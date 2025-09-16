@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Dashboard | kastelenbelgie.be</title>
+  <meta name="description" content="Beheer reserveringen en gebruikers op kastelenbelgie.be">
+  <link rel="stylesheet" href="./css/style-new.css">
+  <style>
+    .admin-container {
+      min-height: 100vh;
+      background: #f8f9fa;
+    }
+    
+    .admin-header {
+      background: #2c3e50;
+      color: white;
+      padding: 1rem 0;
+    }
+    
+    .admin-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    
+    .admin-nav .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+    
+    .admin-tabs {
+      display: flex;
+      gap: 2rem;
+    }
+    
+    .admin-tab {
+      padding: 0.5rem 1rem;
+      background: transparent;
+      border: 2px solid transparent;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .admin-tab.active {
+      border-color: #3498db;
+      background: #3498db;
+    }
+    
+    .admin-tab:hover {
+      border-color: #3498db;
+    }
+    
+    .admin-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .stats-overview {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .stat-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #2c3e50;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    
+    .stat-label {
+      color: #7f8c8d;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .admin-section {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e9ecef;
+    }
+    
+    .section-title {
+      font-size: 1.5rem;
+      color: #2c3e50;
+      margin: 0;
+    }
+    
+    .filters {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+    
+    .filter-select {
+      padding: 0.5rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: white;
+    }
+    
+    .reservations-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    
+    .reservations-table th,
+    .reservations-table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid #e9ecef;
+    }
+    
+    .reservations-table th {
+      background: #f8f9fa;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+    
+    .reservations-table tr:hover {
+      background: #f8f9fa;
+    }
+    
+    .status-badge {
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    
+    .status-pending {
+      background: #fff3cd;
+      color: #856404;
+    }
+    
+    .status-confirmed {
+      background: #d4edda;
+      color: #155724;
+    }
+    
+    .status-cancelled {
+      background: #f8d7da;
+      color: #721c24;
+    }
+    
+    .action-buttons {
+      display: flex;
+      gap: 0.5rem;
+    }
+    
+    .btn-small {
+      padding: 0.25rem 0.75rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .btn-confirm {
+      background: #27ae60;
+      color: white;
+    }
+    
+    .btn-cancel {
+      background: #e74c3c;
+      color: white;
+    }
+    
+    .btn-view {
+      background: #3498db;
+      color: white;
+    }
+    
+    .hidden {
+      display: none;
+    }
+    
+    .loading {
+      text-align: center;
+      padding: 2rem;
+      color: #7f8c8d;
+    }
+    
+    @media (max-width: 1200px) {
+      .stats-overview {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .stats-overview {
+        grid-template-columns: 1fr;
+      }
+      
+      .admin-tabs {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      
+      .reservations-table {
+        font-size: 0.8rem;
+      }
+      
+      .reservations-table th,
+      .reservations-table td {
+        padding: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-container">
+    <header class="admin-header">
+      <nav class="admin-nav">
+        <a href="index.html" class="brand">🏰 Admin Dashboard</a>
+        <div class="admin-tabs">
+          <button class="admin-tab active" onclick="showTab('reservations')">Reserveringen</button>
+          <button class="admin-tab" onclick="showTab('users')">Gebruikers</button>
+          <button class="admin-tab" onclick="showTab('analytics')">Analytics</button>
+        </div>
+        <a href="dashboard.html" style="color: white; text-decoration: none;">← Terug naar site</a>
+      </nav>
+    </header>
+    
+    <main class="admin-content">
+      <div class="stats-overview">
+        <div class="stat-card">
+          <span class="stat-number" id="total-reservations">0</span>
+          <span class="stat-label">Totaal Reserveringen</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="pending-reservations">0</span>
+          <span class="stat-label">In Behandeling</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="confirmed-reservations">0</span>
+          <span class="stat-label">Bevestigd</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="total-users">0</span>
+          <span class="stat-label">Gebruikers</span>
+        </div>
+      </div>
+      
+      <!-- Reservations Tab -->
+      <div id="reservations-tab" class="admin-section">
+        <div class="section-header">
+          <h2 class="section-title">Reserveringen Beheer</h2>
+          <div class="filters">
+            <select class="filter-select" id="status-filter" onchange="filterReservations()">
+              <option value="">Alle statussen</option>
+              <option value="pending">In behandeling</option>
+              <option value="confirmed">Bevestigd</option>
+              <option value="cancelled">Geannuleerd</option>
+            </select>
+            <select class="filter-select" id="castle-filter" onchange="filterReservations()">
+              <option value="">Alle kastelen</option>
+            </select>
+          </div>
+        </div>
+        
+        <div id="reservations-loading" class="loading">
+          Reserveringen laden...
+        </div>
+        
+        <table class="reservations-table hidden" id="reservations-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Kasteel</th>
+              <th>Klant</th>
+              <th>Datum</th>
+              <th>Bezoekers</th>
+              <th>Status</th>
+              <th>Aangemaakt</th>
+              <th>Acties</th>
+            </tr>
+          </thead>
+          <tbody id="reservations-tbody">
+          </tbody>
+        </table>
+      </div>
+      
+      <!-- Users Tab -->
+      <div id="users-tab" class="admin-section hidden">
+        <div class="section-header">
+          <h2 class="section-title">Gebruikers Beheer</h2>
+        </div>
+        
+        <div id="users-loading" class="loading">
+          Gebruikers laden...
+        </div>
+        
+        <table class="reservations-table hidden" id="users-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Naam</th>
+              <th>Email</th>
+              <th>Telefoon</th>
+              <th>Reserveringen</th>
+              <th>Aangemeld</th>
+              <th>Acties</th>
+            </tr>
+          </thead>
+          <tbody id="users-tbody">
+          </tbody>
+        </table>
+      </div>
+      
+      <!-- Analytics Tab -->
+      <div id="analytics-tab" class="admin-section hidden">
+        <div class="section-header">
+          <h2 class="section-title">Analytics & Rapporten</h2>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+          <div>
+            <h3>Populairste Kastelen</h3>
+            <div id="popular-castles"></div>
+          </div>
+          <div>
+            <h3>Reserveringen per Maand</h3>
+            <div id="monthly-stats"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    let allReservations = [];
+    let allUsers = [];
+    
+    // Check admin access (simplified - in production, implement proper role-based access)
+    function checkAdminAccess() {
+      const token = localStorage.getItem('authToken');
+      if (!token) {
+        window.location.href = 'login.html';
+        return false;
+      }
+      return true;
+    }
+    
+    // Tab management
+    function showTab(tabName) {
+      // Hide all tabs
+      document.querySelectorAll('.admin-section').forEach(section => {
+        section.classList.add('hidden');
+      });
+      
+      // Remove active class from all tab buttons
+      document.querySelectorAll('.admin-tab').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      
+      // Show selected tab
+      document.getElementById(`${tabName}-tab`).classList.remove('hidden');
+      event.target.classList.add('active');
+      
+      // Load data for the selected tab
+      if (tabName === 'reservations') {
+        loadReservations();
+      } else if (tabName === 'users') {
+        loadUsers();
+      } else if (tabName === 'analytics') {
+        loadAnalytics();
+      }
+    }
+    
+    // Load reservations
+    async function loadReservations() {
+      if (!checkAdminAccess()) return;
+      
+      const token = localStorage.getItem('authToken');
+      
+      try {
+        const response = await fetch('/api/admin/reservations', {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+        
+        if (response.ok) {
+          allReservations = await response.json();
+          displayReservations(allReservations);
+          updateStats();
+          populateCastleFilter();
+        }
+      } catch (error) {
+        console.error('Error loading reservations:', error);
+      }
+    }
+    
+    // Display reservations
+    function displayReservations(reservations) {
+      const tbody = document.getElementById('reservations-tbody');
+      const table = document.getElementById('reservations-table');
+      const loading = document.getElementById('reservations-loading');
+      
+      tbody.innerHTML = reservations.map(reservation => `
+        <tr>
+          <td>#${reservation.id}</td>
+          <td>${reservation.castleName}</td>
+          <td>
+            ${reservation.firstName ? `${reservation.firstName} ${reservation.lastName}` : reservation.name}<br>
+            <small>${reservation.email}</small>
+          </td>
+          <td>${formatDate(reservation.date)}</td>
+          <td>${reservation.visitors}</td>
+          <td><span class="status-badge status-${reservation.status}">${getStatusText(reservation.status)}</span></td>
+          <td>${formatDate(reservation.createdAt)}</td>
+          <td>
+            <div class="action-buttons">
+              ${reservation.status === 'pending' ? `
+                <button class="btn-small btn-confirm" onclick="updateReservationStatus(${reservation.id}, 'confirmed')">Bevestigen</button>
+                <button class="btn-small btn-cancel" onclick="updateReservationStatus(${reservation.id}, 'cancelled')">Annuleren</button>
+              ` : ''}
+              <button class="btn-small btn-view" onclick="viewReservationDetails(${reservation.id})">Details</button>
+            </div>
+          </td>
+        </tr>
+      `).join('');
+      
+      loading.classList.add('hidden');
+      table.classList.remove('hidden');
+    }
+    
+    // Update reservation status
+    async function updateReservationStatus(id, status) {
+      if (!confirm(`Weet u zeker dat u deze reservering wilt ${status === 'confirmed' ? 'bevestigen' : 'annuleren'}?`)) {
+        return;
+      }
+      
+      const token = localStorage.getItem('authToken');
+      
+      try {
+        const response = await fetch(`/api/admin/reservations/${id}/status`, {
+          method: 'PUT',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ status })
+        });
+        
+        if (response.ok) {
+          alert('Status succesvol bijgewerkt');
+          loadReservations(); // Reload data
+        } else {
+          alert('Er is een fout opgetreden');
+        }
+      } catch (error) {
+        alert('Er is een fout opgetreden');
+      }
+    }
+    
+    // Filter reservations
+    function filterReservations() {
+      const statusFilter = document.getElementById('status-filter').value;
+      const castleFilter = document.getElementById('castle-filter').value;
+      
+      let filtered = allReservations;
+      
+      if (statusFilter) {
+        filtered = filtered.filter(r => r.status === statusFilter);
+      }
+      
+      if (castleFilter) {
+        filtered = filtered.filter(r => r.castleName === castleFilter);
+      }
+      
+      displayReservations(filtered);
+    }
+    
+    // Populate castle filter
+    function populateCastleFilter() {
+      const castleFilter = document.getElementById('castle-filter');
+      const castles = [...new Set(allReservations.map(r => r.castleName))].sort();
+      
+      castleFilter.innerHTML = '<option value="">Alle kastelen</option>' + 
+        castles.map(castle => `<option value="${castle}">${castle}</option>`).join('');
+    }
+    
+    // Update statistics
+    function updateStats() {
+      const total = allReservations.length;
+      const pending = allReservations.filter(r => r.status === 'pending').length;
+      const confirmed = allReservations.filter(r => r.status === 'confirmed').length;
+      
+      document.getElementById('total-reservations').textContent = total;
+      document.getElementById('pending-reservations').textContent = pending;
+      document.getElementById('confirmed-reservations').textContent = confirmed;
+    }
+    
+    // Load users (placeholder)
+    async function loadUsers() {
+      document.getElementById('users-loading').textContent = 'Gebruikers functionaliteit komt binnenkort...';
+    }
+    
+    // Load analytics (placeholder)
+    async function loadAnalytics() {
+      const popularCastles = document.getElementById('popular-castles');
+      const monthlyStats = document.getElementById('monthly-stats');
+      
+      // Calculate popular castles
+      const castleCounts = {};
+      allReservations.forEach(r => {
+        castleCounts[r.castleName] = (castleCounts[r.castleName] || 0) + 1;
+      });
+      
+      const sortedCastles = Object.entries(castleCounts)
+        .sort(([,a], [,b]) => b - a)
+        .slice(0, 5);
+      
+      popularCastles.innerHTML = sortedCastles.map(([castle, count]) => 
+        `<div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
+          <span>${castle}</span>
+          <strong>${count} reserveringen</strong>
+        </div>`
+      ).join('');
+      
+      monthlyStats.innerHTML = '<p>Maandelijkse statistieken komen binnenkort...</p>';
+    }
+    
+    // Helper functions
+    function getStatusText(status) {
+      const statusMap = {
+        'pending': 'In behandeling',
+        'confirmed': 'Bevestigd',
+        'cancelled': 'Geannuleerd'
+      };
+      return statusMap[status] || status;
+    }
+    
+    function formatDate(dateString) {
+      const date = new Date(dateString);
+      return date.toLocaleDateString('nl-NL');
+    }
+    
+    function viewReservationDetails(id) {
+      const reservation = allReservations.find(r => r.id === id);
+      if (reservation) {
+        alert(`Reservering Details:\n\nKasteel: ${reservation.castleName}\nKlant: ${reservation.name}\nEmail: ${reservation.email}\nDatum: ${formatDate(reservation.date)}\nBezoekers: ${reservation.visitors}\nBericht: ${reservation.message || 'Geen bericht'}`);
+      }
+    }
+    
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      if (checkAdminAccess()) {
+        loadReservations();
+      }
+    });
+  </script>
+</body>
+</html>
