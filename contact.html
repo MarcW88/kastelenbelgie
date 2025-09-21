@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | kastelenbelgie.be</title>
+    <meta name="description" content="Neem contact op met kastelenbelgie.be voor vragen over kastelen, reserveringen of samenwerkingen.">
+    <link rel="stylesheet" href="css/unified-style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#667eea">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html" class="brand-link">
+                    <svg class="castle-icon" viewBox="0 0 32 32" width="24" height="24">
+                        <path fill="currentColor" d="M4 28h24v-8h-2v-4h2v-4h-2v-4h-2v-2h-2v-2h-2v2h-2v2h-2v-2h-2v-2h-2v2h-2v2h-2v4h2v4h-2v4h2v8z"/>
+                        <path fill="currentColor" d="M8 20h2v4h-2zm4 0h2v4h-2zm8 0h2v4h-2zm4 0h2v4h-2z"/>
+                    </svg>
+                    kastelenbelgie.be
+                </a>
+            </div>
+            <nav class="navbar-nav">
+                <a href="index.html">Home</a>
+                <a href="provinces.html">Kastelen</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-separator">›</span>
+            <span class="breadcrumb-current">Contact</span>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Contact</h1>
+                <p class="lead">Neem contact op voor vragen over kastelen, reserveringen of samenwerkingen.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Contactgegevens</h2>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <h3>📧 E-mail</h3>
+                                <p>info@kastelenbelgie.be</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>📞 Telefoon</h3>
+                                <p>+32 (0)2 123 45 67</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>📍 Adres</h3>
+                                <p>Kastelenstraat 123<br>1000 Brussel, België</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>🕒 Openingstijden</h3>
+                                <p>Ma-Vr: 9:00 - 17:00<br>Weekend: Op afspraak</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h2>Stuur ons een bericht</h2>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Naam *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefoon</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Onderwerp *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Kies een onderwerp</option>
+                                    <option value="algemene-vraag">Algemene vraag</option>
+                                    <option value="reservering">Reservering</option>
+                                    <option value="samenwerking">Samenwerking</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Bericht *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Verstuur bericht</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Kastelen</h4>
+                    <ul>
+                        <li><a href="provinces.html">Alle kastelen</a></li>
+                        <li><a href="antwerpen.html">Antwerpen</a></li>
+                        <li><a href="limburg.html">Limburg</a></li>
+                        <li><a href="oost-vlaanderen.html">Oost-Vlaanderen</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informatie</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="algemene-voorwaarden.html">Voorwaarden</a></li>
+                        <li><a href="privacybeleid.html">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>kastelenbelgie.be</h4>
+                    <p>Ontdek de mooiste kastelen van België en beleef eeuwenoude geschiedenis.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 kastelenbelgie.be. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Bedankt voor uw bericht! We nemen zo snel mogelijk contact met u op.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | kastelenbelgie.be</title>
+  <meta name="description" content="Beheer uw reserveringen en profiel op kastelenbelgie.be">
+  <link rel="stylesheet" href="./css/style-new.css">
+  <style>
+    .dashboard-container {
+      min-height: 100vh;
+      background: #f8f9fa;
+    }
+    
+    .dashboard-header {
+      background: white;
+      border-bottom: 1px solid #e9ecef;
+      padding: 1rem 0;
+    }
+    
+    .dashboard-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    
+    .dashboard-nav .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #2c3e50;
+      text-decoration: none;
+    }
+    
+    .user-menu {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #667eea;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+    
+    .btn-logout {
+      background: #e74c3c;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    
+    .btn-logout:hover {
+      background: #c0392b;
+    }
+    
+    .dashboard-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .stats-card {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    
+    .stat-item {
+      text-align: center;
+      padding: 1rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+    }
+    
+    .stat-number {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #667eea;
+      display: block;
+    }
+    
+    .stat-label {
+      color: #7f8c8d;
+      font-size: 0.9rem;
+    }
+    
+    .quick-actions {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .action-buttons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .action-btn {
+      padding: 1rem;
+      background: #667eea;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+    
+    .action-btn:hover {
+      background: #5a6fd8;
+    }
+    
+    .action-btn.secondary {
+      background: #95a5a6;
+    }
+    
+    .action-btn.secondary:hover {
+      background: #7f8c8d;
+    }
+    
+    .reservations-section {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .section-title {
+      font-size: 1.5rem;
+      color: #2c3e50;
+      margin: 0;
+    }
+    
+    .reservation-card {
+      border: 1px solid #e9ecef;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      transition: box-shadow 0.3s ease;
+    }
+    
+    .reservation-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    .reservation-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+    
+    .castle-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #2c3e50;
+      margin: 0;
+    }
+    
+    .reservation-status {
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    
+    .status-pending {
+      background: #fff3cd;
+      color: #856404;
+    }
+    
+    .status-confirmed {
+      background: #d4edda;
+      color: #155724;
+    }
+    
+    .status-cancelled {
+      background: #f8d7da;
+      color: #721c24;
+    }
+    
+    .reservation-details {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .detail-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    
+    .detail-label {
+      font-size: 0.8rem;
+      color: #7f8c8d;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .detail-value {
+      font-weight: 500;
+      color: #2c3e50;
+    }
+    
+    .reservation-actions {
+      display: flex;
+      gap: 0.5rem;
+    }
+    
+    .btn-small {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .btn-primary-small {
+      background: #667eea;
+      color: white;
+    }
+    
+    .btn-secondary-small {
+      background: #95a5a6;
+      color: white;
+    }
+    
+    .btn-danger-small {
+      background: #e74c3c;
+      color: white;
+    }
+    
+    .empty-state {
+      text-align: center;
+      padding: 3rem;
+      color: #7f8c8d;
+    }
+    
+    .empty-state h3 {
+      margin-bottom: 1rem;
+      color: #95a5a6;
+    }
+    
+    @media (max-width: 768px) {
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .action-buttons {
+        grid-template-columns: 1fr;
+      }
+      
+      .reservation-details {
+        grid-template-columns: 1fr;
+      }
+      
+      .dashboard-content {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <header class="dashboard-header">
+      <nav class="dashboard-nav">
+        <a href="index.html" class="brand">kastelenbelgie.be</a>
+        <div class="user-menu">
+          <div class="user-info">
+            <div class="user-avatar" id="user-avatar">M</div>
+            <span id="user-name">Marc Willems</span>
+          </div>
+          <button class="btn-logout" onclick="logout()">Uitloggen</button>
+        </div>
+      </nav>
+    </header>
+    
+    <main class="dashboard-content">
+      <div class="dashboard-grid">
+        <div class="stats-card">
+          <h2>Uw statistieken</h2>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-number" id="total-reservations">0</span>
+              <span class="stat-label">Totaal reserveringen</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" id="upcoming-visits">0</span>
+              <span class="stat-label">Komende bezoeken</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" id="visited-castles">0</span>
+              <span class="stat-label">Bezochte kastelen</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" id="favorite-castles">0</span>
+              <span class="stat-label">Favoriete kastelen</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="quick-actions">
+          <h2>Snelle acties</h2>
+          <div class="action-buttons">
+            <a href="index.html#destinations-grid-section" class="action-btn">Nieuw kasteel zoeken</a>
+            <a href="profile.html" class="action-btn secondary">Profiel bewerken</a>
+            <a href="favorites.html" class="action-btn secondary">Mijn favorieten</a>
+            <a href="index.html#blog" class="action-btn secondary">Blog lezen</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="reservations-section">
+        <div class="section-header">
+          <h2 class="section-title">Mijn reserveringen</h2>
+          <a href="index.html#destinations-grid-section" class="action-btn">Nieuwe reservering</a>
+        </div>
+        
+        <div id="reservations-list">
+          <!-- Reservations will be loaded here -->
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Check if user is logged in
+    function checkAuth() {
+      const token = localStorage.getItem('authToken');
+      if (!token) {
+        window.location.href = 'login.html';
+        return false;
+      }
+      return true;
+    }
+    
+    // Logout function
+    function logout() {
+      localStorage.removeItem('authToken');
+      window.location.href = 'login.html';
+    }
+    
+    // Load user data and reservations
+    async function loadDashboardData() {
+      if (!checkAuth()) return;
+      
+      const token = localStorage.getItem('authToken');
+      
+      try {
+        // Load user profile
+        const userResponse = await fetch('/api/user/profile', {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+        
+        if (userResponse.ok) {
+          const userData = await userResponse.json();
+          document.getElementById('user-name').textContent = `${userData.firstName} ${userData.lastName}`;
+          document.getElementById('user-avatar').textContent = userData.firstName.charAt(0).toUpperCase();
+        }
+        
+        // Load reservations
+        const reservationsResponse = await fetch('/api/reservations/user', {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+        
+        if (reservationsResponse.ok) {
+          const reservations = await reservationsResponse.json();
+          displayReservations(reservations);
+          updateStats(reservations);
+        }
+        
+      } catch (error) {
+        console.error('Error loading dashboard data:', error);
+      }
+    }
+    
+    // Display reservations
+    function displayReservations(reservations) {
+      const container = document.getElementById('reservations-list');
+      
+      if (reservations.length === 0) {
+        container.innerHTML = `
+          <div class="empty-state">
+            <h3>Nog geen reserveringen</h3>
+            <p>Begin met het verkennen van België's mooiste kastelen!</p>
+            <a href="index.html#destinations-grid-section" class="action-btn">Ontdek kastelen</a>
+          </div>
+        `;
+        return;
+      }
+      
+      container.innerHTML = reservations.map(reservation => `
+        <div class="reservation-card">
+          <div class="reservation-header">
+            <h3 class="castle-name">${reservation.castleName}</h3>
+            <span class="reservation-status status-${reservation.status}">${getStatusText(reservation.status)}</span>
+          </div>
+          <div class="reservation-details">
+            <div class="detail-item">
+              <span class="detail-label">Datum</span>
+              <span class="detail-value">${formatDate(reservation.date)}</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Tijd</span>
+              <span class="detail-value">${reservation.time || 'Hele dag'}</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Bezoekers</span>
+              <span class="detail-value">${reservation.visitors} personen</span>
+            </div>
+          </div>
+          <div class="reservation-actions">
+            <a href="reservation-details.html?id=${reservation.id}" class="btn-small btn-primary-small">Details</a>
+            ${reservation.status === 'pending' ? `
+              <button class="btn-small btn-secondary-small" onclick="editReservation(${reservation.id})">Bewerken</button>
+              <button class="btn-small btn-danger-small" onclick="cancelReservation(${reservation.id})">Annuleren</button>
+            ` : ''}
+          </div>
+        </div>
+      `).join('');
+    }
+    
+    // Update statistics
+    function updateStats(reservations) {
+      const totalReservations = reservations.length;
+      const upcomingVisits = reservations.filter(r => new Date(r.date) > new Date() && r.status === 'confirmed').length;
+      const visitedCastles = reservations.filter(r => new Date(r.date) < new Date() && r.status === 'confirmed').length;
+      
+      document.getElementById('total-reservations').textContent = totalReservations;
+      document.getElementById('upcoming-visits').textContent = upcomingVisits;
+      document.getElementById('visited-castles').textContent = visitedCastles;
+      document.getElementById('favorite-castles').textContent = '3'; // This would come from favorites API
+    }
+    
+    // Helper functions
+    function getStatusText(status) {
+      const statusMap = {
+        'pending': 'In behandeling',
+        'confirmed': 'Bevestigd',
+        'cancelled': 'Geannuleerd'
+      };
+      return statusMap[status] || status;
+    }
+    
+    function formatDate(dateString) {
+      const date = new Date(dateString);
+      return date.toLocaleDateString('nl-NL', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+    }
+    
+    // Reservation actions
+    function editReservation(id) {
+      window.location.href = `edit-reservation.html?id=${id}`;
+    }
+    
+    async function cancelReservation(id) {
+      if (!confirm('Weet u zeker dat u deze reservering wilt annuleren?')) {
+        return;
+      }
+      
+      const token = localStorage.getItem('authToken');
+      
+      try {
+        const response = await fetch(`/api/reservations/${id}/cancel`, {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+        
+        if (response.ok) {
+          alert('Reservering succesvol geannuleerd');
+          loadDashboardData(); // Reload data
+        } else {
+          alert('Er is een fout opgetreden bij het annuleren');
+        }
+      } catch (error) {
+        alert('Er is een fout opgetreden');
+      }
+    }
+    
+    // Load data when page loads
+    document.addEventListener('DOMContentLoaded', loadDashboardData);
+  </script>
+</body>
+</html>

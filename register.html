@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registreren | kastelenbelgie.be</title>
+  <meta name="description" content="Maak een account aan om uw reserveringen te beheren en exclusieve voordelen te krijgen.">
+  <link rel="stylesheet" href="./css/style-new.css">
+  <style>
+    .auth-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 2rem 1rem;
+    }
+    
+    .auth-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      padding: 3rem;
+      width: 100%;
+      max-width: 450px;
+    }
+    
+    .auth-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .auth-header h1 {
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+    }
+    
+    .auth-header p {
+      color: #7f8c8d;
+      margin: 0;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+      font-weight: 500;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 2px solid #e9ecef;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+    
+    .form-group input:focus {
+      outline: none;
+      border-color: #667eea;
+    }
+    
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    
+    .btn-auth {
+      width: 100%;
+      padding: 0.75rem;
+      background: #667eea;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-bottom: 1rem;
+    }
+    
+    .btn-auth:hover {
+      background: #5a6fd8;
+    }
+    
+    .auth-links {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    
+    .auth-links a {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .auth-links a:hover {
+      text-decoration: underline;
+    }
+    
+    .checkbox-group {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .checkbox-group input[type="checkbox"] {
+      margin-top: 0.25rem;
+    }
+    
+    .checkbox-group label {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin-bottom: 0;
+    }
+    
+    .error-message {
+      background: #fee;
+      color: #c33;
+      padding: 0.75rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      display: none;
+    }
+    
+    .success-message {
+      background: #efe;
+      color: #363;
+      padding: 0.75rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      display: none;
+    }
+    
+    .password-strength {
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+    }
+    
+    .strength-weak { color: #e74c3c; }
+    .strength-medium { color: #f39c12; }
+    .strength-strong { color: #27ae60; }
+  </style>
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-card">
+      <div class="auth-header">
+        <h1>Account aanmaken</h1>
+        <p>Sluit je aan bij duizenden kasteelliefhebbers</p>
+      </div>
+      
+      <div id="error-message" class="error-message"></div>
+      <div id="success-message" class="success-message"></div>
+      
+      <form id="register-form" class="auth-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">Voornaam</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Achternaam</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">E-mailadres</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Telefoonnummer (optioneel)</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Wachtwoord</label>
+          <input type="password" id="password" name="password" required minlength="8">
+          <div id="password-strength" class="password-strength"></div>
+        </div>
+        
+        <div class="form-group">
+          <label for="confirmPassword">Bevestig wachtwoord</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+        
+        <div class="checkbox-group">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">
+            Ik ga akkoord met de <a href="algemene-voorwaarden.html" target="_blank">algemene voorwaarden</a> 
+            en het <a href="privacybeleid.html" target="_blank">privacybeleid</a>
+          </label>
+        </div>
+        
+        <div class="checkbox-group">
+          <input type="checkbox" id="newsletter" name="newsletter">
+          <label for="newsletter">
+            Ik wil graag updates ontvangen over nieuwe kastelen en speciale aanbiedingen
+          </label>
+        </div>
+        
+        <button type="submit" class="btn-auth">Account aanmaken</button>
+      </form>
+      
+      <div class="auth-links">
+        <p>Al een account? <a href="login.html">Log hier in</a></p>
+        <p><a href="index.html">← Terug naar homepage</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Password strength checker
+    document.getElementById('password').addEventListener('input', function() {
+      const password = this.value;
+      const strengthDiv = document.getElementById('password-strength');
+      
+      let strength = 0;
+      let feedback = '';
+      
+      if (password.length >= 8) strength++;
+      if (/[a-z]/.test(password)) strength++;
+      if (/[A-Z]/.test(password)) strength++;
+      if (/[0-9]/.test(password)) strength++;
+      if (/[^A-Za-z0-9]/.test(password)) strength++;
+      
+      switch (strength) {
+        case 0:
+        case 1:
+        case 2:
+          strengthDiv.className = 'password-strength strength-weak';
+          feedback = 'Zwak wachtwoord';
+          break;
+        case 3:
+        case 4:
+          strengthDiv.className = 'password-strength strength-medium';
+          feedback = 'Gemiddeld wachtwoord';
+          break;
+        case 5:
+          strengthDiv.className = 'password-strength strength-strong';
+          feedback = 'Sterk wachtwoord';
+          break;
+      }
+      
+      strengthDiv.textContent = feedback;
+    });
+    
+    // Form submission
+    document.getElementById('register-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+      const errorDiv = document.getElementById('error-message');
+      const successDiv = document.getElementById('success-message');
+      
+      // Hide previous messages
+      errorDiv.style.display = 'none';
+      successDiv.style.display = 'none';
+      
+      // Validate passwords match
+      if (data.password !== data.confirmPassword) {
+        errorDiv.textContent = 'Wachtwoorden komen niet overeen.';
+        errorDiv.style.display = 'block';
+        return;
+      }
+      
+      try {
+        const response = await fetch('/api/auth/register', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+        
+        const result = await response.json();
+        
+        if (response.ok) {
+          successDiv.textContent = 'Account succesvol aangemaakt! U wordt doorgestuurd naar de login pagina...';
+          successDiv.style.display = 'block';
+          
+          setTimeout(() => {
+            window.location.href = 'login.html';
+          }, 2000);
+        } else {
+          errorDiv.textContent = result.message || 'Registratie mislukt. Probeer het opnieuw.';
+          errorDiv.style.display = 'block';
+        }
+      } catch (error) {
+        errorDiv.textContent = 'Er is een fout opgetreden. Probeer het later opnieuw.';
+        errorDiv.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>
