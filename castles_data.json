@@ -1,0 +1,707 @@
+{
+  "castles": [
+    {
+      "title": "Kasteel engelhof",
+      "slug": "kasteel-engelhof-houthalen",
+      "url": "https://kastelenbelgie.be/nl/kasteel-engelhof-houthalen/",
+      "province": "Luik",
+      "name_found": "Kasteel Engelhof",
+      "address": "Hengelhoefdreef 2, 3530 Houthalen-Helchteren",
+      "opening_hours": {},
+      "has_opening_hours": false
+    },
+    {
+      "title": "Kasteel Beauregard",
+      "slug": "kasteel-beauregard-froyennes",
+      "url": "https://kastelenbelgie.be/nl/kasteel-beauregard-froyennes/",
+      "province": "Luik",
+      "name_found": "Château Beauregard",
+      "address": "Beauregard, 6530 Thuin",
+      "opening_hours": {},
+      "has_opening_hours": false
+    },
+    {
+      "title": "Kasteel karreveld",
+      "slug": "kasteel-karreveld-te-sint-jans-molenbeek",
+      "url": "https://kastelenbelgie.be/nl/kasteel-karreveld-te-sint-jans-molenbeek/",
+      "province": "Luik",
+      "name_found": "Kasteelhoeve Karreveld",
+      "address": "Jean de la Hoeselaan 32, 1080 Sint-Jans-Molenbeek",
+      "opening_hours": {
+        "mon": "08:30–17:00",
+        "tue": "08:30–17:00",
+        "wed": "08:30–18:00",
+        "thu": "08:30–18:00",
+        "fri": "08:30–18:00",
+        "sat": "08:30–18:00",
+        "sun": "08:30–18:00"
+      },
+      "has_opening_hours": true
+    },
+    {
+      "title": "Kasteel van wegimont",
+      "slug": "kasteel-van-wegimont-ayeneux-soumagne",
+      "url": "https://kastelenbelgie.be/nl/kasteel-van-wegimont-ayeneux-soumagne/",
+      "province": "Luik",
+      "name_found": "Château de Wégimont",
+      "address": "4630 Liège",
+      "opening_hours": {
+        "mon": "09:00–17:00",
+        "tue": "09:00–17:00",
+        "wed": "09:00–17:00",
+        "thu": "09:00–17:00",
+        "fri": "09:00–17:00",
+        "sat": "09:00–17:00",
+        "sun": "09:00–17:00"
+      },
+      "has_opening_hours": true
+    },
+    {
+      "title": "Kasteel ter lucht",
+      "slug": "kasteel-ter-lucht-sint-andries",
+      "url": "https://kastelenbelgie.be/nl/kasteel-ter-lucht-sint-andries/",
+      "province": "Luik",
+      "name_found": "Kasteel van Waroux",
+      "address": "Rue de Waroux 301, 4432 Ans",
+      "opening_hours": {
+        "mon": "Gesloten",
+        "tue": "14:00–18:00",
+        "wed": "14:00–18:00",
+        "thu": "14:00–18:00",
+        "fri": "14:00–18:00",
+        "sat": "14:00–18:00",
+        "sun": "14:00–18:00"
+      },
+      "has_opening_hours": true
+    },
+    {
+      "title": "Hof ter borght",
+      "slug": "hof-ter-borght-westmeerbeek",
+      "url": "https://kastelenbelgie.be/nl/hof-ter-borght-westmeerbeek/",
+      "province": "Luik",
+      "name_found": "Hof ter Borght",
+      "address": "Heide 41, 2235 Hulshout",
+      "opening_hours": {},
+      "has_opening_hours": false
+    },
+    {
+      "title": "Kasteel van Durbuy",
+      "slug": "kasteel-van-durbuy-durbuy",
+      "url": "https://kastelenbelgie.be/nl/kasteel-van-durbuy-durbuy/",
+      "province": "Luik",
+      "name_found": "Kasteel van Durbuy",
+      "address": "6940 Durbuy",
+      "opening_hours": {},
+      "has_opening_hours": false
+    },
+    {
+      "title": "Kasteel van fougeraie",
+      "slug": "kasteel-van-fougeraie-te-ukkel",
+      "url": "https://kastelenbelgie.be/nl/kasteel-van-fougeraie-te-ukkel/",
+      "province": "Luik",
+      "name_found": "Kasteel van Jehay",
+      "address": "Rue du Parc 1, 4540 Amay",
+      "opening_hours": {
+        "mon": "11:00–18:00",
+        "tue": "11:00–18:00",
+        "wed": "11:00–18:00",
+        "thu": "11:00–18:00",
+        "fri": "11:00–18:00",
+        "sat": "11:00–18:00",
+        "sun": "11:00–18:00"
+      },
+      "has_opening_hours": true
+    },
+    {
+      "title": "Kasteel Mohimont",
+      "slug": "kasteel-mohimont-villers-devant-orval",
+      "url": "https://kastelenbelgie.be/nl/kasteel-mohimont-villers-devant-orval/",
+      "province": "Luik",
+      "name_found": "Château de Wégimont",
+      "address": "4630 Liège",
+      "opening_hours": {
+        "mon": "09:00–17:00",
+        "tue": "09:00–17:00",
+        "wed": "09:00–17:00",
+        "thu": "09:00–17:00",
+        "fri": "09:00–17:00",
+        "sat": "09:00–17:00",
+        "sun": "09:00–17:00"
+      },
+      "has_opening_hours": true
+    },
+    {
+      "title": "Kasteel van Orval",
+      "slug": "kasteel-van-orval-villers-devant-orval",
+      "url": "https://kastelenbelgie.be/nl/kasteel-van-orval-villers-devant-orval/",
+      "province": "Luxemburg",
+      "name_found": "Kasteel van Orval",
+      "address": "Orval 5, 6823 Florenville",
+      "opening_hours": {},
+      "has_opening_hours": false
+    },
+    {
+      "title": "Kasteel van Templeuve",
+      "slug": "kasteel-van-templeuve-templeuve",
+      "url": "https://kastelenbelgie.be/nl/kasteel-van-templeuve-templeuve/",
+      "province": "Henegouwen",
+      "name_found": "Templeuve Castle",
+      "address": "7520 Tournai",
+      "opening_hours": {},
+      "has_opening_hours": false
+    },
+    {
+      "title": "Kasteel van biez",
+      "slug": "kasteel-van-biez-peruwelz",
+      "url": "https://kastelenbelgie.be/nl/kasteel-van-biez-peruwelz/",
+      "province": "Namen",
+      "name_found": "Château De Beez",
+      "address": "Av. du Chateau de Beez, 5000 Namur",
+      "opening_hours": {
+        "mon": "24 uur geopend",
+        "tue": "24 uur geopend",
+        "wed": "24 uur geopend",
+        "thu": "24 uur geopend",
+        "fri": "24 uur geopend",
+        "sat": "24 uur geopend",
+        "sun": "24 uur geopend"
+      },
+      "has_opening_hours": true
+    },
+    {
+      "title": "Kasteel van Roumont",
+      "slug": "kasteel-van-roumont-roumont",
+      "url": "https://kastelenbelgie.be/nl/kasteel-van-roumont-roumont/",
+      "province": "Antwerpen",
+      "name_found": "Château Mondron (XIXe siècle)",
+      "address": "Chau. du Château Mondron 159, 6040 Charleroi",
+      "opening_hours": {
+        "mon": "08:30–16:30",
+        "tue": "08:30–16:30",
+        "wed": "08:30–16:30",
+        "thu": "08:30–16:30",
+        "fri": "08:30–16:30",
+        "sat": "Gesloten",
+        "sun": "Gesloten"
+      },
+      "has_opening_hours": true
+    },
+    {
+      "title": "Kasteel van rethy",
+      "slug": "kasteel-van-rethy-retie",
+      "url": "https://kastelenbelgie.be/nl/kasteel-van-rethy-retie/",
+      "province": "Limburg",
+      "name_found": "Kasteel van Rijkel",
+      "address": "Dionysius van Leeuwenstraat 23, 3840 Tongeren-Borgloon",
+      "opening_hours": {},
+      "has_opening_hours": false
+    },
+    {
+      "title": "Kasteel van wijer",
+      "slug": "kasteel-van-wijer-te-wijer-gemeente-nieuwerkerken",
+      "url": "https://kastelenbelgie.be/nl/kasteel-van-wijer-te-wijer-gemeente-nieuwerkerken/",
+      "province": "Antwerpen",
+      "name_found": "Castle of Wijer",
+      "address": "Grotestraat 205, 3850 Nieuwerkerken",
+      "opening_hours": {},
+      "has_opening_hours": false
+    },
+    {
+      "title": "Kasteel van bouchout",
+      "slug": "kasteel-van-bouchout-te-meise",
+      "url": "https://kastelenbelgie.be/nl/kasteel-van-bouchout-te-meise/",
+      "province": "Antwerpen",
+      "name_found": "Kasteel van Bouchout",
+      "address": "1860 Meise",
+      "opening_hours": {
+        "mon": "10:00–17:00",
+        "tue": "10:00–17:00",
+        "wed": "10:00–17:00",
+        "thu": "10:00–17:00",
+        "fri": "10:00–17:00",
+        "sat": "10:00–17:00",
+        "sun": "10:00–17:00"
+      },
+      "has_opening_hours": true
+    },
+    {
+      "title": "Kasteel ter borcht",
+      "slug": "kasteel-ter-borcht-meulebeke",
+      "url": "https://kastelenbelgie.be/nl/kasteel-ter-borcht-meulebeke/",
+      "province": "Antwerpen",
+      "name_found": "Kasteel Ter Borcht",
+      "address": "Baronielaan 27-29, 8760 Tielt",
+      "opening_hours": {},
+      "has_opening_hours": false
+    },
+    {
+      "title": "Kasteel van heetvelde",
+      "slug": "kasteel-van-heetvelde-te-oetingen",
+      "url": "https://kastelenbelgie.be/nl/kasteel-van-heetvelde-te-oetingen/",
+      "province": "Vlaams-Brabant",
+      "name_found": "Kasteel van Heetvelde",
+      "address": "Oude Heerbaan 83, 1755 Pajottegem",
+      "opening_hours": {},
+      "has_opening_hours": false
+    },
+    {
+      "title": "Kasteel hulsberg",
+      "slug": "kasteel-hulsberg-borgloon",
+      "url": "https://kastelenbelgie.be/nl/kasteel-hulsberg-borgloon/",
+      "province": "Luxemburg",
+      "name_found": "Kasteel Hulsberg",
+      "address": "St.-Truidersteenweg 101, 3840 Tongeren-Borgloon",
+      "opening_hours": {},
+      "has_opening_hours": false
+    },
+    {
+      "title": "Kasteel van Voneche",
+      "slug": "kasteel-van-voneche-voneche",
+      "url": "https://kastelenbelgie.be/nl/kasteel-van-voneche-voneche/",
+      "province": "Luxemburg",
+      "name_found": "Château de Vonêche",
+      "address": "Rue Le Parc, 5570 Beauraing",
+      "opening_hours": {},
+      "has_opening_hours": false
+    },
+    {
+      "title": "Sint-Antoniuskasteel",
+      "slug": "sint-antoniuskasteel-celles",
+      "url": "https://kastelenbelgie.be/nl/sint-antoniuskasteel-celles/",
+      "province": "Henegouwen",
+      "name_found": "Kasteel van Antoing",
+      "address": "Pl. Bara, 7640 Antoing",
+      "opening_hours": {
+        "mon": "Gesloten",
+        "tue": "Gesloten",
+        "wed": "Gesloten",
+        "thu": "15:00–17:00",
+        "fri": "Gesloten",
+        "sat": "Gesloten",
+        "sun": "15:00–17:00"
+      },
+      "has_opening_hours": true
+    },
+    {
+      "title": "Citadel van hoei",
+      "slug": "citadel-van-hoei-hoei",
+      "url": "https://kastelenbelgie.be/nl/citadel-van-hoei-hoei/",
+      "province": "Luik",
+      "name_found": "Fort van Hoei",
+      "address": "Chau. de Napoléon, 4500 Huy",
+      "opening_hours": {
+        "mon": "13:30–18:00",
+        "tue": "10:30–18:00",
+        "wed": "10:30–18:00",
+        "thu": "10:30–18:00",
+        "fri": "10:30–18:00",
+        "sat": "10:30–18:00",
+        "sun": "10:30–18:00"
+      },
+      "has_opening_hours": true
+    },
+    {
+      "title": "Kasteel van freyr",
+      "slug": "kasteel-van-freyr-freyr",
+      "url": "https://kastelenbelgie.be/nl/kasteel-van-freyr-freyr/",
+      "province": "Antwerpen",
+      "name_found": "Kasteel van Freÿr",
+      "address": "Freyr 12, 5540 Hastière",
+      "opening_hours": {
+        "mon": "Gesloten",
+        "tue": "11:00–17:00",
+        "wed": "11:00–17:00",
+        "thu": "11:00–17:00",
+        "fri": "11:00–17:00",
+        "sat": "11:00–17:00",
+        "sun": "11:00–17:00"
+      },
+      "has_opening_hours": true
+    }
+  ],
+  "provinces": {
+    "Luik": [
+      {
+        "title": "Kasteel engelhof",
+        "slug": "kasteel-engelhof-houthalen",
+        "url": "https://kastelenbelgie.be/nl/kasteel-engelhof-houthalen/",
+        "province": "Luik",
+        "name_found": "Kasteel Engelhof",
+        "address": "Hengelhoefdreef 2, 3530 Houthalen-Helchteren",
+        "opening_hours": {},
+        "has_opening_hours": false
+      },
+      {
+        "title": "Kasteel Beauregard",
+        "slug": "kasteel-beauregard-froyennes",
+        "url": "https://kastelenbelgie.be/nl/kasteel-beauregard-froyennes/",
+        "province": "Luik",
+        "name_found": "Château Beauregard",
+        "address": "Beauregard, 6530 Thuin",
+        "opening_hours": {},
+        "has_opening_hours": false
+      },
+      {
+        "title": "Kasteel karreveld",
+        "slug": "kasteel-karreveld-te-sint-jans-molenbeek",
+        "url": "https://kastelenbelgie.be/nl/kasteel-karreveld-te-sint-jans-molenbeek/",
+        "province": "Luik",
+        "name_found": "Kasteelhoeve Karreveld",
+        "address": "Jean de la Hoeselaan 32, 1080 Sint-Jans-Molenbeek",
+        "opening_hours": {
+          "mon": "08:30–17:00",
+          "tue": "08:30–17:00",
+          "wed": "08:30–18:00",
+          "thu": "08:30–18:00",
+          "fri": "08:30–18:00",
+          "sat": "08:30–18:00",
+          "sun": "08:30–18:00"
+        },
+        "has_opening_hours": true
+      },
+      {
+        "title": "Kasteel van wegimont",
+        "slug": "kasteel-van-wegimont-ayeneux-soumagne",
+        "url": "https://kastelenbelgie.be/nl/kasteel-van-wegimont-ayeneux-soumagne/",
+        "province": "Luik",
+        "name_found": "Château de Wégimont",
+        "address": "4630 Liège",
+        "opening_hours": {
+          "mon": "09:00–17:00",
+          "tue": "09:00–17:00",
+          "wed": "09:00–17:00",
+          "thu": "09:00–17:00",
+          "fri": "09:00–17:00",
+          "sat": "09:00–17:00",
+          "sun": "09:00–17:00"
+        },
+        "has_opening_hours": true
+      },
+      {
+        "title": "Kasteel ter lucht",
+        "slug": "kasteel-ter-lucht-sint-andries",
+        "url": "https://kastelenbelgie.be/nl/kasteel-ter-lucht-sint-andries/",
+        "province": "Luik",
+        "name_found": "Kasteel van Waroux",
+        "address": "Rue de Waroux 301, 4432 Ans",
+        "opening_hours": {
+          "mon": "Gesloten",
+          "tue": "14:00–18:00",
+          "wed": "14:00–18:00",
+          "thu": "14:00–18:00",
+          "fri": "14:00–18:00",
+          "sat": "14:00–18:00",
+          "sun": "14:00–18:00"
+        },
+        "has_opening_hours": true
+      },
+      {
+        "title": "Hof ter borght",
+        "slug": "hof-ter-borght-westmeerbeek",
+        "url": "https://kastelenbelgie.be/nl/hof-ter-borght-westmeerbeek/",
+        "province": "Luik",
+        "name_found": "Hof ter Borght",
+        "address": "Heide 41, 2235 Hulshout",
+        "opening_hours": {},
+        "has_opening_hours": false
+      },
+      {
+        "title": "Kasteel van Durbuy",
+        "slug": "kasteel-van-durbuy-durbuy",
+        "url": "https://kastelenbelgie.be/nl/kasteel-van-durbuy-durbuy/",
+        "province": "Luik",
+        "name_found": "Kasteel van Durbuy",
+        "address": "6940 Durbuy",
+        "opening_hours": {},
+        "has_opening_hours": false
+      },
+      {
+        "title": "Kasteel van fougeraie",
+        "slug": "kasteel-van-fougeraie-te-ukkel",
+        "url": "https://kastelenbelgie.be/nl/kasteel-van-fougeraie-te-ukkel/",
+        "province": "Luik",
+        "name_found": "Kasteel van Jehay",
+        "address": "Rue du Parc 1, 4540 Amay",
+        "opening_hours": {
+          "mon": "11:00–18:00",
+          "tue": "11:00–18:00",
+          "wed": "11:00–18:00",
+          "thu": "11:00–18:00",
+          "fri": "11:00–18:00",
+          "sat": "11:00–18:00",
+          "sun": "11:00–18:00"
+        },
+        "has_opening_hours": true
+      },
+      {
+        "title": "Kasteel Mohimont",
+        "slug": "kasteel-mohimont-villers-devant-orval",
+        "url": "https://kastelenbelgie.be/nl/kasteel-mohimont-villers-devant-orval/",
+        "province": "Luik",
+        "name_found": "Château de Wégimont",
+        "address": "4630 Liège",
+        "opening_hours": {
+          "mon": "09:00–17:00",
+          "tue": "09:00–17:00",
+          "wed": "09:00–17:00",
+          "thu": "09:00–17:00",
+          "fri": "09:00–17:00",
+          "sat": "09:00–17:00",
+          "sun": "09:00–17:00"
+        },
+        "has_opening_hours": true
+      },
+      {
+        "title": "Citadel van hoei",
+        "slug": "citadel-van-hoei-hoei",
+        "url": "https://kastelenbelgie.be/nl/citadel-van-hoei-hoei/",
+        "province": "Luik",
+        "name_found": "Fort van Hoei",
+        "address": "Chau. de Napoléon, 4500 Huy",
+        "opening_hours": {
+          "mon": "13:30–18:00",
+          "tue": "10:30–18:00",
+          "wed": "10:30–18:00",
+          "thu": "10:30–18:00",
+          "fri": "10:30–18:00",
+          "sat": "10:30–18:00",
+          "sun": "10:30–18:00"
+        },
+        "has_opening_hours": true
+      }
+    ],
+    "Luxemburg": [
+      {
+        "title": "Kasteel van Orval",
+        "slug": "kasteel-van-orval-villers-devant-orval",
+        "url": "https://kastelenbelgie.be/nl/kasteel-van-orval-villers-devant-orval/",
+        "province": "Luxemburg",
+        "name_found": "Kasteel van Orval",
+        "address": "Orval 5, 6823 Florenville",
+        "opening_hours": {},
+        "has_opening_hours": false
+      },
+      {
+        "title": "Kasteel hulsberg",
+        "slug": "kasteel-hulsberg-borgloon",
+        "url": "https://kastelenbelgie.be/nl/kasteel-hulsberg-borgloon/",
+        "province": "Luxemburg",
+        "name_found": "Kasteel Hulsberg",
+        "address": "St.-Truidersteenweg 101, 3840 Tongeren-Borgloon",
+        "opening_hours": {},
+        "has_opening_hours": false
+      },
+      {
+        "title": "Kasteel van Voneche",
+        "slug": "kasteel-van-voneche-voneche",
+        "url": "https://kastelenbelgie.be/nl/kasteel-van-voneche-voneche/",
+        "province": "Luxemburg",
+        "name_found": "Château de Vonêche",
+        "address": "Rue Le Parc, 5570 Beauraing",
+        "opening_hours": {},
+        "has_opening_hours": false
+      }
+    ],
+    "Henegouwen": [
+      {
+        "title": "Kasteel van Templeuve",
+        "slug": "kasteel-van-templeuve-templeuve",
+        "url": "https://kastelenbelgie.be/nl/kasteel-van-templeuve-templeuve/",
+        "province": "Henegouwen",
+        "name_found": "Templeuve Castle",
+        "address": "7520 Tournai",
+        "opening_hours": {},
+        "has_opening_hours": false
+      },
+      {
+        "title": "Sint-Antoniuskasteel",
+        "slug": "sint-antoniuskasteel-celles",
+        "url": "https://kastelenbelgie.be/nl/sint-antoniuskasteel-celles/",
+        "province": "Henegouwen",
+        "name_found": "Kasteel van Antoing",
+        "address": "Pl. Bara, 7640 Antoing",
+        "opening_hours": {
+          "mon": "Gesloten",
+          "tue": "Gesloten",
+          "wed": "Gesloten",
+          "thu": "15:00–17:00",
+          "fri": "Gesloten",
+          "sat": "Gesloten",
+          "sun": "15:00–17:00"
+        },
+        "has_opening_hours": true
+      }
+    ],
+    "Namen": [
+      {
+        "title": "Kasteel van biez",
+        "slug": "kasteel-van-biez-peruwelz",
+        "url": "https://kastelenbelgie.be/nl/kasteel-van-biez-peruwelz/",
+        "province": "Namen",
+        "name_found": "Château De Beez",
+        "address": "Av. du Chateau de Beez, 5000 Namur",
+        "opening_hours": {
+          "mon": "24 uur geopend",
+          "tue": "24 uur geopend",
+          "wed": "24 uur geopend",
+          "thu": "24 uur geopend",
+          "fri": "24 uur geopend",
+          "sat": "24 uur geopend",
+          "sun": "24 uur geopend"
+        },
+        "has_opening_hours": true
+      }
+    ],
+    "Antwerpen": [
+      {
+        "title": "Kasteel van Roumont",
+        "slug": "kasteel-van-roumont-roumont",
+        "url": "https://kastelenbelgie.be/nl/kasteel-van-roumont-roumont/",
+        "province": "Antwerpen",
+        "name_found": "Château Mondron (XIXe siècle)",
+        "address": "Chau. du Château Mondron 159, 6040 Charleroi",
+        "opening_hours": {
+          "mon": "08:30–16:30",
+          "tue": "08:30–16:30",
+          "wed": "08:30–16:30",
+          "thu": "08:30–16:30",
+          "fri": "08:30–16:30",
+          "sat": "Gesloten",
+          "sun": "Gesloten"
+        },
+        "has_opening_hours": true
+      },
+      {
+        "title": "Kasteel van wijer",
+        "slug": "kasteel-van-wijer-te-wijer-gemeente-nieuwerkerken",
+        "url": "https://kastelenbelgie.be/nl/kasteel-van-wijer-te-wijer-gemeente-nieuwerkerken/",
+        "province": "Antwerpen",
+        "name_found": "Castle of Wijer",
+        "address": "Grotestraat 205, 3850 Nieuwerkerken",
+        "opening_hours": {},
+        "has_opening_hours": false
+      },
+      {
+        "title": "Kasteel van bouchout",
+        "slug": "kasteel-van-bouchout-te-meise",
+        "url": "https://kastelenbelgie.be/nl/kasteel-van-bouchout-te-meise/",
+        "province": "Antwerpen",
+        "name_found": "Kasteel van Bouchout",
+        "address": "1860 Meise",
+        "opening_hours": {
+          "mon": "10:00–17:00",
+          "tue": "10:00–17:00",
+          "wed": "10:00–17:00",
+          "thu": "10:00–17:00",
+          "fri": "10:00–17:00",
+          "sat": "10:00–17:00",
+          "sun": "10:00–17:00"
+        },
+        "has_opening_hours": true
+      },
+      {
+        "title": "Kasteel ter borcht",
+        "slug": "kasteel-ter-borcht-meulebeke",
+        "url": "https://kastelenbelgie.be/nl/kasteel-ter-borcht-meulebeke/",
+        "province": "Antwerpen",
+        "name_found": "Kasteel Ter Borcht",
+        "address": "Baronielaan 27-29, 8760 Tielt",
+        "opening_hours": {},
+        "has_opening_hours": false
+      },
+      {
+        "title": "Kasteel van freyr",
+        "slug": "kasteel-van-freyr-freyr",
+        "url": "https://kastelenbelgie.be/nl/kasteel-van-freyr-freyr/",
+        "province": "Antwerpen",
+        "name_found": "Kasteel van Freÿr",
+        "address": "Freyr 12, 5540 Hastière",
+        "opening_hours": {
+          "mon": "Gesloten",
+          "tue": "11:00–17:00",
+          "wed": "11:00–17:00",
+          "thu": "11:00–17:00",
+          "fri": "11:00–17:00",
+          "sat": "11:00–17:00",
+          "sun": "11:00–17:00"
+        },
+        "has_opening_hours": true
+      }
+    ],
+    "Limburg": [
+      {
+        "title": "Kasteel van rethy",
+        "slug": "kasteel-van-rethy-retie",
+        "url": "https://kastelenbelgie.be/nl/kasteel-van-rethy-retie/",
+        "province": "Limburg",
+        "name_found": "Kasteel van Rijkel",
+        "address": "Dionysius van Leeuwenstraat 23, 3840 Tongeren-Borgloon",
+        "opening_hours": {},
+        "has_opening_hours": false
+      }
+    ],
+    "Vlaams-Brabant": [
+      {
+        "title": "Kasteel van heetvelde",
+        "slug": "kasteel-van-heetvelde-te-oetingen",
+        "url": "https://kastelenbelgie.be/nl/kasteel-van-heetvelde-te-oetingen/",
+        "province": "Vlaams-Brabant",
+        "name_found": "Kasteel van Heetvelde",
+        "address": "Oude Heerbaan 83, 1755 Pajottegem",
+        "opening_hours": {},
+        "has_opening_hours": false
+      }
+    ]
+  },
+  "provinces_list": [
+    {
+      "name": "Antwerpen",
+      "slug": "antwerpen"
+    },
+    {
+      "name": "Limburg",
+      "slug": "limburg"
+    },
+    {
+      "name": "Oost-Vlaanderen",
+      "slug": "oost-vlaanderen"
+    },
+    {
+      "name": "West-Vlaanderen",
+      "slug": "west-vlaanderen"
+    },
+    {
+      "name": "Vlaams-Brabant",
+      "slug": "vlaams-brabant"
+    },
+    {
+      "name": "Brussel",
+      "slug": "brussel"
+    },
+    {
+      "name": "Waals-Brabant",
+      "slug": "waals-brabant"
+    },
+    {
+      "name": "Henegouwen",
+      "slug": "henegouwen"
+    },
+    {
+      "name": "Namen",
+      "slug": "namen"
+    },
+    {
+      "name": "Luik",
+      "slug": "luik"
+    },
+    {
+      "name": "Luxemburg",
+      "slug": "luxemburg"
+    }
+  ],
+  "stats": {
+    "total_castles": 23,
+    "total_provinces": 7,
+    "castles_with_hours": 11
+  }
+}

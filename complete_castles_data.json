@@ -1,0 +1,308 @@
+{
+  "castles": [
+    {
+      "title": "Kasteel engelhof",
+      "url": "https://kastelenbelgie.be/nl/kasteel-engelhof-houthalen/",
+      "province": "Luik",
+      "place_id": "ChIJ4YgVpIfYwEcROLY6-aVZxVg",
+      "name_found": "Kasteel Engelhof",
+      "address": "Hengelhoefdreef 2, 3530 Houthalen-Helchteren",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "business_status": "OPERATIONAL",
+      "open_now": "yes",
+      "opening_hours_text": "",
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "can_visit": false,
+      "has_opening_hours": false,
+      "needs_reservation_form": false,
+      "slug": "engelhof",
+      "filename": "engelhof.html"
+    },
+    {
+      "title": "Kasteel Beauregard",
+      "url": "https://kastelenbelgie.be/nl/kasteel-beauregard-froyennes/",
+      "province": "Luik",
+      "place_id": "ChIJg32qFBI9wkcRnH8JNQ_K-SU",
+      "name_found": "Château Beauregard",
+      "address": "Beauregard, 6530 Thuin",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "business_status": "OPERATIONAL",
+      "open_now": "yes",
+      "opening_hours_text": "",
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "can_visit": false,
+      "has_opening_hours": false,
+      "needs_reservation_form": false,
+      "slug": "beauregard",
+      "filename": "beauregard.html"
+    },
+    {
+      "title": "Kasteel karreveld",
+      "url": "https://kastelenbelgie.be/nl/kasteel-karreveld-te-sint-jans-molenbeek/",
+      "province": "Luik",
+      "place_id": "ChIJpxgMN-PDw0cRudiYpvhfQOg",
+      "name_found": "Kasteelhoeve Karreveld",
+      "address": "Jean de la Hoeselaan 32, 1080 Sint-Jans-Molenbeek",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "tourist_attraction"
+      ],
+      "business_status": "OPERATIONAL",
+      "open_now": "FALSE",
+      "opening_hours_text": "maandag: 08:30–17:00",
+      "hours": {
+        "monday": "dinsdag: 08:30–17:00",
+        "tuesday": "woensdag: 08:30–18:00",
+        "wednesday": "donderdag: 08:30–18:00",
+        "thursday": "vrijdag: 08:30–18:00",
+        "friday": "zaterdag: 08:30–18:00",
+        "saturday": "zondag: 08:30–18:00",
+        "sunday": "08:30–17:00"
+      },
+      "can_visit": false,
+      "has_opening_hours": true,
+      "needs_reservation_form": false,
+      "slug": "karreveld",
+      "filename": "karreveld.html"
+    },
+    {
+      "title": "Kasteel van wegimont",
+      "url": "https://kastelenbelgie.be/nl/kasteel-van-wegimont-ayeneux-soumagne/",
+      "province": "Luik",
+      "place_id": "ChIJV9ZMwIX0wEcRkqSleNQDFfE",
+      "name_found": "Château de Wégimont",
+      "address": "4630 Liège",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "business_status": "OPERATIONAL",
+      "open_now": "FALSE",
+      "opening_hours_text": "maandag: 09:00–17:00",
+      "hours": {
+        "monday": "dinsdag: 09:00–17:00",
+        "tuesday": "woensdag: 09:00–17:00",
+        "wednesday": "donderdag: 09:00–17:00",
+        "thursday": "vrijdag: 09:00–17:00",
+        "friday": "zaterdag: 09:00–17:00",
+        "saturday": "zondag: 09:00–17:00",
+        "sunday": "09:00–17:00"
+      },
+      "can_visit": false,
+      "has_opening_hours": true,
+      "needs_reservation_form": false,
+      "slug": "van-wegimont",
+      "filename": "van-wegimont.html"
+    },
+    {
+      "title": "Kasteel ter lucht",
+      "url": "https://kastelenbelgie.be/nl/kasteel-ter-lucht-sint-andries/",
+      "province": "Luik",
+      "place_id": "ChIJhze3yX37wEcRVr9xfIQtxNM",
+      "name_found": "Kasteel van Waroux",
+      "address": "Rue de Waroux 301, 4432 Ans",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "tourist_attraction"
+      ],
+      "business_status": "OPERATIONAL",
+      "open_now": "FALSE",
+      "opening_hours_text": "maandag: Gesloten",
+      "hours": {
+        "monday": "dinsdag: 14:00–18:00",
+        "tuesday": "woensdag: 14:00–18:00",
+        "wednesday": "donderdag: 14:00–18:00",
+        "thursday": "vrijdag: 14:00–18:00",
+        "friday": "zaterdag: 14:00–18:00",
+        "saturday": "zondag: 14:00–18:00",
+        "sunday": "Gesloten"
+      },
+      "can_visit": false,
+      "has_opening_hours": true,
+      "needs_reservation_form": false,
+      "slug": "ter-lucht",
+      "filename": "ter-lucht.html"
+    }
+  ],
+  "provinces": {
+    "Luik": [
+      {
+        "title": "Kasteel engelhof",
+        "url": "https://kastelenbelgie.be/nl/kasteel-engelhof-houthalen/",
+        "province": "Luik",
+        "place_id": "ChIJ4YgVpIfYwEcROLY6-aVZxVg",
+        "name_found": "Kasteel Engelhof",
+        "address": "Hengelhoefdreef 2, 3530 Houthalen-Helchteren",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "business_status": "OPERATIONAL",
+        "open_now": "yes",
+        "opening_hours_text": "",
+        "hours": {
+          "monday": "",
+          "tuesday": "",
+          "wednesday": "",
+          "thursday": "",
+          "friday": "",
+          "saturday": "",
+          "sunday": ""
+        },
+        "can_visit": false,
+        "has_opening_hours": false,
+        "needs_reservation_form": false,
+        "slug": "engelhof",
+        "filename": "engelhof.html"
+      },
+      {
+        "title": "Kasteel Beauregard",
+        "url": "https://kastelenbelgie.be/nl/kasteel-beauregard-froyennes/",
+        "province": "Luik",
+        "place_id": "ChIJg32qFBI9wkcRnH8JNQ_K-SU",
+        "name_found": "Château Beauregard",
+        "address": "Beauregard, 6530 Thuin",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "business_status": "OPERATIONAL",
+        "open_now": "yes",
+        "opening_hours_text": "",
+        "hours": {
+          "monday": "",
+          "tuesday": "",
+          "wednesday": "",
+          "thursday": "",
+          "friday": "",
+          "saturday": "",
+          "sunday": ""
+        },
+        "can_visit": false,
+        "has_opening_hours": false,
+        "needs_reservation_form": false,
+        "slug": "beauregard",
+        "filename": "beauregard.html"
+      },
+      {
+        "title": "Kasteel karreveld",
+        "url": "https://kastelenbelgie.be/nl/kasteel-karreveld-te-sint-jans-molenbeek/",
+        "province": "Luik",
+        "place_id": "ChIJpxgMN-PDw0cRudiYpvhfQOg",
+        "name_found": "Kasteelhoeve Karreveld",
+        "address": "Jean de la Hoeselaan 32, 1080 Sint-Jans-Molenbeek",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "tourist_attraction"
+        ],
+        "business_status": "OPERATIONAL",
+        "open_now": "FALSE",
+        "opening_hours_text": "maandag: 08:30–17:00",
+        "hours": {
+          "monday": "dinsdag: 08:30–17:00",
+          "tuesday": "woensdag: 08:30–18:00",
+          "wednesday": "donderdag: 08:30–18:00",
+          "thursday": "vrijdag: 08:30–18:00",
+          "friday": "zaterdag: 08:30–18:00",
+          "saturday": "zondag: 08:30–18:00",
+          "sunday": "08:30–17:00"
+        },
+        "can_visit": false,
+        "has_opening_hours": true,
+        "needs_reservation_form": false,
+        "slug": "karreveld",
+        "filename": "karreveld.html"
+      },
+      {
+        "title": "Kasteel van wegimont",
+        "url": "https://kastelenbelgie.be/nl/kasteel-van-wegimont-ayeneux-soumagne/",
+        "province": "Luik",
+        "place_id": "ChIJV9ZMwIX0wEcRkqSleNQDFfE",
+        "name_found": "Château de Wégimont",
+        "address": "4630 Liège",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "business_status": "OPERATIONAL",
+        "open_now": "FALSE",
+        "opening_hours_text": "maandag: 09:00–17:00",
+        "hours": {
+          "monday": "dinsdag: 09:00–17:00",
+          "tuesday": "woensdag: 09:00–17:00",
+          "wednesday": "donderdag: 09:00–17:00",
+          "thursday": "vrijdag: 09:00–17:00",
+          "friday": "zaterdag: 09:00–17:00",
+          "saturday": "zondag: 09:00–17:00",
+          "sunday": "09:00–17:00"
+        },
+        "can_visit": false,
+        "has_opening_hours": true,
+        "needs_reservation_form": false,
+        "slug": "van-wegimont",
+        "filename": "van-wegimont.html"
+      },
+      {
+        "title": "Kasteel ter lucht",
+        "url": "https://kastelenbelgie.be/nl/kasteel-ter-lucht-sint-andries/",
+        "province": "Luik",
+        "place_id": "ChIJhze3yX37wEcRVr9xfIQtxNM",
+        "name_found": "Kasteel van Waroux",
+        "address": "Rue de Waroux 301, 4432 Ans",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "tourist_attraction"
+        ],
+        "business_status": "OPERATIONAL",
+        "open_now": "FALSE",
+        "opening_hours_text": "maandag: Gesloten",
+        "hours": {
+          "monday": "dinsdag: 14:00–18:00",
+          "tuesday": "woensdag: 14:00–18:00",
+          "wednesday": "donderdag: 14:00–18:00",
+          "thursday": "vrijdag: 14:00–18:00",
+          "friday": "zaterdag: 14:00–18:00",
+          "saturday": "zondag: 14:00–18:00",
+          "sunday": "Gesloten"
+        },
+        "can_visit": false,
+        "has_opening_hours": true,
+        "needs_reservation_form": false,
+        "slug": "ter-lucht",
+        "filename": "ter-lucht.html"
+      }
+    ]
+  },
+  "stats": {
+    "total_castles": 5,
+    "provinces_count": 1,
+    "with_opening_hours": 3,
+    "need_reservation_form": 0
+  }
+}

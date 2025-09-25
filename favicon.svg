@@ -1,0 +1,39 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="castleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main castle structure -->
+  <rect x="4" y="12" width="24" height="16" fill="url(#castleGradient)"/>
+  
+  <!-- Towers -->
+  <rect x="2" y="8" width="4" height="20" fill="url(#castleGradient)"/>
+  <rect x="26" y="8" width="4" height="20" fill="url(#castleGradient)"/>
+  <rect x="14" y="6" width="4" height="22" fill="url(#castleGradient)"/>
+  
+  <!-- Crenellations -->
+  <rect x="2" y="8" width="1" height="3" fill="url(#castleGradient)"/>
+  <rect x="5" y="8" width="1" height="3" fill="url(#castleGradient)"/>
+  <rect x="8" y="12" width="1" height="3" fill="url(#castleGradient)"/>
+  <rect x="11" y="12" width="1" height="3" fill="url(#castleGradient)"/>
+  <rect x="20" y="12" width="1" height="3" fill="url(#castleGradient)"/>
+  <rect x="23" y="12" width="1" height="3" fill="url(#castleGradient)"/>
+  <rect x="26" y="8" width="1" height="3" fill="url(#castleGradient)"/>
+  <rect x="29" y="8" width="1" height="3" fill="url(#castleGradient)"/>
+  
+  <!-- Windows -->
+  <rect x="8" y="20" width="2" height="4" fill="#ffffff" opacity="0.8"/>
+  <rect x="12" y="20" width="2" height="4" fill="#ffffff" opacity="0.8"/>
+  <rect x="18" y="20" width="2" height="4" fill="#ffffff" opacity="0.8"/>
+  <rect x="22" y="20" width="2" height="4" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- Gate -->
+  <rect x="14" y="22" width="4" height="6" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Flag -->
+  <rect x="15" y="4" width="2" height="4" fill="#667eea"/>
+  <polygon points="17,4 17,6 20,5" fill="#f59e0b"/>
+</svg>

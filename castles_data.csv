@@ -1,0 +1,4 @@
+Title,URL,Provincie,PLACE_ID,NAME_FOUND,FORMATTED_ADDRESS,TYPES,BUSINESS_STATUS,OPEN_NOW,OPENING_HOURS_TEXT,MON,TUE,WED,THU,FRI,SAT,SUN,CAN_VISIT
+Kastelen per provincie,https://kastelenbelgie.be/nl/kastelen-per-provincie/,-,,,,,,,,,,,,,
+Kastelen in luik,https://kastelenbelgie.be/nl/kastelen-luik/,Luik,,,,,,,,,,,,,
+Kasteel engelhof,https://kastelenbelgie.be/nl/kasteel-engelhof-houthalen/,Luik,ChIJ4YgVpIfYwEcROLY6-aVZxVg,Kasteel Engelhof,"Hengelhoefdreef 2, 3530 Houthalen-Helchteren","establishment,point_of_interest",OPERATIONAL,yes,,,,,,,,,yes

@@ -1,200 +1,392 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kastelen in Luik | kastelenbelgie.be</title>
-  <meta name="description" content="Ontdek alle 16 kastelen in de provincie Luik. Luik combineert indrukwekkende citadellen met elegante kastelen, getuigen van de strategische betekenis van deze provincie in de Europese geschiedenis.">
-  <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kastelen in Luik | kastelenbelgie.be</title>
+    <meta name="description" content="Ontdek de mooiste kastelen in Luik. Van historische burchten tot moderne landgoederen, elk kasteel heeft zijn eigen verhaal.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./">kastelenbelgie.be</a>
-      <nav class="nav">
-        <a href="./provinces.html">Kastelen per provincie</a>
-        <a href="./index.html#blog">Blog</a>
-      </nav>
-    </div>
-  </header>
-  
-  <main>
-    <section class="hero">
-      <div class="container">
-        <nav class="breadcrumb">
-          <a href="index.html">Home</a>
-          <span class="breadcrumb-separator">›</span>
-          <a href="provinces.html">Provincies</a>
-          <span class="breadcrumb-separator">›</span>
-          <span class="breadcrumb-current">Luik</span>
-        </nav>
-        <h1>Kastelen in Luik</h1>
-        <p class="lead">Luik combineert indrukwekkende citadellen met elegante kastelen, getuigen van de strategische betekenis van deze provincie in de Europese geschiedenis.</p>
-        <div class="stats">
-          <span class="stat"><strong>16</strong> kastelen</span>
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">🏰</div>
+                    kastelenbelgie
+                </a>
+                <div class="nav-menu">
+                    <a href="provinces.html" class="nav-link">Kastelen</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <div class="search-box">
+                        <input type="text" placeholder="Zoek kasteel..." class="search-input" id="search-input">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-    
-    <section class="section province-intro">
-      <div class="container">
-        <div class="province-content">
-          <p class="lead">Luik, met zijn rijke industriële en culturele geschiedenis, herbergt kastelen die de evolutie van deze provincie illustreren. Van middeleeuwse vestingen tot 18e-eeuwse elegantie.</p>
-          <p>De provincie Luik toont kastelen die de strategische belangrijkheid van deze regio door de eeuwen heen weerspiegelen. Van de Citadel van Hoei tot charmante landkastelen, elk monument draagt bij aan het rijke erfgoed van deze streek. Ontdek ook <a href="provinces.html">alle provincies van België</a> en hun unieke kasteelcollecties, of bezoek onze <a href="index.html">homepage</a> voor meer informatie over kastelen in België.</p>
-          <div class="province-navigation">
-            <a href="index.html" class="btn btn-secondary">← Terug naar homepage</a>
-            <a href="provinces.html" class="btn btn-ghost">Alle provincies →</a>
-          </div>
+    </nav>
+
+    <nav class="breadcrumbs">
+        <div class="breadcrumbs-container">
+            <div class="breadcrumbs-nav">
+                <a href="index.html">Home</a>
+                <span class="breadcrumbs-separator">›</span>
+                <a href="provinces.html">Provincies</a>
+                <span class="breadcrumbs-separator">›</span>
+                <span class="breadcrumbs-current">Luik</span>
+            </div>
         </div>
-      </div>
-    </section>
-    
-    <section class="section">
-      <div class="container">
-        <div class="castle-grid">
-          <a class="castle-card" href="kasteel-bayard-dhuy.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_bayard.jpg" alt="Bayard Dhuy" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Bayard</h3>
-              <p class="castle-location">Huy</p>
+
+    <!-- Section Châteaux de la Province -->
+    <section class="section province-castles-section">
+        <div class="container">
+            <h2 class="section-title">Kastelen in Luik</h2>
+            <p class="section-description">Ontdek alle prachtige kastelen in de provincie Luik</p>
+            <div class="castle-grid">
+
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_Beauregard_2.jpg" alt="Kasteel Beauregard" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel Beauregard</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-beauregard-froyennes.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_wegimont_4.jpg" alt="Kasteel van wegimont" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van wegimont</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-van-wegimont-ayeneux-soumagne.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_ter_lucht_3.jpg" alt="Kasteel ter lucht" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel ter lucht</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-ter-lucht-sint-andries.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Hof_ter_borght_5.jpg" alt="Hof ter borght" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Hof ter borght</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="hof-ter-borght-westmeerbeek.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_fougeraie_3.jpg" alt="Kasteel van fougeraie" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van fougeraie</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-van-fougeraie-te-ukkel.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_Mohimont_6.jpg" alt="Kasteel Mohimont" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel Mohimont</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-mohimont-villers-devant-orval.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_froidcourt_5.jpg" alt="Kasteel van froidcourt" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van froidcourt</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-van-froidcourt-stoumont.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_Tavigny_1.jpg" alt="Kasteel van Tavigny" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van Tavigny</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-van-tavigny-tavigny-houffalize.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_vieux_chateau_5.jpg" alt="Kasteel vieux chateau" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel vieux chateau</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-vieux-chateau-saive-blegny.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_hovorst_5.jpg" alt="Kasteel van vorst" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van vorst</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-van-vorst-meerlaer-laakdal.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_maxburg_3.jpg" alt="Kasteel maxburg" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel maxburg</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-maxburg-meer.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_wodemont_2.jpg" alt="Kasteel van wodemont" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van wodemont</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-van-wodemont-neufchateau-luik.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_hermalle_sous_huy_6.jpg" alt="Kasteel van hermalle sous huy" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van hermalle sous huy</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-van-hermalle-sous-huy-hermalle-sous-huy-engis.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Citadel_van_hoei_4.jpg" alt="Citadel van hoei" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Citadel van hoei</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="citadel-van-hoei-hoei.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Burcht_reuland_4.jpg" alt="Burcht reuland" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Burcht reuland</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="burcht-reuland-reuland-burg-reuland.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_Sohier_3.jpg" alt="Kasteel van Sohier" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van Sohier</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-van-sohier-sohier.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_awans_2.jpg" alt="Kasteel van awans" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van awans</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-van-awans-awans.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_baronville_4.jpg" alt="Kasteel van baronville" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van baronville</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-van-baronville-baronville-belgie.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Chateau_de_bellaire_5.jpg" alt="Chateau de bellaire" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Chateau de bellaire</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="chateau-de-bellaire-haltinne.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_isschot_1.jpg" alt="Kasteel isschot" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel isschot</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-isschot-itegem.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_La_Roche-en-Ardenne_1.jpg" alt="Kasteel van La Roche-en-Ardenne" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van La Roche-en-Ardenne</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-van-la-roche-en-ardenne-la-roche-en-ardenne.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    
+                    <div class="castle-card-content">
+                        <h3>Kasteel le fy</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-le-fy-esneux.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_Porcheresse_4.jpg" alt="Kasteel van rond" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van rond</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-van-rond-chene-esneux.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_rouge_bas_2.jpg" alt="Kasteel rouge bas" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel rouge bas</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-rouge-bas-oha-wanze.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_laide_4.jpg" alt="Kasteel laide" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel laide</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-laide-fagne-steinbach.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_waleffe_4.jpg" alt="Kasteel van waleffe" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van waleffe</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Luik</p>
+                        <a href="kasteel-van-waleffe-les-waleffes.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
             </div>
-          </a>
-          <a class="castle-card" href="kasteel-brunsode-tilff.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_brunsode.jpg" alt="Brunsode Tilff" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Brunsode</h3>
-              <p class="castle-location">Tilff</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-eyneburg-hergenrath.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_eyneburg.jpg" alt="Eyneburg Hergenrath" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Eyneburg</h3>
-              <p class="castle-location">Hergenrath</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-le-fy-esneux.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_le_fy.jpg" alt="Le Fy Esneux" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Le Fy Esneux</h3>
-              <p class="castle-location">Esneux</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-lhirondelle-oteppe.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_lhirondelle.jpg" alt="Lhirondelle Oteppe" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Lhirondelle</h3>
-              <p class="castle-location">Oteppe</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-reinhardstein-burg-metternich-te-weismes.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Kasteel Reinhardstein Burg Metternich te</h3>
-              <p class="castle-location">Weismes</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-awans-awans.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_van_awans.jpg" alt="Van Awans Awans" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Awans</h3>
-              <p class="castle-location">Awans</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-beusdael-bij-sippenaeken.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Beusdael Bij</h3>
-              <p class="castle-location">Sippenaeken</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-dieupart-aywaille.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Dieupart</h3>
-              <p class="castle-location">Aywaille</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-froidcourt-stoumont.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Froidcourt</h3>
-              <p class="castle-location">Stoumont</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-hermalle-sous-huy-hermalle-sous-huy-engis.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_van_hermalle_sous_huy.jpg" alt="Van Hermalle Sous Huy Hermalle Sous Huy Engis" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Hermalle Sous Huy Hermalle Sous Huy</h3>
-              <p class="castle-location">Huy</p>
-            </div>
-          </a>
-          <a class="castle-card" href="citadel-van-hoei-hoei.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Hoei</h3>
-              <p class="castle-location">Hoei</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-rond-chene-esneux.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Rond Chene</h3>
-              <p class="castle-location">Esneux</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-waroux-alleur.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_van_waroux.jpg" alt="Van Waroux Alleur" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Waroux</h3>
-              <p class="castle-location">Alleur</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-wegimont-ayeneux-soumagne.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Wegimont Ayeneux</h3>
-              <p class="castle-location">Soumagne</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-vieux-chateau-saive-blegny.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Kasteel Vieux Chateau Saive</h3>
-              <p class="castle-location">Blegny</p>
-            </div>
-          </a>
+
         </div>
-      </div>
     </section>
-  </main>
-  
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p><a href="./index.html#">Contacteer ons</a></p>
-      </div>
-      <div class="footer-col">
-        <h4>Andere provincies</h4>
-        <ul>          <li><a href="antwerpen.html">Antwerpen</a></li>
-          <li><a href="oost-vlaanderen.html">Oost-Vlaanderen</a></li>
-          <li><a href="west-vlaanderen.html">West-Vlaanderen</a></li>
-          <li><a href="limburg.html">Limburg</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Handige links</h4>
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>© 2024 kastelenbelgie.be. Alle rechten voorbehouden</p>
-    </div>
-  </footer>
+
+    <!-- Footer -->
+        <!-- Footer uniforme -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4 class="footer-title">Kastelen België</h4>
+                    <p class="footer-description">
+                        Ontdek de rijke geschiedenis van België door haar prachtige kastelen. 
+                        Van middeleeuwse burchten tot barokke paleizen.
+                    </p>
+                    <div class="footer-social">
+                        <a href="index.html" class="social-link">📧</a>
+                        <a href="index.html" class="social-link">📱</a>
+                        <a href="index.html" class="social-link">🌐</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Verken</h4>
+                    <ul class="footer-links">
+                        <li><a href="provinces.html">Alle Provincies</a></li>
+                        <li><a href="antwerpen.html">Antwerpen</a></li>
+                        <li><a href="vlaams-brabant.html">Vlaams-Brabant</a></li>
+                        <li><a href="oost-vlaanderen.html">Oost-Vlaanderen</a></li>
+                        <li><a href="west-vlaanderen.html">West-Vlaanderen</a></li>
+                        <li><a href="limburg.html">Limburg</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Informatie</h4>
+                    <ul class="footer-links">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" onclick="alert('Privacy policy komt binnenkort')">Privacy</a></li>
+                        <li><a href="index.html" onclick="alert('Algemene voorwaarden komen binnenkort')">Voorwaarden</a></li>
+                        <li><a href="index.html" onclick="alert('Over ons komt binnenkort')">Over Ons</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kastelen België. Alle rechten voorbehouden.</p>
+                <p>Gemaakt met ❤️ voor de Belgische erfgoed.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/search.js"></script>
 </body>
 </html>

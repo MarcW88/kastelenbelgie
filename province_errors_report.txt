@@ -1,0 +1,850 @@
+RAPPORT COMPLET DES ERREURS DE PROVINCES
+==================================================
+
+Château: Kasteel engelhof
+URL: https://kastelenbelgie.be/nl/kasteel-engelhof-houthalen/
+Province déclarée: Luik
+Province réelle: Limburg
+Ville (URL): houthalen
+Ville (titre): engelhof
+------------------------------
+Château: Kasteel karreveld
+URL: https://kastelenbelgie.be/nl/kasteel-karreveld-te-sint-jans-molenbeek/
+Province déclarée: Luik
+Province réelle: Antwerpen
+Ville (URL): molenbeek
+Ville (titre): karreveld
+------------------------------
+Château: Kasteel van Durbuy
+URL: https://kastelenbelgie.be/nl/kasteel-van-durbuy-durbuy/
+Province déclarée: Luik
+Province réelle: Luxemburg
+Ville (URL): durbuy
+Ville (titre): durbuy
+------------------------------
+Château: Kasteel van biez
+URL: https://kastelenbelgie.be/nl/kasteel-van-biez-peruwelz/
+Province déclarée: Namen
+Province réelle: Henegouwen
+Ville (URL): peruwelz
+Ville (titre): biez
+------------------------------
+Château: Kasteel van rethy
+URL: https://kastelenbelgie.be/nl/kasteel-van-rethy-retie/
+Province déclarée: Limburg
+Province réelle: Antwerpen
+Ville (URL): retie
+Ville (titre): rethy
+------------------------------
+Château: Kasteel van wijer
+URL: https://kastelenbelgie.be/nl/kasteel-van-wijer-te-wijer-gemeente-nieuwerkerken/
+Province déclarée: Antwerpen
+Province réelle: Limburg
+Ville (URL): nieuwerkerken
+Ville (titre): wijer
+------------------------------
+Château: Kasteel van bouchout
+URL: https://kastelenbelgie.be/nl/kasteel-van-bouchout-te-meise/
+Province déclarée: Antwerpen
+Province réelle: Vlaams-Brabant
+Ville (URL): meise
+Ville (titre): bouchout
+------------------------------
+Château: Kasteel ter borcht
+URL: https://kastelenbelgie.be/nl/kasteel-ter-borcht-meulebeke/
+Province déclarée: Antwerpen
+Province réelle: West-Vlaanderen
+Ville (URL): meulebeke
+Ville (titre): borcht
+------------------------------
+Château: Kasteel hulsberg
+URL: https://kastelenbelgie.be/nl/kasteel-hulsberg-borgloon/
+Province déclarée: Luxemburg
+Province réelle: Limburg
+Ville (URL): borgloon
+Ville (titre): hulsberg
+------------------------------
+Château: Sint-Antoniuskasteel
+URL: https://kastelenbelgie.be/nl/sint-antoniuskasteel-celles/
+Province déclarée: Henegouwen
+Province réelle: Namen
+Ville (URL): celles
+Ville (titre): 
+------------------------------
+Château: Kasteel terlaemen
+URL: https://kastelenbelgie.be/nl/kasteel-terlaemen-te-viversel-zolder-gemeente-heusden-zolder/
+Province déclarée: Vlaams-Brabant
+Province réelle: Limburg
+Ville (URL): zolder
+Ville (titre): terlaemen
+------------------------------
+Château: Kasteel blauw huys
+URL: https://kastelenbelgie.be/nl/kasteel-blauw-huys-drongen-gent/
+Province déclarée: Brussel
+Province réelle: Oost-Vlaanderen
+Ville (URL): gent
+Ville (titre): huys
+------------------------------
+Château: Kasteel van wedergrate
+URL: https://kastelenbelgie.be/nl/kasteel-van-wedergrate-ninove/
+Province déclarée: Luxemburg
+Province réelle: Oost-Vlaanderen
+Ville (URL): ninove
+Ville (titre): wedergrate
+------------------------------
+Château: Kastelen brussel
+URL: https://kastelenbelgie.be/nl/kastelen-brussel/
+Province déclarée: Antwerpen
+Province réelle: Brussel
+Ville (URL): brussel
+Ville (titre): 
+------------------------------
+Château: Kasteel van Porcheresse
+URL: https://kastelenbelgie.be/nl/kasteel-van-porcheresse-daverdisse/
+Province déclarée: Limburg
+Province réelle: Luxemburg
+Ville (URL): daverdisse
+Ville (titre): porcheresse
+------------------------------
+Château: De solhof
+URL: https://kastelenbelgie.be/nl/de-solhof-aartselaar/
+Province déclarée: Vlaams-Brabant
+Province réelle: Antwerpen
+Ville (URL): aartselaar
+Ville (titre): solhof
+------------------------------
+Château: Kasteel ter motten
+URL: https://kastelenbelgie.be/nl/kasteel-ter-motten-te-dilsen/
+Province déclarée: Oost-Vlaanderen
+Province réelle: Limburg
+Ville (URL): dilsen
+Ville (titre): motten
+------------------------------
+Château: Kasteel van froidcourt
+URL: https://kastelenbelgie.be/nl/kasteel-van-froidcourt-stoumont/
+Province déclarée: West-Vlaanderen
+Province réelle: Luik
+Ville (URL): stoumont
+Ville (titre): froidcourt
+------------------------------
+Château: Kasteel van leeuwergem
+URL: https://kastelenbelgie.be/nl/kasteel-van-leeuwergem-leeuwergem-zottegem/
+Province déclarée: Luxemburg
+Province réelle: Oost-Vlaanderen
+Ville (URL): zottegem
+Ville (titre): leeuwergem
+------------------------------
+Château: Kasteel van elverdinge
+URL: https://kastelenbelgie.be/nl/kasteel-van-elverdinge-ieper/
+Province déclarée: Waals-Brabant
+Province réelle: West-Vlaanderen
+Ville (URL): ieper
+Ville (titre): elverdinge
+------------------------------
+Château: Kasteel van Tavigny
+URL: https://kastelenbelgie.be/nl/kasteel-van-tavigny-tavigny-houffalize/
+Province déclarée: West-Vlaanderen
+Province réelle: Luik
+Ville (URL): houffalize
+Ville (titre): tavigny
+------------------------------
+Château: Kasteel de faille
+URL: https://kastelenbelgie.be/nl/kasteel-de-faille-brugge/
+Province déclarée: Limburg
+Province réelle: West-Vlaanderen
+Ville (URL): brugge
+Ville (titre): faille
+------------------------------
+Château: Kasteel ingelmunster
+URL: https://kastelenbelgie.be/nl/kasteel-ingelmunster-ingelmunster/
+Province déclarée: Limburg
+Province réelle: West-Vlaanderen
+Ville (URL): ingelmunster
+Ville (titre): ingelmunster
+------------------------------
+Château: Kasteel oude kluis
+URL: https://kastelenbelgie.be/nl/kasteel-oude-kluis-gent/
+Province déclarée: Namen
+Province réelle: Oost-Vlaanderen
+Ville (URL): gent
+Ville (titre): kluis
+------------------------------
+Château: Kasteel van bokrijk
+URL: https://kastelenbelgie.be/nl/kasteel-van-bokrijk-genk/
+Province déclarée: Namen
+Province réelle: Limburg
+Ville (URL): genk
+Ville (titre): bokrijk
+------------------------------
+Château: Kasteel van montjardin
+URL: https://kastelenbelgie.be/nl/kasteel-van-montjardin-sougne-remouchamps/
+Province déclarée: Oost-Vlaanderen
+Province réelle: Limburg
+Ville (URL): remouchamps
+Ville (titre): montjardin
+------------------------------
+Château: Kasteel vieux chateau
+URL: https://kastelenbelgie.be/nl/kasteel-vieux-chateau-saive-blegny/
+Province déclarée: Luxemburg
+Province réelle: Luik
+Ville (URL): blegny
+Ville (titre): chateau
+------------------------------
+Château: Kasteel Petite-Somme
+URL: https://kastelenbelgie.be/nl/kasteel-petite-somme-petite-somme/
+Province déclarée: Vlaams-Brabant
+Province réelle: Namen
+Ville (URL): somme
+Ville (titre): somme
+------------------------------
+Château: Kasteel eyneburg
+URL: https://kastelenbelgie.be/nl/kasteel-eyneburg-hergenrath/
+Province déclarée: Luik
+Province réelle: Henegouwen
+Ville (URL): hergenrath
+Ville (titre): eyneburg
+------------------------------
+Château: Kasteel leva
+URL: https://kastelenbelgie.be/nl/kasteel-leva-alken/
+Province déclarée: Luik
+Province réelle: Limburg
+Ville (URL): alken
+Ville (titre): leva
+------------------------------
+Château: Kasteel de hoof teuven
+URL: https://kastelenbelgie.be/nl/kasteel-de-hoof-teuven-te-voeren/
+Province déclarée: Luik
+Province réelle: Limburg
+Ville (URL): voeren
+Ville (titre): teuven
+------------------------------
+Château: Kasteel van wodemont
+URL: https://kastelenbelgie.be/nl/kasteel-van-wodemont-neufchateau-luik/
+Province déclarée: Vlaams-Brabant
+Province réelle: Luik
+Ville (URL): luik
+Ville (titre): wodemont
+------------------------------
+Château: Kasteel de merode
+URL: https://kastelenbelgie.be/nl/kasteel-de-merode-te-dilbeek/
+Province déclarée: Waals-Brabant
+Province réelle: Vlaams-Brabant
+Ville (URL): dilbeek
+Ville (titre): merode
+------------------------------
+Château: Kasteel van braine le chateau
+URL: https://kastelenbelgie.be/nl/kasteel-van-braine-le-chateau-kasteelbrakel/
+Province déclarée: Henegouwen
+Province réelle: Limburg
+Ville (URL): kasteelbrakel
+Ville (titre): chateau
+------------------------------
+Château: Kasteel van wemmel
+URL: https://kastelenbelgie.be/nl/kasteel-van-wemmel-te-wemmel/
+Province déclarée: Henegouwen
+Province réelle: Vlaams-Brabant
+Ville (URL): wemmel
+Ville (titre): wemmel
+------------------------------
+Château: Kasteel van Habay-la-Neuve
+URL: https://kastelenbelgie.be/nl/kasteel-van-habay-la-neuve-habay-la-neuve/
+Province déclarée: Henegouwen
+Province réelle: Waals-Brabant
+Ville (URL): neuve
+Ville (titre): neuve
+------------------------------
+Château: Kasteel van haversin
+URL: https://kastelenbelgie.be/nl/kasteel-van-haversin-serinchamps/
+Province déclarée: Henegouwen
+Province réelle: Limburg
+Ville (URL): serinchamps
+Ville (titre): haversin
+------------------------------
+Château: Kasteel van longchamps
+URL: https://kastelenbelgie.be/nl/kasteel-van-longchamps-longchamps-bertogne/
+Province déclarée: Henegouwen
+Province réelle: Luxemburg
+Ville (URL): bertogne
+Ville (titre): longchamps
+------------------------------
+Château: Koninklijk kasteel van ciergnon
+URL: https://kastelenbelgie.be/nl/koninklijk-kasteel-van-ciergnon-houyet/
+Province déclarée: Waals-Brabant
+Province réelle: Namen
+Ville (URL): houyet
+Ville (titre): ciergnon
+------------------------------
+Château: Kasteel baelen
+URL: https://kastelenbelgie.be/nl/kasteel-baelen-hendrik-kapelle/
+Province déclarée: Luxemburg
+Province réelle: Antwerpen
+Ville (URL): kapelle
+Ville (titre): baelen
+------------------------------
+Château: Kasteel van schoonhoven
+URL: https://kastelenbelgie.be/nl/kasteel-van-schoonhoven-te-aarschot/
+Province déclarée: Waals-Brabant
+Province réelle: Vlaams-Brabant
+Ville (URL): aarschot
+Ville (titre): schoonhoven
+------------------------------
+Château: Kasteel casier
+URL: https://kastelenbelgie.be/nl/kasteel-casier-waregem/
+Province déclarée: Henegouwen
+Province réelle: West-Vlaanderen
+Ville (URL): waregem
+Ville (titre): casier
+------------------------------
+Château: Kasteel ter elst
+URL: https://kastelenbelgie.be/nl/kasteel-ter-elst-duffel/
+Province déclarée: Luxemburg
+Province réelle: Antwerpen
+Ville (URL): duffel
+Ville (titre): elst
+------------------------------
+Château: Kasteel van melveren
+URL: https://kastelenbelgie.be/nl/kasteel-van-melveren-sint-truiden/
+Province déclarée: Waals-Brabant
+Province réelle: Limburg
+Ville (URL): truiden
+Ville (titre): melveren
+------------------------------
+Château: Kasteel edelhof
+URL: https://kastelenbelgie.be/nl/kasteel-edelhof-munsterbilzen/
+Province déclarée: Waals-Brabant
+Province réelle: Limburg
+Ville (URL): munsterbilzen
+Ville (titre): edelhof
+------------------------------
+Château: Kasteel roos
+URL: https://kastelenbelgie.be/nl/kasteel-roos-waasmunster/
+Province déclarée: Antwerpen
+Province réelle: Limburg
+Ville (URL): waasmunster
+Ville (titre): roos
+------------------------------
+Château: Kasteel doverschie
+URL: https://kastelenbelgie.be/nl/kasteel-doverschie-te-grimbergen/
+Province déclarée: Namen
+Province réelle: Vlaams-Brabant
+Ville (URL): grimbergen
+Ville (titre): doverschie
+------------------------------
+Château: Kasteel groenveld
+URL: https://kastelenbelgie.be/nl/kasteel-groenveld-te-grimbergen/
+Province déclarée: Namen
+Province réelle: Vlaams-Brabant
+Ville (URL): grimbergen
+Ville (titre): groenveld
+------------------------------
+Château: Kasteel borghoven
+URL: https://kastelenbelgie.be/nl/kasteel-borghoven-piringen-bij-tongeren/
+Province déclarée: Vlaams-Brabant
+Province réelle: Limburg
+Ville (URL): tongeren
+Ville (titre): borghoven
+------------------------------
+Château: Kasteel van voorde
+URL: https://kastelenbelgie.be/nl/kasteel-van-voorde-voorde/
+Province déclarée: Antwerpen
+Province réelle: Vlaams-Brabant
+Ville (URL): voorde
+Ville (titre): voorde
+------------------------------
+Château: Kasteel de rivieren
+URL: https://kastelenbelgie.be/nl/kasteel-de-rivieren-te-ganshoren/
+Province déclarée: Luik
+Province réelle: Brussel
+Ville (URL): ganshoren
+Ville (titre): rivieren
+------------------------------
+Château: Kasteel drie koningen
+URL: https://kastelenbelgie.be/nl/kasteel-drie-koningen-beernem/
+Province déclarée: Brussel
+Province réelle: West-Vlaanderen
+Ville (URL): beernem
+Ville (titre): koningen
+------------------------------
+Château: Kasteel van bever
+URL: https://kastelenbelgie.be/nl/kasteel-van-bever-te-strombeek-bever/
+Province déclarée: Henegouwen
+Province réelle: Antwerpen
+Ville (URL): bever
+Ville (titre): bever
+------------------------------
+Château: Kasteel van beauraing
+URL: https://kastelenbelgie.be/nl/kasteel-van-beauraing-beauraing/
+Province déclarée: Waals-Brabant
+Province réelle: Namen
+Ville (URL): beauraing
+Ville (titre): beauraing
+------------------------------
+Château: Kasteel van rixensart
+URL: https://kastelenbelgie.be/nl/kasteel-van-rixensart-rixensart/
+Province déclarée: Luxemburg
+Province réelle: Waals-Brabant
+Ville (URL): rixensart
+Ville (titre): rixensart
+------------------------------
+Château: Burcht reuland
+URL: https://kastelenbelgie.be/nl/burcht-reuland-reuland-burg-reuland/
+Province déclarée: Oost-Vlaanderen
+Province réelle: Luik
+Ville (URL): reuland
+Ville (titre): 
+------------------------------
+Château: Kasteel ter meeren
+URL: https://kastelenbelgie.be/nl/kasteel-ter-meeren-sterrebeek-zaventem/
+Province déclarée: Oost-Vlaanderen
+Province réelle: Vlaams-Brabant
+Ville (URL): zaventem
+Ville (titre): meeren
+------------------------------
+Château: Kasteel van genval
+URL: https://kastelenbelgie.be/nl/kasteel-van-genval-rixensart/
+Province déclarée: Namen
+Province réelle: Waals-Brabant
+Ville (URL): rixensart
+Ville (titre): genval
+------------------------------
+Château: Kasteel van awans
+URL: https://kastelenbelgie.be/nl/kasteel-van-awans-awans/
+Province déclarée: Luxemburg
+Province réelle: Luik
+Ville (URL): awans
+Ville (titre): awans
+------------------------------
+Château: Kasteel altembrouck
+URL: https://kastelenbelgie.be/nl/kasteel-altembrouck-s-gravenvoeren-te-voeren/
+Province déclarée: Henegouwen
+Province réelle: Limburg
+Ville (URL): voeren
+Ville (titre): altembrouck
+------------------------------
+Château: Kasteel de commanderij
+URL: https://kastelenbelgie.be/nl/kasteel-de-commanderij-sint-pieters-voeren/
+Province déclarée: Oost-Vlaanderen
+Province réelle: Limburg
+Ville (URL): voeren
+Ville (titre): commanderij
+------------------------------
+Château: De cijnshof van boutersem
+URL: https://kastelenbelgie.be/nl/de-cijnshof-van-boutersem-zandhoven/
+Province déclarée: Namen
+Province réelle: Antwerpen
+Ville (URL): zandhoven
+Ville (titre): boutersem
+------------------------------
+Château: Kasteel hoogveld
+URL: https://kastelenbelgie.be/nl/kasteel-hoogveld-vliermaal/
+Province déclarée: Waals-Brabant
+Province réelle: Antwerpen
+Ville (URL): vliermaal
+Ville (titre): hoogveld
+------------------------------
+Château: Kasteel van seneffe
+URL: https://kastelenbelgie.be/nl/kasteel-van-seneffe-seneffe/
+Province déclarée: Oost-Vlaanderen
+Province réelle: Henegouwen
+Ville (URL): seneffe
+Ville (titre): seneffe
+------------------------------
+Château: Kasteel Laresteen
+URL: https://kastelenbelgie.be/nl/kasteel-laresteen-lovendegem/
+Province déclarée: Limburg
+Province réelle: Oost-Vlaanderen
+Ville (URL): lovendegem
+Ville (titre): laresteen
+------------------------------
+Château: Kasteel vogelsanck
+URL: https://kastelenbelgie.be/nl/kasteel-vogelsanck-te-zolder-gemeente-heusden-zolder/
+Province déclarée: Antwerpen
+Province réelle: Limburg
+Ville (URL): zolder
+Ville (titre): vogelsanck
+------------------------------
+Château: Kasteel stas de richelle
+URL: https://kastelenbelgie.be/nl/kasteel-stas-de-richelle-heusden/
+Province déclarée: Vlaams-Brabant
+Province réelle: Limburg
+Ville (URL): heusden
+Ville (titre): richelle
+------------------------------
+Château: Kasteel ommerstein
+URL: https://kastelenbelgie.be/nl/kasteel-ommerstein-te-rotem-bij-dilsen/
+Province déclarée: Vlaams-Brabant
+Province réelle: Limburg
+Ville (URL): dilsen
+Ville (titre): ommerstein
+------------------------------
+Château: Waterkasteel van schoonbeek
+URL: https://kastelenbelgie.be/nl/waterkasteel-van-schoonbeek-te-beverst-gemeente-bilzen/
+Province déclarée: Antwerpen
+Province réelle: Limburg
+Ville (URL): bilzen
+Ville (titre): schoonbeek
+------------------------------
+Château: Kasteel van coloma
+URL: https://kastelenbelgie.be/nl/kasteel-van-coloma-te-sint-pieters-leeuw/
+Province déclarée: Antwerpen
+Province réelle: Vlaams-Brabant
+Ville (URL): leeuw
+Ville (titre): coloma
+------------------------------
+Château: Kasteel wittouck
+URL: https://kastelenbelgie.be/nl/kasteel-wittouck-sint-pieters-leeuw/
+Province déclarée: Namen
+Province réelle: Vlaams-Brabant
+Ville (URL): leeuw
+Ville (titre): wittouck
+------------------------------
+Château: Kasteel blauwhuis
+URL: https://kastelenbelgie.be/nl/kasteel-blauwhuis-izegem/
+Province déclarée: Luik
+Province réelle: West-Vlaanderen
+Ville (URL): izegem
+Ville (titre): blauwhuis
+------------------------------
+Château: Kasteel diepenbroeck
+URL: https://kastelenbelgie.be/nl/kasteel-diepenbroeck-lovendegem/
+Province déclarée: West-Vlaanderen
+Province réelle: Oost-Vlaanderen
+Ville (URL): lovendegem
+Ville (titre): diepenbroeck
+------------------------------
+Château: Hof van liere
+URL: https://kastelenbelgie.be/nl/hof-van-liere-zandhoven/
+Province déclarée: West-Vlaanderen
+Province réelle: Antwerpen
+Ville (URL): zandhoven
+Ville (titre): liere
+------------------------------
+Château: Kasteel befferhof
+URL: https://kastelenbelgie.be/nl/kasteel-befferhof-bonheiden/
+Province déclarée: Oost-Vlaanderen
+Province réelle: Antwerpen
+Ville (URL): bonheiden
+Ville (titre): befferhof
+------------------------------
+Château: Kasteel pulhof
+URL: https://kastelenbelgie.be/nl/kasteel-pulhof-wijnegem/
+Province déclarée: Oost-Vlaanderen
+Province réelle: Antwerpen
+Ville (URL): wijnegem
+Ville (titre): pulhof
+------------------------------
+Château: Kasteel belvedere
+URL: https://kastelenbelgie.be/nl/kasteel-belvedere-te-laken-brussel/
+Province déclarée: Oost-Vlaanderen
+Province réelle: Brussel
+Ville (URL): brussel
+Ville (titre): belvedere
+------------------------------
+Château: Kasteel ravenhof
+URL: https://kastelenbelgie.be/nl/kasteel-ravenhof-torhout-torhout/
+Province déclarée: Antwerpen
+Province réelle: West-Vlaanderen
+Ville (URL): torhout
+Ville (titre): ravenhof
+------------------------------
+Château: Kasteel van zellaer
+URL: https://kastelenbelgie.be/nl/kasteel-van-zellaer-bonheiden/
+Province déclarée: Vlaams-Brabant
+Province réelle: Antwerpen
+Ville (URL): bonheiden
+Ville (titre): zellaer
+------------------------------
+Château: Paleis op de koudenberg
+URL: https://kastelenbelgie.be/nl/paleis-op-de-koudenberg-te-brussel/
+Province déclarée: Oost-Vlaanderen
+Province réelle: Brussel
+Ville (URL): brussel
+Ville (titre): koudenberg
+------------------------------
+Château: Kasteel selsaete
+URL: https://kastelenbelgie.be/nl/kasteel-selsaete-wommelgem/
+Province déclarée: Oost-Vlaanderen
+Province réelle: Antwerpen
+Ville (URL): wommelgem
+Ville (titre): selsaete
+------------------------------
+Château: Kasteel mariahove
+URL: https://kastelenbelgie.be/nl/kasteel-mariahove-bellem/
+Province déclarée: Oost-Vlaanderen
+Province réelle: Antwerpen
+Ville (URL): bellem
+Ville (titre): mariahove
+------------------------------
+Château: Kasteel mussenborg
+URL: https://kastelenbelgie.be/nl/kasteel-mussenborg-edegem/
+Province déclarée: West-Vlaanderen
+Province réelle: Antwerpen
+Ville (URL): edegem
+Ville (titre): mussenborg
+------------------------------
+Château: Kasteel arendsnest
+URL: https://kastelenbelgie.be/nl/kasteel-arendsnest-edegem/
+Province déclarée: West-Vlaanderen
+Province réelle: Antwerpen
+Ville (URL): edegem
+Ville (titre): arendsnest
+------------------------------
+Château: Kasteel van gravenhof
+URL: https://kastelenbelgie.be/nl/kasteel-van-gravenhof-te-dworp/
+Province déclarée: Luxemburg
+Province réelle: Waals-Brabant
+Ville (URL): dworp
+Ville (titre): gravenhof
+------------------------------
+Château: Kasteel ter beken
+URL: https://kastelenbelgie.be/nl/kasteel-ter-beken-mariakerke-gent/
+Province déclarée: Vlaams-Brabant
+Province réelle: Oost-Vlaanderen
+Ville (URL): gent
+Ville (titre): beken
+------------------------------
+Château: Kasteel borgwal
+URL: https://kastelenbelgie.be/nl/kasteel-borgwal-gavere/
+Province déclarée: West-Vlaanderen
+Province réelle: Oost-Vlaanderen
+Ville (URL): gavere
+Ville (titre): borgwal
+------------------------------
+Château: Kasteel van Boussu
+URL: https://kastelenbelgie.be/nl/kasteel-van-boussu-boussu/
+Province déclarée: Oost-Vlaanderen
+Province réelle: Henegouwen
+Ville (URL): boussu
+Ville (titre): boussu
+------------------------------
+Château: Kasteel van La Roche-en-Ardenne
+URL: https://kastelenbelgie.be/nl/kasteel-van-la-roche-en-ardenne-la-roche-en-ardenne/
+Province déclarée: Luxemburg
+Province réelle: Luik
+Ville (URL): ardenne
+Ville (titre): ardenne
+------------------------------
+Château: Kasteel groenendaal
+URL: https://kastelenbelgie.be/nl/kasteel-groenendaal-te-waltwilder-gemeente-bilzen/
+Province déclarée: Vlaams-Brabant
+Province réelle: Limburg
+Ville (URL): bilzen
+Ville (titre): groenendaal
+------------------------------
+Château: Kasteel daspremont lynden
+URL: https://kastelenbelgie.be/nl/kasteel-daspremont-lynden-oud-rekem-gemeente-lanaken/
+Province déclarée: Henegouwen
+Province réelle: Limburg
+Ville (URL): lanaken
+Ville (titre): lynden
+------------------------------
+Château: Kasteel van altena
+URL: https://kastelenbelgie.be/nl/kasteel-van-altena-kontich/
+Province déclarée: Oost-Vlaanderen
+Province réelle: Antwerpen
+Ville (URL): kontich
+Ville (titre): altena
+------------------------------
+Château: Kasteel nieuwland
+URL: https://kastelenbelgie.be/nl/kasteel-nieuwland-te-aarschot/
+Province déclarée: Oost-Vlaanderen
+Province réelle: Vlaams-Brabant
+Ville (URL): aarschot
+Ville (titre): nieuwland
+------------------------------
+Château: Kasteel van wideux
+URL: https://kastelenbelgie.be/nl/kasteel-van-wideux-hasselt/
+Province déclarée: Luik
+Province réelle: Limburg
+Ville (URL): hasselt
+Ville (titre): wideux
+------------------------------
+Château: Kasteel van mombeek
+URL: https://kastelenbelgie.be/nl/kasteel-van-mombeek-hasselt/
+Province déclarée: Luik
+Province réelle: Limburg
+Ville (URL): hasselt
+Ville (titre): mombeek
+------------------------------
+Château: Kasteel le fy
+URL: https://kastelenbelgie.be/nl/kasteel-le-fy-esneux/
+Province déclarée: Namen
+Province réelle: Luik
+Ville (URL): esneux
+Ville (titre): 
+------------------------------
+Château: Kasteel van corroy le chateau
+URL: https://kastelenbelgie.be/nl/kasteel-van-corroy-le-chateau-corroy-le-chateau/
+Province déclarée: Namen
+Province réelle: Luxemburg
+Ville (URL): chateau
+Ville (titre): chateau
+------------------------------
+Château: Kasteel van sombreffe
+URL: https://kastelenbelgie.be/nl/kasteel-van-sombreffe-sombreffe/
+Province déclarée: Waals-Brabant
+Province réelle: Namen
+Ville (URL): sombreffe
+Ville (titre): sombreffe
+------------------------------
+Château: Kasteel van rond
+URL: https://kastelenbelgie.be/nl/kasteel-van-rond-chene-esneux/
+Province déclarée: Namen
+Province réelle: Luik
+Ville (URL): esneux
+Ville (titre): rond
+------------------------------
+Château: Chateau de Prelle
+URL: https://kastelenbelgie.be/nl/chateau-de-prelle-manage/
+Province déclarée: Luik
+Province réelle: Henegouwen
+Ville (URL): manage
+Ville (titre): prelle
+------------------------------
+Château: Kasteel van obsinnich remersdaal te voeren
+URL: https://kastelenbelgie.be/nl/kasteel-van-obsinnich-remersdaal-te-voeren/
+Province déclarée: Luik
+Province réelle: Limburg
+Ville (URL): voeren
+Ville (titre): voeren
+------------------------------
+Château: Kasteel rouge bas
+URL: https://kastelenbelgie.be/nl/kasteel-rouge-bas-oha-wanze/
+Province déclarée: Namen
+Province réelle: Luik
+Ville (URL): wanze
+Ville (titre): bas
+------------------------------
+Château: Kasteel la motte
+URL: https://kastelenbelgie.be/nl/kasteel-la-motte-te-sint-ulriks-kapelle/
+Province déclarée: Namen
+Province réelle: Antwerpen
+Ville (URL): kapelle
+Ville (titre): motte
+------------------------------
+Château: Commanderij van sint pieters voeren
+URL: https://kastelenbelgie.be/nl/commanderij-van-sint-pieters-voeren-te-sint-pieters-voeren-te-voeren/
+Province déclarée: Luik
+Province réelle: Limburg
+Ville (URL): voeren
+Ville (titre): sint
+------------------------------
+Château: Kasteel kijckuit
+URL: https://kastelenbelgie.be/nl/kasteel-kijckuit-wijnegem/
+Province déclarée: Luik
+Province réelle: Antwerpen
+Ville (URL): wijnegem
+Ville (titre): kijckuit
+------------------------------
+Château: Kasteel van rullingen
+URL: https://kastelenbelgie.be/nl/kasteel-van-rullingen-te-kuttekoven-gemeente-borgloon/
+Province déclarée: Antwerpen
+Province réelle: Limburg
+Ville (URL): borgloon
+Ville (titre): rullingen
+------------------------------
+Château: Kasteel de merode
+URL: https://kastelenbelgie.be/nl/kasteel-de-merode-westerlo/
+Province déclarée: Namen
+Province réelle: Antwerpen
+Ville (URL): westerlo
+Ville (titre): merode
+------------------------------
+Château: Kasteel terlinden
+URL: https://kastelenbelgie.be/nl/kasteel-terlinden-aalst/
+Province déclarée: Limburg
+Province réelle: Oost-Vlaanderen
+Ville (URL): aalst
+Ville (titre): terlinden
+------------------------------
+Château: Kasteel van schoten
+URL: https://kastelenbelgie.be/nl/kasteel-van-schoten-schoten/
+Province déclarée: Vlaams-Brabant
+Province réelle: Antwerpen
+Ville (URL): schoten
+Ville (titre): schoten
+------------------------------
+Château: Kasteel de campagne
+URL: https://kastelenbelgie.be/nl/kasteel-de-campagne-drongen-gent/
+Province déclarée: Namen
+Province réelle: Oost-Vlaanderen
+Ville (URL): gent
+Ville (titre): campagne
+------------------------------
+Château: Kasteel van seraing
+URL: https://kastelenbelgie.be/nl/kasteel-van-seraing-le-chateau-seraing-le-chateau/
+Province déclarée: Vlaams-Brabant
+Province réelle: Luxemburg
+Ville (URL): chateau
+Ville (titre): seraing
+------------------------------
+Château: Kasteel van regelsbrugge
+URL: https://kastelenbelgie.be/nl/kasteel-van-regelsbrugge-aalst/
+Province déclarée: Antwerpen
+Province réelle: Oost-Vlaanderen
+Ville (URL): aalst
+Ville (titre): regelsbrugge
+------------------------------
+Château: Kasteel borrekens
+URL: https://kastelenbelgie.be/nl/kasteel-borrekens-vorselaar/
+Province déclarée: Oost-Vlaanderen
+Province réelle: Antwerpen
+Ville (URL): vorselaar
+Ville (titre): borrekens
+------------------------------
+Château: Kasteel van jeanne
+URL: https://kastelenbelgie.be/nl/kasteel-van-jeanne-de-merode-nieuw-kasteel-westerlo/
+Province déclarée: Oost-Vlaanderen
+Province réelle: Antwerpen
+Ville (URL): westerlo
+Ville (titre): jeanne
+------------------------------
+Château: Gaverkasteel
+URL: https://kastelenbelgie.be/nl/gaverkasteel-deerlijk/
+Province déclarée: Vlaams-Brabant
+Province réelle: West-Vlaanderen
+Ville (URL): deerlijk
+Ville (titre): 
+------------------------------
+Château: Kasteel van villers schoten
+URL: https://kastelenbelgie.be/nl/kasteel-van-villers-schoten/
+Province déclarée: Luxemburg
+Province réelle: Antwerpen
+Ville (URL): schoten
+Ville (titre): schoten
+------------------------------
+Château: Kasteel de pelichy
+URL: https://kastelenbelgie.be/nl/kasteel-de-pelichy-gent/
+Province déclarée: Luxemburg
+Province réelle: Oost-Vlaanderen
+Ville (URL): gent
+Ville (titre): pelichy
+------------------------------
+Château: Hof van ringen
+URL: https://kastelenbelgie.be/nl/hof-van-ringen-lier/
+Province déclarée: Henegouwen
+Province réelle: Antwerpen
+Ville (URL): lier
+Ville (titre): ringen
+------------------------------
+Château: Kasteel slotendries
+URL: https://kastelenbelgie.be/nl/kasteel-slotendries-oostakker/
+Province déclarée: Namen
+Province réelle: Waals-Brabant
+Ville (URL): oostakker
+Ville (titre): slotendries
+------------------------------
+Château: Kasteel marnix de sainte aldegonde
+URL: https://kastelenbelgie.be/nl/kasteel-marnix-de-sainte-aldegonde-bornem/
+Province déclarée: Henegouwen
+Province réelle: Antwerpen
+Ville (URL): bornem
+Ville (titre): aldegonde
+------------------------------
+Château: Waterburcht millen
+URL: https://kastelenbelgie.be/nl/waterburcht-millen-millen-te-riemst/
+Province déclarée: Luxemburg
+Province réelle: Limburg
+Ville (URL): riemst
+Ville (titre): 
+------------------------------

@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Just a moment ...</title>
+<style>
+body {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	background: #fcfcfc;
+}
+.whitebackground {
+	padding: 30px;
+	background: #FFFFFF;
+	border: 1px solid rgba(0,0,0,0.1);
+	width: 450px;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 10px;
+	text-align: center;
+	height: 140px;
+}
+@media (max-width: 480px) {
+	.whitebackground {
+		width: calc(100% - 80px);
+	}
+}
+h1 {
+	font-size: 26px;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 40px;
+	margin-top: 150px;
+}
+h2 {
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+.button {
+	padding: 10px;
+	background-color: #08d;
+	border-radius: 4px;
+	border: 0;
+	box-sizing: border-box;
+	color: #FFF;
+	font-size: 18px;
+	height: 50px;
+	text-align: center;
+	width: 240px;
+}
+.dropdown {
+	background-color: #DDD;
+	border-radius: 4px;
+	color: #000;
+	font-size: 14px;
+	height: 30px;
+	text-align: center;
+	width: 100px;
+}
+.center {
+	text-align: center;
+}
+@media (max-width: 480px) {
+	.dropdown {
+		height: 40px;
+	}
+}
+</style>
+</head>
+
+<body>
+<h1>fuchsiafinder.com</h1>
+<div class="center"><img src="logo.png" /></div>
+<h2>Verify you are human by completing the action below.</h2>
+<div class="whitebackground">
+<form id="__captcha_validation_form" name="__captcha_validation_form" action="" method="post">
+
+<input type="hidden" name="__captcha_validation_answer_hash" value="49f01c21785eb2dc68245e75b3538d9a">
+What is the sum of ten and thirteen?<br /><br />
+  <select class="dropdown" name="__captcha_validation_answer" id="captcha">
+	<option>0</option>
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+	<option>6</option>
+	<option>7</option>
+	<option>8</option>
+	<option>9</option>
+	<option>10</option>
+	<option>11</option>
+	<option>12</option>
+	<option>13</option>
+	<option>14</option>
+	<option>15</option>
+	<option>16</option>
+	<option>17</option>
+	<option>18</option>
+	<option>19</option>
+	<option>20</option>
+	<option>21</option>
+	<option>22</option>
+	<option>23</option>
+	<option>24</option>
+	<option>25</option>
+	<option>26</option>
+	<option>27</option>
+	<option>28</option>
+  </select><br /><br />
+<input class="button" type="submit" name="__captcha_validation_answer_submit" value="Validate" />
+
+</form>
+</div>
+
+<h2>fuchsiafinder.com needs to review your connection before proceeding.</h2>
+
+</body>
+</html>

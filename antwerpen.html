@@ -1,333 +1,537 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kastelen in Antwerpen | kastelenbelgie.be</title>
-  <meta name="description" content="Ontdek alle 35 kastelen in de provincie Antwerpen. De provincie Antwerpen herbergt een rijke collectie kastelen die de evolutie van de Vlaamse architectuur illustreren, van middeleeuwse burchten tot elegante 19e-eeuwse landhuizen.">
-  <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kastelen in Antwerpen | kastelenbelgie.be</title>
+    <meta name="description" content="Ontdek de mooiste kastelen in Antwerpen. Van historische burchten tot moderne landgoederen, elk kasteel heeft zijn eigen verhaal.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./">kastelenbelgie.be</a>
-      <nav class="nav">
-        <a href="./provinces.html">Kastelen per provincie</a>
-        <a href="./index.html#blog">Blog</a>
-      </nav>
-    </div>
-  </header>
-  
-  <main>
-    <section class="hero">
-      <div class="container">
-        <nav class="breadcrumb">
-          <a href="index.html">Home</a>
-          <span class="breadcrumb-separator">›</span>
-          <a href="provinces.html">Provincies</a>
-          <span class="breadcrumb-separator">›</span>
-          <span class="breadcrumb-current">Antwerpen</span>
-        </nav>
-        <h1>Kastelen in Antwerpen</h1>
-        <p class="lead">De provincie Antwerpen herbergt een rijke collectie kastelen die de evolutie van de Vlaamse architectuur illustreren, van middeleeuwse burchten tot elegante 19e-eeuwse landhuizen.</p>
-        <div class="stats">
-          <span class="stat"><strong>35</strong> kastelen</span>
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">🏰</div>
+                    kastelenbelgie
+                </a>
+                <div class="nav-menu">
+                    <a href="provinces.html" class="nav-link">Kastelen</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <div class="search-box">
+                        <input type="text" placeholder="Zoek kasteel..." class="search-input" id="search-input">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-    
-    <section class="section province-intro">
-      <div class="container">
-        <div class="province-content">
-          <p class="lead">De provincie Antwerpen is een schatgraver voor liefhebbers van historische architectuur. Van imposante waterkastelen tot charmante hoven, deze regio toont de rijke geschiedenis van Vlaanderen door haar diverse kasteelcollectie.</p>
-          <p>Ontdek kastelen die eeuwen van geschiedenis vertellen, van middeleeuwse verdedigingswerken tot elegante 19e-eeuwse landhuizen. Elk kasteel in Antwerpen heeft zijn eigen verhaal en architecturale bijzonderheden die de evolutie van de Vlaamse bouwkunst illustreren. Ontdek ook <a href="provinces.html">alle provincies van België</a> en hun unieke kasteelcollecties, of bezoek onze <a href="index.html">homepage</a> voor meer informatie over kastelen in België.</p>
-          <div class="province-navigation">
-            <a href="index.html" class="btn btn-secondary">← Terug naar homepage</a>
-            <a href="provinces.html" class="btn btn-ghost">Alle provincies →</a>
-          </div>
+    </nav>
+
+    <nav class="breadcrumbs">
+        <div class="breadcrumbs-container">
+            <div class="breadcrumbs-nav">
+                <a href="index.html">Home</a>
+                <span class="breadcrumbs-separator">›</span>
+                <a href="provinces.html">Provincies</a>
+                <span class="breadcrumbs-separator">›</span>
+                <span class="breadcrumbs-current">Antwerpen</span>
+            </div>
         </div>
-      </div>
-    </section>
-    
-    <section class="section">
-      <div class="container">
-        <div class="castle-grid">
-          <a class="castle-card" href="kasteel-arendsnest-edegem.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_arendsnest.jpg" alt="Arendsnest Edegem" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Arendsnest</h3>
-              <p class="castle-location">Edegem</p>
+
+    <!-- Section Châteaux de la Province -->
+    <section class="section province-castles-section">
+        <div class="container">
+            <h2 class="section-title">Kastelen in Antwerpen</h2>
+            <p class="section-description">Ontdek alle prachtige kastelen in de provincie Antwerpen</p>
+            <div class="castle-grid">
+
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_dieupart_4.jpg" alt="Kasteel van dieupart" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van dieupart</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-van-dieupart-aywaille.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Hof_van_liere_2.jpg" alt="Hof van liere" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Hof van liere</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="hof-van-liere-zandhoven.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_befferhof_4.jpg" alt="Kasteel befferhof" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel befferhof</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-befferhof-bonheiden.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_pulhof_4.jpg" alt="Kasteel pulhof" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel pulhof</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-pulhof-wijnegem.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_tillegem_3.jpg" alt="Kasteel van tillegem" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van tillegem</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-van-tillegem-sint-michiels.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_zellaer_2.jpg" alt="Kasteel van zellaer" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van zellaer</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-van-zellaer-bonheiden.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_selsaete_4.jpg" alt="Kasteel selsaete" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel selsaete</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-selsaete-wommelgem.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_mariahove_5.jpg" alt="Kasteel mariahove" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel mariahove</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-mariahove-bellem.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_mussenborg_4.jpg" alt="Kasteel mussenborg" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel mussenborg</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-mussenborg-edegem.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_arendsnest_1.jpg" alt="Kasteel arendsnest" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel arendsnest</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-arendsnest-edegem.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_kruishoutem_4.jpg" alt="Kasteel van nokere" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van nokere</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-van-nokere-nokere-kruishoutem.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Het_wit_kasteel_6.jpg" alt="Het wit kasteel" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Het wit kasteel</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="het-wit-kasteel-te-linden.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_de_blauwe_toren_3.jpg" alt="Kasteel de blauwe toren" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel de blauwe toren</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-de-blauwe-toren-varsenare.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Bisschoppenhof_4.jpg" alt="Bisschoppenhof" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Bisschoppenhof</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="bisschoppenhof-deurne.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_altena_3.jpg" alt="Kasteel van altena" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van altena</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-van-altena-kontich.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_cantecroy_5.jpg" alt="Kasteel cantecroy" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel cantecroy</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-cantecroy-mortsel.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_la_motte_1.jpg" alt="Kasteel la motte" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel la motte</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-la-motte-te-sint-ulriks-kapelle.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_kijckuit_6.jpg" alt="Kasteel kijckuit" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel kijckuit</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-kijckuit-wijnegem.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_walburg_5.jpg" alt="Kasteel walburg" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel walburg</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-walburg-sint-niklaas.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_de_merode_3.jpg" alt="Kasteel de merode" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel de merode</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-de-merode-westerlo.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_groenendaal_6.jpg" alt="Kasteel groenendaal" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel groenendaal</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-groenendaal-merksem.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_La_Berlière_3.jpg" alt="Kasteel van La Berlière" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van La Berlière</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-van-la-berliere-houtaing.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Waterslot_cleydael_2.jpg" alt="Waterslot cleydael" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Waterslot cleydael</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="waterslot-cleydael-aartselaar.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_vianden_6.jpg" alt="Kasteel van vianden" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van vianden</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-van-vianden-vianden.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/De_hof_van_veltwijck_2.jpg" alt="De hof van veltwijck" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>De hof van veltwijck</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="de-hof-van-veltwijck-ekeren.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/De_berlaarhof_1.jpg" alt="De berlaarhof" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>De berlaarhof</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="de-berlaarhof-berlaar.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_schoten_5.jpg" alt="Kasteel van schoten" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van schoten</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-van-schoten-schoten.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_borrekens_1.jpg" alt="Kasteel borrekens" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel borrekens</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-borrekens-vorselaar.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_jeanne_1.jpg" alt="Kasteel van jeanne" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van jeanne</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-van-jeanne-de-merode-nieuw-kasteel-westerlo.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_brasschaat_5.jpg" alt="Kasteel van brasschaat" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van brasschaat</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-van-brasschaat-brasschaat.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_gavergracht_5.jpg" alt="Kasteel gavergracht" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel gavergracht</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-gavergracht-vinderhoute.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_lozer_5.jpg" alt="Kasteel lozer" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel lozer</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-lozer-lozer-kruishoutem.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_solvay_4.jpg" alt="Kasteel solvay" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel solvay</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-solvay-kasteel-van-ter-hulpen-terhulpen.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_claeys_bouuaert_5.jpg" alt="Kasteel claeys bouuaert" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel claeys bouuaert</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-claeys-bouuaert-mariakerke.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_villers_schoten_6.jpg" alt="Kasteel van villers schoten" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van villers schoten</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-van-villers-schoten.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Hof_van_ringen_1.jpg" alt="Hof van ringen" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Hof van ringen</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="hof-van-ringen-lier.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Vrieselhof_5.jpg" alt="Vrieselhof" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Vrieselhof</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="vrieselhof-oelegem.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_marnix_de_sainte_aldegonde_5.jpg" alt="Kasteel marnix de sainte aldegonde" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel marnix de sainte aldegonde</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="kasteel-marnix-de-sainte-aldegonde-bornem.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
+            
+                <div class="castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/De_hof_van_riemen_3.jpg" alt="De hof van riemen" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>De hof van riemen</h3>
+                        <p class="card-description-modern">Ontdek dit prachtige kasteel in Antwerpen</p>
+                        <a href="de-hof-van-riemen-heist-op-den-berg.html" class="btn-modern btn-primary-modern">Meer info</a>
+                    </div>
+                </div>
             </div>
-          </a>
-          <a class="castle-card" href="kasteel-befferhof-bonheiden.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Kasteel Befferhof</h3>
-              <p class="castle-location">Bonheiden</p>
-            </div>
-          </a>
-          <a class="castle-card" href="de-berlaarhof-berlaar.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Kasteel Berlaarhof</h3>
-              <p class="castle-location">Berlaar</p>
-            </div>
-          </a>
-          <a class="castle-card" href="de-beukenhof-kapellen.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Kasteel Beukenhof</h3>
-              <p class="castle-location">Kapellen</p>
-            </div>
-          </a>
-          <a class="castle-card" href="bisschoppenhof-deurne.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Bisschoppenhof</h3>
-              <p class="castle-location">Deurne</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-boeckenberg-deurne.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Kasteel Boeckenberg</h3>
-              <p class="castle-location">Deurne</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-borrekens-vorselaar.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_borrekens.jpg" alt="Borrekens Vorselaar" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Borrekens</h3>
-              <p class="castle-location">Vorselaar</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-bouckenborgh-merksem.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_bouckenborgh.jpg" alt="Bouckenborgh Merksem" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Bouckenborgh</h3>
-              <p class="castle-location">Merksem</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-cantecroy-mortsel.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Kasteel Cantecroy</h3>
-              <p class="castle-location">Mortsel</p>
-            </div>
-          </a>
-          <a class="castle-card" href="de-cijnshof-van-boutersem-zandhoven.html">
-            <div class="castle-media"><img src="./chateaux_images/De_cijnshof_van_boutersem.jpg" alt="Cijnshof Van Boutersem Zandhoven" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Cijnshof van Boutersem</h3>
-              <p class="castle-location">Zandhoven</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-de-bist-ekeren.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_de_bist.jpg" alt="De Bist Ekeren" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>De Bist</h3>
-              <p class="castle-location">Ekeren</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-de-merode-westerlo.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_de_merode.jpg" alt="De Merode Westerlo" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>De Merode</h3>
-              <p class="castle-location">Westerlo</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-groenendaal-merksem.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_groenendaal.jpg" alt="Groenendaal Merksem" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Groenendaal</h3>
-              <p class="castle-location">Merksem</p>
-            </div>
-          </a>
-          <a class="castle-card" href="de-hof-ter-beke-wilrijk.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Hof Ter Beke</h3>
-              <p class="castle-location">Wilrijk</p>
-            </div>
-          </a>
-          <a class="castle-card" href="de-hof-van-riemen-heist-op-den-berg.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Hof van Riemen Heist op Den</h3>
-              <p class="castle-location">Heist-Op-Den-Berg</p>
-            </div>
-          </a>
-          <a class="castle-card" href="de-hof-van-veltwijck-ekeren.html">
-            <div class="castle-media"><img src="./chateaux_images/De_hof_van_veltwijck.jpg" alt="Hof Van Veltwijck Ekeren" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Hof van Veltwijck</h3>
-              <p class="castle-location">Ekeren</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-hoogveld-vliermaal.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_hoogveld.jpg" alt="Hoogveld Vliermaal" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Hoogveld</h3>
-              <p class="castle-location">Lier</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-meerlenhof-hoboken.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_meerlenhof.jpg" alt="Meerlenhof Hoboken" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Meerlenhof</h3>
-              <p class="castle-location">Hoboken</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-mussenborg-edegem.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_mussenborg.jpg" alt="Mussenborg Edegem" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Mussenborg</h3>
-              <p class="castle-location">Edegem</p>
-            </div>
-          </a>
-          <a class="castle-card" href="de-solhof-aartselaar.html">
-            <div class="castle-media"><img src="./chateaux_images/De_solhof.jpg" alt="Solhof Aartselaar" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Solhof</h3>
-              <p class="castle-location">Aartselaar</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-altena-kontich.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_van_altena.jpg" alt="Van Altena Kontich" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Altena</h3>
-              <p class="castle-location">Kontich</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-brasschaat-brasschaat.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_van_brasschaat.jpg" alt="Van Brasschaat Brasschaat" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Brasschaat</h3>
-              <p class="castle-location">Brasschaat</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-jeanne-de-merode-nieuw-kasteel-westerlo.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Jeanne de Merode Nieuw Kasteel</h3>
-              <p class="castle-location">Westerlo</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-la-berliere-houtaing.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van la Berliere</h3>
-              <p class="castle-location">Lier</p>
-            </div>
-          </a>
-          <a class="castle-card" href="hof-van-liere-zandhoven.html">
-            <div class="castle-media"><img src="./chateaux_images/Hof_van_liere.jpg" alt="Van Liere Zandhoven" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Liere</h3>
-              <p class="castle-location">Zandhoven</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-rethy-retie.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_van_rethy.jpg" alt="Van Rethy Retie" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Rethy</h3>
-              <p class="castle-location">Retie</p>
-            </div>
-          </a>
-          <a class="castle-card" href="hof-van-ringen-lier.html">
-            <div class="castle-media"><img src="./chateaux_images/Hof_van_ringen.jpg" alt="Van Ringen Lier" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Ringen</h3>
-              <p class="castle-location">Lier</p>
-            </div>
-          </a>
-          <a class="castle-card" href="hof-van-roosendael-merksem.html">
-            <div class="castle-media"><img src="./chateaux_images/Hof_van_roosendael.jpg" alt="Van Roosendael Merksem" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Roosendael</h3>
-              <p class="castle-location">Merksem</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-schoten-schoten.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_van_schoten.jpg" alt="Van Schoten Schoten" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Schoten</h3>
-              <p class="castle-location">Schoten</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-veerle-laakdal.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Veerle</h3>
-              <p class="castle-location">Laakdal</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-villers-schoten.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_van_villers_schoten.jpg" alt="Van Villers Schoten" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Villers</h3>
-              <p class="castle-location">Schoten</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-vorst-meerlaer-laakdal.html">
-            <div class="castle-media gradient-1"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Vorst Meerlaer</h3>
-              <p class="castle-location">Laakdal</p>
-            </div>
-          </a>
-          <a class="castle-card" href="kasteel-van-zellaer-bonheiden.html">
-            <div class="castle-media"><img src="./chateaux_images/Kasteel_van_zellaer.jpg" alt="Van Zellaer Bonheiden" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Kasteel Van Zellaer</h3>
-              <p class="castle-location">Bonheiden</p>
-            </div>
-          </a>
-          <a class="castle-card" href="vrieselhof-oelegem.html">
-            <div class="castle-media"><img src="./chateaux_images/Vrieselhof.jpg" alt="Vrieselhof Oelegem" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Vrieselhof</h3>
-              <p class="castle-location">Oelegem</p>
-            </div>
-          </a>
-          <a class="castle-card" href="waterslot-cleydael-aartselaar.html">
-            <div class="castle-media"><img src="./chateaux_images/Waterslot_cleydael.jpg" alt="Waterslot Cleydael Aartselaar" class="castle-image"></div>
-            <div class="castle-info">
-              <h3>Waterslot Cleydael</h3>
-              <p class="castle-location">Aartselaar</p>
-            </div>
-          </a>
+
         </div>
-      </div>
     </section>
-  </main>
-  
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p><a href="./index.html#">Contacteer ons</a></p>
-      </div>
-      <div class="footer-col">
-        <h4>Andere provincies</h4>
-        <ul>          <li><a href="oost-vlaanderen.html">Oost-Vlaanderen</a></li>
-          <li><a href="west-vlaanderen.html">West-Vlaanderen</a></li>
-          <li><a href="limburg.html">Limburg</a></li>
-          <li><a href="vlaams-brabant.html">Vlaams-Brabant</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Handige links</h4>
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>© 2024 kastelenbelgie.be. Alle rechten voorbehouden</p>
-    </div>
-  </footer>
+
+    <!-- Footer -->
+        <!-- Footer uniforme -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4 class="footer-title">Kastelen België</h4>
+                    <p class="footer-description">
+                        Ontdek de rijke geschiedenis van België door haar prachtige kastelen. 
+                        Van middeleeuwse burchten tot barokke paleizen.
+                    </p>
+                    <div class="footer-social">
+                        <a href="index.html" class="social-link">📧</a>
+                        <a href="index.html" class="social-link">📱</a>
+                        <a href="index.html" class="social-link">🌐</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Verken</h4>
+                    <ul class="footer-links">
+                        <li><a href="provinces.html">Alle Provincies</a></li>
+                        <li><a href="antwerpen.html">Antwerpen</a></li>
+                        <li><a href="vlaams-brabant.html">Vlaams-Brabant</a></li>
+                        <li><a href="oost-vlaanderen.html">Oost-Vlaanderen</a></li>
+                        <li><a href="west-vlaanderen.html">West-Vlaanderen</a></li>
+                        <li><a href="limburg.html">Limburg</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Informatie</h4>
+                    <ul class="footer-links">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" onclick="alert('Privacy policy komt binnenkort')">Privacy</a></li>
+                        <li><a href="index.html" onclick="alert('Algemene voorwaarden komen binnenkort')">Voorwaarden</a></li>
+                        <li><a href="index.html" onclick="alert('Over ons komt binnenkort')">Over Ons</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kastelen België. Alle rechten voorbehouden.</p>
+                <p>Gemaakt met ❤️ voor de Belgische erfgoed.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/search.js"></script>
 </body>
 </html>

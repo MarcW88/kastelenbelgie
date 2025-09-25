@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Kasteel engelhof",
+    "url": "https://kastelenbelgie.be/nl/kasteel-engelhof-houthalen/",
+    "province": "Luik",
+    "name": "Kasteel Engelhof",
+    "address": "Hengelhoefdreef 2, 3530 Houthalen-Helchteren",
+    "opening_hours": "",
+    "can_visit": true
+  },
+  {
+    "title": "Kasteel Beauregard",
+    "url": "https://kastelenbelgie.be/nl/kasteel-beauregard-froyennes/",
+    "province": "Luik",
+    "name": "Château Beauregard",
+    "address": "Beauregard, 6530 Thuin",
+    "opening_hours": "",
+    "can_visit": true
+  },
+  {
+    "title": "Kasteel karreveld",
+    "url": "https://kastelenbelgie.be/nl/kasteel-karreveld-te-sint-jans-molenbeek/",
+    "province": "Luik",
+    "name": "Kasteelhoeve Karreveld",
+    "address": "Jean de la Hoeselaan 32, 1080 Sint-Jans-Molenbeek",
+    "opening_hours": "maandag: 08:30–17:00 | dinsdag: 08:30–17:00 | woensdag: 08:30–18:00 | donderdag: 08:30–18:00 | vrijdag: 08:30–18:00 | zaterdag: 08:30–18:00 | zondag: 08:30–18:00",
+    "can_visit": true
+  },
+  {
+    "title": "Kasteel van wegimont",
+    "url": "https://kastelenbelgie.be/nl/kasteel-van-wegimont-ayeneux-soumagne/",
+    "province": "Luik",
+    "name": "Château de Wégimont",
+    "address": "4630 Liège",
+    "opening_hours": "maandag: 09:00–17:00 | dinsdag: 09:00–17:00 | woensdag: 09:00–17:00 | donderdag: 09:00–17:00 | vrijdag: 09:00–17:00 | zaterdag: 09:00–17:00 | zondag: 09:00–17:00",
+    "can_visit": true
+  },
+  {
+    "title": "Kasteel ter lucht",
+    "url": "https://kastelenbelgie.be/nl/kasteel-ter-lucht-sint-andries/",
+    "province": "Luik",
+    "name": "Kasteel van Waroux",
+    "address": "Rue de Waroux 301, 4432 Ans",
+    "opening_hours": "maandag: Gesloten | dinsdag: 14:00–18:00 | woensdag: 14:00–18:00 | donderdag: 14:00–18:00 | vrijdag: 14:00–18:00 | zaterdag: 14:00–18:00 | zondag: 14:00–18:00",
+    "can_visit": true
+  },
+  {
+    "title": "Hof ter borght",
+    "url": "https://kastelenbelgie.be/nl/hof-ter-borght-westmeerbeek/",
+    "province": "Luik",
+    "name": "Hof ter Borght",
+    "address": "Heide 41, 2235 Hulshout",
+    "opening_hours": "",
+    "can_visit": true
+  },
+  {
+    "title": "Kasteel van Durbuy",
+    "url": "https://kastelenbelgie.be/nl/kasteel-van-durbuy-durbuy/",
+    "province": "Luik",
+    "name": "Kasteel van Durbuy",
+    "address": "6940 Durbuy",
+    "opening_hours": "",
+    "can_visit": true
+  },
+  {
+    "title": "Kasteel van fougeraie",
+    "url": "https://kastelenbelgie.be/nl/kasteel-van-fougeraie-te-ukkel/",
+    "province": "Luik",
+    "name": "Kasteel van Jehay",
+    "address": "Rue du Parc 1, 4540 Amay",
+    "opening_hours": "maandag: 11:00–18:00 | dinsdag: 11:00–18:00 | woensdag: 11:00–18:00 | donderdag: 11:00–18:00 | vrijdag: 11:00–18:00 | zaterdag: 11:00–18:00 | zondag: 11:00–18:00",
+    "can_visit": true
+  },
+  {
+    "title": "Kasteel Mohimont",
+    "url": "https://kastelenbelgie.be/nl/kasteel-mohimont-villers-devant-orval/",
+    "province": "Luik",
+    "name": "Château de Wégimont",
+    "address": "4630 Liège",
+    "opening_hours": "maandag: 09:00–17:00 | dinsdag: 09:00–17:00 | woensdag: 09:00–17:00 | donderdag: 09:00–17:00 | vrijdag: 09:00–17:00 | zaterdag: 09:00–17:00 | zondag: 09:00–17:00",
+    "can_visit": true
+  },
+  {
+    "title": "Kasteel van Orval",
+    "url": "https://kastelenbelgie.be/nl/kasteel-van-orval-villers-devant-orval/",
+    "province": "Luxemburg",
+    "name": "Kasteel van Orval",
+    "address": "Orval 5, 6823 Florenville",
+    "opening_hours": "",
+    "can_visit": true
+  }
+]

@@ -1,392 +1,366 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>kastelenbelgie.be - Ontdek de Mooiste Kastelen van België</title>
-  <meta name="description" content="Kastelen in België: ga op avontuur door België's adellijke erfgoed. Ontdek kastelen per provincie, lees de blog en plan je bezoek.">
-  <link rel="stylesheet" href="./css/style-new.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <meta name="theme-color" content="#2563eb">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kastelen in België - Ontdek de mooiste kastelen van België</title>
+    <meta name="description" content="Ontdek de mooiste kastelen van België. Bezoek historische kastelen, leer over hun geschiedenis en plan je bezoek met openingsuren en praktische informatie.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="nav-brand">
-        <h1>kastelenbelgie.be</h1>
-      </div>
-      <div class="nav-menu">
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="provinces.html" class="nav-link">Kastelen</a>
-        <a href="#destinations-grid-section" class="nav-link">Provincies</a>
-        <a href="#blog" class="nav-link">Blog</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </div>
-      <div class="nav-actions">
-        <button class="btn-secondary">Inloggen</button>
-        <button class="btn-primary">Reserveren</button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero-section" id="home">
-    <div class="hero-container">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span>🏰 Ontdek België's Erfgoed</span>
-        </div>
-        <h1 class="hero-title">
-          Laat het <span class="highlight">kasteel avontuur</span> beginnen
-        </h1>
-        <p class="hero-description">
-          Ontdek de rijke geschiedenis en adembenemende architectuur van België's mooiste kastelen. 
-          Van middeleeuwse burchten tot elegante renaissance paleizen.
-        </p>
-        <div class="hero-actions">
-          <button class="btn-primary large">
-            <span>Start je avontuur</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="m9 18 6-6-6-6"/>
-            </svg>
-          </button>
-          <button class="btn-ghost large">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polygon points="5,3 19,12 5,21 5,3"/>
-            </svg>
-            <span>Bekijk video</span>
-          </button>
-        </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-number">250+</span>
-            <span class="stat-label">Kastelen</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">11</span>
-            <span class="stat-label">Provincies</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">50k+</span>
-            <span class="stat-label">Bezoekers</span>
-          </div>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-image-container">
-          <img src="./chateaux_images/Gravensteen.jpg" alt="Kasteel in België" class="hero-image">
-          <div class="floating-card">
-            <div class="card-content">
-              <div class="card-icon">🏰</div>
-              <div class="card-text">
-                <h4>Kasteel van Gaasbeek</h4>
-                <p>Vlaams-Brabant</p>
-              </div>
-              <div class="card-rating">
-                <span>4.8</span>
-                <div class="stars">★★★★★</div>
-              </div>
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">🏰</div>
+                    kastelenbelgie
+                </a>
+                <div class="nav-menu">
+                    <a href="provinces.html" class="nav-link">Provincies</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <div class="search-box">
+                        <input type="text" placeholder="Zoek kasteel..." class="search-input" id="search-input">
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Popular Destinations -->
-  <section class="destinations-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Populaire kastelen</h2>
-        <p>Ontdek de meest bezochte kastelen van België</p>
-      </div>
-      <div class="destinations-grid">
-        <a href="kasteel-van-freyr-freyr.html" class="destination-card">
-          <img src="./chateaux_images/kasteel_van_freyr.jpg" alt="Kasteel van Freÿr">
-          <div class="card-overlay">
-            <div class="card-info">
-              <h3>Kasteel van Freÿr</h3>
-              <p>Namen • Wallonië</p>
-              <div class="card-rating">
-                <span>4.9</span>
-                <div class="stars">★★★★★</div>
-              </div>
+    <!-- Hero Section -->
+    <section class="hero-modern">
+        <div class="container">
+            <div class="hero-content-modern">
+                <div class="hero-text-modern">
+                    <div class="hero-badge-modern">✨ Ontdek België</div>
+                    <h1 class="hero-title-modern">Ontdek de mooiste <span class="highlight">kastelen van België</span></h1>
+                    <p>Ontdek de rijke geschiedenis van België door haar prachtige kastelen. Van middeleeuwse burchten tot barokke paleizen - elk kasteel vertelt een uniek verhaal.</p>
+                    
+                    <div class="hero-actions-modern">
+                        <a href="provinces.html" class="btn-modern btn-primary-modern">
+                            <span>Ontdek kastelen</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#features" class="btn-modern btn-secondary-modern">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="23 7 16 12 23 17 23 7"/>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                            </svg>
+                            <span>Bekijk video</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">300+</span>
+                            <span class="stat-label">Kastelen</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">11</span>
+                            <span class="stat-label">Provincies</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Jaar geschiedenis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual-modern">
+                    <img src="chateaux_images_update-2/Kasteel_van_freyr_2.jpg" alt="Kasteel van Freÿr" class="hero-image-modern">
+                    <div class="hero-floating-card">
+                        <h4>Kasteel van Freÿr</h4>
+                        <p>Een prachtig renaissancekasteel aan de Maas met adembenemende tuinen.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </a>
-        <a href="kasteel-van-gaasbeek-gaasbeek.html" class="destination-card">
-          <img src="./chateaux_images/Kasteel_van_Gaasbeek.jpg" alt="Kasteel van Gaasbeek">
-          <div class="card-overlay">
-            <div class="card-info">
-              <h3>Kasteel van Gaasbeek</h3>
-              <p>Gent • Vlaams-Brabant</p>
-              <div class="card-rating">
-                <span>4.7</span>
-                <div class="stars">★★★★★</div>
-              </div>
+        </div>
+    </section>
+    <!-- Section Features Moderne -->
+    <section class="section features-section">
+        <div class="container">
+            <h2 class="section-title">Waarom Kastelen België?</h2>
+            <p class="section-subtitle">Ontdek wat ons platform uniek maakt voor het verkennen van Belgische kastelen</p>
+            
+            <div class="grid-3">
+                <div class="card-modern">
+                    <div class="card-content-modern">
+                        <div class="feature-icon">🏰</div>
+                        <h3 class="card-title-modern">300+ Kastelen</h3>
+                        <p class="card-description-modern">De meest complete database van Belgische kastelen met gedetailleerde informatie en prachtige foto's.</p>
+                    </div>
+                </div>
+                
+                <div class="card-modern">
+                    <div class="card-content-modern">
+                        <div class="feature-icon">📍</div>
+                        <h3 class="card-title-modern">Per Provincie</h3>
+                        <p class="card-description-modern">Vind kastelen georganiseerd per provincie met handige filters en zoekfuncties.</p>
+                    </div>
+                </div>
+                
+                <div class="card-modern">
+                    <div class="card-content-modern">
+                        <div class="feature-icon">📚</div>
+                        <h3 class="card-title-modern">Rijke Geschiedenis</h3>
+                        <p class="card-description-modern">Leer over de fascinerende geschiedenis en architectuur van elk kasteel.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </a>
-        <a href="burcht-reuland-reuland-burg-reuland.html" class="destination-card">
-          <img src="./chateaux_images/Burcht_reuland.jpg" alt="Burcht van Reuland">
-          <div class="card-overlay">
-            <div class="card-info">
-              <h3>Burcht van Reuland</h3>
-              <p>Luik • Wallonië</p>
-              <div class="card-rating">
-                <span>4.6</span>
-                <div class="stars">★★★★★</div>
-              </div>
+        </div>
+    </section>
+
+    <!-- Section Châteaux Populaires -->
+    <section class="popular-castles-section">
+        <div class="container">
+            <h2 class="section-title">Populaire Kastelen</h2>
+            <p class="section-description">Ontdek de meest bezochte en geliefde kastelen van België</p>
+            <div class="popular-castles-grid">
+
+                <div class="popular-castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Citadel_van_hoei_4.jpg" alt="Citadel van hoei" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Citadel van hoei</h3>
+                        <p class="card-description-modern">Luik</p>
+                        <a href="citadel-van-hoei-hoei.html" class="btn-modern btn-primary-modern">Bezoek kasteel</a>
+                    </div>
+                </div>
+            
+                <div class="popular-castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_de_merode_3.jpg" alt="Kasteel de merode" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel de merode</h3>
+                        <p class="card-description-modern">Antwerpen</p>
+                        <a href="kasteel-de-merode-westerlo.html" class="btn-modern btn-primary-modern">Bezoek kasteel</a>
+                    </div>
+                </div>
+            
+                <div class="popular-castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Waterslot_cleydael_2.jpg" alt="Waterslot cleydael" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Waterslot cleydael</h3>
+                        <p class="card-description-modern">Antwerpen</p>
+                        <a href="waterslot-cleydael-aartselaar.html" class="btn-modern btn-primary-modern">Bezoek kasteel</a>
+                    </div>
+                </div>
+            
+                <div class="popular-castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_van_Durbuy_6.jpg" alt="Kasteel van Durbuy" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel van Durbuy</h3>
+                        <p class="card-description-modern">Luxemburg</p>
+                        <a href="kasteel-van-durbuy-durbuy.html" class="btn-modern btn-primary-modern">Bezoek kasteel</a>
+                    </div>
+                </div>
+            
+                <div class="popular-castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_de_merode_3.jpg" alt="Kasteel de merode" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel de merode</h3>
+                        <p class="card-description-modern">Vlaams-Brabant</p>
+                        <a href="kasteel-de-merode-te-dilbeek.html" class="btn-modern btn-primary-modern">Bezoek kasteel</a>
+                    </div>
+                </div>
+            
+                <div class="popular-castle-card">
+                    <div class="castle-image">
+                        <img src="chateaux_images_update-2/Kasteel_engelhof_3.jpg" alt="Kasteel engelhof" loading="lazy">
+                    </div>
+                    <div class="castle-card-content">
+                        <h3>Kasteel engelhof</h3>
+                        <p class="card-description-modern">Limburg</p>
+                        <a href="kasteel-engelhof-houthalen.html" class="btn-modern btn-primary-modern">Bezoek kasteel</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </a>
-        <a href="kasteel-arendsnest-edegem.html" class="destination-card">
-          <img src="./chateaux_images/Kasteel_arendsnest.jpg" alt="Kasteel Arendsnest">
-          <div class="card-overlay">
-            <div class="card-info">
-              <h3>Kasteel Arendsnest</h3>
-              <p>Antwerpen • Vlaanderen</p>
-              <div class="card-rating">
-                <span>4.5</span>
-                <div class="stars">★★★★★</div>
-              </div>
+
+        </div>
+    </section>
+
+    <!-- Reis naar -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Reis naar</h2>
+                <p class="section-subtitle">Maak herinneringen die een leven lang meegaan</p>
             </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <!-- Travel Categories -->
-  <section class="categories-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Reis om herinneringen te maken</h2>
-        <p>Kies je perfecte kasteel ervaring</p>
-      </div>
-      <div class="categories-grid">
-        <div class="category-card">
-          <div class="category-icon">🏰</div>
-          <h3>Historische Kastelen</h3>
-          <p>Ontdek eeuwenoude geschiedenis en architectuur</p>
-          <a href="blog-gotische-kastelen-belgie.html" class="category-link">Verkennen →</a>
-        </div>
-        <div class="category-card">
-          <div class="category-icon">🌸</div>
-          <h3>Kasteeltuinen</h3>
-          <p>Wandel door prachtige historische tuinen</p>
-          <a href="blog-kasteeltuinen-parken-belgie.html" class="category-link">Verkennen →</a>
-        </div>
-        <div class="category-card">
-          <div class="category-icon">💒</div>
-          <h3>Trouwlocaties</h3>
-          <p>Vind de perfecte locatie voor je droomhuwelijk</p>
-          <a href="blog-kastelen-trouwlocaties-belgie.html" class="category-link">Verkennen →</a>
-        </div>
-        <div class="category-card">
-          <div class="category-icon">👻</div>
-          <h3>Spookkastelen</h3>
-          <p>Beleef mysterieuze verhalen en legendes</p>
-          <a href="blog-kastelen-legendes-verhalen.html" class="category-link">Verkennen →</a>
-        </div>
-      </div>
-    </div>
-  </section>
+            <div class="cards-grid">
+                <a href="antwerpen.html" class="province-card">
+                    <div class="province-header">
+                        <h3 class="province-title">Antwerpen</h3>
+                        <span class="province-count">45+ kastelen</span>
+                    </div>
+                    <p class="province-description">Ontdek de kastelen van de diamantstad, van middeleeuwse burchten tot moderne landgoederen.</p>
+                    <span class="province-link">Bekijk kastelen →</span>
+                </a>
 
-  <!-- How it Works -->
-  <section class="how-it-works">
-    <div class="container">
-      <div class="section-header">
-        <h2>Hoe het werkt</h2>
-        <p>Plan je perfecte kasteelbezoek in 3 eenvoudige stappen</p>
-      </div>
-      <div class="steps-grid">
-        <div class="step">
-          <div class="step-number">1</div>
-          <div class="step-content">
-            <h3>Zoek & Ontdek</h3>
-            <p>Blader door onze uitgebreide collectie van 250+ kastelen verspreid over heel België</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-number">2</div>
-          <div class="step-content">
-            <h3>Plan & Reserveer</h3>
-            <p>Bekijk openingstijden, prijzen en reserveer je tickets online voor een zorgeloze ervaring</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-number">3</div>
-          <div class="step-content">
-            <h3>Beleef & Geniet</h3>
-            <p>Geniet van je kasteelbezoek met onze gedetailleerde gidsen en insider tips</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+                <a href="limburg.html" class="province-card">
+                    <div class="province-header">
+                        <h3 class="province-title">Limburg</h3>
+                        <span class="province-count">25+ kastelen</span>
+                    </div>
+                    <p class="province-description">Verken de groene provincie met haar prachtige waterkastelen en historische sites.</p>
+                    <span class="province-link">Bekijk kastelen →</span>
+                </a>
 
-  <!-- Destinations Grid -->
-  <section class="destinations-grid-section" id="destinations-grid-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Ga ergens heen</h2>
-        <p>Ontdek kastelen per provincie</p>
-      </div>
-      <div class="provinces-grid">
-        <a href="west-vlaanderen.html" class="province-card">
-          <img src="./chateaux_images/kasteel-wissekerke.jpg" alt="West-Vlaanderen">
-          <div class="province-info">
-            <h3>West-Vlaanderen</h3>
-            <p>19 kastelen</p>
-          </div>
-        </a>
-        <a href="oost-vlaanderen.html" class="province-card">
-          <img src="./chateaux_images/Gravensteen.jpg" alt="Oost-Vlaanderen">
-          <div class="province-info">
-            <h3>Oost-Vlaanderen</h3>
-            <p>31 kastelen</p>
-          </div>
-        </a>
-        <a href="antwerpen.html" class="province-card">
-          <img src="./chateaux_images/Kasteel_arendsnest.jpg" alt="Antwerpen">
-          <div class="province-info">
-            <h3>Antwerpen</h3>
-            <p>35 kastelen</p>
-          </div>
-        </a>
-        <a href="vlaams-brabant.html" class="province-card">
-          <img src="./chateaux_images/Kasteel_van_Gaasbeek.jpg" alt="Vlaams-Brabant">
-          <div class="province-info">
-            <h3>Vlaams-Brabant</h3>
-            <p>28 kastelen</p>
-          </div>
-        </a>
-        <a href="limburg.html" class="province-card">
-          <img src="./chateaux_images/Kasteel_van_bokrijk.jpg" alt="Limburg">
-          <div class="province-info">
-            <h3>Limburg</h3>
-            <p>22 kastelen</p>
-          </div>
-        </a>
-        <a href="namen.html" class="province-card">
-          <img src="./chateaux_images/kasteel_van_freyr.jpg" alt="Namen">
-          <div class="province-info">
-            <h3>Namen</h3>
-            <p>18 kastelen</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+                <a href="oost-vlaanderen.html" class="province-card">
+                    <div class="province-header">
+                        <h3 class="province-title">Oost-Vlaanderen</h3>
+                        <span class="province-count">35+ kastelen</span>
+                    </div>
+                    <p class="province-description">Van het Gravensteen in Gent tot verborgen pareltjes in het Vlaamse landschap.</p>
+                    <span class="province-link">Bekijk kastelen →</span>
+                </a>
 
-  <!-- Newsletter -->
-  <section class="newsletter-section">
-    <div class="container">
-      <div class="newsletter-content">
-        <div class="newsletter-text">
-          <h2>Reis om herinneringen te maken over de hele wereld</h2>
-          <p>Ontvang de nieuwste updates over nieuwe kastelen, speciale evenementen en exclusieve aanbiedingen direct in je inbox.</p>
-        </div>
-        <div class="newsletter-visual">
-          <img src="./chateaux_images/kasteel-van-modave.jpg" alt="Kasteel landschap">
-        </div>
-      </div>
-      <div class="newsletter-form">
-        <input type="email" placeholder="Voer je e-mailadres in" class="email-input">
-        <button class="btn-primary">Inschrijven</button>
-      </div>
-    </div>
-  </section>
+                <a href="west-vlaanderen.html" class="province-card">
+                    <div class="province-header">
+                        <h3 class="province-title">West-Vlaanderen</h3>
+                        <span class="province-count">30+ kastelen</span>
+                    </div>
+                    <p class="province-description">Kastelen aan de kust en in het binnenland, elk met hun eigen verhaal.</p>
+                    <span class="province-link">Bekijk kastelen →</span>
+                </a>
 
-  <!-- Blog Section -->
-  <section class="blog-section" id="blog">
-    <div class="container">
-      <div class="section-header">
-        <h2>Verken je land</h2>
-        <p>Ontdek verhalen en tips over België's mooiste kastelen</p>
-      </div>
-      <div class="blog-grid">
-        <article class="blog-card featured">
-          <img src="./chateaux_images/Gravensteen.jpg" alt="Gotische kastelen">
-          <div class="blog-content">
-            <div class="blog-category">Architectuur</div>
-            <h3>Gotische Kastelen in België</h3>
-            <p>Ontdek de fascinerende wereld van gotische kastelen in België. Van imposante burchten tot elegante waterkastelen.</p>
-            <a href="blog-gotische-kastelen-belgie.html" class="blog-link">Lees meer →</a>
-          </div>
-        </article>
-        <article class="blog-card">
-          <img src="./chateaux_images/Kasteel_van_Gaasbeek.jpg" alt="Kasteeltuinen">
-          <div class="blog-content">
-            <div class="blog-category">Tuinen</div>
-            <h3>Kasteeltuinen en Parken</h3>
-            <p>Een wandeling door eeuwen tuinarchitectuur.</p>
-            <a href="blog-kasteeltuinen-parken-belgie.html" class="blog-link">Lees meer →</a>
-          </div>
-        </article>
-        <article class="blog-card">
-          <img src="./chateaux_images/kasteel_van_freyr.jpg" alt="Trouwlocaties">
-          <div class="blog-content">
-            <div class="blog-category">Events</div>
-            <h3>Kastelen als Trouwlocaties</h3>
-            <p>Ontdek de mooiste kastelen voor uw droomhuwelijk.</p>
-            <a href="blog-kastelen-trouwlocaties-belgie.html" class="blog-link">Lees meer →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+                <a href="namen.html" class="province-card">
+                    <div class="province-header">
+                        <h3 class="province-title">Namen</h3>
+                        <span class="province-count">40+ kastelen</span>
+                    </div>
+                    <p class="province-description">Majestueuze kastelen in de Ardennen en langs de rivieren van Wallonië.</p>
+                    <span class="province-link">Bekijk kastelen →</span>
+                </a>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3>kastelenbelgie.be</h3>
-          <p>Ontdek de mooiste kastelen van België en beleef eeuwenoude geschiedenis.</p>
-          <div class="social-links">
-            <a href="#" class="social-link">Facebook</a>
-            <a href="#" class="social-link">Instagram</a>
-            <a href="#" class="social-link">Twitter</a>
-          </div>
+                <a href="luik.html" class="province-card">
+                    <div class="province-header">
+                        <h3 class="province-title">Luik</h3>
+                        <span class="province-count">50+ kastelen</span>
+                    </div>
+                    <p class="province-description">Rijke geschiedenis in steen gevat, van prinsbisschoppelijke paleizen tot industriële erfgoed.</p>
+                    <span class="province-link">Bekijk kastelen →</span>
+                </a>
+            </div>
         </div>
-        <div class="footer-links">
-          <div class="link-group">
-            <h4>Kastelen</h4>
-            <a href="provinces.html">Alle kastelen</a>
-            <a href="#destinations-grid-section">Per provincie</a>
-            <a href="#destinations-section">Populaire kastelen</a>
-            <a href="kaart.html">Kastelenkaart</a>
-          </div>
-          <div class="link-group">
-            <h4>Informatie</h4>
-            <a href="#">Over ons</a>
-            <a href="#contact">Contact</a>
-            <a href="#">FAQ</a>
-            <a href="#blog">Blog</a>
-          </div>
-          <div class="link-group">
-            <h4>Service</h4>
-            <a href="#">Reserveren</a>
-            <a href="#">Groepsbezoeken</a>
-            <a href="#">Gidsen</a>
-            <a href="#">Evenementen</a>
-          </div>
+    </section>
+
+    <!-- Hoe het werkt -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hoe het werkt</h2>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card-modern">
+                    <div class="card-content-modern">
+                        <div style="width: 48px; height: 48px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title-modern">Kies je bestemming</h3>
+                        <p class="card-description-modern">Blader door onze uitgebreide collectie van meer dan 300 kastelen verspreid over heel België.</p>
+                    </div>
+                </div>
+
+                <div class="card-modern">
+                    <div class="card-content-modern">
+                        <div style="width: 48px; height: 48px; background: var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title-modern">Plan je bezoek</h3>
+                        <p class="card-description-modern">Bekijk openingsuren, toegangsprijzen en praktische informatie voor elk kasteel.</p>
+                    </div>
+                </div>
+
+                <div class="card-modern">
+                    <div class="card-content-modern">
+                        <div style="width: 48px; height: 48px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title-modern">Beleef geschiedenis</h3>
+                        <p class="card-description-modern">Dompel jezelf onder in eeuwenoude verhalen en ontdek de rijke geschiedenis van België.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2025 kastelenbelgie.be. Alle rechten voorbehouden.</p>
-        <div class="footer-legal">
-          <a href="privacybeleid.html">Privacy</a>
-          <a href="algemene-voorwaarden.html">Voorwaarden</a>
-          <a href="#">Cookies</a>
+    </section>
+
+    <!-- Footer -->
+        <!-- Footer uniforme -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4 class="footer-title">Kastelen België</h4>
+                    <p class="footer-description">
+                        Ontdek de rijke geschiedenis van België door haar prachtige kastelen. 
+                        Van middeleeuwse burchten tot barokke paleizen.
+                    </p>
+                    <div class="footer-social">
+                        <a href="index.html" class="social-link">📧</a>
+                        <a href="index.html" class="social-link">📱</a>
+                        <a href="index.html" class="social-link">🌐</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Verken</h4>
+                    <ul class="footer-links">
+                        <li><a href="provinces.html">Alle Provincies</a></li>
+                        <li><a href="antwerpen.html">Antwerpen</a></li>
+                        <li><a href="vlaams-brabant.html">Vlaams-Brabant</a></li>
+                        <li><a href="oost-vlaanderen.html">Oost-Vlaanderen</a></li>
+                        <li><a href="west-vlaanderen.html">West-Vlaanderen</a></li>
+                        <li><a href="limburg.html">Limburg</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Informatie</h4>
+                    <ul class="footer-links">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" onclick="alert('Privacy policy komt binnenkort')">Privacy</a></li>
+                        <li><a href="index.html" onclick="alert('Algemene voorwaarden komen binnenkort')">Voorwaarden</a></li>
+                        <li><a href="index.html" onclick="alert('Over ons komt binnenkort')">Over Ons</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kastelen België. Alle rechten voorbehouden.</p>
+                <p>Gemaakt met ❤️ voor de Belgische erfgoed.</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
+
+    <script src="js/search.js"></script>
 </body>
 </html>
