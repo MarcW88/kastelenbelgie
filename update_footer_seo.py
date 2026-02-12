@@ -1,94 +1,19 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De 10 Mooiste Kastelen van België | Kastelen België Blog</title>
-    <meta name="description" content="België herbergt enkele van de meest indrukwekkende kastelen van Europa. Van het romantische Kasteel van Freÿr aan de Maas tot het imposante Gravenstee...">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-container">
-                <a href="index.html" class="logo">
-                    <div class="logo-icon">🏰</div>
-                    kastelenbelgie
-                </a>
-                <div class="nav-menu">
-                    <a href="provinces.html" class="nav-link">Provincies</a>
-                    <a href="blog.html" class="nav-link">Blog</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+#!/usr/bin/env python3
+"""
+Script pour mettre à jour le footer de toutes les pages HTML avec un footer SEO-optimisé.
+Axes travaillés :
+1. Structure générale (4 colonnes)
+2. Maillage interne (provinces + châteaux populaires)
+3. Ancres optimisées
+4. Bloc éditorial SEO
+"""
 
-    <!-- Breadcrumbs -->
-    <div class="container">
-        <div class="breadcrumbs-nav">
-            <a href="index.html">Home</a>
-            <span class="breadcrumbs-separator">›</span>
-            <a href="blog.html">Blog</a>
-            <span class="breadcrumbs-separator">›</span>
-            <span class="breadcrumbs-current">De 10 Mooiste Kastelen van België</span>
-        </div>
-    </div>
+import os
+import re
+from pathlib import Path
 
-    <!-- Article Header -->
-    <section class="hero-modern">
-        <div class="container">
-            <div class="section-header">
-                <span style="background: var(--primary); color: white; padding: 0.5rem 1rem; border-radius: 25px; font-size: 0.875rem; font-weight: 600; margin-bottom: 1rem; display: inline-block;">UITGELICHT</span>
-                <h1 class="section-title">De 10 Mooiste Kastelen van België</h1>
-                <div style="display: flex; align-items: center; gap: 1rem; margin-top: 1rem; justify-content: center;">
-                    <span style="color: var(--text-light);">21 september 2025</span>
-                    <span style="color: var(--text-light);">•</span>
-                    <span style="color: var(--text-light);">5-8 min leestijd</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Article Content -->
-    <section class="section">
-        <div class="container">
-            <div style="max-width: 800px; margin: 0 auto;">
-                <div class="article-content">
-
-                    <div style="font-size: 1.125rem; line-height: 1.8; color: var(--text); margin-bottom: 2rem;">
-                        <p>België herbergt enkele van de meest indrukwekkende kastelen van Europa. Van het romantische Kasteel van Freÿr aan de Maas tot het imposante Gravensteen in Gent, elk kasteel vertelt een uniek verhaal van macht, liefde en geschiedenis.</p>
-                    </div>
-
-                    <div style="margin-bottom: 2rem;">
-                        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--text);">1. Kasteel van Freÿr - Namen</h2>
-                        <p style="line-height: 1.7; color: var(--text); margin-bottom: 1rem;">Dit prachtige renaissancekasteel aan de Maas is beroemd om zijn Franse tuinen en 350 jaar oude oranjebomen. Het kasteel speelde een belangrijke rol in de Europese diplomatie en ontving illustere gasten zoals Lodewijk XIV.</p>
-                    </div>
-
-                    <div style="margin-bottom: 2rem;">
-                        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--text);">2. Gravensteen - Gent</h2>
-                        <p style="line-height: 1.7; color: var(--text); margin-bottom: 1rem;">Dit middeleeuwse kasteel in het hart van Gent is een van de best bewaarde burchten van Europa. Met zijn imposante donjon en marteltoren biedt het een fascinerende blik op het middeleeuwse leven.</p>
-                    </div>
-
-                    <div style="margin-bottom: 2rem;">
-                        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--text);">3. Kasteel van Durbuy - Luxemburg</h2>
-                        <p style="line-height: 1.7; color: var(--text); margin-bottom: 1rem;">Gelegen in de kleinste stad van België, combineert dit kasteel middeleeuwse charme met neo-gotische elegantie. Het wordt nog steeds bewoond door de familie d'Ursel.</p>
-                    </div>
-
-                </div>
-                
-                <!-- Call to Action -->
-                <div style="background: var(--bg-light); padding: 2rem; border-radius: var(--radius); text-align: center; margin-top: 3rem;">
-                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem;">Ontdek meer kastelen</h3>
-                    <p style="color: var(--text-light); margin-bottom: 1.5rem;">Verken alle prachtige kastelen van België en plan je volgende bezoek.</p>
-                    <a href="provinces.html" class="btn-modern btn-primary-modern">Bekijk alle provincies</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-                <!-- Footer Kastelen België v2.0 -->
+# Nouveau footer SEO-optimisé
+NEW_FOOTER = '''    <!-- Footer Kastelen België v2.0 -->
     <footer class="footer" style="background: #1E2523; color: #F5F3EF; padding: 0;">
         <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
             
@@ -214,6 +139,80 @@
                 </div>
             </div>
         </div>
-    </footer>
-</body>
-</html>
+    </footer>'''
+
+
+def update_footer_in_file(filepath):
+    """Met à jour le footer dans un fichier HTML."""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Pattern pour trouver le footer existant (plusieurs variantes possibles)
+        # On cherche de <!-- Footer --> ou <footer jusqu'à </footer>
+        patterns = [
+            r'<!-- Footer Kastelen België v2\.0 -->.*?<footer class="footer"[^>]*>.*?</footer>',
+            r'<!-- Footer.*?-->.*?<footer class="footer"[^>]*>.*?</footer>',
+            r'<!-- Footer uniforme -->.*?<footer class="footer"[^>]*>.*?</footer>',
+            r'<!-- Footer SEO-optimisé -->.*?<footer class="footer"[^>]*>.*?</footer>',
+            r'<footer class="footer"[^>]*>.*?</footer>',
+        ]
+        
+        new_content = content
+        replaced = False
+        
+        for pattern in patterns:
+            if re.search(pattern, new_content, re.DOTALL):
+                new_content = re.sub(pattern, NEW_FOOTER, new_content, flags=re.DOTALL)
+                replaced = True
+                break
+        
+        if replaced and new_content != content:
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.write(new_content)
+            return True
+        elif not replaced:
+            print(f"  ⚠️  Pas de footer trouvé dans: {filepath}")
+            return False
+        else:
+            return False  # Pas de changement nécessaire
+            
+    except Exception as e:
+        print(f"  ❌ Erreur avec {filepath}: {e}")
+        return False
+
+
+def main():
+    """Parcourt tous les fichiers HTML et met à jour les footers."""
+    project_dir = Path(__file__).parent
+    html_files = list(project_dir.glob('*.html'))
+    
+    print(f"🏰 Mise à jour du footer SEO pour {len(html_files)} fichiers HTML...")
+    print("=" * 60)
+    
+    updated = 0
+    skipped = 0
+    errors = 0
+    
+    for html_file in sorted(html_files):
+        # Ignorer les fichiers de test
+        if 'test' in html_file.name.lower():
+            skipped += 1
+            continue
+            
+        result = update_footer_in_file(html_file)
+        if result:
+            print(f"  ✅ {html_file.name}")
+            updated += 1
+        elif result is False:
+            errors += 1
+    
+    print("=" * 60)
+    print(f"✅ Fichiers mis à jour: {updated}")
+    print(f"⏭️  Fichiers ignorés: {skipped}")
+    print(f"⚠️  Erreurs/non trouvés: {errors}")
+    print("\n🎉 Footer SEO appliqué avec succès!")
+
+
+if __name__ == "__main__":
+    main()

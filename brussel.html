@@ -33,32 +33,56 @@
         </div>
     </nav>
 
-    <nav class="breadcrumbs">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
         <div class="breadcrumbs-container">
-            <div class="breadcrumbs-nav">
-                <a href="index.html">Home</a>
+            <div class="breadcrumbs-nav" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="index.html" itemprop="item"><span itemprop="name">Home</span></a>
+                    <meta itemprop="position" content="1" />
+                </span>
                 <span class="breadcrumbs-separator">›</span>
-                <a href="provinces.html">Provincies</a>
+                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="provinces.html" itemprop="item"><span itemprop="name">Provincies</span></a>
+                    <meta itemprop="position" content="2" />
+                </span>
                 <span class="breadcrumbs-separator">›</span>
-                <span class="breadcrumbs-current">Brussel</span>
+                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name" class="breadcrumbs-current">Kastelen in Brussel en omgeving</span>
+                    <meta itemprop="position" content="3" />
+                </span>
             </div>
         </div>
+    </nav>
 
-    <!-- Hero -->
-    <section class="hero-modern">
+    <!-- Hero compact -->
+    <section style="background: var(--bg-secondary); padding: 2rem 0 1.5rem;">
         <div class="container">
-            <div class="section-header">
-                <h1 class="section-title">Kastelen in Brussels Hoofdstedelijk Gewest</h1>
-                <p class="section-subtitle">Historische sites en kastelen in en rond de hoofdstad van Europa.</p>
-            </div>
+            <h1 style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 2rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem;">Kastelen in Brussel en omgeving</h1>
+            <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 1rem; color: var(--text-light);">Ideale uitvalsbasis voor kasteelbezoek in de stad en de groene rand eromheen</p>
+        </div>
+    </section>
+
+    <!-- Intro SEO Block -->
+    <section style="padding: 1.5rem 0;">
+        <div class="container">
+            <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 1rem; line-height: 1.8; color: var(--text); margin-bottom: 1rem;">
+                <strong>Brussel</strong> is een ideale uitvalsbasis om kastelen te ontdekken, zowel in de stad zelf als in de groene rand eromheen. 
+                In en rond de hoofdstad vind je kasteeldomeinen met parken, vijvers en bossen, maar ook historische sites en paleizen die het verhaal van Brussel en Brabant vertellen.
+            </p>
+            <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 1rem; line-height: 1.8; color: var(--text); margin-bottom: 1rem;">
+                Van stadskastelen en oude buitenverblijven tot grote parken rond kastelen net buiten de stad: er is altijd een uitstap mogelijk op korte afstand.
+            </p>
+            <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 1rem; line-height: 1.7; color: var(--text-light);">
+                Op deze pagina ontdek je kastelen in Brussel en de nabije omgeving, met links naar detailpagina's zodat je je daguitstap eenvoudig kunt plannen.
+            </p>
         </div>
     </section>
 
     <!-- Section Châteaux de la Province -->
-    <section class="province-castles-section">
+    <section style="padding: 1rem 0 3rem;">
         <div class="container">
-            <h2 class="section-title">Kastelen in Brussel</h2>
-            <p class="section-description">Ontdek alle prachtige kastelen in de provincie Brussel</p>
+            <h2 style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--text); margin-bottom: 0.75rem;">Kastelen en historische sites in Brussel</h2>
+            <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 1rem; line-height: 1.7; color: var(--text-light); margin-bottom: 1.5rem;">In de Brusselse hoofdstad zelf vind je enkele kastelen, kasteeldomeinen en paleissites die vaak omgeven zijn door parken of geïntegreerd zijn in woonwijken. Deze plekken zijn meestal vlot bereikbaar met het openbaar vervoer en goed te combineren met een bezoek aan het centrum van Brussel.</p>
             <div class="castle-grid">
 
                 <div class="castle-card">
@@ -138,55 +162,182 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- Footer -->
-        <!-- Footer uniforme -->
-    <footer class="footer">
+    <!-- Over kastelen in en rond Brussel + FAQ -->
+    <section style="background: var(--bg-secondary); padding: 3rem 0;">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h4 class="footer-title">Kastelen België</h4>
-                    <p class="footer-description">
-                        Ontdek de rijke geschiedenis van België door haar prachtige kastelen. 
-                        Van middeleeuwse burchten tot barokke paleizen.
+            <!-- Over kastelen -->
+            <div style="margin-bottom: 2.5rem;">
+                <h2 style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--text); margin-bottom: 1rem;">Over kastelen in en rond Brussel</h2>
+                <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 1rem; line-height: 1.8; color: var(--text); margin-bottom: 1rem;">
+                    De regio rond Brussel heeft eeuwenlang gediend als decor voor buitenverblijven van adel, rijke families en notabelen uit de stad. 
+                    Langs oude invalswegen en op de heuvels rond de hoofdstad werden kastelen en landhuizen gebouwd, vaak met grote parken en tuinen om de drukte van de stad te ontvluchten. 
+                    Verderop in Vlaams- en Waals-Brabant vind je kastelen waarbij het park, de bloemen, de vijvers en de bossen minstens zo belangrijk zijn als het gebouw zelf.
+                </p>
+                <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 1rem; line-height: 1.8; color: var(--text);">
+                    Vandaag zijn veel van deze kasteeldomeinen toegankelijk als park of wandelgebied en worden sommige kastelen gebruikt voor tentoonstellingen, rondleidingen of evenementen. 
+                    Dat maakt Brussel en omgeving bijzonder interessant voor korte uitstappen: je kan een bezoek aan musea, winkels of historische wijken in de stad vlot combineren met een wandeling in een kasteelpark net buiten de hoofdstad.
+                </p>
+                <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 0.95rem; line-height: 1.7; color: var(--text-light); margin-top: 1rem;">
+                    Ontdek ook onze artikelen over <a href="blog-mooiste-kastelen-belgie.html" style="color: var(--primary); text-decoration: none; font-weight: 500;">de mooiste kastelen van België</a> 
+                    of bekijk kastelen in naburige provincies zoals <a href="vlaams-brabant.html" style="color: var(--primary); text-decoration: none; font-weight: 500;">Vlaams-Brabant</a> 
+                    en <a href="waals-brabant.html" style="color: var(--primary); text-decoration: none; font-weight: 500;">Waals-Brabant</a>.
+                </p>
+            </div>
+
+            <!-- FAQ -->
+            <div>
+                <h2 style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--text); margin-bottom: 1.5rem;">Veelgestelde vragen over kastelen in en rond Brussel</h2>
+                
+                <div style="background: white; border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid var(--border);">
+                    <h3 style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 1.1rem; color: var(--text); margin-bottom: 0.5rem;">Wat zijn de mooiste kastelen rond Brussel om te bezoeken?</h3>
+                    <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--text-light); line-height: 1.7;">Rond Brussel liggen verschillende kastelen met parken en tuinen die vaak genoemd worden in lijsten met de mooiste kastelen van België. In onze lijst zie je per kasteel een korte beschrijving en foto's, zodat je snel ontdekt welke daguitstap het best bij jou past.</p>
+                </div>
+                
+                <div style="background: white; border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid var(--border);">
+                    <h3 style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 1.1rem; color: var(--text); margin-bottom: 0.5rem;">Kan ik kastelen rond Brussel bezoeken met het openbaar vervoer?</h3>
+                    <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--text-light); line-height: 1.7;">Veel kastelen in de omgeving van Brussel zijn bereikbaar met trein, tram of bus, soms met een korte wandeling vanaf het station of de halte. Op de detailpagina's vermelden we waar mogelijk hoe je er het best geraakt, met de auto of met het openbaar vervoer.</p>
+                </div>
+                
+                <div style="background: white; border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid var(--border);">
+                    <h3 style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 1.1rem; color: var(--text); margin-bottom: 0.5rem;">Zijn er kastelen met parken en tuinen dicht bij Brussel?</h3>
+                    <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--text-light); line-height: 1.7;">Ja, in de groene rand rond Brussel liggen meerdere kasteeldomeinen met grote parken, vijvers en bospercelen. Ze zijn ideaal voor een korte wandeling, een picknick of een rustige namiddag in het groen na een bezoek aan de stad.</p>
+                </div>
+
+                <div style="background: white; border-radius: 12px; padding: 1.5rem; border: 1px solid var(--border);">
+                    <h3 style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 1.1rem; color: var(--text); margin-bottom: 0.5rem;">Kan ik kastelen rond Brussel als daguitstap combineren met een citytrip?</h3>
+                    <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--text-light); line-height: 1.7;">Zeker. Dankzij de korte afstanden kan je 's ochtends de bezienswaardigheden van Brussel verkennen en in de namiddag een kasteelpark bezoeken, of omgekeerd, afhankelijk van je planning en het weer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Kastelen België v2.0 -->
+    <footer class="footer" style="background: #1E2523; color: #F5F3EF; padding: 0;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+            
+            <!-- SECTION 1: Branding + Stats -->
+            <div class="footer-top" style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 3rem; padding: 3rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <!-- Brand Column -->
+                <div>
+                    <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: #F5F3EF;">
+                        🏰 Kastelen België
+                    </h3>
+                    <p style="color: #D4C7B4; line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem;">
+                        <strong>Dé gids voor kastelen in België.</strong> Ontdek meer dan 300 kastelen per provincie, 
+                        plan je bezoek met praktische info en laat je inspireren door eeuwenoude verhalen 
+                        en prachtige foto's uit meer dan duizend jaar Belgische geschiedenis.
                     </p>
-                    <div class="footer-social">
-                        <a href="index.html" class="social-link">📧</a>
-                        <a href="index.html" class="social-link">📱</a>
-                        <a href="index.html" class="social-link">🌐</a>
+
+                    <!-- Trust Signals -->
+                    <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                        <div style="font-size: 0.85rem; color: #D4C7B4;">
+                            <strong style="display: block; color: #C89A3B; font-size: 1.1rem;">300+</strong>
+                            Kastelen
+                        </div>
+                        <div style="font-size: 0.85rem; color: #D4C7B4;">
+                            <strong style="display: block; color: #C89A3B; font-size: 1.1rem;">11</strong>
+                            Provincies
+                        </div>
+                        <div style="font-size: 0.85rem; color: #D4C7B4;">
+                            <strong style="display: block; color: #C89A3B; font-size: 1.1rem;">1000+</strong>
+                            Jaar geschiedenis
+                        </div>
                     </div>
                 </div>
+
+                <!-- Social + Contact -->
+                <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    <h4 style="color: #F5F3EF; margin-bottom: 1rem; font-size: 1rem;">📬 Contact & Volg Ons</h4>
+                    <p style="color: #D4C7B4; font-size: 0.9rem; margin-bottom: 1rem;">
+                        Vragen over een kasteel? Suggesties? We horen graag van je!
+                    </p>
+                    <div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+                        <a href="mailto:info@kastelenbelgie.be" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.1); border-radius: 50%; color: #F5F3EF; text-decoration: none; transition: background 0.2s;" aria-label="E-mail">📧</a>
+                        <a href="https://www.instagram.com/kastelenbelgie" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.1); border-radius: 50%; color: #F5F3EF; text-decoration: none; transition: background 0.2s;" aria-label="Instagram">📷</a>
+                        <a href="https://www.facebook.com/kastelenbelgie" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.1); border-radius: 50%; color: #F5F3EF; text-decoration: none; transition: background 0.2s;" aria-label="Facebook">f</a>
+                    </div>
+                    <a href="contact.html" style="color: #C89A3B; font-size: 0.9rem; text-decoration: none;">→ Contactformulier</a>
+                </div>
+            </div>
+
+            <!-- SECTION 2: Navigation Grid -->
+            <div class="footer-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; padding: 2.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
                 
-                <div class="footer-column">
-                    <h4 class="footer-title">Verken</h4>
-                    <ul class="footer-links">
-                        <li><a href="provinces.html">Alle Provincies</a></li>
-                        <li><a href="antwerpen.html">Antwerpen</a></li>
-                        <li><a href="vlaams-brabant.html">Vlaams-Brabant</a></li>
-                        <li><a href="oost-vlaanderen.html">Oost-Vlaanderen</a></li>
-                        <li><a href="west-vlaanderen.html">West-Vlaanderen</a></li>
-                        <li><a href="limburg.html">Limburg</a></li>
+                <!-- COLUMN 1: Provincies Vlaanderen -->
+                <div>
+                    <h4 style="color: #F5F3EF; margin-bottom: 1.2rem; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Kastelen Vlaanderen</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.6rem;"><a href="antwerpen.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem; transition: color 0.2s;">Kastelen in Antwerpen</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="vlaams-brabant.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Vlaams-Brabant</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="oost-vlaanderen.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Oost-Vlaanderen</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="west-vlaanderen.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in West-Vlaanderen</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="limburg.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Limburg</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="provinces.html" style="color: #C89A3B; font-weight: 600; text-decoration: none; font-size: 0.9rem;">→ Alle provincies</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-column">
-                    <h4 class="footer-title">Informatie</h4>
-                    <ul class="footer-links">
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="index.html" onclick="alert('Privacy policy komt binnenkort')">Privacy</a></li>
-                        <li><a href="index.html" onclick="alert('Algemene voorwaarden komen binnenkort')">Voorwaarden</a></li>
-                        <li><a href="index.html" onclick="alert('Over ons komt binnenkort')">Over Ons</a></li>
+
+                <!-- COLUMN 2: Provincies Wallonië -->
+                <div>
+                    <h4 style="color: #F5F3EF; margin-bottom: 1.2rem; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Kastelen Wallonië</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.6rem;"><a href="namen.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Namen</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="luik.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Luik</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="henegouwen.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Henegouwen</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="luxemburg.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Luxemburg</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="waals-brabant.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Waals-Brabant</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="brussel.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Brussel</a></li>
+                    </ul>
+                </div>
+
+                <!-- COLUMN 3: Populaire Kastelen -->
+                <div>
+                    <h4 style="color: #F5F3EF; margin-bottom: 1.2rem; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Populaire Kastelen</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.6rem;"><a href="kasteel-van-freyr-freyr.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kasteel van Freÿr</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="citadel-van-hoei-hoei.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Citadel van Hoei</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="kasteel-de-merode-westerlo.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kasteel de Merode</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="kasteel-van-durbuy-durbuy.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kasteel van Durbuy</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="kasteel-van-bouchout-te-meise.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kasteel van Bouchout</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="kasteel-reinhardstein-burg-metternich-te-weismes.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kasteel Reinhardstein</a></li>
+                    </ul>
+                </div>
+
+                <!-- COLUMN 4: Blog & Info -->
+                <div>
+                    <h4 style="color: #F5F3EF; margin-bottom: 1.2rem; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Blog & Informatie</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.6rem;"><a href="blog.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">📖 Blog</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="blog-mooiste-kastelen-belgie.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Mooiste kastelen van België</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="blog-middeleeuwse-kastelen.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Middeleeuwse kastelen</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="contact.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">💬 Contact</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="privacybeleid.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Privacybeleid</a></li>
+                        <li style="margin-bottom: 0.6rem;"><a href="algemene-voorwaarden.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Algemene voorwaarden</a></li>
                     </ul>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Kastelen België. Alle rechten voorbehouden.</p>
-                <p>Gemaakt met ❤️ voor de Belgische erfgoed.</p>
+
+            <!-- SECTION 3: Bottom Bar -->
+            <div class="footer-bottom" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; padding: 2rem 0;">
+                <!-- Left: Copyright -->
+                <div>
+                    <p style="color: #D4C7B4; font-size: 0.85rem; line-height: 1.6; margin: 0;">
+                        <strong style="color: #F5F3EF;">© 2024 Kastelen België.</strong> Alle rechten voorbehouden.
+                        <br><br>
+                        <span style="color: #8A857D;">Op Kastelenbelgie.be vind je meer dan 300 kastelen in België, 
+                        netjes gebundeld per provincie met praktische informatie en tips.</span>
+                    </p>
+                </div>
+
+                <!-- Right: Back to top -->
+                <div style="text-align: right;">
+                    <p style="color: #8A857D; font-size: 0.85rem; margin: 0 0 0.5rem 0;">
+                        Gemaakt met ❤️ voor het Belgische erfgoed
+                    </p>
+                    <a href="#" style="color: #C89A3B; text-decoration: none; font-size: 0.85rem;">Terug naar boven ↑</a>
+                </div>
             </div>
         </div>
     </footer>
