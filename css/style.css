@@ -913,38 +913,20 @@ h3 {
 /* Gallery */
 .gallery-section {
   padding: 3rem 0;
-  background: var(--bg-secondary);
-}
-
-.gallery-section .section-title {
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
-
-.gallery-section .section-description {
-  text-align: center;
-  color: var(--text-light);
-  margin-bottom: 2rem;
 }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
+  margin-top: 2rem;
 }
 
 .gallery-grid img {
   width: 100%;
-  height: 220px;
+  height: 200px;
   object-fit: cover;
   border-radius: var(--radius);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Related castles */
@@ -4764,158 +4746,5 @@ img[src*="placeholder"] {
   color: var(--text-light);
   font-size: 1.05rem;
   line-height: 1.7;
-}
-
-/* ===== CASTLE TICKETS SECTION (Overnachten/Events) ===== */
-.castle-tickets {
-  padding: 3rem 0;
-  background: white;
-}
-
-.castle-tickets h2 {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 1rem;
-}
-
-.section-eyebrow {
-  font-size: 0.9rem;
-  color: var(--primary);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.5rem;
-}
-
-.ticket-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.ticket-card {
-  background: white;
-  border-radius: 12px;
-  padding: 1.5rem;
-  border: 1px solid var(--border);
-  position: relative;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.ticket-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
-.ticket-card.card-featured,
-.ticket-card:first-child {
-  border: 2px solid var(--primary);
-}
-
-.ticket-card h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: 0.75rem;
-  margin-top: 0.5rem;
-}
-
-.ticket-card p {
-  color: var(--text-light);
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.card-badge {
-  position: absolute;
-  top: -10px;
-  left: 1rem;
-  background: var(--primary);
-  color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
-.affiliate-note {
-  font-size: 0.85rem;
-  color: var(--text-light);
-  margin-top: 1.5rem;
-  font-style: italic;
-}
-
-/* ===== CASTLE PRACTICAL SECTION ===== */
-.castle-practical {
-  padding: 3rem 0;
-  background: var(--bg-secondary);
-}
-
-.castle-practical h2 {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 1.5rem;
-}
-
-.practical-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-.practical-grid > div {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.practical-grid h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: 0.75rem;
-}
-
-.practical-grid p {
-  color: var(--text-light);
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.practical-grid ul {
-  padding-left: 1.25rem;
-  color: var(--text-light);
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.practical-grid li {
-  margin-bottom: 0.5rem;
-}
-
-/* ===== RESPONSIVE CASTLE SECTIONS ===== */
-@media (max-width: 768px) {
-  .ticket-grid,
-  .practical-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .castle-tickets,
-  .castle-practical {
-    padding: 2rem 0;
-  }
-  
-  .ticket-card,
-  .practical-grid > div {
-    padding: 1.25rem;
-  }
 }
 
