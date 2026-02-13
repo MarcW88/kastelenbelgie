@@ -1,0 +1,40 @@
+/*
+  # Sécurité - Protection contre le clickjacking
+  X-Frame-Options: SAMEORIGIN
+  
+  # Sécurité - Protection XSS
+  X-Content-Type-Options: nosniff
+  
+  # Sécurité - Referrer Policy
+  Referrer-Policy: strict-origin-when-cross-origin
+  
+  # Sécurité - Permissions Policy (remplace Feature-Policy)
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  
+  # Cache pour les fichiers statiques
+/*.css
+  Cache-Control: public, max-age=31536000
+
+/*.js
+  Cache-Control: public, max-age=31536000
+
+/*.jpg
+  Cache-Control: public, max-age=31536000
+
+/*.jpeg
+  Cache-Control: public, max-age=31536000
+
+/*.png
+  Cache-Control: public, max-age=31536000
+
+/*.webp
+  Cache-Control: public, max-age=31536000
+
+/*.svg
+  Cache-Control: public, max-age=31536000
+
+/*.woff
+  Cache-Control: public, max-age=31536000
+
+/*.woff2
+  Cache-Control: public, max-age=31536000
