@@ -173,6 +173,23 @@ h3 {
   overflow: hidden;
 }
 
+/* Blog Article Header - compact avec fond dégradé */
+.hero-modern.blog-header {
+  min-height: auto;
+  padding: 4rem 0 3rem;
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, #3a7a5e 100%);
+}
+
+.hero-modern.blog-header .section-header {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-modern.blog-header .section-title {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
 .hero-modern::before {
   content: '';
   position: absolute;
@@ -2869,15 +2886,35 @@ body {
   padding: 24px;
 }
 
+.hero-modern.blog-header .section-header > span:first-child {
+  background: var(--secondary);
+  color: var(--primary-dark);
+}
+
+/* Blog category badge */
 .blog-category {
   display: inline-block;
-  background: var(--light-blue);
-  color: var(--primary);
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 500;
-  margin-bottom: 12px;
+  background: var(--secondary);
+  color: var(--primary-dark);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Blog meta info */
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+  color: rgba(255,255,255,0.8);
+}
+
+.blog-meta span {
+  color: rgba(255,255,255,0.8);
 }
 
 .blog-content h3 {
