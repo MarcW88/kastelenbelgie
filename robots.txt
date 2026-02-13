@@ -1,0 +1,16 @@
+# Robots.txt pour kastelenbelgie.be
+# https://kastelenbelgie.be/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://kastelenbelgie.be/sitemap.xml
+
+# Bloquer les fichiers utilitaires
+Disallow: /*.py$
+Disallow: /_headers
+Disallow: /.htaccess
+
+# Bloquer les fichiers de test
+Disallow: /test-*.html
