@@ -42,28 +42,86 @@
         
         <!-- Contenu -->
         <div class="container" style="position: relative; z-index: 2; text-align: center; padding: 2rem;">
-            <div style="max-width: 800px; margin: 0 auto;">
+            <div style="max-width: 900px; margin: 0 auto;">
+                
+                <!-- Badge fonctionnel -->
                 <div style="display: inline-block; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 0.5rem 1.25rem; border-radius: 50px; font-size: 0.9rem; color: white; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.2);">
-                    ✨ Ontdek België's rijke erfgoed
+                    Zoek in meer dan 300 kastelen in België
                 </div>
                 
+                <!-- Titre -->
                 <h1 style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; color: white; line-height: 1.1; margin-bottom: 1.5rem; text-shadow: 0 2px 20px rgba(0,0,0,0.3);">
                     Ontdek de mooiste <span style="color: #C89A3B;">kastelen van België</span>
                 </h1>
                 
-                <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); line-height: 1.7; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-                    Van middeleeuwse burchten tot barokke paleizen - elk kasteel vertelt een uniek verhaal uit meer dan duizend jaar Belgische geschiedenis.
+                <!-- Sous-titre -->
+                <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); line-height: 1.7; margin-bottom: 2rem; max-width: 650px; margin-left: auto; margin-right: auto;">
+                    Van middeleeuwse burchten tot barokke paleizen – elk kasteel vertelt een uniek verhaal uit meer dan duizend jaar Belgische geschiedenis.
                 </p>
                 
-                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
-                    <a href="provinces.html" style="display: inline-flex; align-items: center; gap: 0.5rem; background: #E4553D; color: white; padding: 1rem 2rem; border-radius: 12px; font-weight: 600; text-decoration: none; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(228, 85, 61, 0.4);">
-                        <span>Ontdek kastelen</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
+                <!-- Barre de recherche type Booking -->
+                <form class="search-hero" action="alle-kastelen.html" method="get" style="background: rgba(255,255,255,0.98); border-radius: 18px; padding: 1rem; display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: stretch; box-shadow: 0 15px 40px rgba(0,0,0,0.35); margin-bottom: 1.75rem;">
+                    <!-- Destination -->
+                    <div class="search-hero-field" style="flex: 1 1 220px; text-align: left;">
+                        <label for="q" style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #555; margin-bottom: 0.3rem;">
+                            Bestemming, kasteel, provincie
+                        </label>
+                        <input type="text" id="q" name="q" placeholder="Zoek op naam, stad of provincie…" style="width: 100%; border: 1px solid #ddd; border-radius: 10px; padding: 0.65rem 0.75rem; font-size: 0.95rem; font-family: inherit;">
+                    </div>
+                    
+                    <!-- Type ervaring -->
+                    <div class="search-hero-field" style="flex: 0.8 1 200px; text-align: left;">
+                        <label for="type" style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #555; margin-bottom: 0.3rem;">
+                            Type ervaring
+                        </label>
+                        <select id="type" name="type" style="width: 100%; border: 1px solid #ddd; border-radius: 10px; padding: 0.65rem 0.75rem; font-size: 0.95rem; font-family: inherit; background-color: white;">
+                            <option value="">Alle types</option>
+                            <option value="bezoek">Bezoek / museum</option>
+                            <option value="overnachten">Overnachting in kasteel</option>
+                            <option value="evenement">Evenement / huwelijk</option>
+                            <option value="wandeling">Wandeling rond kastelen</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Région -->
+                    <div class="search-hero-field" style="flex: 0.8 1 180px; text-align: left;">
+                        <label for="regio" style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #555; margin-bottom: 0.3rem;">
+                            Regio
+                        </label>
+                        <select id="regio" name="regio" style="width: 100%; border: 1px solid #ddd; border-radius: 10px; padding: 0.65rem 0.75rem; font-size: 0.95rem; font-family: inherit; background-color: white;">
+                            <option value="">Heel België</option>
+                            <option value="vlaanderen">Vlaanderen</option>
+                            <option value="wallonie">Wallonië</option>
+                            <option value="brussel">Brussel</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Bouton -->
+                    <div class="search-hero-submit" style="flex: 0 0 150px; display: flex; align-items: flex-end;">
+                        <button type="submit" style="width: 100%; background: #E4553D; color: white; border: none; border-radius: 12px; padding: 0.8rem 1rem; font-weight: 600; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; box-shadow: 0 4px 15px rgba(228,85,61,0.5);">
+                            Zoek kastelen
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- Texte explicatif -->
+                <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); margin-top: 0.5rem; margin-bottom: 1.5rem;">
+                    Zoek per naam, provincie of type ervaring en vind het kasteel dat bij jouw uitstap past.
+                </p>
+                
+                <!-- Raccourcis rapides -->
+                <div class="quick-filters" style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 2.5rem;">
+                    <a href="blog-mooiste-kastelen-belgie.html" style="font-size: 0.9rem; padding: 0.45rem 0.9rem; border-radius: 999px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.3); color: #fff; text-decoration: none;">
+                        Mooiste kastelen
                     </a>
-                    <a href="blog.html" style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); color: white; padding: 1rem 2rem; border-radius: 12px; font-weight: 600; text-decoration: none; font-size: 1.1rem; border: 1px solid rgba(255,255,255,0.3); transition: all 0.3s ease;">
-                        <span>📖 Lees onze blog</span>
+                    <a href="blog-middeleeuwse-kastelen.html" style="font-size: 0.9rem; padding: 0.45rem 0.9rem; border-radius: 999px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.3); color: #fff; text-decoration: none;">
+                        Middeleeuwse kastelen
+                    </a>
+                    <a href="namen.html" style="font-size: 0.9rem; padding: 0.45rem 0.9rem; border-radius: 999px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.3); color: #fff; text-decoration: none;">
+                        Kastelen in de Ardennen
+                    </a>
+                    <a href="west-vlaanderen.html" style="font-size: 0.9rem; padding: 0.45rem 0.9rem; border-radius: 999px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.3); color: #fff; text-decoration: none;">
+                        Aan de kust
                     </a>
                 </div>
                 
@@ -101,25 +159,41 @@
             <div class="grid-3">
                 <div class="card-modern">
                     <div class="card-content-modern">
-                        <div class="feature-icon">🏰</div>
-                        <h3 class="card-title-modern">300+ Kastelen</h3>
-                        <p class="card-description-modern">De meest complete database van Belgische kastelen met gedetailleerde informatie en prachtige foto's.</p>
+                        <div style="width: 48px; height: 48px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title-modern">Meest complete overzicht</h3>
+                        <p class="card-description-modern">Meer dan 300 kastelen met foto's, geschiedenis en praktische info, netjes gebundeld per provincie.</p>
                     </div>
                 </div>
                 
                 <div class="card-modern">
                     <div class="card-content-modern">
-                        <div class="feature-icon">📍</div>
-                        <h3 class="card-title-modern">Per Provincie</h3>
-                        <p class="card-description-modern">Vind kastelen georganiseerd per provincie met handige filters en zoekfuncties.</p>
+                        <div style="width: 48px; height: 48px; background: var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="M21 21l-4.35-4.35"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title-modern">Zoek per provincie en thema</h3>
+                        <p class="card-description-modern">Filter kastelen op provincie, regio of thema: kindvriendelijk, aan de kust, in de Ardennen en meer.</p>
                     </div>
                 </div>
                 
                 <div class="card-modern">
                     <div class="card-content-modern">
-                        <div class="feature-icon">📚</div>
-                        <h3 class="card-title-modern">Rijke Geschiedenis</h3>
-                        <p class="card-description-modern">Leer over de fascinerende geschiedenis en architectuur van elk kasteel.</p>
+                        <div style="width: 48px; height: 48px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title-modern">Plan je volgende uitstap</h3>
+                        <p class="card-description-modern">Vind openingsuren, toegangsprijzen en praktische tips zodat je bezoek vlot verloopt.</p>
                     </div>
                 </div>
             </div>
