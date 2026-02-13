@@ -41,6 +41,24 @@
   --muted: #6B675F;             /* = text-light */
 }
 
+
+/* Classes d alternance de fond pour les sections */
+.section-bg-white {
+  background-color: #FFFFFF;
+}
+
+.section-bg-cream {
+  background-color: #F9F6F1;
+}
+/* Classes d'alternance de fond pour les sections */
+.section-bg-white {
+  background-color: #FFFFFF;
+}
+
+.section-bg-cream {
+  background-color: #F9F6F1;
+}
+
 /* Reset et base */
 * {
   margin: 0;
@@ -4576,3 +4594,120 @@ img[src*="placeholder"] {
         transform: translateX(-50%) translateY(-5px);
     }
 }
+
+/* ========== AMÉLIORATIONS VISUELLES - HIÉRARCHIE ET RYTHME ========== */
+
+/* Section contrastée (fond légèrement plus chaud) */
+.section-contrast {
+  background: #F7F4EF;
+}
+
+/* Section blanche */
+.section-white {
+  background: #FFFFFF;
+}
+
+/* Eyebrow (micro-sous-titre éditorial) */
+.section-eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #A18A68;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Cartes améliorées avec ombre douce */
+.card-enhanced {
+  background: #FFFFFF;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.card-enhanced:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+/* Carte mise en avant */
+.card-featured {
+  border-color: #C89A3B;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+  position: relative;
+}
+
+.card-featured:hover {
+  box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+}
+
+/* Badge pour carte featured */
+.card-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(200,154,59,0.12);
+  color: #8A6B28;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/* Typographie améliorée - H2 plus impactants */
+.section-contrast h2,
+.section-white h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+/* H3 dans les cartes */
+.card-enhanced h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+/* Paragraphes dans les cartes */
+.card-enhanced p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+/* Boutons dans les cartes - plus marqués */
+.card-enhanced .btn-modern {
+  margin-top: auto;
+}
+
+/* Grille de cartes améliorée */
+.cards-grid-enhanced {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Section padding uniforme */
+.section-padded {
+  padding: 4rem 0;
+}
+
+/* Intro de section */
+.section-intro {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+

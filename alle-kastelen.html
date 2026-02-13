@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alle kastelen in België (A–Z) | kastelenbelgie.be</title>
+<meta content="Alfabetische lijst van alle kastelen in België. Ontdek meer dan 222 kastelen per provincie met praktische informatie en geschiedenis." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<style>
+.alphabet-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 1.5rem;
+    background: var(--cream);
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    position: sticky;
+    top: 80px;
+    z-index: 100;
+}
+.alphabet-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 8px;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+    transition: all 0.2s;
+    border: 1px solid var(--border);
+}
+.alphabet-link:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+.letter-section {
+    margin-bottom: 3rem;
+    scroll-margin-top: 150px;
+}
+.letter-heading {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.castle-list {
+    display: grid;
+    gap: 0.75rem;
+}
+.castle-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    transition: all 0.2s;
+}
+.castle-list-item:hover {
+    border-color: var(--primary);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.castle-link {
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+}
+.castle-link:hover {
+    color: var(--primary);
+}
+.castle-meta {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+.annuaire-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+.annuaire-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.stat-item {
+    text-align: center;
+}
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    display: block;
+}
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+@media (max-width: 768px) {
+    .alphabet-link {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+    .castle-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+}
+</style>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+<div class="container">
+<div class="nav-container">
+<a class="logo" href="index.html">
+<div class="logo-icon">🏰</div>
+                    kastelenbelgie
+                </a>
+<div class="nav-menu">
+<a class="nav-link" href="provinces.html">Kastelen</a>
+<a class="nav-link active" href="alle-kastelen.html">A–Z</a>
+<a class="nav-link" href="blog.html">Blog</a>
+<a class="nav-link" href="contact.html">Contact</a>
+<div class="search-box">
+<input class="search-input" id="search-input" placeholder="Zoek kasteel..." type="text"/>
+</div>
+</div>
+</div>
+</div>
+</nav>
+
+<!-- Breadcrumbs -->
+<nav aria-label="Breadcrumb" class="breadcrumbs">
+<div class="breadcrumbs-container">
+<div class="breadcrumbs-nav">
+<a href="index.html">Home</a>
+<span class="breadcrumbs-separator">›</span>
+<span class="breadcrumbs-current">Alle kastelen (A–Z)</span>
+</div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="page-hero" style="background: linear-gradient(135deg, var(--cream) 0%, white 100%); padding: 3rem 0;">
+<div class="container">
+<h1 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem;">Alle kastelen in België (A–Z)</h1>
+<div class="annuaire-intro">
+<p>Ontdek de volledige alfabetische lijst van alle kastelen op kastelenbelgie.be. Van middeleeuwse burchten tot elegante landhuizen, van Vlaanderen tot Wallonië.</p>
+</div>
+<div class="annuaire-stats">
+<div class="stat-item">
+<span class="stat-number">222</span>
+<span class="stat-label">Kastelen</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">11</span>
+<span class="stat-label">Provincies</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">4</span>
+<span class="stat-label">Letters</span>
+</div>
+</div>
+<p style="text-align: center; margin-top: 1rem;">
+<a href="provinces.html" class="btn-modern btn-secondary-modern">📍 Bekijk kastelen per provincie</a>
+</p>
+</div>
+</section>
+
+<!-- Alphabet Navigation -->
+<section style="padding: 0 0 2rem;">
+<div class="container">
+<div class="alphabet-nav">
+<a href="#B" class="alphabet-link">B</a> <a href="#C" class="alphabet-link">C</a> <a href="#H" class="alphabet-link">H</a> <a href="#K" class="alphabet-link">K</a>
+</div>
+</div>
+</section>
+
+<!-- Castle List -->
+<section style="padding: 0 0 4rem;">
+<div class="container">
+
+<section class="letter-section" id="B">
+<h2 class="letter-heading">B</h2>
+<div class="castle-list">
+<div class="castle-list-item">
+<a href="burcht-reuland-reuland-burg-reuland.html" class="castle-link">Burcht reuland</a>
+<span class="castle-meta">Luik – Burg-Reuland</span>
+</div>
+</div>
+</section>
+
+
+<section class="letter-section" id="C">
+<h2 class="letter-heading">C</h2>
+<div class="castle-list">
+<div class="castle-list-item">
+<a href="citadel-van-hoei-hoei.html" class="castle-link">Citadel van hoei</a>
+<span class="castle-meta">Luik – Huy</span>
+</div>
+</div>
+</section>
+
+
+<section class="letter-section" id="H">
+<h2 class="letter-heading">H</h2>
+<div class="castle-list">
+<div class="castle-list-item">
+<a href="hof-te-melis-lippelo.html" class="castle-link">Hof te melis</a>
+<span class="castle-meta">Luxemburg – Puurs-Sint-Amands</span>
+</div>
+<div class="castle-list-item">
+<a href="hof-ter-borght-westmeerbeek.html" class="castle-link">Hof ter borght</a>
+<span class="castle-meta">Luik – Hulshout</span>
+</div>
+<div class="castle-list-item">
+<a href="hof-van-liere-zandhoven.html" class="castle-link">Hof van Liere</a>
+<span class="castle-meta">Antwerpen – Zandhoven</span>
+</div>
+<div class="castle-list-item">
+<a href="hof-van-ringen-lier.html" class="castle-link">Hof van ringen</a>
+<span class="castle-meta">Antwerpen – Lier</span>
+</div>
+<div class="castle-list-item">
+<a href="hof-van-roosendael-merksem.html" class="castle-link">Hof van roosendael</a>
+<span class="castle-meta">Antwerpen – Antwerpen</span>
+</div>
+</div>
+</section>
+
+
+<section class="letter-section" id="K">
+<h2 class="letter-heading">K</h2>
+<div class="castle-list">
+<div class="castle-list-item">
+<a href="kasteel-altembrouck-s-gravenvoeren-te-voeren.html" class="castle-link">Kasteel altembrouck</a>
+<span class="castle-meta">Limburg – Voeren</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-arendsnest-edegem.html" class="castle-link">Kasteel arendsnest</a>
+<span class="castle-meta">Antwerpen – Edegem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-baelen-hendrik-kapelle.html" class="castle-link">Kasteel baelen</a>
+<span class="castle-meta">Antwerpen – 3740</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-bayard-dhuy.html" class="castle-link">Kasteel bayard</a>
+<span class="castle-meta">Namen – Éghezée</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-beauregard-froyennes.html" class="castle-link">Kasteel Beauregard</a>
+<span class="castle-meta">Luik – Thuin</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-befferhof-bonheiden.html" class="castle-link">Kasteel Befferhof</a>
+<span class="castle-meta">Antwerpen – Bonheiden</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-belvedere-te-laken-brussel.html" class="castle-link">Kasteel belvedere</a>
+<span class="castle-meta">Brussel – Wijnegem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-blauw-huys-drongen-gent.html" class="castle-link">Kasteel blauw huys</a>
+<span class="castle-meta">Oost-Vlaanderen – Gent</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-blauwhuis-izegem.html" class="castle-link">Kasteel blauwhuis</a>
+<span class="castle-meta">West-Vlaanderen – Izegem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-boeckenberg-deurne.html" class="castle-link">Kasteel boeckenberg</a>
+<span class="castle-meta">Luxemburg – Jodoigne</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-borghoven-piringen-bij-tongeren.html" class="castle-link">Kasteel borghoven</a>
+<span class="castle-meta">Limburg – Tongeren-Borgloon</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-borgwal-gavere.html" class="castle-link">Kasteel borgwal</a>
+<span class="castle-meta">Oost-Vlaanderen – Gavere</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-borluut-sint-denijs-westrem.html" class="castle-link">Kasteel borluut</a>
+<span class="castle-meta">Henegouwen – Gent</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-borrekens-vorselaar.html" class="castle-link">Kasteel borrekens</a>
+<span class="castle-meta">Antwerpen – Vorselaar</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-bouckenborgh-merksem.html" class="castle-link">Kasteel bouckenborgh</a>
+<span class="castle-meta">Oost-Vlaanderen – Antwerpen</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-brunsode-tilff.html" class="castle-link">Kasteel brunsode</a>
+<span class="castle-meta">Henegouwen – Esneux</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-cantecroy-mortsel.html" class="castle-link">Kasteel cantecroy</a>
+<span class="castle-meta">Antwerpen – Mortsel</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-carolinaberg-stokkem.html" class="castle-link">Kasteel carolinaberg</a>
+<span class="castle-meta">Limburg – Dilsen-Stokkem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-casier-waregem.html" class="castle-link">Kasteel casier</a>
+<span class="castle-meta">West-Vlaanderen – Kruisem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-claeys-bouuaert-mariakerke.html" class="castle-link">Kasteel claeys bouuaert</a>
+<span class="castle-meta">Antwerpen – Gent</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-cortewalle-beveren-waas.html" class="castle-link">Kasteel cortewalle</a>
+<span class="castle-meta">Antwerpen – Beveren-Kruibeke-Zwijndrecht</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-daalbroek-rekem.html" class="castle-link">Kasteel daalbroek</a>
+<span class="castle-meta">Henegouwen – Lanaken</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-daspremont-lynden-oud-rekem-gemeente-lanaken.html" class="castle-link">Kasteel daspremont lynden</a>
+<span class="castle-meta">Limburg – Lanaken</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-de-bist-ekeren.html" class="castle-link">Kasteel de bist</a>
+<span class="castle-meta">Oost-Vlaanderen – Nijlen</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-de-blauwe-toren-varsenare.html" class="castle-link">Kasteel de blauwe toren</a>
+<span class="castle-meta">Antwerpen – Jabbeke</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-de-campagne-drongen-gent.html" class="castle-link">Kasteel de campagne</a>
+<span class="castle-meta">Oost-Vlaanderen – Gent</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-de-commanderij-sint-pieters-voeren.html" class="castle-link">Kasteel de commanderij</a>
+<span class="castle-meta">Limburg – Voeren</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-de-faille-brugge.html" class="castle-link">Kasteel de faille</a>
+<span class="castle-meta">West-Vlaanderen – Brugge</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-de-hoof-teuven-te-voeren.html" class="castle-link">Kasteel de hoof teuven</a>
+<span class="castle-meta">Limburg – Voeren</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-de-marnix-te-overijse.html" class="castle-link">Kasteel de marnix</a>
+<span class="castle-meta">Henegouwen – Bornem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-de-merode-westerlo.html" class="castle-link">Kasteel de merode</a>
+<span class="castle-meta">Antwerpen – Westerlo</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-de-merode-te-dilbeek.html" class="castle-link">Kasteel de merode</a>
+<span class="castle-meta">Vlaams-Brabant – Westerlo</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-de-motte-groot-gelmen-bij-sint-truiden.html" class="castle-link">Kasteel de motte groot gelmen</a>
+<span class="castle-meta">Limburg – Sint-Truiden</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-de-pelichy-gent.html" class="castle-link">Kasteel de pelichy</a>
+<span class="castle-meta">Oost-Vlaanderen – Gent</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-de-renesse-oostmalle.html" class="castle-link">Kasteel de renesse</a>
+<span class="castle-meta">Antwerpen – Malle</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-de-rivieren-te-ganshoren.html" class="castle-link">Kasteel de rivieren</a>
+<span class="castle-meta">Brussel – Ganshoren</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-des-cailloux-geldenaken.html" class="castle-link">Kasteel des cailloux</a>
+<span class="castle-meta">Waals-Brabant – Jodoigne</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-diepenbroeck-lovendegem.html" class="castle-link">Kasteel diepenbroeck</a>
+<span class="castle-meta">Oost-Vlaanderen – Zedelgem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-diependael-elewijt.html" class="castle-link">Kasteel diependael</a>
+<span class="castle-meta">Antwerpen – Aartselaar</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-doverschie-te-grimbergen.html" class="castle-link">Kasteel doverschie</a>
+<span class="castle-meta">Vlaams-Brabant – Grimbergen</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-drie-koningen-beernem.html" class="castle-link">Kasteel drie koningen</a>
+<span class="castle-meta">West-Vlaanderen – Beernem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-du-lac-genval.html" class="castle-link">Kasteel du lac genval</a>
+<span class="castle-meta">Brussel – Rixensart</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-duras-te-duras.html" class="castle-link">Kasteel duras</a>
+<span class="castle-meta">Limburg – Sint-Truiden</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-edelhof-munsterbilzen.html" class="castle-link">Kasteel edelhof</a>
+<span class="castle-meta">Limburg – Bilzen-Hoeselt</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-en-park-ter-rijst-te-heikruis.html" class="castle-link">Kasteel en park</a>
+<span class="castle-meta">Namen – Namur</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-engelhof-houthalen.html" class="castle-link">Kasteel engelhof</a>
+<span class="castle-meta">Limburg – Houthalen-Helchteren</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-eyneburg-hergenrath.html" class="castle-link">Kasteel eyneburg</a>
+<span class="castle-meta">Henegouwen – Kelmis</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-fallon-de-keyser-destelbergen.html" class="castle-link">Kasteel fallon de keyser</a>
+<span class="castle-meta">Oost-Vlaanderen – Destelbergen</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-gavergracht-vinderhoute.html" class="castle-link">Kasteel gavergracht</a>
+<span class="castle-meta">Antwerpen – Antwerpen</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-grevenbroek-achel.html" class="castle-link">Kasteel grevenbroek</a>
+<span class="castle-meta">Limburg – Hamont-Achel</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-groenendaal-merksem.html" class="castle-link">Kasteel groenendaal</a>
+<span class="castle-meta">Antwerpen – Antwerpen</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-groenendaal-te-waltwilder-gemeente-bilzen.html" class="castle-link">Kasteel groenendaal</a>
+<span class="castle-meta">Limburg – Hoeilaart</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-groenveld-te-grimbergen.html" class="castle-link">Kasteel groenveld</a>
+<span class="castle-meta">Vlaams-Brabant – ML Baarn</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-hof-ter-saksen-beveren-waas.html" class="castle-link">Kasteel hof ter saksen</a>
+<span class="castle-meta">Antwerpen – Beveren-Kruibeke-Zwijndrecht</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-hoogveld-vliermaal.html" class="castle-link">Kasteel hoogveld</a>
+<span class="castle-meta">Antwerpen – Zedelgem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-hoogveld-veldegem.html" class="castle-link">Kasteel hoogveld</a>
+<span class="castle-meta">Namen – Zedelgem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-hovorst-viersel.html" class="castle-link">Kasteel hovorst</a>
+<span class="castle-meta">Vlaams-Brabant – Zandhoven</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-hulsberg-borgloon.html" class="castle-link">Kasteel hulsberg</a>
+<span class="castle-meta">Limburg – Tongeren-Borgloon</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-ingelmunster-ingelmunster.html" class="castle-link">Kasteel ingelmunster</a>
+<span class="castle-meta">West-Vlaanderen – Ingelmunster</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-isschot-itegem.html" class="castle-link">Kasteel isschot</a>
+<span class="castle-meta">Luik – Heist-op-den-Berg</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-karreveld-te-sint-jans-molenbeek.html" class="castle-link">Kasteel karreveld</a>
+<span class="castle-meta">Antwerpen – Sint-Jans-Molenbeek</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-kijckuit-wijnegem.html" class="castle-link">Kasteel kijckuit</a>
+<span class="castle-meta">Antwerpen – Amay</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-la-motte-te-sint-ulriks-kapelle.html" class="castle-link">Kasteel la motte</a>
+<span class="castle-meta">Antwerpen – Dilbeek</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-laide-fagne-steinbach.html" class="castle-link">Kasteel laide</a>
+<span class="castle-meta">Luik – Amay</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-laresteen-lovendegem.html" class="castle-link">Kasteel Laresteen</a>
+<span class="castle-meta">Oost-Vlaanderen – Dilsen-Stokkem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-le-fy-esneux.html" class="castle-link">Kasteel le fy</a>
+<span class="castle-meta">Luik – Esneux</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-leva-alken.html" class="castle-link">Kasteel leva</a>
+<span class="castle-meta">Limburg – Alken</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-lhirondelle-oteppe.html" class="castle-link">Kasteel lhirondelle</a>
+<span class="castle-meta">Namen – Burdinne</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-lozer-lozer-kruishoutem.html" class="castle-link">Kasteel lozer</a>
+<span class="castle-meta">Antwerpen – Kruisem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-mariahove-bellem.html" class="castle-link">Kasteel mariahove</a>
+<span class="castle-meta">Antwerpen – Aalter</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-marnix-de-sainte-aldegonde-bornem.html" class="castle-link">Kasteel marnix de sainte aldegonde</a>
+<span class="castle-meta">Antwerpen – Bornem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-maxburg-meer.html" class="castle-link">Kasteel maxburg</a>
+<span class="castle-meta">Luik – Hoogstraten</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-meerlenhof-hoboken.html" class="castle-link">Kasteel meerlenhof</a>
+<span class="castle-meta">Antwerpen – Antwerpen</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-miranda-celles.html" class="castle-link">Kasteel miranda</a>
+<span class="castle-meta">Namen – Houyet</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-mohimont-villers-devant-orval.html" class="castle-link">Kasteel Mohimont</a>
+<span class="castle-meta">Luik – Liège</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-mussenborg-edegem.html" class="castle-link">Kasteel mussenborg</a>
+<span class="castle-meta">Antwerpen – Edegem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-nieuwland-te-aarschot.html" class="castle-link">Kasteel nieuwland</a>
+<span class="castle-meta">Vlaams-Brabant – Aarschot</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-ommerstein-te-rotem-bij-dilsen.html" class="castle-link">Kasteel ommerstein</a>
+<span class="castle-meta">Limburg – Dilsen-Stokkem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-oude-kluis-gent.html" class="castle-link">Kasteel oude kluis</a>
+<span class="castle-meta">Oost-Vlaanderen – Gent</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-petite-somme-petite-somme.html" class="castle-link">Kasteel Petite-Somme</a>
+<span class="castle-meta">Namen – Steenokkerzeel</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-pulhof-wijnegem.html" class="castle-link">Kasteel Pulhof</a>
+<span class="castle-meta">Antwerpen – Wijnegem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-puyenbrug-domein-puyenbroeck-wachtebeke.html" class="castle-link">Kasteel puyenbrug</a>
+<span class="castle-meta">Oost-Vlaanderen – Lochristi</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-ravenhof-torhout-torhout.html" class="castle-link">Kasteel ravenhof</a>
+<span class="castle-meta">West-Vlaanderen – Stabroek</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-reinhardstein-burg-metternich-te-weismes.html" class="castle-link">Kasteel reinhardstein</a>
+<span class="castle-meta">Luxemburg – Waimes</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-roos-waasmunster.html" class="castle-link">Kasteel roos</a>
+<span class="castle-meta">Limburg – Waasmunster</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-rose-orp-le-petit.html" class="castle-link">Kasteel rose</a>
+<span class="castle-meta">Waals-Brabant – Orp-Jauche</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-rouge-bas-oha-wanze.html" class="castle-link">Kasteel rouge bas</a>
+<span class="castle-meta">Luik – Namur</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-saint-pierre-beauraing.html" class="castle-link">Kasteel saint pierre</a>
+<span class="castle-meta">Namen – Sombreffe</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-scheldevelde-de-pinte.html" class="castle-link">Kasteel scheldevelde</a>
+<span class="castle-meta">Oost-Vlaanderen – Nazareth-De Pinte</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-selsaete-wommelgem.html" class="castle-link">Kasteel Selsaete</a>
+<span class="castle-meta">Antwerpen – Wommelgem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-slotendries-oostakker.html" class="castle-link">Kasteel slotendries</a>
+<span class="castle-meta">Waals-Brabant – Gent</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-solvay-kasteel-van-ter-hulpen-terhulpen.html" class="castle-link">Kasteel solvay</a>
+<span class="castle-meta">Antwerpen – La Hulpe</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-stas-de-richelle-heusden.html" class="castle-link">Kasteel stas de richelle</a>
+<span class="castle-meta">Limburg – Destelbergen</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-t-hooghe-kortrijk.html" class="castle-link">Kasteel t hooghe</a>
+<span class="castle-meta">West-Vlaanderen – Kortrijk</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-ten-bieze-beerlegem.html" class="castle-link">Kasteel ten bieze</a>
+<span class="castle-meta">Henegouwen – Zwalm</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-ter-beken-mariakerke-gent.html" class="castle-link">Kasteel ter beken</a>
+<span class="castle-meta">Oost-Vlaanderen – Gent</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-ter-borcht-meulebeke.html" class="castle-link">Kasteel ter borcht</a>
+<span class="castle-meta">West-Vlaanderen – Tielt</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-ter-elst-duffel.html" class="castle-link">Kasteel ter elst</a>
+<span class="castle-meta">Antwerpen – Duffel</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-ter-leyen-boekhoute.html" class="castle-link">Kasteel ter leyen</a>
+<span class="castle-meta">Oost-Vlaanderen – Assenede</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-ter-lucht-sint-andries.html" class="castle-link">Kasteel ter lucht</a>
+<span class="castle-meta">Luik – Ans</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-ter-meeren-sterrebeek-zaventem.html" class="castle-link">Kasteel ter meeren</a>
+<span class="castle-meta">Vlaams-Brabant – Zaventem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-ter-motten-te-dilsen.html" class="castle-link">Kasteel ter motten</a>
+<span class="castle-meta">Limburg – Dilsen-Stokkem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-terlaemen-te-viversel-zolder-gemeente-heusden-zolder.html" class="castle-link">Kasteel terlaemen</a>
+<span class="castle-meta">Limburg – Heusden-Zolder</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-terlinden-aalst.html" class="castle-link">Kasteel terlinden</a>
+<span class="castle-meta">Oost-Vlaanderen – Edegem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-tudor-sint-andries.html" class="castle-link">Kasteel tudor</a>
+<span class="castle-meta">Henegouwen – Brugge</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-altena-kruibeke.html" class="castle-link">Kasteel van altena</a>
+<span class="castle-meta">Oost-Vlaanderen – Beveren-Kruibeke-Zwijndrecht</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-altena-kontich.html" class="castle-link">Kasteel van altena</a>
+<span class="castle-meta">Antwerpen – Beveren-Kruibeke-Zwijndrecht</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-attre-attre.html" class="castle-link">Kasteel van Attre</a>
+<span class="castle-meta">Henegouwen – Brugelette</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-awans-awans.html" class="castle-link">Kasteel van awans</a>
+<span class="castle-meta">Luik – Ans</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-baronville-baronville-belgie.html" class="castle-link">Kasteel van baronville</a>
+<span class="castle-meta">Luik – Beauraing</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-beauraing-beauraing.html" class="castle-link">Kasteel van beauraing</a>
+<span class="castle-meta">Namen – Beauraing</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-beervelde-beervelde.html" class="castle-link">Kasteel van beervelde</a>
+<span class="castle-meta">Antwerpen – Lochristi</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-berlare-berlare.html" class="castle-link">Kasteel van berlare</a>
+<span class="castle-meta">Oost-Vlaanderen – Berlare</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-beusdael-bij-sippenaeken.html" class="castle-link">Kasteel van beusdael</a>
+<span class="castle-meta">Limburg – Plombières</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-bever-te-strombeek-bever.html" class="castle-link">Kasteel van bever</a>
+<span class="castle-meta">Antwerpen – Grimbergen</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-biez-peruwelz.html" class="castle-link">Kasteel van biez</a>
+<span class="castle-meta">Henegouwen – Namur</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-blekkom-loksbergen.html" class="castle-link">Kasteel van blekkom</a>
+<span class="castle-meta">Luxemburg – Halen</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-bokrijk-genk.html" class="castle-link">Kasteel van bokrijk</a>
+<span class="castle-meta">Limburg – Genk</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-bouchout-te-meise.html" class="castle-link">Kasteel van bouchout</a>
+<span class="castle-meta">Vlaams-Brabant – Meise</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-boussu-boussu.html" class="castle-link">Kasteel van Boussu</a>
+<span class="castle-meta">Henegouwen – Boussu</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-braine-le-chateau-kasteelbrakel.html" class="castle-link">Kasteel van braine le chateau</a>
+<span class="castle-meta">Waals-Brabant – Braine-le-Château</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-brasschaat-brasschaat.html" class="castle-link">Kasteel van brasschaat</a>
+<span class="castle-meta">Antwerpen – Brasschaat</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-coloma-te-sint-pieters-leeuw.html" class="castle-link">Kasteel van coloma</a>
+<span class="castle-meta">Vlaams-Brabant – Sint-Pieters-Leeuw</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-corroy-le-chateau-corroy-le-chateau.html" class="castle-link">Kasteel van corroy le chateau</a>
+<span class="castle-meta">Luxemburg – Gembloux</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-deulin-deulin-fronville.html" class="castle-link">Kasteel van Deulin</a>
+<span class="castle-meta">Luxemburg – Hotton</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-dieupart-aywaille.html" class="castle-link">Kasteel van Dieupart</a>
+<span class="castle-meta">Luik – Aywaille</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-durbuy-durbuy.html" class="castle-link">Kasteel van Durbuy</a>
+<span class="castle-meta">Luxemburg – Durbuy</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-elverdinge-ieper.html" class="castle-link">Kasteel van elverdinge</a>
+<span class="castle-meta">West-Vlaanderen – Ieper</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-fosteau-leers-et-fosteau.html" class="castle-link">Kasteel van Fosteau</a>
+<span class="castle-meta">Namen – Thuin</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-fougeraie-te-ukkel.html" class="castle-link">Kasteel van fougeraie</a>
+<span class="castle-meta">Luik – Amay</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-freyr-freyr.html" class="castle-link">Kasteel van Freyr</a>
+<span class="castle-meta">Namen – Hastière</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-froidcourt-stoumont.html" class="castle-link">Kasteel van froidcourt</a>
+<span class="castle-meta">Luik – Stoumont</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-genval-rixensart.html" class="castle-link">Kasteel van genval</a>
+<span class="castle-meta">Waals-Brabant – Rixensart</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-gravenhof-te-dworp.html" class="castle-link">Kasteel van gravenhof</a>
+<span class="castle-meta">Waals-Brabant – Beersel</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-habay-la-neuve-habay-la-neuve.html" class="castle-link">Kasteel van Habay-la-Neuve</a>
+<span class="castle-meta">Waals-Brabant – Habay</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-haltinne-haltinne.html" class="castle-link">Kasteel van haltinne</a>
+<span class="castle-meta">Waals-Brabant – Gesves</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-haversin-serinchamps.html" class="castle-link">Kasteel van haversin</a>
+<span class="castle-meta">Limburg – Ciney</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-heetvelde-te-oetingen.html" class="castle-link">Kasteel van heetvelde</a>
+<span class="castle-meta">Vlaams-Brabant – Pajottegem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-hermalle-sous-huy-hermalle-sous-huy-engis.html" class="castle-link">Kasteel van hermalle sous huy</a>
+<span class="castle-meta">Luik – Amay</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-jeanne-de-merode-nieuw-kasteel-westerlo.html" class="castle-link">Kasteel van jeanne</a>
+<span class="castle-meta">Antwerpen – Lede</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-julius-caesar-doornik.html" class="castle-link">Kasteel van julius caesar</a>
+<span class="castle-meta">Brussel – Dilbeek</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-kruishoutem-kruishoutem.html" class="castle-link">Kasteel van kruishoutem</a>
+<span class="castle-meta">Namen – Kruisem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-la-berliere-houtaing.html" class="castle-link">Kasteel van La Berlière</a>
+<span class="castle-meta">Antwerpen – Érezée</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-la-roche-en-ardenne-la-roche-en-ardenne.html" class="castle-link">Kasteel van La Roche-en-Ardenne</a>
+<span class="castle-meta">Luik – La Roche-en-Ardenne</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-leeuwergem-leeuwergem-zottegem.html" class="castle-link">Kasteel van leeuwergem</a>
+<span class="castle-meta">Oost-Vlaanderen – Zottegem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-limont-donceel.html" class="castle-link">Kasteel van limont</a>
+<span class="castle-meta">Limburg – Donceel</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-longchamps-longchamps-bertogne.html" class="castle-link">Kasteel van longchamps</a>
+<span class="castle-meta">Luxemburg – Waremme</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-melveren-sint-truiden.html" class="castle-link">Kasteel van Melveren</a>
+<span class="castle-meta">Onbekend – Sint-Truiden</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-mirwart-mirwart-saint-hubert.html" class="castle-link">Kasteel van Mirwart</a>
+<span class="castle-meta">Luxemburg – Saint-Hubert</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-moere-le-bon-sejour-moere.html" class="castle-link">Kasteel van moere</a>
+<span class="castle-meta">Waals-Brabant – Gistel</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-moerkerke-moerkerke.html" class="castle-link">Kasteel van moerkerke</a>
+<span class="castle-meta">Vlaams-Brabant – Damme</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-mombeek-hasselt.html" class="castle-link">Kasteel van mombeek</a>
+<span class="castle-meta">Limburg – Hasselt</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-montaigle-falaen.html" class="castle-link">Kasteel van montaigle</a>
+<span class="castle-meta">Luxemburg – Onhaye</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-montjardin-sougne-remouchamps.html" class="castle-link">Kasteel van montjardin</a>
+<span class="castle-meta">Limburg – Aywaille</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-moriensart-ceroux-mousty.html" class="castle-link">Kasteel van moriensart</a>
+<span class="castle-meta">Waals-Brabant – Ottignies-Louvain-la-Neuve</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-mouffrin-natoye.html" class="castle-link">Kasteel van mouffrin</a>
+<span class="castle-meta">Waals-Brabant – Genappe</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-neigem-meerbeke.html" class="castle-link">Kasteel van neigem</a>
+<span class="castle-meta">Vlaams-Brabant – Ninove</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-nieuwenhoven-te-sint-truiden.html" class="castle-link">Kasteel van nieuwenhoven</a>
+<span class="castle-meta">Limburg – Sint-Truiden</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-nokere-nokere-kruishoutem.html" class="castle-link">Kasteel van nokere</a>
+<span class="castle-meta">Antwerpen – Kruisem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-obsinnich-remersdaal-te-voeren.html" class="castle-link">Kasteel van obsinnich remersdaal te voeren</a>
+<span class="castle-meta">Limburg – Voeren</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-olsene-olsene-zulte.html" class="castle-link">Kasteel van olsene</a>
+<span class="castle-meta">West-Vlaanderen – Zulte</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-orval-villers-devant-orval.html" class="castle-link">Kasteel van Orval</a>
+<span class="castle-meta">Luxemburg – Florenville</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-porcheresse-daverdisse.html" class="castle-link">Kasteel van Porcheresse</a>
+<span class="castle-meta">Luxemburg – Daverdisse</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-regelsbrugge-aalst.html" class="castle-link">Kasteel van regelsbrugge</a>
+<span class="castle-meta">Oost-Vlaanderen – Aalst</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-rethy-retie.html" class="castle-link">Kasteel van rethy</a>
+<span class="castle-meta">Antwerpen – Tongeren-Borgloon</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-rivieren-te-aarschot.html" class="castle-link">Kasteel van rivieren</a>
+<span class="castle-meta">Vlaams-Brabant – Aarschot</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-rixensart-rixensart.html" class="castle-link">Kasteel van rixensart</a>
+<span class="castle-meta">Waals-Brabant – Rixensart</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-roborst-roborst.html" class="castle-link">Kasteel van roborst</a>
+<span class="castle-meta">Henegouwen – Fontaine-l'Évêque</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-rond-chene-esneux.html" class="castle-link">Kasteel van rond</a>
+<span class="castle-meta">Luik – Namur</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-roumont-roumont.html" class="castle-link">Kasteel van Roumont</a>
+<span class="castle-meta">Antwerpen – Charleroi</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-rullingen-te-kuttekoven-gemeente-borgloon.html" class="castle-link">Kasteel van rullingen</a>
+<span class="castle-meta">Limburg – Tongeren-Borgloon</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-s-gravenwezel-s-gravenwezel.html" class="castle-link">Kasteel van s gravenwezel</a>
+<span class="castle-meta">Luxemburg – Schilde</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-saffelberg-gooik.html" class="castle-link">Kasteel van saffelberg</a>
+<span class="castle-meta">Vlaams-Brabant – Pajottegem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-schoonhoven-te-aarschot.html" class="castle-link">Kasteel van schoonhoven</a>
+<span class="castle-meta">Vlaams-Brabant – Aarschot</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-schoten-schoten.html" class="castle-link">Kasteel van schoten</a>
+<span class="castle-meta">Antwerpen – Schoten</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-seneffe-seneffe.html" class="castle-link">Kasteel van seneffe</a>
+<span class="castle-meta">Henegouwen – Seneffe</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-seraing-le-chateau-seraing-le-chateau.html" class="castle-link">Kasteel van seraing</a>
+<span class="castle-meta">Luxemburg – Verlaine</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-skeuvre-natoye.html" class="castle-link">Kasteel van skeuvre</a>
+<span class="castle-meta">Waals-Brabant – Hamois</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-sohier-sohier.html" class="castle-link">Kasteel van Sohier</a>
+<span class="castle-meta">Luik – Sohier-Wellin</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-sombreffe-sombreffe.html" class="castle-link">Kasteel van sombreffe</a>
+<span class="castle-meta">Namen – Sombreffe</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-spiere-spiere.html" class="castle-link">Kasteel van Spiere</a>
+<span class="castle-meta">West-Vlaanderen – Spiere-Helkijn</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-spontin-spontin.html" class="castle-link">Kasteel van spontin</a>
+<span class="castle-meta">Henegouwen – Yvoir</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-strijtem-strijtem.html" class="castle-link">Kasteel van strijtem</a>
+<span class="castle-meta">Oost-Vlaanderen – Roosdaal</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-tavigny-tavigny-houffalize.html" class="castle-link">Kasteel van Tavigny</a>
+<span class="castle-meta">Luik</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-templeuve-templeuve.html" class="castle-link">Kasteel van Templeuve</a>
+<span class="castle-meta">Henegouwen – Tournai</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-tieghem-de-ten-berghe-mariakerke.html" class="castle-link">Kasteel van tieghem</a>
+<span class="castle-meta">Brussel – Dilbeek</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-tillegem-sint-michiels.html" class="castle-link">Kasteel van Tillegem</a>
+<span class="castle-meta">West-Vlaanderen – Sint-Michiels (Brugge)</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-veerle-laakdal.html" class="castle-link">Kasteel van veerle</a>
+<span class="castle-meta">Antwerpen – Laakdal</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-veulen-veulen.html" class="castle-link">Kasteel van veulen</a>
+<span class="castle-meta">Namen – Heers</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-vianden-vianden.html" class="castle-link">Kasteel van vianden</a>
+<span class="castle-meta">Antwerpen – Vianden</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-villers-schoten.html" class="castle-link">Kasteel van villers schoten</a>
+<span class="castle-meta">Antwerpen – Schoten</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-voneche-voneche.html" class="castle-link">Kasteel van Voneche</a>
+<span class="castle-meta">Luxemburg – Beauraing</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-voorde-voorde.html" class="castle-link">Kasteel van voorde</a>
+<span class="castle-meta">Vlaams-Brabant – Ninove</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-vorst-meerlaer-laakdal.html" class="castle-link">Kasteel van vorst</a>
+<span class="castle-meta">Luik – Huldenberg</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-veves-te-celles.html" class="castle-link">Kasteel van Vêves</a>
+<span class="castle-meta">Namen – Houyet</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-wakken-wakken.html" class="castle-link">Kasteel van wakken</a>
+<span class="castle-meta">West-Vlaanderen – Dentergem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-waleffe-les-waleffes.html" class="castle-link">Kasteel van waleffe</a>
+<span class="castle-meta">Luik – Faimes</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-waroux-alleur.html" class="castle-link">Kasteel van waroux</a>
+<span class="castle-meta">Luxemburg – Ans</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-wedergrate-ninove.html" class="castle-link">Kasteel van wedergrate</a>
+<span class="castle-meta">Oost-Vlaanderen – Gent</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-wegimont-ayeneux-soumagne.html" class="castle-link">Kasteel van wegimont</a>
+<span class="castle-meta">Luik – Liège</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-weillen-weilen.html" class="castle-link">Kasteel van weillen</a>
+<span class="castle-meta">Namen – Onhaye</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-wemmel-te-wemmel.html" class="castle-link">Kasteel van wemmel</a>
+<span class="castle-meta">Vlaams-Brabant – Wemmel</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-westmalle-westmalle.html" class="castle-link">Kasteel van westmalle</a>
+<span class="castle-meta">Antwerpen – Malle</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-wideux-hasselt.html" class="castle-link">Kasteel van wideux</a>
+<span class="castle-meta">Limburg – Hasselt</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-wijer-te-wijer-gemeente-nieuwerkerken.html" class="castle-link">Kasteel van wijer</a>
+<span class="castle-meta">Limburg – Nieuwerkerken</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-wimmertingen-wimmertingen.html" class="castle-link">Kasteel van wimmertingen</a>
+<span class="castle-meta">Limburg – Hasselt</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-wippelgem-wippelgem.html" class="castle-link">Kasteel van Wippelgem</a>
+<span class="castle-meta">Antwerpen – Evergem</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-wodemont-neufchateau-luik.html" class="castle-link">Kasteel van wodemont</a>
+<span class="castle-meta">Luik – Herk-de-Stad</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-van-zellaer-bonheiden.html" class="castle-link">Kasteel van Zellaer</a>
+<span class="castle-meta">Antwerpen – Bonheiden</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-vieux-chateau-saive-blegny.html" class="castle-link">Kasteel vieux chateau</a>
+<span class="castle-meta">Luik – Florenville</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-viteux-de-pinte.html" class="castle-link">Kasteel viteux</a>
+<span class="castle-meta">Oost-Vlaanderen – Nazareth-De Pinte</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-vogelsanck-te-zolder-gemeente-heusden-zolder.html" class="castle-link">Kasteel vogelsanck</a>
+<span class="castle-meta">Limburg – Zonhoven</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-waalborre-te-asse.html" class="castle-link">Kasteel waalborre</a>
+<span class="castle-meta">Vlaams-Brabant – Asse</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-walburg-sint-niklaas.html" class="castle-link">Kasteel walburg</a>
+<span class="castle-meta">Antwerpen – Sint-Niklaas</span>
+</div>
+<div class="castle-list-item">
+<a href="kasteel-wittouck-sint-pieters-leeuw.html" class="castle-link">Kasteel wittouck</a>
+<span class="castle-meta">Vlaams-Brabant – Namur</span>
+</div>
+</div>
+</section>
+
+</div>
+</section>
+
+<!-- Back to top -->
+<div style="text-align: center; padding: 2rem;">
+<a href="#" class="btn-modern btn-primary-modern">↑ Terug naar boven</a>
+</div>
+
+<!-- Footer -->
+<footer class="footer" style="background: #1E2523; color: #F5F3EF; padding: 0;">
+<div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+<div class="footer-top" style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 3rem; padding: 3rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+<div>
+<h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: #F5F3EF;">
+                        🏰 Kastelen België
+                    </h3>
+<p style="color: #D4C7B4; line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem;">
+<strong>Dé gids voor kastelen in België.</strong> Ontdek meer dan 300 kastelen per provincie, 
+                        plan je bezoek met praktische info en laat je inspireren door eeuwenoude verhalen 
+                        en prachtige foto's uit meer dan duizend jaar Belgische geschiedenis.
+                    </p>
+<div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+<div style="font-size: 0.85rem; color: #D4C7B4;">
+<strong style="display: block; color: #C89A3B; font-size: 1.1rem;">300+</strong>
+                            Kastelen
+                        </div>
+<div style="font-size: 0.85rem; color: #D4C7B4;">
+<strong style="display: block; color: #C89A3B; font-size: 1.1rem;">11</strong>
+                            Provincies
+                        </div>
+<div style="font-size: 0.85rem; color: #D4C7B4;">
+<strong style="display: block; color: #C89A3B; font-size: 1.1rem;">1000+</strong>
+                            Jaar geschiedenis
+                        </div>
+</div>
+</div>
+<div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+<h4 style="color: #F5F3EF; margin-bottom: 1rem; font-size: 1rem;">📬 Contact &amp; Volg Ons</h4>
+<p style="color: #D4C7B4; font-size: 0.9rem; margin-bottom: 1rem;">
+                        Vragen over een kasteel? Suggesties? We horen graag van je!
+                    </p>
+<div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+<a aria-label="E-mail" href="mailto:info@kastelenbelgie.be" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.1); border-radius: 50%; color: #F5F3EF; text-decoration: none;">📧</a>
+<a aria-label="Instagram" href="https://www.instagram.com/kastelenbelgie" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.1); border-radius: 50%; color: #F5F3EF; text-decoration: none;">📷</a>
+<a aria-label="Facebook" href="https://www.facebook.com/kastelenbelgie" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.1); border-radius: 50%; color: #F5F3EF; text-decoration: none;">f</a>
+</div>
+<a href="contact.html" style="color: #C89A3B; font-size: 0.9rem; text-decoration: none;">→ Contactformulier</a>
+</div>
+</div>
+<div class="footer-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; padding: 2.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+<div>
+<h4 style="color: #F5F3EF; margin-bottom: 1.2rem; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Kastelen Vlaanderen</h4>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="margin-bottom: 0.6rem;"><a href="antwerpen.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Antwerpen</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="vlaams-brabant.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Vlaams-Brabant</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="oost-vlaanderen.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Oost-Vlaanderen</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="west-vlaanderen.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in West-Vlaanderen</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="limburg.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Limburg</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="provinces.html" style="color: #C89A3B; font-weight: 600; text-decoration: none; font-size: 0.9rem;">→ Alle provincies</a></li>
+</ul>
+</div>
+<div>
+<h4 style="color: #F5F3EF; margin-bottom: 1.2rem; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Kastelen Wallonië</h4>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="margin-bottom: 0.6rem;"><a href="namen.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Namen</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="luik.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Luik</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="henegouwen.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Henegouwen</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="luxemburg.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Luxemburg</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="waals-brabant.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Waals-Brabant</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="brussel.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kastelen in Brussel</a></li>
+</ul>
+</div>
+<div>
+<h4 style="color: #F5F3EF; margin-bottom: 1.2rem; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Populaire Kastelen</h4>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="margin-bottom: 0.6rem;"><a href="kasteel-van-freyr-freyr.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kasteel van Freÿr</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="citadel-van-hoei-hoei.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Citadel van Hoei</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="kasteel-de-merode-westerlo.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kasteel de Merode</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="kasteel-van-durbuy-durbuy.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kasteel van Durbuy</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="kasteel-van-bouchout-te-meise.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kasteel van Bouchout</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="kasteel-reinhardstein-burg-metternich-te-weismes.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Kasteel Reinhardstein</a></li>
+</ul>
+</div>
+<div>
+<h4 style="color: #F5F3EF; margin-bottom: 1.2rem; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Blog &amp; Informatie</h4>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="margin-bottom: 0.6rem;"><a href="blog.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">📖 Blog</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="alle-kastelen.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">🔤 Alle kastelen A–Z</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="blog-mooiste-kastelen-belgie.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Mooiste kastelen van België</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="contact.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">💬 Contact</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="privacybeleid.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Privacybeleid</a></li>
+<li style="margin-bottom: 0.6rem;"><a href="algemene-voorwaarden.html" style="color: #D4C7B4; text-decoration: none; font-size: 0.9rem;">Algemene voorwaarden</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; padding: 2rem 0;">
+<div>
+<p style="color: #D4C7B4; font-size: 0.85rem; line-height: 1.6; margin: 0;">
+<strong style="color: #F5F3EF;">© 2024 Kastelen België.</strong> Alle rechten voorbehouden.
+                        <br/><br/>
+<span style="color: #8A857D;">Op Kastelenbelgie.be vind je meer dan 300 kastelen in België, 
+                        netjes gebundeld per provincie met praktische informatie en tips.</span>
+</p>
+</div>
+<div style="text-align: right;">
+<p style="color: #8A857D; font-size: 0.85rem; margin: 0 0 0.5rem 0;">
+                        Gemaakt met ❤️ voor het Belgische erfgoed
+                    </p>
+<a href="#" style="color: #C89A3B; text-decoration: none; font-size: 0.85rem;">Terug naar boven ↑</a>
+</div>
+</div>
+</div>
+</footer>
+<script src="js/search.js"></script>
+</body>
+</html>
