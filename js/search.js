@@ -424,8 +424,86 @@ function addSearchStyles() {
     document.head.appendChild(styleSheet);
 }
 
+// Fonction pour filtrer la liste des châteaux sur alle-kastelen.html
+function initializePageFilter() {
+    // Vérifier si on est sur alle-kastelen.html
+    if (!window.location.pathname.includes('alle-kastelen')) {
+        return;
+    }
+    
+    // Récupérer les paramètres URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get('q');
+    const type = urlParams.get('type');
+    const regio = urlParams.get('regio');
+    
+    if (!query && !type && !regio) {
+        return;
+    }
+    
+    // Filtrer les éléments de la liste
+    const castleItems = document.querySelectorAll('.castle-list-item');
+    const letterSections = document.querySelectorAll('.letter-section');
+    let visibleCount = 0;
+    
+    castleItems.forEach(item => {
+        const link = item.querySelector('.castle-link');
+        const meta = item.querySelector('.castle-meta');
+        
+        if (!link) return;
+        
+        const name = link.textContent.toLowerCase();
+        const location = meta ? meta.textContent.toLowerCase() : '';
+        const searchText = name + ' ' + location;
+        
+        let visible = true;
+        
+        // Filtre par recherche texte
+        if (query) {
+            const searchTerms = query.toLowerCase().split(' ');
+            visible = searchTerms.every(term => searchText.includes(term));
+        }
+        
+        // Filtre par région
+        if (visible && regio) {
+            const vlaamseProvincies = ['antwerpen', 'limburg', 'oost-vlaanderen', 'west-vlaanderen', 'vlaams-brabant'];
+            const waalseProvincies = ['luik', 'namen', 'henegouwen', 'luxemburg', 'waals-brabant'];
+            
+            if (regio === 'vlaanderen') {
+                visible = vlaamseProvincies.some(p => location.includes(p));
+            } else if (regio === 'wallonie') {
+                visible = waalseProvincies.some(p => location.includes(p));
+            } else if (regio === 'brussel') {
+                visible = location.includes('brussel');
+            }
+        }
+        
+        item.style.display = visible ? '' : 'none';
+        if (visible) visibleCount++;
+    });
+    
+    // Masquer les sections de lettres vides
+    letterSections.forEach(section => {
+        const visibleItems = section.querySelectorAll('.castle-list-item[style=""], .castle-list-item:not([style])');
+        const hasVisible = Array.from(section.querySelectorAll('.castle-list-item')).some(
+            item => item.style.display !== 'none'
+        );
+        section.style.display = hasVisible ? '' : 'none';
+    });
+    
+    // Afficher un message avec les résultats
+    const introSection = document.querySelector('.annuaire-intro');
+    if (introSection && query) {
+        const resultMsg = document.createElement('p');
+        resultMsg.style.cssText = 'background: var(--bg-secondary); padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center;';
+        resultMsg.innerHTML = `<strong>${visibleCount}</strong> kastelen gevonden voor "<em>${query}</em>"${regio ? ` in <em>${regio}</em>` : ''}. <a href="alle-kastelen.html">Toon alle kastelen</a>`;
+        introSection.appendChild(resultMsg);
+    }
+}
+
 // Initialiser quand le DOM est chargé
 document.addEventListener('DOMContentLoaded', function() {
     addSearchStyles();
     initializeSearch();
+    initializePageFilter();
 });
