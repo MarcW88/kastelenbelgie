@@ -1,0 +1,72 @@
+{
+  "blocks": [
+    {
+      "id": "durbuy-practical",
+      "page": "kasteel-van-durbuy-durbuy.html",
+      "castle": "Kasteel van Durbuy",
+      "location": "Durbuy, België",
+      "theme": "oude_stad_sfeer",
+      "current_image": "chateau_image_update_3/kasteel_durbuy_3.jpg",
+      "target_image": "images/practical/durbuy-practical.jpg"
+    },
+    {
+      "id": "deulin-practical",
+      "page": "kasteel-van-deulin-deulin-fronville.html",
+      "castle": "Kasteel van Deulin",
+      "location": "Deulin, Hotton",
+      "theme": "landelijk_pad",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Deulin_6.jpg",
+      "target_image": "images/practical/deulin-practical.jpg"
+    },
+    {
+      "id": "mirwart-practical",
+      "page": "kasteel-van-mirwart-mirwart-saint-hubert.html",
+      "castle": "Kasteel van Mirwart",
+      "location": "Mirwart, Saint-Hubert",
+      "theme": "bos_pad",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Mirwart_6.jpg",
+      "target_image": "images/practical/mirwart-practical.jpg"
+    },
+    {
+      "id": "longchamps-practical",
+      "page": "kasteel-van-longchamps-longchamps-bertogne.html",
+      "castle": "Kasteel van Longchamps",
+      "location": "Longchamps, Bertogne",
+      "theme": "ardennen_landschap",
+      "current_image": "chateaux_images_update-2/Kasteel_van_longchamps_3.jpg",
+      "target_image": "images/practical/longchamps-practical.jpg"
+    },
+    {
+      "id": "porcheresse-practical",
+      "page": "kasteel-van-porcheresse-daverdisse.html",
+      "castle": "Kasteel van Porcheresse",
+      "location": "Porcheresse, Daverdisse",
+      "theme": "rustig_dorp",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Porcheresse_6.jpg",
+      "target_image": "images/practical/porcheresse-practical.jpg"
+    },
+    {
+      "id": "orval-practical",
+      "page": "kasteel-van-orval-villers-devant-orval.html",
+      "castle": "Kasteel van Orval",
+      "location": "Villers-devant-Orval",
+      "theme": "abdij_sfeer",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Orval_3.jpg",
+      "target_image": "images/practical/orval-practical.jpg"
+    }
+  ],
+  "prompt_templates": {
+    "oude_stad_sfeer": "Vertical view of charming cobblestone alley in old Belgian town, stone walls with ivy, vintage lantern, flower pots, warm afternoon light filtering through, cozy European atmosphere",
+    "landelijk_pad": "Vertical view of country path through Belgian countryside, wooden fence along meadow, wildflowers, rolling green hills in distance, peaceful rural atmosphere, soft golden hour light",
+    "bos_pad": "Vertical view of forest trail in Belgian Ardennes, tall beech trees creating natural archway, dappled sunlight on path, ferns and moss, mystical woodland atmosphere",
+    "ardennen_landschap": "Vertical view of Ardennes landscape, winding country road through green hills, distant forest, dramatic clouds, Belgian countryside panorama, travel inspiration",
+    "rustig_dorp": "Vertical view of quiet Belgian village street, traditional stone houses, church steeple in background, cobblestones, potted flowers, peaceful morning atmosphere",
+    "abdij_sfeer": "Vertical view of abbey garden path, old stone archway covered in climbing roses, herb garden, peaceful monastic atmosphere, soft diffused light, spiritual tranquility"
+  },
+  "style_constants": {
+    "format": "vertical 9:16 portrait image",
+    "lighting": "soft warm natural light",
+    "style": "realistic photographic style, no text in image, no recognizable people faces, professional tourism photography, suitable for sidebar image",
+    "resolution": "768x1344"
+  }
+}
