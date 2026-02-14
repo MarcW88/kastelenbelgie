@@ -1939,17 +1939,17 @@ body {
 }
 
 .castle-activities h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--text);
-    margin-bottom: 1rem;
-    text-align: center;
+    margin-bottom: 1.5rem;
+    text-align: left;
 }
 
 .activities-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: none;
+    margin: 0;
+    text-align: left;
 }
 
 .activities-content > p {
@@ -4768,10 +4768,10 @@ img[src*="placeholder"] {
 }
 
 .castle-tickets h2 {
-  color: var(--primary);
-  font-size: 1.75rem;
+  color: var(--text);
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .castle-tickets .section-eyebrow {
@@ -4851,19 +4851,17 @@ img[src*="placeholder"] {
   font-style: italic;
 }
 
-/* Section Praktische Informatie - fond blanc, layout vertical */
+/* Section Praktische Informatie - fond blanc, image à droite sous le titre */
 .castle-practical {
   padding: 3rem 0;
   background: white;
 }
 
 .practical-layout {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  display: block;
 }
 
-.practical-content h2 {
+.practical-layout > h2 {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text);
@@ -4871,32 +4869,30 @@ img[src*="placeholder"] {
 }
 
 .practical-image {
-  max-width: 400px;
-  margin: 0 auto 2rem;
+  float: right;
+  width: 350px;
+  margin: 0 0 1.5rem 2rem;
 }
 
 .practical-image img {
   width: 100%;
   height: auto;
-  max-height: 500px;
-  object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .practical-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
-@media (max-width: 768px) {
-  .practical-grid {
-    grid-template-columns: 1fr;
-  }
-  
+@media (max-width: 900px) {
   .practical-image {
-    max-width: 300px;
+    float: none;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 2rem;
   }
 }
 
@@ -4958,16 +4954,16 @@ img[src*="placeholder"] {
 }
 
 .castle-faq h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--text);
-  margin-bottom: 2rem;
-  text-align: center;
+  margin-bottom: 1.5rem;
+  text-align: left;
 }
 
 .faq-grid {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -5118,6 +5114,36 @@ img[src*="placeholder"] {
 
 .activity-content p {
   margin: 0;
+}
+
+/* ===== LIENS INTERNES - COULEURS PALETTE SITE ===== */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+/* Liens dans les sections château */
+.castle-practical a,
+.castle-activities a,
+.castle-tickets a,
+.activity-content a,
+.practical-grid a {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.castle-practical a:hover,
+.castle-activities a:hover,
+.castle-tickets a:hover,
+.activity-content a:hover,
+.practical-grid a:hover {
+  color: var(--secondary);
 }
 
 /* Responsive */
