@@ -493,12 +493,103 @@ function initializePageFilter() {
     
     // Afficher un message avec les résultats
     const introSection = document.querySelector('.annuaire-intro');
-    if (introSection && query) {
-        const resultMsg = document.createElement('p');
-        resultMsg.style.cssText = 'background: var(--bg-secondary); padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center;';
-        resultMsg.innerHTML = `<strong>${visibleCount}</strong> kastelen gevonden voor "<em>${query}</em>"${regio ? ` in <em>${regio}</em>` : ''}. <a href="alle-kastelen.html">Toon alle kastelen</a>`;
+    if (introSection && (query || regio || type)) {
+        const resultMsg = document.createElement('div');
+        resultMsg.style.cssText = 'background: var(--bg-secondary); padding: 1.25rem; border-radius: 12px; margin-top: 1.5rem; text-align: center; border: 1px solid var(--border);';
+        
+        let filterText = '';
+        if (query) filterText += `"<strong>${query}</strong>"`;
+        if (regio) {
+            const regioNames = {vlaanderen: 'Vlaanderen', wallonie: 'Wallonië', brussel: 'Brussel'};
+            filterText += (filterText ? ' in ' : '') + `<strong>${regioNames[regio] || regio}</strong>`;
+        }
+        if (type) {
+            const typeNames = {bezoek: 'Bezoek/museum', overnachten: 'Overnachting', evenement: 'Evenement', wandeling: 'Wandeling'};
+            filterText += (filterText ? ', ' : '') + `type: <strong>${typeNames[type] || type}</strong>`;
+        }
+        
+        resultMsg.innerHTML = `
+            <p style="margin: 0 0 0.75rem; font-size: 1.1rem;">
+                🏰 <strong>${visibleCount}</strong> kastelen gevonden ${filterText ? 'voor ' + filterText : ''}
+            </p>
+            <a href="alle-kastelen.html" style="color: var(--primary); font-weight: 500;">← Toon alle kastelen</a>
+        `;
         introSection.appendChild(resultMsg);
+        
+        // Mettre à jour le titre de la page
+        document.title = `Zoekresultaten: ${visibleCount} kastelen | kastelenbelgie.be`;
     }
+}
+
+// Fonction pour initialiser l'autocomplete sur le hero search
+function initializeHeroSearch() {
+    const heroInput = document.getElementById('q');
+    if (!heroInput) return;
+    
+    // Créer le conteneur de suggestions
+    const suggestionsDiv = document.createElement('div');
+    suggestionsDiv.id = 'hero-suggestions';
+    suggestionsDiv.style.cssText = `
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        z-index: 1000;
+        max-height: 250px;
+        overflow-y: auto;
+        display: none;
+        margin-top: 4px;
+    `;
+    
+    // Positionner le parent en relative
+    const parentField = heroInput.closest('.search-hero-field');
+    if (parentField) {
+        parentField.style.position = 'relative';
+        parentField.appendChild(suggestionsDiv);
+    }
+    
+    // Event listener pour la saisie
+    heroInput.addEventListener('input', function(e) {
+        const query = e.target.value;
+        if (query.length < 2) {
+            suggestionsDiv.style.display = 'none';
+            return;
+        }
+        
+        const results = searchCastles(query);
+        if (results.length === 0) {
+            suggestionsDiv.style.display = 'none';
+            return;
+        }
+        
+        suggestionsDiv.innerHTML = results.map(castle => `
+            <div class="hero-suggestion-item" style="padding: 0.75rem 1rem; border-bottom: 1px solid #f0f0f0; cursor: pointer;">
+                <a href="${castle.url}" style="display: flex; align-items: center; text-decoration: none; color: #333;">
+                    <span style="margin-right: 0.5rem;">🏰</span>
+                    <span style="font-weight: 500;">${castle.name}</span>
+                </a>
+            </div>
+        `).join('');
+        
+        suggestionsDiv.style.display = 'block';
+        
+        // Hover effect
+        suggestionsDiv.querySelectorAll('.hero-suggestion-item').forEach(item => {
+            item.addEventListener('mouseenter', () => item.style.background = '#f8f8f8');
+            item.addEventListener('mouseleave', () => item.style.background = 'white');
+        });
+    });
+    
+    // Masquer les suggestions quand on clique ailleurs
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.search-hero-field')) {
+            suggestionsDiv.style.display = 'none';
+        }
+    });
 }
 
 // Initialiser quand le DOM est chargé
@@ -506,4 +597,5 @@ document.addEventListener('DOMContentLoaded', function() {
     addSearchStyles();
     initializeSearch();
     initializePageFilter();
+    initializeHeroSearch();
 });
