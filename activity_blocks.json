@@ -1,0 +1,269 @@
+{
+  "blocks": [
+    {
+      "id": "durbuy-stadswandeling",
+      "page": "kasteel-van-durbuy-durbuy.html",
+      "title": "Stadswandeling in de oude stad",
+      "description": "Verken de kronkelende straatjes, oude huizen en pleinen van Durbuy.",
+      "location": "Durbuy, België",
+      "theme": "oude_stad_wandeling",
+      "current_image": "chateau_image_update_3/kasteel_durbuy_5.jpeg",
+      "target_image": "images/activities/durbuy-stadswandeling.jpg"
+    },
+    {
+      "id": "durbuy-topiary",
+      "page": "kasteel-van-durbuy-durbuy.html",
+      "title": "Topiary Park",
+      "description": "Bezoek het beroemde buxuspark aan de oevers van de Ourthe.",
+      "location": "Durbuy, België",
+      "theme": "topiary_park",
+      "current_image": "chateau_image_update_3/kastelen_durbuy_2.jpg",
+      "target_image": "images/activities/durbuy-topiary.jpg"
+    },
+    {
+      "id": "durbuy-adventure",
+      "page": "kasteel-van-durbuy-durbuy.html",
+      "title": "Adventure Valley Durbuy",
+      "description": "Avonturenparcours, zipline, mountainbike, kajak en meer.",
+      "location": "Durbuy, België",
+      "theme": "adventure_outdoor",
+      "current_image": "chateau_image_update_3/kasteel_durbuy_5.jpeg",
+      "target_image": "images/activities/durbuy-adventure.jpg"
+    },
+    {
+      "id": "durbuy-kastelen-ourthe",
+      "page": "kasteel-van-durbuy-durbuy.html",
+      "title": "Andere kastelen in de Ourthevallei",
+      "description": "Kastelen langs de Ourthe verkennen, ruïnes van Logne en kasteel Palogne.",
+      "location": "Ourthevallei, België",
+      "theme": "kastelen_route",
+      "current_image": "chateau_image_update_3/kasteel_durbuy_6.jpg",
+      "target_image": "images/activities/durbuy-kastelen-ourthe.jpg"
+    },
+    {
+      "id": "deulin-wandelen-ourthe",
+      "page": "kasteel-van-deulin-deulin-fronville.html",
+      "title": "Wandelen langs de Ourthe & in de ban van Fronville",
+      "description": "Wandeling tussen Deulin, Fronville en de omliggende dorpen.",
+      "location": "Deulin, Hotton",
+      "theme": "wandelen_rivier",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Deulin_3.jpg",
+      "target_image": "images/activities/deulin-wandelen-ourthe.jpg"
+    },
+    {
+      "id": "deulin-durbuy-marche",
+      "page": "kasteel-van-deulin-deulin-fronville.html",
+      "title": "Durbuy & Marche-en-Famenne",
+      "description": "Stadswandeling in Durbuy en Marche-en-Famenne.",
+      "location": "Durbuy, Marche-en-Famenne",
+      "theme": "steden_bezoek",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Durbuy_6.jpg",
+      "target_image": "images/activities/deulin-durbuy-marche.jpg"
+    },
+    {
+      "id": "deulin-grotten-hotton",
+      "page": "kasteel-van-deulin-deulin-fronville.html",
+      "title": "Grotten van Hotton & outdooractiviteiten",
+      "description": "Grotten van Hotton, kajakmogelijkheden op de Ourthe.",
+      "location": "Hotton, België",
+      "theme": "grotten_outdoor",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Deulin_4.jpg",
+      "target_image": "images/activities/deulin-grotten-hotton.jpg"
+    },
+    {
+      "id": "deulin-kastelen-ourthe",
+      "page": "kasteel-van-deulin-deulin-fronville.html",
+      "title": "Kastelen & vallei van de Ourthe",
+      "description": "Route langs meerdere kastelen in de Ourthevallei.",
+      "location": "Ourthevallei, België",
+      "theme": "kastelen_route",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Deulin_5.jpg",
+      "target_image": "images/activities/deulin-kastelen-ourthe.jpg"
+    },
+    {
+      "id": "mirwart-domein-wandelen",
+      "page": "kasteel-van-mirwart-mirwart-saint-hubert.html",
+      "title": "Wandelen in Domein van Mirwart",
+      "description": "Gemarkeerde wandelpaden langs vijvers, beken en uitgestrekte bossen.",
+      "location": "Mirwart, België",
+      "theme": "bos_wandelen",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Mirwart_4.jpg",
+      "target_image": "images/activities/mirwart-domein-wandelen.jpg"
+    },
+    {
+      "id": "mirwart-saint-hubert",
+      "page": "kasteel-van-mirwart-mirwart-saint-hubert.html",
+      "title": "Saint-Hubert & omgeving",
+      "description": "Basiliek, jachtcultuur en musea in Saint-Hubert.",
+      "location": "Saint-Hubert, België",
+      "theme": "stad_erfgoed",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Mirwart_5.jpg",
+      "target_image": "images/activities/mirwart-saint-hubert.jpg"
+    },
+    {
+      "id": "mirwart-grotten-han",
+      "page": "kasteel-van-mirwart-mirwart-saint-hubert.html",
+      "title": "Grotten van Han & de Gaume",
+      "description": "Daguitstap naar de Grotten van Han of de Gaume.",
+      "location": "Han-sur-Lesse, België",
+      "theme": "grotten_natuur",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Orval_6.jpg",
+      "target_image": "images/activities/mirwart-grotten-han.jpg"
+    },
+    {
+      "id": "mirwart-kastelen-ardennen",
+      "page": "kasteel-van-mirwart-mirwart-saint-hubert.html",
+      "title": "Andere kastelen in de Ardense bossen",
+      "description": "Kastelen in de Ardense bossen ontdekken.",
+      "location": "Ardennen, België",
+      "theme": "kastelen_bos",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Porcheresse_4.jpg",
+      "target_image": "images/activities/mirwart-kastelen-ardennen.jpg"
+    },
+    {
+      "id": "longchamps-wandelen-bertogne",
+      "page": "kasteel-van-longchamps-longchamps-bertogne.html",
+      "title": "Wandelen in de Ardennen rond Bertogne",
+      "description": "Wandelingen door bossen, langs beekjes en over open plateaus.",
+      "location": "Bertogne, België",
+      "theme": "bos_wandelen",
+      "current_image": "chateaux_images_update-2/Kasteel_van_longchamps_4.jpg",
+      "target_image": "images/activities/longchamps-wandelen-bertogne.jpg"
+    },
+    {
+      "id": "longchamps-la-roche",
+      "page": "kasteel-van-longchamps-longchamps-bertogne.html",
+      "title": "La Roche-en-Ardenne & kasteelruïne",
+      "description": "Middeleeuwse kasteelruïne boven de Ourthe, gezellige straatjes.",
+      "location": "La Roche-en-Ardenne, België",
+      "theme": "kasteel_ruine",
+      "current_image": "chateaux_images_update-2/Kasteel_van_longchamps_5.jpg",
+      "target_image": "images/activities/longchamps-la-roche.jpg"
+    },
+    {
+      "id": "longchamps-bastogne",
+      "page": "kasteel-van-longchamps-longchamps-bertogne.html",
+      "title": "Bastogne & WOII-erfgoed",
+      "description": "Bastogne War Museum, Mardasson-monument, Ardennenoffensief.",
+      "location": "Bastogne, België",
+      "theme": "woii_erfgoed",
+      "current_image": "chateaux_images_update-2/Kasteel_van_longchamps_6.jpg",
+      "target_image": "images/activities/longchamps-bastogne.jpg"
+    },
+    {
+      "id": "longchamps-kastelen-ardennen",
+      "page": "kasteel-van-longchamps-longchamps-bertogne.html",
+      "title": "Andere kastelen in de Ardense heuvels",
+      "description": "Kastelen in de Ardense heuvels bereiken.",
+      "location": "Ardennen, België",
+      "theme": "kastelen_bos",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Mirwart_3.jpg",
+      "target_image": "images/activities/longchamps-kastelen-ardennen.jpg"
+    },
+    {
+      "id": "porcheresse-wandelen",
+      "page": "kasteel-van-porcheresse-daverdisse.html",
+      "title": "Wandelen rond Porcheresse & Daverdisse",
+      "description": "Lussen door het bos, langs beekjes en landelijke wegen.",
+      "location": "Daverdisse, België",
+      "theme": "bos_wandelen",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Porcheresse_3.jpg",
+      "target_image": "images/activities/porcheresse-wandelen.jpg"
+    },
+    {
+      "id": "porcheresse-mirwart",
+      "page": "kasteel-van-porcheresse-daverdisse.html",
+      "title": "Mirwart & Domein van Mirwart",
+      "description": "Kasteel op de rots en provinciaal Domein van Mirwart.",
+      "location": "Mirwart, België",
+      "theme": "kasteel_domein",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Mirwart_3.jpg",
+      "target_image": "images/activities/porcheresse-mirwart.jpg"
+    },
+    {
+      "id": "porcheresse-bouillon",
+      "page": "kasteel-van-porcheresse-daverdisse.html",
+      "title": "Kasteel van Bouillon & Semoisvallei",
+      "description": "Middeleeuws kasteel en uitzichten over de Semois.",
+      "location": "Bouillon, België",
+      "theme": "kasteel_rivier",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Porcheresse_5.jpg",
+      "target_image": "images/activities/porcheresse-bouillon.jpg"
+    },
+    {
+      "id": "porcheresse-kastelen",
+      "page": "kasteel-van-porcheresse-daverdisse.html",
+      "title": "Andere kasteelovernachtingen in de Ardennen",
+      "description": "Kasteelovernachtingen in de Ardennen.",
+      "location": "Ardennen, België",
+      "theme": "kastelen_bos",
+      "current_image": "chateaux_images_update-2/Kasteel_van_longchamps_6.jpg",
+      "target_image": "images/activities/porcheresse-kastelen.jpg"
+    },
+    {
+      "id": "orval-wandelen-gaume",
+      "page": "kasteel-van-orval-villers-devant-orval.html",
+      "title": "Wandelen in de Gaume & het woud van Chiny",
+      "description": "Wandelroutes door bossen, valleien en dorpen rond Orval.",
+      "location": "Gaume, België",
+      "theme": "bos_wandelen",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Orval_4.jpg",
+      "target_image": "images/activities/orval-wandelen-gaume.jpg"
+    },
+    {
+      "id": "orval-bier-kaas",
+      "page": "kasteel-van-orval-villers-devant-orval.html",
+      "title": "Bier & kaas van Orval",
+      "description": "Abdijwinkel met bier en kaas van Orval.",
+      "location": "Orval, België",
+      "theme": "gastronomie",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Orval_5.jpg",
+      "target_image": "images/activities/orval-bier-kaas.jpg"
+    },
+    {
+      "id": "orval-kastelen-ardennen",
+      "page": "kasteel-van-orval-villers-devant-orval.html",
+      "title": "Kastelen in de Ardennen",
+      "description": "Kasteelroadtrip in Luxemburg uitbreiden.",
+      "location": "Ardennen, België",
+      "theme": "kastelen_bos",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Mirwart_3.jpg",
+      "target_image": "images/activities/orval-kastelen-ardennen.jpg"
+    },
+    {
+      "id": "orval-semoisvallei",
+      "page": "kasteel-van-orval-villers-devant-orval.html",
+      "title": "Natuur in de Semoisvallei",
+      "description": "Uitzichtpunten en wandelgebieden langs de Semois.",
+      "location": "Semoisvallei, België",
+      "theme": "rivier_natuur",
+      "current_image": "chateaux_images_update-2/Kasteel_van_Orval_6.jpg",
+      "target_image": "images/activities/orval-semoisvallei.jpg"
+    }
+  ],
+  "prompt_templates": {
+    "oude_stad_wandeling": "Charming cobblestone streets in a small Belgian medieval town, old stone houses, narrow alleys, warm afternoon light, tourists walking",
+    "topiary_park": "Beautiful topiary garden with sculpted boxwood bushes in artistic shapes, green lawn, river view, sunny day, Belgian Ardennes",
+    "adventure_outdoor": "Outdoor adventure park in forest setting, zipline through trees, people doing outdoor activities, sunny day, Belgian Ardennes",
+    "kastelen_route": "Scenic road through Belgian countryside with castle visible on hilltop, green rolling hills, autumn colors, road trip atmosphere",
+    "wandelen_rivier": "Hiking trail along a river in the Ardennes, lush green forest, peaceful water reflections, hikers on path, Belgian nature",
+    "steden_bezoek": "Picturesque Belgian town square with historic buildings, cafes with terraces, church tower, sunny day, tourists exploring",
+    "grotten_outdoor": "Entrance to limestone caves in forested area, dramatic rock formations, visitors at cave entrance, Belgian Ardennes",
+    "grotten_natuur": "Spectacular underground cave with stalactites and stalagmites, dramatic lighting, natural wonder, Belgian caves",
+    "bos_wandelen": "Forest hiking trail in the Belgian Ardennes, tall trees, dappled sunlight, peaceful atmosphere, autumn colors",
+    "stad_erfgoed": "Historic Belgian town with basilica and traditional architecture, cobblestone streets, heritage buildings, Saint-Hubert style",
+    "kastelen_bos": "Castle tower visible through forest trees, misty morning atmosphere, Belgian Ardennes landscape, fairy tale setting",
+    "kasteel_ruine": "Medieval castle ruins on hilltop overlooking river valley, dramatic sky, historic atmosphere, La Roche-en-Ardenne style",
+    "woii_erfgoed": "World War II memorial monument, Mardasson style, star-shaped structure, green surroundings, Bastogne Belgium",
+    "kasteel_domein": "Castle estate with manicured grounds, pond reflections, autumn trees, Belgian countryside manor",
+    "kasteel_rivier": "Medieval fortress castle on cliff above meandering river, Bouillon style, dramatic landscape, Belgian Ardennes",
+    "rivier_natuur": "Scenic viewpoint over meandering Semois river valley, lush green forests, misty morning, Belgian Gaume region",
+    "gastronomie": "Belgian abbey products display, Trappist beer bottles and cheese wheels, rustic wooden setting, artisanal atmosphere"
+  },
+  "style_constants": {
+    "format": "horizontal 16:9 image",
+    "lighting": "soft warm natural light",
+    "style": "realistic photographic style, no text in image, no recognizable people faces, professional tourism photography",
+    "resolution": "1344x768"
+  }
+}
