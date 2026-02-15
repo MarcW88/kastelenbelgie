@@ -221,6 +221,31 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://kastelenbelgie.be/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Provincies",
+      "item": "https://kastelenbelgie.be/provinces.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Kastelen in Luik"
+    }
+  ]
+}
+</script>
 </head>
 <body>
     <!-- Navigation -->
@@ -247,20 +272,20 @@
 
     <nav class="breadcrumbs" aria-label="Breadcrumb">
         <div class="breadcrumbs-container">
-            <div class="breadcrumbs-nav" itemscope itemtype="https://schema.org/BreadcrumbList">
-                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a href="index.html" itemprop="item"><span itemprop="name">Home</span></a>
-                    <meta itemprop="position" content="1" />
+            <div class="breadcrumbs-nav">
+                <span>
+                    <a href="index.html"><span>Home</span></a>
+                    <meta content="1" />
                 </span>
                 <span class="breadcrumbs-separator">›</span>
-                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a href="provinces.html" itemprop="item"><span itemprop="name">Provincies</span></a>
-                    <meta itemprop="position" content="2" />
+                <span>
+                    <a href="provinces.html"><span>Provincies</span></a>
+                    <meta content="2" />
                 </span>
                 <span class="breadcrumbs-separator">›</span>
-                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <span itemprop="name" class="breadcrumbs-current">Kastelen in Luik</span>
-                    <meta itemprop="position" content="3" />
+                <span>
+                    <span class="breadcrumbs-current">Kastelen in Luik</span>
+                    <meta content="3" />
                 </span>
             </div>
         </div>

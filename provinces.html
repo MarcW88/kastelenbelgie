@@ -11,6 +11,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link href="favicon.png" rel="icon" type="image/png"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://kastelenbelgie.be/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Kastelen per provincie"
+    }
+  ]
+}
+</script>
 </head>
 <body>
     <!-- Navigation -->
@@ -37,15 +56,15 @@
 
     <nav class="breadcrumbs" aria-label="Breadcrumb">
         <div class="breadcrumbs-container">
-            <div class="breadcrumbs-nav" itemscope itemtype="https://schema.org/BreadcrumbList">
-                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a href="index.html" itemprop="item"><span itemprop="name">Home</span></a>
-                    <meta itemprop="position" content="1" />
+            <div class="breadcrumbs-nav">
+                <span>
+                    <a href="index.html"><span>Home</span></a>
+                    <meta content="1" />
                 </span>
                 <span class="breadcrumbs-separator">›</span>
-                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <span itemprop="name" class="breadcrumbs-current">Kastelen per provincie</span>
-                    <meta itemprop="position" content="2" />
+                <span>
+                    <span class="breadcrumbs-current">Kastelen per provincie</span>
+                    <meta content="2" />
                 </span>
             </div>
         </div>
