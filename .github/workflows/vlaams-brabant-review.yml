@@ -10,6 +10,7 @@ on:
       - "content/reviewed-pages.json"
       - "scripts/build.mjs"
       - "scripts/check-vlaams-brabant.mjs"
+      - "scripts/audit-vlaams-brabant-style.mjs"
       - ".github/workflows/vlaams-brabant-review.yml"
   push:
     branches: [main]
@@ -39,6 +40,8 @@ jobs:
         run: npm run build
       - name: Structural and workflow-artifact gates
         run: node scripts/check-vlaams-brabant.mjs
+      - name: Humanizer and anti-ai-slop pattern audit
+        run: node scripts/audit-vlaams-brabant-style.mjs
       - name: Existing native site validation
         run: npm run check
       - name: Install Playwright browser
@@ -75,6 +78,7 @@ jobs:
           name: vlaams-brabant-castle-qa
           path: |
             .artifacts/qa/vlaams-brabant-machine-gates.json
+            .artifacts/qa/vlaams-brabant-style-review.json
             .artifacts/design-review/vlaams-brabant/
           if-no-files-found: warn
           retention-days: 14
