@@ -326,5 +326,40 @@
     "title": "Kastelen in Wallonië per provincie | Kastelen België",
     "description": "Ontdek kastelen in de vijf Waalse provincies: Henegouwen, Namen, Luik, Luxemburg en Waals-Brabant. Vind burchten, kasteeldomeinen en bezoekinformatie.",
     "stylesheet": "assets/province-guide.css"
+  },
+  {
+    "route": "/kastelen/waals-brabant/",
+    "source": "content/kastelen/waals-brabant/body.html",
+    "title": "Kastelen in Waals-Brabant bezoeken | Kastelen België",
+    "description": "Ontdek bezoekbare kastelen en historische domeinen in Waals-Brabant. Vergelijk interieurbezoeken, parken en rondleidingen met betrouwbare bronnen.",
+    "stylesheet": "assets/province-guide.css"
+  },
+  {
+    "route": "/kastelen/henegouwen/",
+    "source": "content/kastelen/henegouwen/body.html",
+    "title": "Kastelen in Henegouwen bezoeken | Kastelen België",
+    "description": "Ontdek bezoekbare kastelen en historische domeinen in Henegouwen. Vergelijk interieurbezoeken, parken en rondleidingen met betrouwbare bronnen.",
+    "stylesheet": "assets/province-guide.css"
+  },
+  {
+    "route": "/kastelen/namen/",
+    "source": "content/kastelen/namen/body.html",
+    "title": "Kastelen in Namen bezoeken | Kastelen België",
+    "description": "Ontdek bezoekbare kastelen en historische domeinen in Namen. Vergelijk interieurbezoeken, parken en rondleidingen met betrouwbare bronnen.",
+    "stylesheet": "assets/province-guide.css"
+  },
+  {
+    "route": "/kastelen/luik/",
+    "source": "content/kastelen/luik/body.html",
+    "title": "Kastelen in Luik bezoeken | Kastelen België",
+    "description": "Ontdek bezoekbare kastelen en historische domeinen in Luik. Vergelijk interieurbezoeken, parken en rondleidingen met betrouwbare bronnen.",
+    "stylesheet": "assets/province-guide.css"
+  },
+  {
+    "route": "/kastelen/luxemburg/",
+    "source": "content/kastelen/luxemburg/body.html",
+    "title": "Kastelen in Luxemburg bezoeken | Kastelen België",
+    "description": "Ontdek bezoekbare kastelen en historische domeinen in Luxemburg. Vergelijk interieurbezoeken, parken en rondleidingen met betrouwbare bronnen.",
+    "stylesheet": "assets/province-guide.css"
   }
 ]
