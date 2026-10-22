@@ -1,0 +1,43 @@
+name: Visual design review
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "kasteel/gravensteen/**"
+      - "content/kasteel/gravensteen/**"
+      - "assets/castle-detail.css"
+      - "assets/province-guide.css"
+      - "assets/styles.css"
+      - "package.json"
+      - "package-lock.json"
+      - ".agents/skills/site-design-review/**"
+      - ".github/workflows/visual-design-review.yml"
+
+jobs:
+  visual-gravensteen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Build reviewed pages
+        run: npm run build
+      - name: Capture Gravensteen desktop and mobile
+        run: npm run visual:gravensteen
+      - name: Upload visual review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gravensteen-design-review
+          path: .artifacts/design-review/gravensteen/
+          if-no-files-found: warn
+          retention-days: 14
