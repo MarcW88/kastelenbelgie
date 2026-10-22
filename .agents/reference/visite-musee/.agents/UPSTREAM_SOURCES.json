@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "policy": "Reuse existing skills and workflows before creating custom methods. Museum-specific code is limited to orchestration, ownership, entity/freshness rules and publication gates.",
+  "orchestration_target": ">=80% existing GitHub skills/workflows",
+  "workflow_sources": [
+    {
+      "name": "renovation-analysis-workflow",
+      "repo": "MarcW88/thuisrenovatie-gids",
+      "path": ".agents/skills/renovation-analysis-workflow/SKILL.md",
+      "usage": "primary orchestration parent"
+    },
+    {
+      "name": "renovation-content-workflow",
+      "repo": "MarcW88/thuisrenovatie-gids",
+      "path": ".agents/skills/renovation-content-workflow/SKILL.md",
+      "usage": "primary content orchestration parent"
+    },
+    {
+      "name": "guide-analysis-workflow",
+      "repo": "MarcW88/bloc-notes-numerique",
+      "path": ".agents/skills/guide-analysis-workflow/SKILL.md",
+      "usage": "historical parent"
+    },
+    {
+      "name": "guide-content-workflow",
+      "repo": "MarcW88/bloc-notes-numerique",
+      "path": ".agents/skills/guide-content-workflow/SKILL.md",
+      "usage": "historical parent"
+    }
+  ],
+  "skill_source_priority": [
+    "MarcW88/thuisrenovatie-gids/.agents/skills/<skill>/",
+    "MarcW88/bloc-notes-numerique/.agents/skills/<skill>/"
+  ],
+  "required_skills": [
+    "seo-content-audit",
+    "seo-keyword",
+    "search-intent",
+    "seo-competitor",
+    "content-refresh",
+    "jtbd-framing",
+    "information-architecture",
+    "fact-check",
+    "evidence-based-reviews",
+    "content-brief-authoring",
+    "brand-voice",
+    "content-and-copy",
+    "seo-aeo-geo",
+    "internal-linking-audit",
+    "humanizer",
+    "general-writing",
+    "anti-ai-slop",
+    "seo-drift",
+    "seo-onpage",
+    "seo-technical",
+    "seo-best-practices",
+    "editorial-qa"
+  ],
+  "museum_domain_sources": [
+    {
+      "repo": "linked-art/linked.art",
+      "usage": "entity relations, linked data and museum object modelling"
+    },
+    {
+      "repo": "CollectionBuilder/collectionbuilder-gh",
+      "usage": "metadata-first static collection patterns"
+    },
+    {
+      "repo": "TheScienceMuseum/heritage-connector",
+      "usage": "entity enrichment, Wikidata linking and knowledge-graph patterns"
+    }
+  ]
+}

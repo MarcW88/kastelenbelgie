@@ -1,0 +1,191 @@
+{
+  "source": "MarcW88/visite-musee",
+  "commit": "7c30b136a4e069d472282678bed4205fd0f2b972",
+  "files": {
+    ".agents/skills/museum-analysis-workflow/SKILL.md": {
+      "repository": "MarcW88/visite-musee",
+      "commit": "7c30b136a4e069d472282678bed4205fd0f2b972",
+      "source_path": ".agents/skills/museum-analysis-workflow/SKILL.md",
+      "sha256": "56e972dda93ee9962e6d10a74353c8d4abf57793cb6e682c94ac780a2708eeb8"
+    },
+    ".agents/skills/museum-analysis-workflow/references/serp-coverage-matrix-template.md": {
+      "repository": "MarcW88/visite-musee",
+      "commit": "7c30b136a4e069d472282678bed4205fd0f2b972",
+      "source_path": ".agents/skills/museum-analysis-workflow/references/serp-coverage-matrix-template.md",
+      "sha256": "2cab5a57777836dda2283d058b09b4a0971ef58db67290a171f1c41d052820e8"
+    },
+    ".agents/skills/museum-content-workflow/SKILL.md": {
+      "repository": "MarcW88/visite-musee",
+      "commit": "7c30b136a4e069d472282678bed4205fd0f2b972",
+      "source_path": ".agents/skills/museum-content-workflow/SKILL.md",
+      "sha256": "5e4d70369caab6d394b3cbb9759aed7b370e034ea7a2fd248eb9fdcd895fae11"
+    },
+    ".agents/skills/museum-content-workflow/references/post-write-gap-check-template.md": {
+      "repository": "MarcW88/visite-musee",
+      "commit": "7c30b136a4e069d472282678bed4205fd0f2b972",
+      "source_path": ".agents/skills/museum-content-workflow/references/post-write-gap-check-template.md",
+      "sha256": "3076ebde8792e0ed97c38a23d6cfcba2d96dc0b4b3d4104e17c35df924000a8d"
+    },
+    ".agents/MUSEUM_MODEL.md": {
+      "repository": "MarcW88/visite-musee",
+      "commit": "7c30b136a4e069d472282678bed4205fd0f2b972",
+      "source_path": ".agents/MUSEUM_MODEL.md",
+      "sha256": "b7d7b6ffe7b3976c7419ff0eca63bd24a1f97560095c2ad85f4235c749ef2d81"
+    },
+    ".agents/SKILL_REGISTRY.md": {
+      "repository": "MarcW88/visite-musee",
+      "commit": "7c30b136a4e069d472282678bed4205fd0f2b972",
+      "source_path": ".agents/SKILL_REGISTRY.md",
+      "sha256": "d41c77677a2fa7c1a7596376bf814e1c67baf4da45222e1e22514cf521df745a"
+    },
+    ".agents/reference/visite-musee/AGENTS.md": {
+      "repository": "MarcW88/visite-musee",
+      "commit": "7c30b136a4e069d472282678bed4205fd0f2b972",
+      "source_path": "AGENTS.md",
+      "sha256": "6e035b9ea3f8042716db0c7d1cc64548265994d4984dab06b44585307e45d03e"
+    },
+    ".agents/reference/visite-musee/.agents/README.md": {
+      "repository": "MarcW88/visite-musee",
+      "commit": "7c30b136a4e069d472282678bed4205fd0f2b972",
+      "source_path": ".agents/README.md",
+      "sha256": "94ba81d4ca38728490bd698411e8de1635b060b4991b1ee6a7bc24e80fdae5a8"
+    },
+    ".agents/reference/visite-musee/.agents/UPSTREAM_SOURCES.json": {
+      "repository": "MarcW88/visite-musee",
+      "commit": "7c30b136a4e069d472282678bed4205fd0f2b972",
+      "source_path": ".agents/UPSTREAM_SOURCES.json",
+      "sha256": "af644c5a41643faca7fd16518c121763f40b640493e9f658863e57926e843715"
+    },
+    ".agents/skills/seo-competitor/SKILL.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/seo-competitor/SKILL.md",
+      "sha256": "b43a744d3e0bf204e58dccb48552ee6b8c5988ccaeff22744b9dc12f9b3aeb0e"
+    },
+    ".agents/skills/seo-competitor/references/competitive-audit-template.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/seo-competitor/references/competitive-audit-template.md",
+      "sha256": "0fe2971545f422c63edcb9aab9c6dbd87c80397617b65cb6da7eb63e9ffb133b"
+    },
+    ".agents/skills/seo-competitor/references/content-gap-method.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/seo-competitor/references/content-gap-method.md",
+      "sha256": "c330977140a343b11f7fab31972c4cc1b77d35f8c9dc5dd0807f964da9773994"
+    },
+    ".agents/skills/jtbd-framing/SKILL.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/jtbd-framing/SKILL.md",
+      "sha256": "31dce3d89f9b078b44a4605ce625c74ca3270693724ee71fe27485a6a73452af"
+    },
+    ".agents/skills/jtbd-framing/references/applying-jtbd-to-discovery.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/jtbd-framing/references/applying-jtbd-to-discovery.md",
+      "sha256": "24a4f4bc22673cabe559109cec85f2b7555195b4ae2f8526bce6d6e85b55fc23"
+    },
+    ".agents/skills/jtbd-framing/references/applying-jtbd-to-positioning.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/jtbd-framing/references/applying-jtbd-to-positioning.md",
+      "sha256": "41f82c8fa88a8a7ef0087504f541c8bb41af990c2d28cd218dd3dcdd991eb699"
+    },
+    ".agents/skills/jtbd-framing/references/applying-jtbd-to-prioritization.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/jtbd-framing/references/applying-jtbd-to-prioritization.md",
+      "sha256": "22855cd3a942d6470a734e62c5bff1514504be34f8b68ddd646d8e6654b4e71f"
+    },
+    ".agents/skills/jtbd-framing/references/common-jtbd-failures.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/jtbd-framing/references/common-jtbd-failures.md",
+      "sha256": "ce94c5bd7688ce6aecb7d2f217dbb3e9a5eb2eb70a0ce29904a91e36c8511d3a"
+    },
+    ".agents/skills/jtbd-framing/references/functional-emotional-social-dimensions.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/jtbd-framing/references/functional-emotional-social-dimensions.md",
+      "sha256": "b28a1771dfed2a254d44cf9b7cbe61f4229ae58d19e14c733ab5972b910dd8d7"
+    },
+    ".agents/skills/jtbd-framing/references/hire-and-fire-criteria.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/jtbd-framing/references/hire-and-fire-criteria.md",
+      "sha256": "cb4d1a2fdc6d525d37b40073554c157a80977908636cfa17dd1a742ba8ed0f64"
+    },
+    ".agents/skills/jtbd-framing/references/identifying-struggling-moments.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/jtbd-framing/references/identifying-struggling-moments.md",
+      "sha256": "ce7683c317251c8949c791836039ab2b99a059722d9df9af8119954415b5411a"
+    },
+    ".agents/skills/jtbd-framing/references/job-statement-structure-patterns.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/jtbd-framing/references/job-statement-structure-patterns.md",
+      "sha256": "80cac04e5df9c3b27ce922d6e606e00914d899fa2df88053369c3f333fff0033"
+    },
+    ".agents/skills/information-architecture/SKILL.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/information-architecture/SKILL.md",
+      "sha256": "b61e91c357c58eed1a12aad57beb1660d59d5cb598d2fd54beab7beb208bc969"
+    },
+    ".agents/skills/information-architecture/references/ia-document-template.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/information-architecture/references/ia-document-template.md",
+      "sha256": "74c09120e7d6c2cdcd4f7bc1253a6234310f450e7e8acaaa5086faf672f88127"
+    },
+    ".agents/skills/information-architecture/references/url-pattern-library.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/information-architecture/references/url-pattern-library.md",
+      "sha256": "235a35a3703a3f94a691343cde949bee543550650952ea1a911eb0fa07c61353"
+    },
+    ".agents/skills/brand-voice/SKILL.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/brand-voice/SKILL.md",
+      "sha256": "7b88607af04d6847639083f498a1b8040372e364da3bfdfeb5715b20109b1009"
+    },
+    ".agents/skills/brand-voice/references/voice-document-template.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/brand-voice/references/voice-document-template.md",
+      "sha256": "3ecb680f2fab6ac6c056078eec6af588594b3f4947f56f6fa6342750c435d747"
+    },
+    ".agents/skills/brand-voice/references/voice-frameworks.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/brand-voice/references/voice-frameworks.md",
+      "sha256": "ddf10b3826f5d16806aad27a34d865ec990b0c910102ae7f289bb6ae19173153"
+    },
+    ".agents/skills/seo-aeo-geo/SKILL.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/seo-aeo-geo/SKILL.md",
+      "sha256": "813fb96dafaba986eaf1d564b6c0194e58f7161181f802406165d0f7d68c8d56"
+    },
+    ".agents/skills/seo-aeo-geo/references/extraction-friendly-patterns.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/seo-aeo-geo/references/extraction-friendly-patterns.md",
+      "sha256": "85b0653394d246a848e1bec3c6595d4d19f6156e209de66871aea07e0883490f"
+    },
+    ".agents/skills/seo-aeo-geo/references/llms-txt-guide.md": {
+      "repository": "MarcW88/thuisrenovatie-gids",
+      "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+      "source_path": ".agents/skills/seo-aeo-geo/references/llms-txt-guide.md",
+      "sha256": "008c48e172172ae440564956e7486014b91fdd93831bdcdc52e2dfbae3a00063"
+    }
+  },
+  "dependency_source": {
+    "repository": "MarcW88/thuisrenovatie-gids",
+    "commit": "33ff11ae8c9b6c9fcc416d3d3cff2a3d5e98de95",
+    "reason": "Canonical source explicitly declared by original Visite Mus\u00e9e registry for non-vendored specialists"
+  }
+}

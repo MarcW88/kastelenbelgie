@@ -12,16 +12,7 @@ The canonical shared file list and provenance are in `site-agents.lock.json`. Co
 
 ## Route bindings
 
-- `/gidsen/` → `guide`
-- `/bronnen/` → `guide`
-- `/kastelen/` → `comparison`
-- `/routes/` → `comparison`
-- `/inspiratie/` → `comparison`
-- `/bezoeken/` → `usage`
-- `/contact/` → `trust`
-- `/over-ons/` → `trust`
-
-All families in `shared-routing.json` are installed, even if this site has no corresponding pages. Trust and design are selected by task as well as URL. Service/portfolio/tool pages keep their actual function; no affiliate template is imposed.
+Read `.agents/castle-context.md` first for all cultural content. The exact museum-analysis/content workflows from Visite Musée take priority for `/kasteel/`, `/kastelen/`, `/soorten/`, `/bezoeken/`, `/routes/`, `/inspiratie/`, `/gidsen/` and the atlas homepage. These are cultural pages, not product/brand reviews. Longest matching prefix in `shared-routing.json` determines the family. `/bronnen/`, `/over-ons/` and `/contact/` use trust. Generic shared families remain installed for tasks where their actual intent applies; they do not supersede the cultural routing.
 
 ## Native technical bindings
 

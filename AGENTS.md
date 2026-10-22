@@ -10,3 +10,12 @@ Read workflows in full: existing-page AUDIT first, then only the correction just
 Original source workflows, configs, scripts and Actions are retained intact in `.agents/reference/`. Those French site generators/Actions are reference dependencies, not commands to run blindly on this site's content. Resolve theme, language, routes and native commands through the site context; record a missing required adapter as BLOCKED, never as PASS.
 
 Run `python3 scripts/verify_site_agents.py` to verify all pinned original files.
+
+
+## Cultural content — Visite Musée migration (2026-10-22)
+
+For any Kastelen België cultural content task, first read `.agents/castle-context.md`, `.agents/shared-routing.json`, `.agents/MUSEUM_MODEL.md` and `.agents/SKILL_REGISTRY.md`. This cultural routing explicitly supersedes generic guide/comparison/brand/usage routing for the atlas homepage and `/kasteel/`, `/kastelen/`, `/soorten/`, `/bezoeken/`, `/routes/`, `/inspiratie/`, `/gidsen/`.
+
+Execute the entire `.agents/skills/museum-analysis-workflow/SKILL.md` and `.agents/skills/museum-content-workflow/SKILL.md`, including all required specialists and their gates. Their original source names/content remain unchanged; the separate castle context resolves language, market, entities and routes. Use NEW_PAGE for placeholders/empty content as defined by the source workflow, AUDIT for substantive existing pages, and PUBLISH_REVIEW after production. Do not substitute the generic product/brand/comparison workflow for a castle fiche. Trust and design retain their own shared workflows.
+
+Keep the complete original research and post-write gap gates; no automatic indexation or invented evidence. Before authoring into published pages, respect the context's native generator warning: current build writes placeholders and must preserve reviewed source content before it can publish it. Run `python3 scripts/verify_museum_agents.py` to verify the migration and existing shared files.

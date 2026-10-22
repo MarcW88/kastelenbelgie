@@ -34,16 +34,35 @@
     ],
     "design": [
       "site-design-review"
+    ],
+    "museum": [
+      "museum-analysis-workflow",
+      "museum-content-workflow"
     ]
   },
   "routes": {
-    "/gidsen/": "guide",
-    "/bronnen/": "guide",
-    "/kastelen/": "comparison",
-    "/routes/": "comparison",
-    "/inspiratie/": "comparison",
-    "/bezoeken/": "usage",
+    "/gidsen/": "museum",
+    "/bronnen/": "trust",
+    "/kastelen/": "museum",
+    "/routes/": "museum",
+    "/inspiratie/": "museum",
+    "/bezoeken/": "museum",
     "/contact/": "trust",
-    "/over-ons/": "trust"
+    "/over-ons/": "trust",
+    "/kasteel/": "museum",
+    "/soorten/": "museum",
+    "/": "museum"
+  },
+  "domain_context": ".agents/castle-context.md",
+  "selection": "Longest matching route prefix; cultural overrides are selected before generic editorial families.",
+  "cultural_owners": {
+    "/kasteel/": "MUSEUM",
+    "/kastelen/": "REGION",
+    "/soorten/": "THEME",
+    "/bezoeken/": "VISIT_INTENT",
+    "/routes/": "VISIT_INTENT",
+    "/inspiratie/": "INSPIRATION",
+    "/gidsen/": "GUIDE",
+    "/": "INSPIRATION"
   }
 }
