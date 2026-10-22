@@ -17,6 +17,7 @@ on:
       - "package-lock.json"
       - ".agents/skills/site-design-review/**"
       - ".github/workflows/visual-design-review.yml"
+      - "scripts/check-west-flanders.mjs"
 
 jobs:
   visual-gravensteen:
@@ -34,6 +35,8 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Build reviewed pages
         run: npm run build
+      - name: Validate West Flanders sources and generated routes
+        run: node scripts/check-west-flanders.mjs
       - name: Capture Gravensteen desktop and mobile
         run: npm run visual:east-flanders
       - name: Capture West Flanders castle desktop and mobile
