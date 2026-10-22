@@ -312,5 +312,12 @@
     "title": "Kastelen in Antwerpen bezoeken | Kastelen België",
     "description": "Ontdek kastelen in provincie Antwerpen: Bornem, d’Ursel, Paleis op de Meir en Rivierenhof. Met bezoekvoorwaarden, rondleidingen en officiële bronnen.",
     "stylesheet": "assets/province-guide.css"
+  },
+  {
+    "route": "/kastelen/limburg/",
+    "source": "content/kastelen/limburg/body.html",
+    "title": "Kastelen in Limburg bezoeken | Kastelen België",
+    "description": "Ontdek kastelen in Belgisch Limburg: Alden Biesen, Heers, Hex en meer. Vergelijk rondleidingen, kasteelparken en praktische bezoekvoorwaarden.",
+    "stylesheet": "assets/province-guide.css"
   }
 ]
