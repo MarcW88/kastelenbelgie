@@ -319,5 +319,12 @@
     "title": "Kastelen in Limburg bezoeken | Kastelen België",
     "description": "Ontdek kastelen in Belgisch Limburg: Alden Biesen, Heers, Hex en meer. Vergelijk rondleidingen, kasteelparken en praktische bezoekvoorwaarden.",
     "stylesheet": "assets/province-guide.css"
+  },
+  {
+    "route": "/kastelen/wallonie/",
+    "source": "content/kastelen/wallonie/body.html",
+    "title": "Kastelen in Wallonië per provincie | Kastelen België",
+    "description": "Ontdek kastelen in de vijf Waalse provincies: Henegouwen, Namen, Luik, Luxemburg en Waals-Brabant. Vind burchten, kasteeldomeinen en bezoekinformatie.",
+    "stylesheet": "assets/province-guide.css"
   }
 ]
