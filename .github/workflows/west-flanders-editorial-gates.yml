@@ -10,6 +10,7 @@ on:
       - "content/briefs/kasteel/**"
       - "content/reviews/kasteel/**"
       - "scripts/verify-west-editorial-gates.mjs"
+      - "scripts/audit-west-editorial-style.mjs"
       - ".github/workflows/west-flanders-editorial-gates.yml"
 
 permissions:
@@ -29,6 +30,15 @@ jobs:
         run: node scripts/check-west-flanders.mjs
       - name: Run executable editorial machine gates
         run: node scripts/verify-west-editorial-gates.mjs
+      - name: Run humanizer and anti-ai-slop pattern checks
+        run: node scripts/audit-west-editorial-style.mjs
+      - name: Upload style findings
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: west-flanders-style-findings
+          path: .artifacts/qa/west-flanders-style-audit.json
+          if-no-files-found: error
       - name: Upload complete gate report
         if: always()
         uses: actions/upload-artifact@v4
