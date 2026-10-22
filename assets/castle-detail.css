@@ -52,3 +52,10 @@ body.reviewed-castle a:focus-visible{outline:3px solid var(--wine);outline-offse
  body.reviewed-castle #tickets .planning-copy{padding:20px 22px}
  body.reviewed-castle .castle-content-layout .castle-editorial-photo img{aspect-ratio:4/3}
 }
+
+/* Visual QA: avoid an empty two-column slot when the source photograph cannot load. */
+body.reviewed-castle .castle-access-note{max-width:790px;padding:25px 32px;background:#e8e1d5;border-left:4px solid var(--wine)}
+body.reviewed-castle .castle-access-note .planning-copy{max-width:100%}
+body.reviewed-castle .castle-access-note p:last-child{margin-bottom:0}
+body.reviewed-castle #toegankelijkheid{padding-bottom:42px}
+@media(max-width:650px){body.reviewed-castle .castle-access-note{padding:20px}}
