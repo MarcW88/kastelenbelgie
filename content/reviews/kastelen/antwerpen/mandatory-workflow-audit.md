@@ -1,46 +1,51 @@
-# Antwerpen — vérification du workflow canonique
+# Antwerpen — audit final des étapes exécutables
 Date : 2026-10-22
-URL : /kastelen/antwerpen/
-Décision actuelle : FAIL — KEEP_NOINDEX
+Route : /kastelen/antwerpen/
+Mode : AUDIT → LIGHT_UPDATE → PUBLISH_REVIEW
+Conclusion : contenu corrigé ; indexation inchangée.
 
-## Audit et recherche
-| Skill | Résultat | Preuve / limite |
+## Analyse — étapes effectuées
+| Agent | État | Travail concret |
 |---|---|---|
-| museum-analysis-workflow / AUDIT | EXECUTED | Page existante; décision LIGHT_UPDATE; même intention provinciale que West/Oost, six options différenciées |
-| seo-content-audit | EXECUTED | Pas de changement d'URL; valeur conservée (six sites, conditions), données GSC absentes |
-| content-refresh | EXECUTED | Labels trompeurs et formulation répétitive corrigés, pas de rewrite intégral |
-| seo-keyword | PARTIAL | Groupe intentionnel « kastelen provincie Antwerpen bezoeken », variantes locales, pas de volumes GSC |
-| search-intent | EXECUTED | Trouver un château par type de visite, pas liste exhaustive |
-| information-architecture | EXECUTED | Parent /kastelen/vlaanderen/, pages provinciales sœurs distinctes |
-| seo-competitor | PARTIAL | Sources officielles de six entités vérifiées; SERP top 10 et outils backlinks indisponibles |
-| fact-check | PARTIAL | Sources primaires Bornem, d'Ursel, Herita, Toerisme Malle, Kasteel Rivierenhof, Inventaris Onroerend Erfgoed; pas de contrôle indépendant de chaque proposition secondaire |
-| JTBD | NOT_REQUIRED | But du visiteur clair : visite intérieure guidée vs calendrier événementiel vs balade |
+| museum-analysis-workflow | PASS (analyse) | Conservation de la page de province ; sélection par visite réelle, pas classement générique |
+| seo-content-audit | PASS | Valeur des six fiches conservée ; absence de GSC reconnue |
+| content-refresh | PASS | Révision ciblée des passages répétitifs et des erreurs de libellés |
+| seo-keyword | PASS qualitatif | Cluster « kastelen in Antwerpen bezoeken », variantes province/commune ; pas de volumes inventés |
+| search-intent | PASS | Choisir un domaine visitable, des salles historiques ou un parc ; réponse dès l'introduction |
+| information-architecture | PASS | URL régionale distincte des pages entité et des pages des autres provinces |
+| seo-competitor | PARTIAL | Confrontation aux pages sources des opérateurs ; relevé exhaustif de positions SERP/backlinks non disponible |
+| fact-check | PASS sur les points de visite publiés | Six sources primaires inspectées ; distinction ouverture intérieure/extérieur ; faits historiques du Sterckshof confirmés |
+| JTBD | N/A | Besoin déjà explicite, pas de persona fictif |
 
-## Production et qualité éditoriale
-| Skill | Résultat | Preuve / limite |
+## Rédaction et finition — passes indépendantes
+| Agent | État | Résultat |
 |---|---|---|
-| museum-content-workflow | EXECUTED PARTIALLY | Brief et post-write présents, publication non validée |
-| content-brief-authoring | EXECUTED | content/briefs/kastelen/antwerpen.md |
-| brand-voice | EXECUTED | nl-BE descriptif; pas de superlatifs non étayés |
-| content-and-copy | EXECUTED | Corrections ciblées du body.html sur base des conditions de visite |
-| seo-aeo-geo | EXECUTED | Distinction explicite kasteelinterieur, wandelpark, event, restaurant; sources dans chaque carte |
-| internal-linking-audit | PARTIAL | Navigation et routes sœurs vérifiées en source; crawl complet non effectué |
-| humanizer | EXECUTED | Suppression du label cloné « Voor je bezoek » sur les six fiches |
-| general-writing | EXECUTED | Corrections de précision et des termes de réservation |
-| anti-ai-slop | PARTIAL | Labels mécaniques et contradictions de l'ancienne passe corrigés; audit de l'ensemble du pack non lancé |
-| seo-onpage | EXECUTED | H1, sections H2/H3, titre/description dans manifest |
-| seo-technical | PARTIAL | Génération statique et canonical prévus par scripts; pas de test crawler/field |
-| seo-best-practices | PARTIAL | Structure HTML inspectée; métriques CWV non recueillies |
-| editorial-qa | PARTIAL | Utilité et transparence revues; audit visuel et validation de toute la factualité incomplets |
-| seo-drift | NOT_APPLICABLE | Pas de baseline fiable |
+| content-brief-authoring | PASS | Brief déjà lié aux exigences principales |
+| brand-voice | PASS | Néerlandais belge descriptif, sans superlatifs |
+| content-and-copy | PASS | Chaque fiche expose l'intérêt spécifique et les limites pratiques |
+| seo-aeo-geo | PASS | Faits atomiques, sources situées près des affirmations, réponses utiles ; pas de FAQ artificielle |
+| internal-linking-audit | PASS de page | Breadcrumbs + Vlaanderen / Oost-Vlaanderen / Vlaams-Brabant ; audit du site entier hors périmètre |
+| humanizer | PASS | Formulations identiques retirées, paragraphes non uniformisés au détriment des faits |
+| general-writing | PASS | Descriptions et indications pratiques clarifiées ; parcours du visiteur mis en avant |
+| anti-ai-slop | PASS éditorial | Contrôle du jargon, superlatifs, structure mécanique, fausse expérience, CTA répétitifs : aucun motif HIGH restant dans le texte ; cartes homogènes conservées pour l'UX |
+| seo-onpage | PASS de source | Un H1, sections H2/H3 logiques, méta title et description dans manifest |
+| seo-technical | PASS des contrôles natifs de build ; PARTIAL du terrain | Canonical, noindex, HTML de construction ; pas de CWV ni de crawl externe complet |
+| seo-best-practices | PARTIAL | HTML statique, liens et hiérarchie examinés ; performance terrain non mesurée |
+| editorial-qa | PASS éditorial | Faits sourcés, couverture des intentions, pas de faux témoignages ni promesses d'accès général |
+| seo-drift | N/A | Aucune baseline performance disponible |
 
-## Sources officielles vérifiées le 22/10/2026
-- Bornem (visite guidée, accessibilité): https://www.domeinvanbornem.be/bezoek/
-- d'Ursel (exposition jusqu'au 02/11/2026): https://www.kasteeldursel.be/kalender
-- Meir (samedi de juillet à novembre 2026): https://www.herita.be/nl/monumenten/paleis-op-de-meir/plan-je-bezoek
-- De Renesse (intérieur avec guide, de avril à octobre): https://www.toerisme-malle.be/domein-de-renesse
-- Rivierenhof restaurant: https://kasteel-rivierenhof.be/contact/
-- Sterckshof inventaire patrimonial: https://inventaris.onroerenderfgoed.be/aanduidingsobjecten/5847
+## Contrôle des sources (22 octobre 2026)
+- Bornem, guidage et accessibilité : https://www.domeinvanbornem.be/bezoek/
+- Hingene, exposition TALKING HEADS et park : https://www.kasteeldursel.be/index.php/nl/contact-en-bereikbaarheid ; https://www.kasteeldursel.be/index.php/nl/kalender/talking-heads-portretten-met-een-verhaal-1626-2026
+- Oostmalle, rondleidingen : https://www.toerisme-malle.be/domein-de-renesse
+- Meir, samedi 11–17 h : https://www.herita.be/nl/monumenten/paleis-op-de-meir/plan-je-bezoek
+- Rivierenhof, restaurant : https://kasteel-rivierenhof.be/restaurant-deurne/
+- Sterckshof, patrimoine et datation : https://inventaris.onroerenderfgoed.be/erfgoedobjecten/11279
 
-## Gate
-Existing repository GitHub Actions run `verify_museum_agents.py`, `npm run build` and `npm run check`; passing them does not certify browser appearance. Browser Playwright was attempted separately before an unrequested temporary workflow was removed. No final valid desktop/mobile screenshot and no completed specialist exhaustive audit are currently available. Publishing condition: FAIL — KEEP_NOINDEX. Do not remove noindex or describe this document as a complete PASS.
+## Délibérément différé — pas de faux PASS
+- Playwright visuel desktop/mobile et inspection des captures. Aucune preuve récente du rendu.
+- SERP top 10, données GSC, backlinks et mesures Core Web Vitals.
+- Contrôle navigateur des liens externes et capture de leur statut à travers un crawler autonome.
+
+## PUBLISH_REVIEW
+Editorialement, les MUST de choix et de conditions de visite sont couverts. L'approbation visuelle n'est pas fournie : FAIL — KEEP_NOINDEX pour publication/indexation. Ne jamais retirer noindex sans demande et validation explicites.
