@@ -1,0 +1,138 @@
+{
+  "directory": ".artifacts/design-review/vlaams-brabant",
+  "versioned": false,
+  "captures": [
+    {
+      "file": "1440-bouchout.png",
+      "sha256": "69e0e11d9add38bc4c08668c4b751beeb7ab4973d3c565ccfe37f02619342ed8"
+    },
+    {
+      "file": "1440-coloma.png",
+      "sha256": "78bf7049229ac5c98ca35ed6ea4f53accce80850a68095617796499735f4c581"
+    },
+    {
+      "file": "1440-full.png",
+      "sha256": "69a7c15fad498c1bed961364450717a45239242ea630fcfbe3772e26583eafa7"
+    },
+    {
+      "file": "1440-gaasbeek.png",
+      "sha256": "5c66a8606a5e89d59585d4c089958c53f62161e3ba0a951aeaf34bd685ac2190"
+    },
+    {
+      "file": "1440-horst.png",
+      "sha256": "5925d6a882b79b563af4380b56310342d006c75d18db5744b5d231e46c8c0e81"
+    },
+    {
+      "file": "1440-kalender-en-toegang.png",
+      "sha256": "ccf9d4c73c37856274a984fc4edbaefed7ca90045a0c4192fb0709fa962eb0b0"
+    },
+    {
+      "file": "1440-top.png",
+      "sha256": "ced2ca91dde79215a05fc491e4bca3dc2283bc557674d070e6e5e2e775c35ea5"
+    },
+    {
+      "file": "320-bouchout.png",
+      "sha256": "872b6dac4f546a64d26b70182ecacc777495bd99d14e03c6d016ca4fe81c474d"
+    },
+    {
+      "file": "320-coloma.png",
+      "sha256": "42f5e5ae1ee6df97f862b7de50c1ed303a8d06fed5740c7a00ad16febe2de6c3"
+    },
+    {
+      "file": "320-full.png",
+      "sha256": "edb3e525ef2595465a0d8260e2f6144a1e5ca76c2053f609a2fe0caf05cc0e25"
+    },
+    {
+      "file": "320-gaasbeek.png",
+      "sha256": "8b17ef1cd72951e8c4649a92ec1b822c05c1608fe9d03ac922466a5e9314cc3d"
+    },
+    {
+      "file": "320-horst.png",
+      "sha256": "e5932dc188a120b65efc3aee827eb3b0a1fa1740cc63a3752ee47d4b7b90a429"
+    },
+    {
+      "file": "320-kalender-en-toegang.png",
+      "sha256": "bddcac68df02ac10f32bdccbd19c9b5c947095b3e48911d8bcf6d6eaf718157f"
+    },
+    {
+      "file": "320-menu.png",
+      "sha256": "1a7dd06e80f5ccf1ba084e98c1894ceaff5a0d3f58a6e46eb53c8f5e20b850ac"
+    },
+    {
+      "file": "320-top.png",
+      "sha256": "36c5350e69ae713ec748108e239092871fdda69df3276e780c43bc1b041033f7"
+    },
+    {
+      "file": "390-bouchout.png",
+      "sha256": "aa75225f0fbb03cc76e35da55ad9c0111cbdf4d7e8c72ab3664f3963b560417c"
+    },
+    {
+      "file": "390-coloma.png",
+      "sha256": "b5015dfdec652fd49f4184c14e03bf8d6b7cdac2ce9edda0ebcd4efda06e1f88"
+    },
+    {
+      "file": "390-full.png",
+      "sha256": "bed4530b0c15b5f0f1118fbf61d188fa7ada4023e5ebf03d11d9f949bf039c32"
+    },
+    {
+      "file": "390-gaasbeek.png",
+      "sha256": "103b30484d5453100922d8e9265d765123ac043d2ee110646ff21708f9a30057"
+    },
+    {
+      "file": "390-horst.png",
+      "sha256": "1e59bcb70f5812fed7998de9b368b045fe8a35d2cd2221912257c8c17d3d4bfc"
+    },
+    {
+      "file": "390-kalender-en-toegang.png",
+      "sha256": "03c5611e2300746beb1c1757c39af7f9b99d6ee885ed3573bf40108404bbdad6"
+    },
+    {
+      "file": "390-menu.png",
+      "sha256": "0fff2ade8e3712062667f83f606914e965972ab5500b2453d4c5796735e1e13c"
+    },
+    {
+      "file": "390-top.png",
+      "sha256": "9decb7f36ab4bdaecd6598c06e2f6cfaed95b0f614d5ccec185fd2c4b0b75e4c"
+    },
+    {
+      "file": "768-bouchout.png",
+      "sha256": "f5b61da4409535d3877ddb0a3c9aa6d9669a6fdc0516602e7fe3436f5f5b20b1"
+    },
+    {
+      "file": "768-coloma.png",
+      "sha256": "172030780c3f6bd88cd1b19737260a28aca1fa77fc6cefd6ebb0b68a8113100c"
+    },
+    {
+      "file": "768-full.png",
+      "sha256": "a8065d79c5b163863d4f7f85f76946b2fc42c0ce7d10daebdb9e232c46769e80"
+    },
+    {
+      "file": "768-gaasbeek.png",
+      "sha256": "9af385474da96049a4c07b925156725fa29a6d01988e8edfea7a85de242ef64e"
+    },
+    {
+      "file": "768-horst.png",
+      "sha256": "73798ea3d9d2be09b85802ed9851bb686f66f99a0526708790173785ba9cbea2"
+    },
+    {
+      "file": "768-kalender-en-toegang.png",
+      "sha256": "f53f0c7381b161139b0812a1ae59e2a6af672ba9bafeeab0670ad00e450db30f"
+    },
+    {
+      "file": "768-menu.png",
+      "sha256": "877eeedc4290303eb7a38ad76cd1b031aad680dda186433da11c9db90979626b"
+    },
+    {
+      "file": "768-top.png",
+      "sha256": "e72c139a6b9d1a0b2cc504331744e930f19986cf81f606827cae75820b9b55c2"
+    },
+    {
+      "file": "original/desktop/kastelen--vlaams-brabant.png",
+      "sha256": "69a7c15fad498c1bed961364450717a45239242ea630fcfbe3772e26583eafa7"
+    },
+    {
+      "file": "original/mobile/kastelen--vlaams-brabant.png",
+      "sha256": "bed4530b0c15b5f0f1118fbf61d188fa7ada4023e5ebf03d11d9f949bf039c32"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "brand": {
+    "name": "Kastelen België",
+    "domain": "https://kastelenbelgie.be",
+    "locale": "nl-BE"
+  },
+  "domain": "https://kastelenbelgie.be",
+  "crawl_mode": "import",
+  "summary": {
+    "checked_pages": 1,
+    "add_internal_link": 0,
+    "add_contextual_body_link": 0,
+    "no_action_needed": 2
+  },
+  "pages": [
+    {
+      "url": "https://kastelenbelgie.be/kastelen/vlaams-brabant/",
+      "fetch": {
+        "fetcher": "import",
+        "status_code": null
+      },
+      "title": "Kastelen in Vlaams-Brabant bezoeken | Kastelen België",
+      "h1": "Kastelen in Vlaams-Brabant bezoeken",
+      "stats": {
+        "total_links": 28,
+        "unique_links": 18,
+        "breakdown": {
+          "navigation": 11,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 4
+        },
+        "unique_breakdown": {
+          "navigation": 8,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 4
+        }
+      },
+      "recommendations": [
+        {
+          "source": "https://kastelenbelgie.be/kastelen/vlaams-brabant/",
+          "target": "https://kastelenbelgie.be/kastelen/",
+          "anchor": "overzicht per provincie",
+          "placement": "selection-method paragraph",
+          "reason": "Functional parent province directory.",
+          "priority": "P1",
+          "target_normalized": "https://kastelenbelgie.be/kastelen",
+          "action": "no_action_needed",
+          "recommendation": "Target URL already exists in body/contextual links.",
+          "target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kastelen",
+              "region": "navigation",
+              "anchor": "Kastelen per regio"
+            },
+            {
+              "url": "https://kastelenbelgie.be/kastelen",
+              "region": "body",
+              "anchor": "overzicht per provincie"
+            }
+          ],
+          "body_target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kastelen",
+              "region": "body",
+              "anchor": "overzicht per provincie"
+            }
+          ]
+        },
+        {
+          "source": "https://kastelenbelgie.be/kastelen/vlaams-brabant/",
+          "target": "https://kastelenbelgie.be/kastelen/oost-vlaanderen/",
+          "anchor": "kastelen en kasteelparken in Oost-Vlaanderen",
+          "placement": "selection-method paragraph",
+          "reason": "Existing reviewed alternative province guide.",
+          "priority": "P1",
+          "target_normalized": "https://kastelenbelgie.be/kastelen/oost-vlaanderen",
+          "action": "no_action_needed",
+          "recommendation": "Target URL already exists in body/contextual links.",
+          "target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kastelen/oost-vlaanderen",
+              "region": "body",
+              "anchor": "kastelen en kasteelparken in Oost-Vlaanderen"
+            }
+          ],
+          "body_target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kastelen/oost-vlaanderen",
+              "region": "body",
+              "anchor": "kastelen en kasteelparken in Oost-Vlaanderen"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "blocked_pages": []
+}

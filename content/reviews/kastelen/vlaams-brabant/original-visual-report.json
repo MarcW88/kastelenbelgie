@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-10-22T09:46:15.296Z",
+  "baseUrl": "http://127.0.0.1:4187",
+  "scope": null,
+  "routes": [
+    "/kastelen/vlaams-brabant/"
+  ],
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "pages": [
+    {
+      "route": "/kastelen/vlaams-brabant/",
+      "viewport": "desktop",
+      "httpStatus": 200,
+      "screenshot": ".artifacts/design-review/vlaams-brabant/original/desktop/kastelen--vlaams-brabant.png",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "title": "Kastelen in Vlaams-Brabant bezoeken | Kastelen België",
+      "statusReady": "complete",
+      "horizontalOverflow": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "headingCount": 0,
+      "tocLinkCount": 0,
+      "tocParentClass": null,
+      "missingHeadingIds": [],
+      "tableCount": 0,
+      "rawTableCount": 0,
+      "overflowingTables": [],
+      "articleAnswer": null,
+      "firstEditorialLink": null,
+      "sidebar": null,
+      "headerHeight": 0
+    },
+    {
+      "route": "/kastelen/vlaams-brabant/",
+      "viewport": "mobile",
+      "httpStatus": 200,
+      "screenshot": ".artifacts/design-review/vlaams-brabant/original/mobile/kastelen--vlaams-brabant.png",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "title": "Kastelen in Vlaams-Brabant bezoeken | Kastelen België",
+      "statusReady": "complete",
+      "horizontalOverflow": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "headingCount": 0,
+      "tocLinkCount": 0,
+      "tocParentClass": null,
+      "missingHeadingIds": [],
+      "tableCount": 0,
+      "rawTableCount": 0,
+      "overflowingTables": [],
+      "articleAnswer": null,
+      "firstEditorialLink": null,
+      "sidebar": null,
+      "headerHeight": 0
+    }
+  ]
+}
