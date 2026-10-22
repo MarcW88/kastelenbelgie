@@ -10,6 +10,7 @@ on:
       - "assets/castle-detail.css"
       - "assets/province-guide.css"
       - "assets/styles.css"
+      - "scripts/apply-reviewed-pages.mjs"
       - "package.json"
       - "package-lock.json"
       - ".agents/skills/site-design-review/**"
