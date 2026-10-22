@@ -35,7 +35,7 @@ for(const slug of slugs){
  add(slug,'SEO_METADATA',Boolean(entry&&render.includes('content="'+entry.description.replace(/&/g,'&amp;')+'"')&&!render.includes('Ontdek Kasteel van Laarne in Oost-Vlaanderen')),renderPath);
  add(slug,'PRIMARY_OFFICIAL_SOURCE',/href="https:\/\//.test(body),bodyPath);
  add(slug,'ONE_H1',(body.match(/<h1\b/g)||[]).length===1,bodyPath);
- add(slug,'ACTUAL_CLAIM_AUDIT',exists(reviewPath)&&/fact.check|factual|feit/i.test(read(reviewPath)),reviewPath);
+ add(slug,'CLAIM_AUDIT_DOCUMENTED',exists(reviewPath)&&/facts, entity and freshness|fact.check|factual|feit/i.test(read(reviewPath)),reviewPath);
  if(exists(researchPath)){
   const text=read(researchPath);
   add(slug,'RESEARCH_GAP_DISCLOSURE',/DATA_GAP|BLOCKED|PARTIAL/i.test(text),researchPath);
