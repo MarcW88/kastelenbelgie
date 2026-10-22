@@ -305,5 +305,12 @@
     "title": "Kastelen in Vlaanderen per provincie | Kastelen België",
     "description": "Ontdek kastelen in de vijf Vlaamse provincies. Kies West-Vlaanderen, Oost-Vlaanderen, Vlaams-Brabant, Antwerpen of Limburg en plan je kasteelbezoek.",
     "stylesheet": "assets/province-guide.css"
+  },
+  {
+    "route": "/kastelen/antwerpen/",
+    "source": "content/kastelen/antwerpen/body.html",
+    "title": "Kastelen in Antwerpen bezoeken | Kastelen België",
+    "description": "Ontdek kastelen in provincie Antwerpen: Bornem, d’Ursel, Paleis op de Meir en Rivierenhof. Met bezoekvoorwaarden, rondleidingen en officiële bronnen.",
+    "stylesheet": "assets/province-guide.css"
   }
 ]
