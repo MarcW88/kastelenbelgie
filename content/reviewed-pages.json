@@ -361,5 +361,12 @@
     "title": "Kastelen in Luxemburg bezoeken | Kastelen België",
     "description": "Ontdek bezoekbare kastelen en historische domeinen in Luxemburg. Vergelijk interieurbezoeken, parken en rondleidingen met betrouwbare bronnen.",
     "stylesheet": "assets/province-guide.css"
+  },
+  {
+    "route": "/kastelen/brussel/",
+    "source": "content/kastelen/brussel/body.html",
+    "title": "Kastelen in Brussel bezoeken | Kastelen België",
+    "description": "Ontdek kastelen en paleizen in Brussel: Coudenberg, Koninklijk Paleis, Karreveld, Malou en Laken. Met bezoekvoorwaarden en bronnen.",
+    "stylesheet": "assets/province-guide.css"
   }
 ]
