@@ -480,5 +480,124 @@
     "title": "Kasteel De Blankaart bezoeken",
     "description": "Bezoek Kasteel De Blankaart in West-Vlaanderen: eigen erfgoedverhaal, bezoekvoorwaarden en officiële bronnen.",
     "stylesheet": "assets/castle-detail.css"
+  },
+  {
+    "route": "/kasteel/kasteel-van-gaasbeek/",
+    "source": "content/kasteel/kasteel-van-gaasbeek/body.html",
+    "title": "Kasteel van Gaasbeek bezoeken | Vlaams-Brabant",
+    "description": "Kasteel van Gaasbeek in Vlaams-Brabant: erfgoed, bezoekmogelijkheden, praktische beperkingen en officiële bronnen.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-van-gaasbeek/",
+      "name": "Kasteel van Gaasbeek bezoeken",
+      "inLanguage": "nl-BE",
+      "isPartOf": {
+        "@id": "https://kastelenbelgie.be/kastelen/vlaams-brabant/#page"
+      }
+    }
+  },
+  {
+    "route": "/kasteel/kasteel-van-beersel/",
+    "source": "content/kasteel/kasteel-van-beersel/body.html",
+    "title": "Kasteel van Beersel bezoeken | Vlaams-Brabant",
+    "description": "Kasteel van Beersel in Vlaams-Brabant: erfgoed, bezoekmogelijkheden, praktische beperkingen en officiële bronnen.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-van-beersel/",
+      "name": "Kasteel van Beersel bezoeken",
+      "inLanguage": "nl-BE",
+      "isPartOf": {
+        "@id": "https://kastelenbelgie.be/kastelen/vlaams-brabant/#page"
+      }
+    }
+  },
+  {
+    "route": "/kasteel/kasteel-groenenberg/",
+    "source": "content/kasteel/kasteel-groenenberg/body.html",
+    "title": "Kasteel en domein Groenenberg bezoeken | Vlaams-Brabant",
+    "description": "Kasteel en domein Groenenberg in Vlaams-Brabant: erfgoed, bezoekmogelijkheden, praktische beperkingen en officiële bronnen.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-groenenberg/",
+      "name": "Kasteel en domein Groenenberg bezoeken",
+      "inLanguage": "nl-BE",
+      "isPartOf": {
+        "@id": "https://kastelenbelgie.be/kastelen/vlaams-brabant/#page"
+      }
+    }
+  },
+  {
+    "route": "/kasteel/kasteel-coloma/",
+    "source": "content/kasteel/kasteel-coloma/body.html",
+    "title": "Park en rozentuin Coloma bezoeken | Vlaams-Brabant",
+    "description": "Park en rozentuin Coloma in Vlaams-Brabant: erfgoed, bezoekmogelijkheden, praktische beperkingen en officiële bronnen.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-coloma/",
+      "name": "Park en rozentuin Coloma bezoeken",
+      "inLanguage": "nl-BE",
+      "isPartOf": {
+        "@id": "https://kastelenbelgie.be/kastelen/vlaams-brabant/#page"
+      }
+    }
+  },
+  {
+    "route": "/kasteel/kasteel-van-bouchout/",
+    "source": "content/kasteel/kasteel-van-bouchout/body.html",
+    "title": "Kasteel van Bouchout bezoeken | Vlaams-Brabant",
+    "description": "Kasteel van Bouchout in Vlaams-Brabant: erfgoed, bezoekmogelijkheden, praktische beperkingen en officiële bronnen.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-van-bouchout/",
+      "name": "Kasteel van Bouchout bezoeken",
+      "inLanguage": "nl-BE",
+      "isPartOf": {
+        "@id": "https://kastelenbelgie.be/kastelen/vlaams-brabant/#page"
+      }
+    }
+  },
+  {
+    "route": "/kasteel/arenbergkasteel/",
+    "source": "content/kasteel/arenbergkasteel/body.html",
+    "title": "Arenbergkasteel bezoeken | Vlaams-Brabant",
+    "description": "Arenbergkasteel in Vlaams-Brabant: erfgoed, bezoekmogelijkheden, praktische beperkingen en officiële bronnen.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "https://kastelenbelgie.be/kasteel/arenbergkasteel/",
+      "name": "Arenbergkasteel bezoeken",
+      "inLanguage": "nl-BE",
+      "isPartOf": {
+        "@id": "https://kastelenbelgie.be/kastelen/vlaams-brabant/#page"
+      }
+    }
+  },
+  {
+    "route": "/kasteel/kasteel-van-horst/",
+    "source": "content/kasteel/kasteel-van-horst/body.html",
+    "title": "Kasteel van Horst bezoeken | Vlaams-Brabant",
+    "description": "Kasteel van Horst in Vlaams-Brabant: erfgoed, bezoekmogelijkheden, praktische beperkingen en officiële bronnen.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-van-horst/",
+      "name": "Kasteel van Horst bezoeken",
+      "inLanguage": "nl-BE",
+      "isPartOf": {
+        "@id": "https://kastelenbelgie.be/kastelen/vlaams-brabant/#page"
+      }
+    }
   }
 ]
