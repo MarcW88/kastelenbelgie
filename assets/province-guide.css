@@ -42,27 +42,3 @@ body.reviewed-province .province-heading h1{font-size:clamp(2.85rem,5.8vw,5.7rem
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media(max-width:390px){body.reviewed-province .province-heading h1{font-size:clamp(2.3rem,10vw,2.65rem)}.reviewed-province .brand{font-size:1.16rem;gap:8px;white-space:nowrap}.reviewed-province .brand img{width:32px;height:32px}}
 
-/* Gravensteen: licensed, documentary photography integrated with the entity page. */
-.reviewed-castle .castle-hero-photo{max-width:1240px;margin:22px auto 0;padding:0 24px}
-.reviewed-castle .castle-hero-photo img{display:block;width:100%;max-height:540px;aspect-ratio:16/9;object-fit:cover;border-radius:3px}
-.reviewed-castle .castle-editorial-photo{max-width:1060px;margin:36px auto 12px;padding:0 24px}
-.reviewed-castle .castle-editorial-photo img{display:block;width:100%;max-height:510px;aspect-ratio:16/9;object-fit:cover;border-radius:3px}
-.reviewed-castle .castle-photo-wide{max-width:900px}
-.reviewed-castle .castle-hero-photo figcaption,.reviewed-castle .castle-editorial-photo figcaption{margin-top:9px;font-size:.72rem;line-height:1.55;color:var(--muted)}
-.reviewed-castle figure figcaption a{text-decoration:underline;text-underline-offset:2px}
-@media(max-width:650px){.reviewed-castle .castle-hero-photo,.reviewed-castle .castle-editorial-photo{padding:0 15px;margin-top:20px}.reviewed-castle .castle-hero-photo img{aspect-ratio:4/3}.reviewed-castle .castle-editorial-photo img{aspect-ratio:3/2}}
-
-/* The Gravensteen pictures now sit inside their matching content sections. */
-.reviewed-castle .province-heading .castle-hero-photo{margin:34px 0 0;padding:0;max-width:none}
-.reviewed-castle .province-heading .castle-hero-photo img{aspect-ratio:2.3/1;max-height:490px}
-.reviewed-castle .castle-content-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.88fr);gap:clamp(24px,4vw,65px);align-items:start}
-.reviewed-castle .castle-content-layout .planning-copy{max-width:none;min-width:0}
-.reviewed-castle .castle-content-layout .castle-editorial-photo{margin:3px 0 0;padding:0;max-width:none;min-width:0}
-.reviewed-castle .castle-content-layout .castle-editorial-photo img{aspect-ratio:4/5;max-height:650px;object-fit:cover}
-.reviewed-castle #geschiedenis{background:#f2ede5;max-width:none;padding:70px max(24px,calc((100vw - 1200px)/2)) 62px}
-.reviewed-castle #geschiedenis .planning-copy{max-width:1000px;columns:2;column-gap:62px}
-.reviewed-castle #geschiedenis .planning-copy h3{break-after:avoid;break-inside:avoid;margin-top:4px}
-.reviewed-castle #geschiedenis .planning-copy p{break-inside:avoid}
-.reviewed-castle #tickets .planning-copy{padding:25px 35px;border:1px solid var(--line);background:var(--paper);max-width:900px}
-@media(max-width:920px){.reviewed-castle .castle-content-layout{grid-template-columns:1fr}.reviewed-castle .castle-content-layout .castle-editorial-photo img{aspect-ratio:16/9;max-height:420px}.reviewed-castle #geschiedenis .planning-copy{columns:1}}
-@media(max-width:650px){.reviewed-castle #geschiedenis{padding:42px 18px}.reviewed-castle .province-heading .castle-hero-photo img{aspect-ratio:4/3}.reviewed-castle #tickets .planning-copy{padding:20px}}
