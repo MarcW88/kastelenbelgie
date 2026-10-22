@@ -298,5 +298,12 @@
         }
       ]
     }
+  },
+  {
+    "route": "/kastelen/vlaanderen/",
+    "source": "content/kastelen/vlaanderen/body.html",
+    "title": "Kastelen in Vlaanderen per provincie | Kastelen België",
+    "description": "Ontdek kastelen in de vijf Vlaamse provincies. Kies West-Vlaanderen, Oost-Vlaanderen, Vlaams-Brabant, Antwerpen of Limburg en plan je kasteelbezoek.",
+    "stylesheet": "assets/province-guide.css"
   }
 ]
