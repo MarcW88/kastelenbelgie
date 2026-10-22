@@ -1,0 +1,24 @@
+name: West Flanders editorial gates
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "content/kasteel/**"
+      - "content/research/kasteel/**"
+      - "content/briefs/kasteel/**"
+      - "content/reviews/kasteel/**"
+      - "scripts/verify-west-editorial-gates.mjs"
+      - ".github/workflows/west-flanders-editorial-gates.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  evidence-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate specialist evidence for each West Flanders page
+        run: node scripts/verify-west-editorial-gates.mjs
