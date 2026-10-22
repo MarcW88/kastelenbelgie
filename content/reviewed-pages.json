@@ -424,5 +424,61 @@
     "title": "Park van Beervelde bezoeken",
     "description": "Ontdek Park van Beervelde in Oost-Vlaanderen: geschiedenis, bezoekmogelijkheden en actuele informatie van de officiële beheerder.",
     "stylesheet": "assets/castle-detail.css"
+  },
+  {
+    "route": "/kasteel/kasteel-van-loppem/",
+    "source": "content/kasteel/kasteel-van-loppem/body.html",
+    "title": "Kasteel van Loppem bezoeken",
+    "description": "Bezoek Kasteel van Loppem in West-Vlaanderen: eigen erfgoedverhaal, bezoekvoorwaarden en officiële bronnen.",
+    "stylesheet": "assets/castle-detail.css"
+  },
+  {
+    "route": "/kasteel/kasteel-beauvoorde/",
+    "source": "content/kasteel/kasteel-beauvoorde/body.html",
+    "title": "Kasteel Beauvoorde bezoeken",
+    "description": "Bezoek Kasteel Beauvoorde in West-Vlaanderen: eigen erfgoedverhaal, bezoekvoorwaarden en officiële bronnen.",
+    "stylesheet": "assets/castle-detail.css"
+  },
+  {
+    "route": "/kasteel/kasteel-van-rumbeke/",
+    "source": "content/kasteel/kasteel-van-rumbeke/body.html",
+    "title": "Kasteel van Rumbeke bezoeken",
+    "description": "Bezoek Kasteel van Rumbeke in West-Vlaanderen: eigen erfgoedverhaal, bezoekvoorwaarden en officiële bronnen.",
+    "stylesheet": "assets/castle-detail.css"
+  },
+  {
+    "route": "/kasteel/kasteel-wijnendale/",
+    "source": "content/kasteel/kasteel-wijnendale/body.html",
+    "title": "Kasteel Wijnendale bezoeken",
+    "description": "Bezoek Kasteel Wijnendale in West-Vlaanderen: eigen erfgoedverhaal, bezoekvoorwaarden en officiële bronnen.",
+    "stylesheet": "assets/castle-detail.css"
+  },
+  {
+    "route": "/kasteel/kasteel-tillegem/",
+    "source": "content/kasteel/kasteel-tillegem/body.html",
+    "title": "Kasteel Tillegem bezoeken",
+    "description": "Bezoek Kasteel Tillegem in West-Vlaanderen: eigen erfgoedverhaal, bezoekvoorwaarden en officiële bronnen.",
+    "stylesheet": "assets/castle-detail.css"
+  },
+  {
+    "route": "/kasteel/kasteel-tudor/",
+    "source": "content/kasteel/kasteel-tudor/body.html",
+    "title": "Kasteel Tudor bezoeken",
+    "description": "Bezoek Kasteel Tudor in West-Vlaanderen: eigen erfgoedverhaal, bezoekvoorwaarden en officiële bronnen.",
+    "stylesheet": "assets/castle-detail.css"
+  },
+  {
+    "route": "/kasteel/kasteel-beisbroek/",
+    "source": "content/kasteel/kasteel-beisbroek/body.html",
+    "title": "Kasteel Beisbroek bezoeken",
+    "description": "Bezoek Kasteel Beisbroek in West-Vlaanderen: eigen erfgoedverhaal, bezoekvoorwaarden en officiële bronnen.",
+    "stylesheet": "assets/castle-detail.css"
+  },
+  {
+    "route": "/kasteel/kasteel-de-blankaart/",
+    "source": "content/kasteel/kasteel-de-blankaart/body.html",
+    "title": "Kasteel De Blankaart bezoeken",
+    "description": "Bezoek Kasteel De Blankaart in West-Vlaanderen: eigen erfgoedverhaal, bezoekvoorwaarden en officiële bronnen.",
+    "stylesheet": "assets/castle-detail.css"
   }
 ]
