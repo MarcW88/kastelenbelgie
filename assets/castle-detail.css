@@ -89,3 +89,27 @@ body.reviewed-castle #wat-zien .castle-intro-copy{max-width:790px;margin:0}
 body.reviewed-castle #wat-zien .castle-intro-copy p{max-width:75ch}
 body.reviewed-castle #geschiedenis{padding-top:58px}
 @media(max-width:650px){body.reviewed-castle #wat-zien{padding-bottom:28px}body.reviewed-castle #geschiedenis{padding-top:38px}}
+
+/* Purpose-built compact modules: no inherited province title/content grid. */
+body.reviewed-castle .castle-visit-panel,
+body.reviewed-castle .castle-access-panel{display:block;max-width:1100px;width:min(1100px,calc(100% - 48px));margin-inline:auto;padding:52px 0 42px;min-width:0}
+body.reviewed-castle .castle-module-heading{max-width:780px;margin-bottom:26px}
+body.reviewed-castle .castle-module-heading h2,
+body.reviewed-castle .castle-access-panel h2{font-size:clamp(2.55rem,4vw,3.75rem);line-height:1.1;margin:10px 0 14px;overflow-wrap:anywhere}
+body.reviewed-castle .castle-module-heading p{max-width:70ch;color:var(--muted);margin:0;font-size:.95rem}
+body.reviewed-castle .castle-info-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}
+body.reviewed-castle .castle-info-card{background:var(--paper);border:1px solid var(--line);padding:28px;min-width:0}
+body.reviewed-castle .castle-info-label{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--wine);font-weight:750}
+body.reviewed-castle .castle-info-card h3{font-size:clamp(1.65rem,2.2vw,2.25rem);line-height:1.1;margin:16px 0}
+body.reviewed-castle .castle-info-card p{font-size:.9rem;line-height:1.75;margin:0;overflow-wrap:anywhere}
+body.reviewed-castle .castle-action-line{display:flex;gap:18px;flex-wrap:wrap;margin-top:20px}
+body.reviewed-castle .castle-action-line a{display:inline-flex;min-height:46px;align-items:center;padding:10px 16px;background:var(--green);color:white;text-decoration:none;font-weight:700;font-size:.84rem}
+body.reviewed-castle .castle-action-line a+ a{background:transparent;color:var(--green);border:1px solid var(--green)}
+body.reviewed-castle .castle-access-panel{padding:30px 0 52px}
+body.reviewed-castle .castle-access-content{background:#e8e1d5;border-left:4px solid var(--wine);display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);gap:36px;padding:32px 38px;align-items:start}
+body.reviewed-castle .castle-access-panel .castle-access-lead{font-size:1.05rem;line-height:1.65;max-width:37ch;margin:0}
+body.reviewed-castle .castle-access-details{min-width:0}
+body.reviewed-castle .castle-access-details p{font-size:.91rem;line-height:1.75;margin:0 0 16px}
+body.reviewed-castle .castle-access-details a{font-size:.86rem;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:900px){body.reviewed-castle .castle-info-grid{grid-template-columns:1fr 1fr}body.reviewed-castle .castle-access-content{grid-template-columns:1fr;gap:16px}}
+@media(max-width:600px){body.reviewed-castle .castle-visit-panel,body.reviewed-castle .castle-access-panel{width:calc(100% - 28px);padding-top:36px;padding-bottom:25px}body.reviewed-castle .castle-info-grid{grid-template-columns:1fr}body.reviewed-castle .castle-info-card{padding:22px}body.reviewed-castle .castle-access-content{padding:24px 20px}body.reviewed-castle .castle-action-line{flex-direction:column}body.reviewed-castle .castle-action-line a{justify-content:center}}
