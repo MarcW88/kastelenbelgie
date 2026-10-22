@@ -21,3 +21,12 @@ checked_at: 2026-10-22
 | Editorial QA / PUBLISH_REVIEW | FAIL | Research and specialist gates incomplete, and structural clone risk HIGH across eight same-layout pages |
 
 Decision: FAIL — KEEP_NOINDEX. These are publication drafts, NOT certified complete pages. Never remove noindex without separate human validation and instruction.
+
+## Humanizer + anti-ai-slop revision — 2026-10-22
+- Source edit: content/kasteel/kasteel-beauvoorde/body.html.
+- Current approximate body words including navigation: 459.
+- Humanizer: removed duplicated conclusions and softened mechanical repeated visitor contrasts; preserved named people, dates, locations, access constraints and official links.
+- Anti-ai-slop: removed overlapping H2 narrative and repeated explanation blocks; retained these concrete page-specific headings: Arthur Merghelynck wilde de klok terugdraaien | Waarom de reconstructie niet hetzelfde is als authenticiteit | Restauratie en heropening in 2026 | Wat ontdekken kinderen in het kasteel? | Wat veranderde na de heropening in 2026? | Controleer de actuele bezoekvoorwaarden.
+- Separate automated heuristic findings: GitHub Actions West Flanders editorial gates / style-findings artifact (machine check, not proof of human authorship or complete specialist signoff).
+- Factuality: volatile opening and price claims should be cross-checked at the official URLs before indexation.
+- Verdict: revision performed; comprehensive SERP gate and final human PUBLISH_REVIEW status unchanged.
