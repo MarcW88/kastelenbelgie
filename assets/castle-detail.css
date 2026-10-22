@@ -59,3 +59,25 @@ body.reviewed-castle .castle-access-note .planning-copy{max-width:100%}
 body.reviewed-castle .castle-access-note p:last-child{margin-bottom:0}
 body.reviewed-castle #toegankelijkheid{padding-bottom:42px}
 @media(max-width:650px){body.reviewed-castle .castle-access-note{padding:20px}}
+
+/* Reading-flow correction: practical modules follow their headings, no float-like grid. */
+body.reviewed-castle #tickets,
+body.reviewed-castle #toegankelijkheid,
+body.reviewed-castle #voor-je-bezoek{width:min(980px,calc(100% - 48px));margin-inline:auto;padding-top:52px}
+body.reviewed-castle #tickets .province-section-head,
+body.reviewed-castle #toegankelijkheid .province-section-head{display:block;max-width:850px;margin:0 0 24px}
+body.reviewed-castle #tickets .province-section-head h2,
+body.reviewed-castle #toegankelijkheid .province-section-head h2{max-width:850px;font-size:clamp(2.5rem,4vw,3.8rem);line-height:1.08}
+body.reviewed-castle #tickets .planning-copy{width:100%;max-width:850px;margin:0;padding:32px 38px;border-left:4px solid var(--green)}
+body.reviewed-castle #toegankelijkheid .castle-access-note{max-width:850px;margin:0;padding:28px 38px}
+body.reviewed-castle #toegankelijkheid .castle-access-note .planning-copy{width:100%;max-width:100%}
+body.reviewed-castle #tickets .planning-copy p,
+body.reviewed-castle #toegankelijkheid .planning-copy p{max-width:74ch;line-height:1.8;margin-bottom:18px}
+body.reviewed-castle #tickets .planning-copy p:last-child{border-top:1px solid var(--line);padding-top:18px;margin-bottom:0}
+body.reviewed-castle #voor-je-bezoek{display:block}
+body.reviewed-castle #voor-je-bezoek .planning-title{max-width:850px;margin-bottom:22px}
+body.reviewed-castle #voor-je-bezoek .planning-copy{max-width:850px}
+@media(max-width:650px){
+ body.reviewed-castle #tickets,body.reviewed-castle #toegankelijkheid,body.reviewed-castle #voor-je-bezoek{width:calc(100% - 28px);padding-top:36px}
+ body.reviewed-castle #tickets .planning-copy,body.reviewed-castle #toegankelijkheid .castle-access-note{padding:20px 22px}
+}
