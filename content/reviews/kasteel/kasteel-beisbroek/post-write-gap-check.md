@@ -21,3 +21,9 @@ checked_at: 2026-10-22
 | Editorial QA / PUBLISH_REVIEW | FAIL | Research and specialist gates incomplete, and structural clone risk HIGH across eight same-layout pages |
 
 Decision: FAIL — KEEP_NOINDEX. These are publication drafts, NOT certified complete pages. Never remove noindex without separate human validation and instruction.
+
+## Humanizer + anti-ai-slop revision — 2026-10-22
+- Removed duplicated narrative sections and mechanical visitor contrasts; retained official links and distinctive facts.
+- Page headings after revision: Een kasteel met een andere publieke functie | 98 hectare bossen en heide | Van boswandeling naar planetenpad | Het domein bezoeken zonder museumticket | De juiste plek voor natuur, sterrenkunde of een wandeling | Controleer je bezoek bij de beheerder
+- Approximately 405 visible words including navigation.
+- Automation checks patterns and structural integrity; does not substitute source fact audit or final PUBLISH_REVIEW.
