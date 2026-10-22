@@ -81,3 +81,11 @@ body.reviewed-castle #voor-je-bezoek .planning-copy{max-width:850px}
  body.reviewed-castle #tickets,body.reviewed-castle #toegankelijkheid,body.reviewed-castle #voor-je-bezoek{width:calc(100% - 28px);padding-top:36px}
  body.reviewed-castle #tickets .planning-copy,body.reviewed-castle #toegankelijkheid .castle-access-note{padding:20px 22px}
 }
+
+/* Gravensteen post-Playwright fix: no reserved space for unavailable photograph. */
+body.reviewed-castle #wat-zien{padding-bottom:52px}
+body.reviewed-castle #wat-zien .province-section-head{max-width:920px}
+body.reviewed-castle #wat-zien .castle-intro-copy{max-width:790px;margin:0}
+body.reviewed-castle #wat-zien .castle-intro-copy p{max-width:75ch}
+body.reviewed-castle #geschiedenis{padding-top:58px}
+@media(max-width:650px){body.reviewed-castle #wat-zien{padding-bottom:28px}body.reviewed-castle #geschiedenis{padding-top:38px}}
