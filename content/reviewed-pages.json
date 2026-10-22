@@ -375,5 +375,54 @@
     "title": "Gravensteen Gent bezoeken: tickets, uren en geschiedenis",
     "description": "Bezoek het Gravensteen in Gent. Ontdek de audiotours, middeleeuwse burcht, actuele openingsuren, tickets en belangrijke toegankelijkheidsinformatie.",
     "stylesheet": "assets/castle-detail.css"
+  },
+  {
+    "route": "/kasteel/kasteel-van-laarne/",
+    "source": "content/kasteel/kasteel-van-laarne/body.html",
+    "title": "Kasteel van Laarne bezoeken",
+    "description": "Ontdek Kasteel van Laarne in Oost-Vlaanderen: geschiedenis, bezoekmogelijkheden en actuele informatie van de officiële beheerder.",
+    "stylesheet": "assets/castle-detail.css"
+  },
+  {
+    "route": "/kasteel/kasteel-ooidonk/",
+    "source": "content/kasteel/kasteel-ooidonk/body.html",
+    "title": "Kasteel Ooidonk bezoeken",
+    "description": "Ontdek Kasteel Ooidonk in Oost-Vlaanderen: geschiedenis, bezoekmogelijkheden en actuele informatie van de officiële beheerder.",
+    "stylesheet": "assets/castle-detail.css"
+  },
+  {
+    "route": "/kasteel/kasteel-van-poeke/",
+    "source": "content/kasteel/kasteel-van-poeke/body.html",
+    "title": "Kasteel van Poeke bezoeken",
+    "description": "Ontdek Kasteel van Poeke in Oost-Vlaanderen: geschiedenis, bezoekmogelijkheden en actuele informatie van de officiële beheerder.",
+    "stylesheet": "assets/castle-detail.css"
+  },
+  {
+    "route": "/kasteel/kasteel-wissekerke/",
+    "source": "content/kasteel/kasteel-wissekerke/body.html",
+    "title": "Kasteel Wissekerke bezoeken",
+    "description": "Ontdek Kasteel Wissekerke in Oost-Vlaanderen: geschiedenis, bezoekmogelijkheden en actuele informatie van de officiële beheerder.",
+    "stylesheet": "assets/castle-detail.css"
+  },
+  {
+    "route": "/kasteel/kasteel-cortewalle/",
+    "source": "content/kasteel/kasteel-cortewalle/body.html",
+    "title": "Kasteel Cortewalle bezoeken",
+    "description": "Ontdek Kasteel Cortewalle in Oost-Vlaanderen: geschiedenis, bezoekmogelijkheden en actuele informatie van de officiële beheerder.",
+    "stylesheet": "assets/castle-detail.css"
+  },
+  {
+    "route": "/kasteel/domein-breivelde/",
+    "source": "content/kasteel/domein-breivelde/body.html",
+    "title": "Kasteel en domein Breivelde bezoeken",
+    "description": "Ontdek Kasteel en domein Breivelde in Oost-Vlaanderen: geschiedenis, bezoekmogelijkheden en actuele informatie van de officiële beheerder.",
+    "stylesheet": "assets/castle-detail.css"
+  },
+  {
+    "route": "/kasteel/park-van-beervelde/",
+    "source": "content/kasteel/park-van-beervelde/body.html",
+    "title": "Park van Beervelde bezoeken",
+    "description": "Ontdek Park van Beervelde in Oost-Vlaanderen: geschiedenis, bezoekmogelijkheden en actuele informatie van de officiële beheerder.",
+    "stylesheet": "assets/castle-detail.css"
   }
 ]
