@@ -1,0 +1,26 @@
+{
+  "brand": {
+    "name": "Kastelen België",
+    "domain": "https://kastelenbelgie.be",
+    "locale": "nl-BE"
+  },
+  "priority_pages": [
+    "/kastelen/oost-vlaanderen/"
+  ],
+  "candidate_links": [
+    {
+      "source": "/kastelen/oost-vlaanderen/",
+      "target": "/kastelen/",
+      "anchor": "overzicht per provincie",
+      "placement": "selection-method paragraph",
+      "reason": "Functional parent province directory."
+    },
+    {
+      "source": "/kastelen/oost-vlaanderen/",
+      "target": "/kastelen/west-vlaanderen/",
+      "anchor": "bezoekbare kasteelsites in West-Vlaanderen",
+      "placement": "selection-method paragraph",
+      "reason": "Existing reviewed adjacent province guide."
+    }
+  ]
+}

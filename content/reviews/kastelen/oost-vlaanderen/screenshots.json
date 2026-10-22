@@ -1,0 +1,130 @@
+{
+  "directory": ".artifacts/design-review/oost-vlaanderen",
+  "versioned": false,
+  "captures": [
+    {
+      "file": "1440-beervelde.png",
+      "sha256": "3b40976d71acf4c5f34b95c927f3a9de650423caa56a4695ca84960b2a6b3e96"
+    },
+    {
+      "file": "1440-full.png",
+      "sha256": "9005c8c64219dc5ead0e57d401693492997ef886631cd92f90a306f1ec09f825"
+    },
+    {
+      "file": "1440-je-uitstap.png",
+      "sha256": "3531a68bc358639a05191c6e358750d39f881c216d9c358201fa62cc0758605f"
+    },
+    {
+      "file": "1440-ooidonk.png",
+      "sha256": "6a62180633b873daac7c255ab4bfc7913c6c94b7d28e9959128b18bccebbdda9"
+    },
+    {
+      "file": "1440-top.png",
+      "sha256": "9b4ecdaf576753663b0f46c1cd079d2c8091c7b27d803b77e5aa40cb9cd75a8a"
+    },
+    {
+      "file": "1440-vooraf-regelen.png",
+      "sha256": "9ea3a0d3b0b7760f4b8d78f91c74b6b6c1342fd952304e76165c854598704fa5"
+    },
+    {
+      "file": "1440-wissekerke.png",
+      "sha256": "a3c7393ce7be462707e596ab9cfe83f96f704c1f9e700970587ca534fe992278"
+    },
+    {
+      "file": "320-beervelde.png",
+      "sha256": "709e8f412a497b8604eb6bbea16073de141ab1f148616801df13c37f4fc0595b"
+    },
+    {
+      "file": "320-full.png",
+      "sha256": "4b79232a9ccfdcb7adfd38fae2ea6c42e82ba2a3ef3dcadf043ca029ff4327be"
+    },
+    {
+      "file": "320-je-uitstap.png",
+      "sha256": "e0fa74d1340c96a51be33f733ac54255596aed4e0be258abcde65269b7cb880a"
+    },
+    {
+      "file": "320-menu.png",
+      "sha256": "c7fa4d710741422f06710d7159c790d3742a22511a9b981235087bbc73360978"
+    },
+    {
+      "file": "320-ooidonk.png",
+      "sha256": "09c0f23be2174e840d0ece50e28fa3266d546ddc89f40e4327474ec68ba1ac94"
+    },
+    {
+      "file": "320-top.png",
+      "sha256": "051e38e8f6c4ecc0fbbbf2eea279be3cd09b5a814cab3edf82778e2867d88a16"
+    },
+    {
+      "file": "320-vooraf-regelen.png",
+      "sha256": "a2ab3590d3c87141f0650bdfa98566275b39cb97d9e41eb1ba7df75e4d876224"
+    },
+    {
+      "file": "320-wissekerke.png",
+      "sha256": "07b741d24769a7d494208a935ffdafe3a1bb6b32dc111ca0818e86f4770f4f16"
+    },
+    {
+      "file": "390-beervelde.png",
+      "sha256": "c3659a8f12c295e49f1ebebbdb89c3b57729f32657711806d11746f669b4cad4"
+    },
+    {
+      "file": "390-full.png",
+      "sha256": "6edbe69de9cd6ea2215f6bcd125a48d061696c7a73747000dc25fabcbda87a1d"
+    },
+    {
+      "file": "390-je-uitstap.png",
+      "sha256": "3fbfb38e7d68857ac80ceffc754c88c411ff60234e485911e2ff18091bb7d78d"
+    },
+    {
+      "file": "390-menu.png",
+      "sha256": "0303741373537fd128985d15642df914f60e9feed9c7413793854b9370c5302b"
+    },
+    {
+      "file": "390-ooidonk.png",
+      "sha256": "8d34050101d17ce7b148e78b7f638f30dae9c7d2808456918bb229198266f69c"
+    },
+    {
+      "file": "390-top.png",
+      "sha256": "9e24c7be8ad5ce6ca6d1a281319f8cac3709569beaf2c6fb4af06f679539dbfe"
+    },
+    {
+      "file": "390-vooraf-regelen.png",
+      "sha256": "214a0660d89870ac140246dd0af524a8adad4b1335ce00823a927311dfae7b4c"
+    },
+    {
+      "file": "390-wissekerke.png",
+      "sha256": "55471b7028c51a8331f72900794e1cd508000890e319d2e8f0c1d82d06200399"
+    },
+    {
+      "file": "768-beervelde.png",
+      "sha256": "c7e84e10d1602e9d477fc42cb7d3bcf11dc86687c40da95b7106c1c4812edb1c"
+    },
+    {
+      "file": "768-full.png",
+      "sha256": "8ad38705b8890673fabecc79ca35c7d44014c51f134c34eb5649d934b2628310"
+    },
+    {
+      "file": "768-je-uitstap.png",
+      "sha256": "5d26baae1c23e9e9482629e1e52e0b9d15992a9a0d75e9240f6f71efbcccfabc"
+    },
+    {
+      "file": "768-menu.png",
+      "sha256": "c6f54941e68096820bf0b41cf7f4544393d46e21b69435e26bb9d5546365c6d1"
+    },
+    {
+      "file": "768-ooidonk.png",
+      "sha256": "54a1f61310b8de02b766479ef8e0d2154244c84555893acf9c5a3f2451816cab"
+    },
+    {
+      "file": "768-top.png",
+      "sha256": "56979bc6f8524639f4320c4c978530b07ef4bd93103a9bf9990af2efaddd1448"
+    },
+    {
+      "file": "768-vooraf-regelen.png",
+      "sha256": "4cc0c22bb5579b7409a83e7f9afb234e2578024302b2938c634f46bddc752d86"
+    },
+    {
+      "file": "768-wissekerke.png",
+      "sha256": "ee6996f89a8085ac94150680afcb1598729b629ec4ced629300a914ac7a34e8a"
+    }
+  ]
+}

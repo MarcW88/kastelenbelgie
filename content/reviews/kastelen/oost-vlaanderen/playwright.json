@@ -1,0 +1,144 @@
+{
+  "testedAt": "2026-10-22T09:11:05.662Z",
+  "browser": "Chromium headless shell 1161",
+  "scope": "/kastelen/oost-vlaanderen/",
+  "results": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "scrollWidth": 1440,
+      "h1s": 1,
+      "cards": 8,
+      "robots": "noindex,follow",
+      "canonical": "https://kastelenbelgie.be/kastelen/oost-vlaanderen/",
+      "loadedFonts": [
+        "Cormorant Garamond",
+        "Manrope"
+      ],
+      "overflows": [],
+      "errors": [],
+      "failedRequests": [],
+      "badResponses": [],
+      "skipFocused": true,
+      "skipWorks": true,
+      "menuPassed": null,
+      "anchors": [
+        {
+          "id": "selectie",
+          "top": 105.640625
+        },
+        {
+          "id": "je-uitstap",
+          "top": 105.890625
+        },
+        {
+          "id": "vooraf-regelen",
+          "top": 105.828125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "h1s": 1,
+      "cards": 8,
+      "robots": "noindex,follow",
+      "canonical": "https://kastelenbelgie.be/kastelen/oost-vlaanderen/",
+      "loadedFonts": [
+        "Cormorant Garamond",
+        "Manrope"
+      ],
+      "overflows": [],
+      "errors": [],
+      "failedRequests": [],
+      "badResponses": [],
+      "skipFocused": true,
+      "skipWorks": true,
+      "menuPassed": true,
+      "anchors": [
+        {
+          "id": "selectie",
+          "top": 105.296875
+        },
+        {
+          "id": "je-uitstap",
+          "top": 105.796875
+        },
+        {
+          "id": "vooraf-regelen",
+          "top": 105.484375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "h1s": 1,
+      "cards": 8,
+      "robots": "noindex,follow",
+      "canonical": "https://kastelenbelgie.be/kastelen/oost-vlaanderen/",
+      "loadedFonts": [
+        "Cormorant Garamond",
+        "Manrope"
+      ],
+      "overflows": [],
+      "errors": [],
+      "failedRequests": [],
+      "badResponses": [],
+      "skipFocused": true,
+      "skipWorks": true,
+      "menuPassed": true,
+      "anchors": [
+        {
+          "id": "selectie",
+          "top": 88.9375
+        },
+        {
+          "id": "je-uitstap",
+          "top": 88.171875
+        },
+        {
+          "id": "vooraf-regelen",
+          "top": 88.578125
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 812,
+      "scrollWidth": 320,
+      "h1s": 1,
+      "cards": 8,
+      "robots": "noindex,follow",
+      "canonical": "https://kastelenbelgie.be/kastelen/oost-vlaanderen/",
+      "loadedFonts": [
+        "Cormorant Garamond",
+        "Manrope"
+      ],
+      "overflows": [],
+      "errors": [],
+      "failedRequests": [],
+      "badResponses": [],
+      "skipFocused": true,
+      "skipWorks": true,
+      "menuPassed": true,
+      "anchors": [
+        {
+          "id": "selectie",
+          "top": 88.515625
+        },
+        {
+          "id": "je-uitstap",
+          "top": 88.921875
+        },
+        {
+          "id": "vooraf-regelen",
+          "top": 88.3125
+        }
+      ]
+    }
+  ],
+  "noJsCards": 8
+}
