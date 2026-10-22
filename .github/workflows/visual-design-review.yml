@@ -6,7 +6,9 @@ on:
     branches: [main]
     paths:
       - "kasteel/gravensteen/**"
-      - "content/kasteel/gravensteen/**"
+      - "content/kasteel/**"
+      - "scripts/build.mjs"
+      - "content/reviewed-pages.json"
       - "assets/castle-detail.css"
       - "assets/province-guide.css"
       - "assets/styles.css"
@@ -33,12 +35,12 @@ jobs:
       - name: Build reviewed pages
         run: npm run build
       - name: Capture Gravensteen desktop and mobile
-        run: npm run visual:gravensteen
+        run: npm run visual:east-flanders
       - name: Upload visual review
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: gravensteen-design-review
-          path: .artifacts/design-review/gravensteen/
+          name: east-flanders-design-review
+          path: .artifacts/design-review/east-flanders/
           if-no-files-found: warn
           retention-days: 14
