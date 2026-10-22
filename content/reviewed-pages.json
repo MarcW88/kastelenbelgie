@@ -1,0 +1,104 @@
+[
+  {
+    "route": "/kastelen/west-vlaanderen/",
+    "source": "content/kastelen/west-vlaanderen/body.html",
+    "title": "Kastelen in West-Vlaanderen bezoeken",
+    "description": "Ontdek welke kastelen in West-Vlaanderen je kunt bezoeken: van Loppem en Beauvoorde tot kasteelparken, met duidelijke bezoekvoorwaarden en officiële bronnen.",
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://kastelenbelgie.be/kastelen/west-vlaanderen/#page",
+          "url": "https://kastelenbelgie.be/kastelen/west-vlaanderen/",
+          "name": "Kastelen in West-Vlaanderen bezoeken",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-22",
+          "mainEntity": {
+            "@id": "https://kastelenbelgie.be/kastelen/west-vlaanderen/#selectie"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://kastelenbelgie.be/kastelen/west-vlaanderen/#selectie",
+          "name": "Selectie van bezoekbare kasteelsites in West-Vlaanderen",
+          "numberOfItems": 8,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Kasteel van Loppem",
+              "url": "https://kastelenbelgie.be/kastelen/west-vlaanderen/#loppem"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kasteel Beauvoorde",
+              "url": "https://kastelenbelgie.be/kastelen/west-vlaanderen/#beauvoorde"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Rumbeke",
+              "url": "https://kastelenbelgie.be/kastelen/west-vlaanderen/#rumbeke"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Kasteel Wijnendale",
+              "url": "https://kastelenbelgie.be/kastelen/west-vlaanderen/#wijnendale"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Kasteel Tillegem",
+              "url": "https://kastelenbelgie.be/kastelen/west-vlaanderen/#tillegem"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Kasteel Tudor",
+              "url": "https://kastelenbelgie.be/kastelen/west-vlaanderen/#tudor"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Kasteel Beisbroek",
+              "url": "https://kastelenbelgie.be/kastelen/west-vlaanderen/#beisbroek"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Kasteel De Blankaart",
+              "url": "https://kastelenbelgie.be/kastelen/west-vlaanderen/#blankaart"
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kastelen per regio",
+              "item": "https://kastelenbelgie.be/kastelen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "West-Vlaanderen",
+              "item": "https://kastelenbelgie.be/kastelen/west-vlaanderen/"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

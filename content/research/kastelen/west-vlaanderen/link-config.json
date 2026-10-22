@@ -1,0 +1,19 @@
+{
+  "brand": {
+    "name": "Kastelen België",
+    "domain": "https://kastelenbelgie.be",
+    "locale": "nl-BE"
+  },
+  "priority_pages": [
+    "/kastelen/west-vlaanderen/"
+  ],
+  "candidate_links": [
+    {
+      "source": "/kastelen/west-vlaanderen/",
+      "target": "/kastelen/",
+      "anchor": "overzicht van kastelen per provincie",
+      "placement": "selection method paragraph",
+      "reason": "A visitor can select another province from the existing functional parent directory."
+    }
+  ]
+}

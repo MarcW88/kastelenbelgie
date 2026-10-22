@@ -53,7 +53,9 @@ Prefer the official castle/site operator and official heritage/tourism/public in
 
 ## Native source-of-truth and technical gates
 
-The present `scripts/build.mjs` contains hardcoded page data and writes the atlas homepage and placeholder HTML. It has no reviewed-content loader. Do not run it over authored HTML and lose content. Before publishing authored content, integrate its source into the native build and verify that a rebuild preserves the reviewed text, evidence and metadata. Keep research/brief/review artifacts separate from rendered HTML. This migration does not change the generator or author pages.
+The native `scripts/build.mjs` first produces atlas placeholders, then applies authored pages from `content/reviewed-pages.json` through `scripts/apply-reviewed-pages.mjs`. Reviewed page content lives in `content/<route>/body.html`; each manifest entry supplies the existing route, source path and page metadata/schema. Only an existing atlas route can be overridden. Add the source and manifest entry together for a newly authored page; editing only generated HTML will be overwritten on rebuild. The first reviewed route is `/kastelen/west-vlaanderen/`. Other routes without a reviewed entry retain their original placeholders.
+
+Keep research, brief, factual review and post-write artifacts separate from rendered HTML. Run `npm run build` followed by `npm run check`; the latter also checks reviewed-source preservation, metadata, robots and internal link targets. Verify that a second build reproduces the authored page and does not alter other published content. These are technical gates, not editorial quality scores.
 
 `npm run check` is the existing static check of CSS references and noindex; it does not validate editorial depth, facts or coverage. `python3 scripts/verify_museum_agents.py` checks source identity, specialist availability and routing, not page quality. CSS/Playwright gates use real rendered pages and inspected screenshots when a UI task requires them. A missing browser or adapter is a real limitation, never a visual PASS.
 

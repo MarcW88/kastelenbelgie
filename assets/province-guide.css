@@ -1,0 +1,43 @@
+/* Reviewed regional content; keep the atlas's shared visual tokens. */
+body.reviewed-province .province-heading{padding:44px 0 42px}
+body.reviewed-province .province-heading h1{font-size:clamp(2.85rem,5.8vw,5.7rem);line-height:1.02;max-width:1000px}
+.province-heading h1 em{font-style:normal;color:var(--green)}
+.province-heading .province-lead{font-size:1.04rem;max-width:760px;color:var(--ink);line-height:1.8;margin-top:24px}
+.province-heading .checked-date{font-size:.76rem;color:var(--muted);margin-top:18px}
+.visit-jumps{display:flex;gap:10px 24px;flex-wrap:wrap;margin-top:25px}
+.visit-jumps a{font-size:.84rem;display:inline-flex;align-items:center;min-height:48px;border-bottom:1px solid var(--green);font-weight:700}
+.province-guide{padding-bottom:25px}
+.selection-intro{padding-top:28px;font-size:.88rem;color:var(--muted);max-width:1240px}
+.selection-intro p{max-width:850px}
+.province-guide a:not(.visit-source){text-decoration:underline;text-underline-offset:4px}
+.province-section{padding-top:62px;padding-bottom:8px;scroll-margin-top:105px}
+.province-section-head{display:grid;grid-template-columns:1.12fr .88fr;align-items:end;gap:48px;margin-bottom:27px}
+.province-section-head h2,.planning-title h2{font-size:clamp(2.3rem,4.1vw,3.65rem);line-height:1.07;margin-top:12px}
+.province-section-head>p{font-size:.93rem;max-width:440px;color:var(--muted);margin:0;line-height:1.8}
+.visit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.visit-card{background:var(--paper);border:1px solid var(--line);padding:30px;display:flex;flex-direction:column;scroll-margin-top:110px;min-width:0}
+.visit-card-top{display:flex;align-items:start;justify-content:space-between;gap:12px;margin-bottom:24px;font-size:.74rem}
+.visit-place{color:var(--muted)}
+.visit-mode{display:inline-block;background:#e5ebe6;color:#2a4034;font-size:.67rem;font-weight:700;line-height:1.5;padding:4px 8px;max-width:190px;text-align:right}
+.visit-mode-group{background:#f0e3dc;color:#763d33}
+.visit-card h3{font-size:2.3rem;line-height:1.08;letter-spacing:-.02em}
+.visit-card p{font-size:.9rem;line-height:1.85;margin:18px 0 0}
+.visit-card .visit-condition{color:#5b554e;font-size:.84rem;padding-top:16px;margin-top:18px;border-top:1px solid var(--line)}
+.visit-source{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px;margin-top:auto;padding-top:23px;font-size:.8rem;font-weight:700;line-height:1.6;text-decoration:underline;text-underline-offset:4px;color:var(--green)}
+.visit-source span{font-size:1.1rem;text-decoration:none;flex-shrink:0}
+.park-section{margin-top:58px;padding:55px 0 58px;background:#ece8de;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.planning-section{display:grid;grid-template-columns:.72fr 1.28fr;gap:70px;padding-bottom:55px}
+.planning-copy{max-width:760px}
+.planning-copy>p{font-size:.94rem;line-height:1.9;margin:0 0 24px}
+.planning-copy h3{font-size:1.85rem;line-height:1.2;margin:32px 0 15px}
+.planning-copy .selection-method{font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);padding-top:24px}
+.reviewed-province a:focus-visible,.reviewed-province button:focus-visible{outline:3px solid var(--wine);outline-offset:5px}
+.skip-to-content{position:absolute;top:6px;left:12px;z-index:100;background:var(--paper);padding:12px;transform:translateY(-160%)}
+.skip-to-content:focus{transform:translateY(0)}
+.reviewed-province .crumbs{display:flex;flex-wrap:wrap;gap:7px;line-height:1.8}
+.reviewed-province .crumbs a{min-height:30px;display:inline-flex;align-items:center;text-decoration:underline;text-underline-offset:3px}
+.reviewed-province .header.light .nav.open{color:var(--ivory)}
+@media(max-width:930px){.province-section-head{grid-template-columns:1fr;gap:20px}.province-section-head>p{max-width:680px}.planning-section{grid-template-columns:1fr;gap:28px}.visit-card{padding:24px}.reviewed-province .header-row{gap:12px;justify-content:space-between}.reviewed-province .menu{width:48px;height:48px}}
+@media(max-width:650px){body.reviewed-province .province-heading{padding:30px 0}.visit-grid{grid-template-columns:1fr;gap:16px}.province-section{padding-top:42px;scroll-margin-top:88px}.visit-card{padding:23px}.visit-card h3{font-size:2.1rem}.visit-card-top{gap:14px;margin-bottom:20px}.visit-place{max-width:48%}.visit-mode{max-width:52%}.visit-jumps{gap:3px 19px}.visit-jumps a{font-size:.8rem}.park-section{padding:38px 0;margin-top:38px}.planning-section{padding-bottom:25px}.reviewed-province .nav.open{top:72px}.province-heading .province-lead{font-size:.96rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media(max-width:390px){body.reviewed-province .province-heading h1{font-size:clamp(2.3rem,10vw,2.65rem)}.reviewed-province .brand{font-size:1.16rem;gap:8px;white-space:nowrap}.reviewed-province .brand img{width:32px;height:32px}}

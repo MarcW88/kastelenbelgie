@@ -1,0 +1,97 @@
+{
+  "note": "Captured and inspected locally; intentionally unversioned per site-design-review. Final run used the environment network proxy to load the actual brand fonts.",
+  "files": [
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/1440-full.png",
+      "sha256": "541976d8307a5460c5730edb7d6cdf4ae1e3d6ade8ab4bf10557817e61e0b515"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/1440-groups.png",
+      "sha256": "285e3f5cfcc2e308639e7db621c45a6986dc6b2f4be907b5af7efb41428da478"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/1440-parks.png",
+      "sha256": "f8b6200f96ca74332499573d9b8f9f7a141c8d55a6a32f675546ceeac990d743"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/1440-planning.png",
+      "sha256": "e7bdfd858acb0da055397f94b42c4da0fb45abbdb1821113d0ba67578357a1e1"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/1440-top.png",
+      "sha256": "c0e0a82a004a824c85a30f6947856c75186fe94ac77ede5127470ad9b6fb4d06"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/320-full.png",
+      "sha256": "9acf5af1fbb13f898516e0a37fceecc5257d88c8e86cf71356e6fd6936a87d46"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/320-groups.png",
+      "sha256": "26ff2162411d5707e1a0ce78982693a7b7574a10fe63f3932bacfe6ff0b393a8"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/320-menu.png",
+      "sha256": "731a16b883acadd30a07ff6f01ed5c486e9521bbbefa880e7557508b47018523"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/320-parks.png",
+      "sha256": "b818dd6e7ce4a94947648d683f01f7fd54eb6b41f7da57597907aca85b4912e2"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/320-planning.png",
+      "sha256": "a5fb44aafba0bb8cbd1f7f9d4dfddea2e0a9b1c74eaf7d78011c9f8b3e1dd49b"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/320-top.png",
+      "sha256": "512feb9183184bc33040fa0635e17391417fdde23129a06b0543d8311965a894"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/390-full.png",
+      "sha256": "d7893681c1b99b3a15f94477239c694ba0d6ae851ebf3a5829b5472a7ef84187"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/390-groups.png",
+      "sha256": "7c79379638cd553d3632414966152d050eee07448e035385665cc95da7f04768"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/390-menu.png",
+      "sha256": "e75d9a6849d04622a0bf0cb1d675443354a8a7eacf65464b63409ac5c5abcb55"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/390-parks.png",
+      "sha256": "0557c04578a72c9e0f8fb828d0c7de0ef3064cb5022297aff7adf7a88fde3cc5"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/390-planning.png",
+      "sha256": "c327ddbc7260a02f7304aa4ba0ca562e8bfc47e9950fd09852d8662ef67abdfa"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/390-top.png",
+      "sha256": "62fcaca7ededf4699e81cbb6d6f7f5780463605dec7a44104ff2c1eeded7eb2b"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/768-full.png",
+      "sha256": "1e484b3e84a82344cd0011f4131ac3d955e446fdcd4e14e086e6a0e371e8b7c0"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/768-groups.png",
+      "sha256": "5376e8b2bf0ad1fe8d43b5a4803e8f8ae1139e0592e6325a450248a4007373df"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/768-menu.png",
+      "sha256": "8a887b91cfeb1d934e6f99754471c725650af8fa8ded3105618e574893d6a7c8"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/768-parks.png",
+      "sha256": "a03b0fe4be2d60da4b9a7b9b2327e52f112640d03e3dfb976c0434e037e11d97"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/768-planning.png",
+      "sha256": "a2ec90d995b289d208a2548f38417a2d53cec3d9ca88bcc55fdcc7cad0458c04"
+    },
+    {
+      "path": ".artifacts/design-review/west-vlaanderen/768-top.png",
+      "sha256": "82849d2ce38634ca5ed71f3c8bdd292bc22422872ab4787eb2810aead3a7a1ac"
+    }
+  ]
+}
