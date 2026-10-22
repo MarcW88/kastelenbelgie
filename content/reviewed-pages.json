@@ -372,7 +372,7 @@
   {
     "route": "/kasteel/gravensteen/",
     "source": "content/kasteel/gravensteen/body.html",
-    "title": "Gravensteen Gent bezoeken: tickets, uren en geschiedenis | Kastelen België",
+    "title": "Gravensteen Gent bezoeken: tickets, uren en geschiedenis",
     "description": "Bezoek het Gravensteen in Gent. Ontdek de audiotours, middeleeuwse burcht, actuele openingsuren, tickets en belangrijke toegankelijkheidsinformatie.",
     "stylesheet": "assets/castle-detail.css"
   }
