@@ -5,7 +5,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "kasteel/gravensteen/**"
+      - "kasteel/**"
       - "content/kasteel/**"
       - "scripts/build.mjs"
       - "content/reviewed-pages.json"
