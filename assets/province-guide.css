@@ -41,3 +41,13 @@ body.reviewed-province .province-heading h1{font-size:clamp(2.85rem,5.8vw,5.7rem
 @media(max-width:650px){body.reviewed-province .province-heading{padding:30px 0}.visit-grid{grid-template-columns:1fr;gap:16px}.province-section{padding-top:42px;scroll-margin-top:88px}.visit-card{padding:23px}.visit-card h3{font-size:2.1rem}.visit-card-top{gap:14px;margin-bottom:20px}.visit-place{max-width:48%}.visit-mode{max-width:52%}.visit-jumps{gap:3px 19px}.visit-jumps a{font-size:.8rem}.park-section{padding:38px 0;margin-top:38px}.planning-section{padding-bottom:25px}.reviewed-province .nav.open{top:72px}.province-heading .province-lead{font-size:.96rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media(max-width:390px){body.reviewed-province .province-heading h1{font-size:clamp(2.3rem,10vw,2.65rem)}.reviewed-province .brand{font-size:1.16rem;gap:8px;white-space:nowrap}.reviewed-province .brand img{width:32px;height:32px}}
+
+/* Gravensteen: licensed, documentary photography integrated with the entity page. */
+.reviewed-castle .castle-hero-photo{max-width:1240px;margin:22px auto 0;padding:0 24px}
+.reviewed-castle .castle-hero-photo img{display:block;width:100%;max-height:540px;aspect-ratio:16/9;object-fit:cover;border-radius:3px}
+.reviewed-castle .castle-editorial-photo{max-width:1060px;margin:36px auto 12px;padding:0 24px}
+.reviewed-castle .castle-editorial-photo img{display:block;width:100%;max-height:510px;aspect-ratio:16/9;object-fit:cover;border-radius:3px}
+.reviewed-castle .castle-photo-wide{max-width:900px}
+.reviewed-castle .castle-hero-photo figcaption,.reviewed-castle .castle-editorial-photo figcaption{margin-top:9px;font-size:.72rem;line-height:1.55;color:var(--muted)}
+.reviewed-castle figure figcaption a{text-decoration:underline;text-underline-offset:2px}
+@media(max-width:650px){.reviewed-castle .castle-hero-photo,.reviewed-castle .castle-editorial-photo{padding:0 15px;margin-top:20px}.reviewed-castle .castle-hero-photo img{aspect-ratio:4/3}.reviewed-castle .castle-editorial-photo img{aspect-ratio:3/2}}
