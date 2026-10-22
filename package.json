@@ -4,6 +4,11 @@
   "version": "1.0.0",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "check": "node scripts/check.mjs && node scripts/check-reviewed-pages.mjs"
+    "check": "node scripts/check.mjs && node scripts/check-reviewed-pages.mjs",
+    "visual:install": "playwright install chromium",
+    "visual:gravensteen": "node .agents/skills/site-design-review/scripts/run-visual-review.mjs --route /kasteel/gravensteen/ --output .artifacts/design-review/gravensteen"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
   }
 }
