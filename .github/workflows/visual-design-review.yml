@@ -36,6 +36,21 @@ jobs:
         run: npm run build
       - name: Capture Gravensteen desktop and mobile
         run: npm run visual:east-flanders
+      - name: Capture West Flanders castle desktop and mobile
+        shell: bash
+        run: |
+          set -euo pipefail
+          for castle in kasteel-van-loppem kasteel-beauvoorde kasteel-van-rumbeke kasteel-wijnendale kasteel-tillegem kasteel-tudor kasteel-beisbroek kasteel-de-blankaart; do
+            node .agents/skills/site-design-review/scripts/run-visual-review.mjs --route "/kasteel/$castle/" --output ".artifacts/design-review/west-flanders/$castle"
+          done
+      - name: Upload West Flanders visual review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: west-flanders-design-review
+          path: .artifacts/design-review/west-flanders/
+          if-no-files-found: warn
+          retention-days: 14
       - name: Upload visual review
         if: always()
         uses: actions/upload-artifact@v4
