@@ -1,0 +1,37 @@
+name: Antwerpen full-page browser validation
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/kastelen/antwerpen/**'
+      - 'content/reviewed-pages.json'
+      - 'assets/**'
+      - 'scripts/**'
+      - '.github/workflows/validate-antwerpen-browser.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: python3 scripts/verify_museum_agents.py
+      - run: npm run build
+      - run: npm run check
+      - run: npm install --no-save playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/validate-antwerpen-browser.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: antwerpen-browser-captures
+          path: .artifacts/antwerpen-review/
+          if-no-files-found: ignore
