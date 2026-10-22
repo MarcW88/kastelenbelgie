@@ -29,7 +29,7 @@ export function applyReviewedPages(root, renderPage) {
     const canonical = `https://${host}${entry.route}`;
     let html = renderPage(escapeHtml(entry.title), body)
       .replace('<html lang="nl">', '<html lang="nl-BE">')
-      .replace('<body>', `<body class="reviewed-province"><a class="skip-to-content" href="${entry.route}#main-content">Naar de inhoud</a>`)
+      .replace('<body>', `<body class="${entry.route.startsWith('/kasteel/') ? 'reviewed-castle' : 'reviewed-province'}"><a class="skip-to-content" href="${entry.route}#main-content">Naar de inhoud</a>`)
       .replace('<main>', '<main id="main-content">')
       .replaceAll('<img src="assets/logo.svg" alt="">', '<img src="assets/logo.svg" alt="" width="42" height="42">')
       .replace('data-nav>', 'data-nav id="primary-navigation" aria-label="Hoofdnavigatie">')
