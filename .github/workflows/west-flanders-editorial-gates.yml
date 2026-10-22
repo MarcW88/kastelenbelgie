@@ -20,5 +20,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate specialist evidence for each West Flanders page
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build canonical castle pages
+        run: npm run build
+      - name: Validate source, metadata and internal links
+        run: node scripts/check-west-flanders.mjs
+      - name: Run executable editorial machine gates
         run: node scripts/verify-west-editorial-gates.mjs
+      - name: Upload complete gate report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: west-flanders-machine-gates
+          path: .artifacts/qa/west-flanders-machine-gates.json
+          if-no-files-found: warn
