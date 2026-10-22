@@ -1,0 +1,54 @@
+@import url("/assets/province-guide.css");
+
+/* Castle entity page — restrained editorial design built on DESIGN.md tokens.
+   Separate from provincial listings to avoid selector conflicts. */
+body.reviewed-castle .province-heading{padding:44px 0 22px}
+body.reviewed-castle .province-heading .container{max-width:1200px}
+body.reviewed-castle .province-heading h1{font-size:clamp(3.1rem,6vw,6.3rem);line-height:1.01;max-width:1000px}
+body.reviewed-castle .province-heading .province-lead{max-width:740px;line-height:1.72}
+body.reviewed-castle .checked-date{font-size:.78rem;color:var(--muted);margin-top:16px}
+body.reviewed-castle .crumbs{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.79rem}
+body.reviewed-castle .crumbs a{text-decoration:underline;text-underline-offset:3px}
+body.reviewed-castle .visit-jumps{margin:25px 0 12px}
+body.reviewed-castle .province-heading .castle-hero-photo{margin:25px 0 0;width:100%;max-width:none;padding:0}
+body.reviewed-castle .province-heading .castle-hero-photo img{width:100%;max-height:520px;aspect-ratio:2/1;object-fit:cover}
+body.reviewed-castle figure{margin-block:0}
+body.reviewed-castle figure img{display:block;width:100%;height:auto}
+body.reviewed-castle figure figcaption{margin:10px 0 0;font-size:.75rem;line-height:1.6;color:var(--muted)}
+body.reviewed-castle figure figcaption a{text-decoration:underline;text-underline-offset:2px}
+body.reviewed-castle .province-guide{padding-bottom:65px}
+body.reviewed-castle .province-section{padding-top:70px;padding-bottom:20px}
+body.reviewed-castle .province-section-head{max-width:1120px;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:52px;align-items:end}
+body.reviewed-castle .province-section-head h2{font-size:clamp(2.5rem,4vw,4rem);line-height:1.08}
+body.reviewed-castle .province-section-head>p{max-width:390px}
+body.reviewed-castle .planning-copy{max-width:760px}
+body.reviewed-castle .planning-copy>p{line-height:1.82}
+body.reviewed-castle .castle-content-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.82fr);gap:clamp(28px,5vw,76px);align-items:start}
+body.reviewed-castle .castle-content-layout .planning-copy{max-width:none}
+body.reviewed-castle .castle-content-layout .castle-editorial-photo{margin:0;padding:0;max-width:none;min-width:0}
+body.reviewed-castle .castle-content-layout .castle-editorial-photo img{aspect-ratio:4/5;object-fit:cover;max-height:560px}
+body.reviewed-castle #geschiedenis{background:#ece8de;max-width:none;padding:72px max(24px,calc((100% - 1200px)/2)) 65px}
+body.reviewed-castle #geschiedenis .planning-copy{max-width:790px;columns:initial}
+body.reviewed-castle #geschiedenis .planning-copy h3{margin:38px 0 14px}
+body.reviewed-castle #geschiedenis .planning-copy h3:first-child{margin-top:4px}
+body.reviewed-castle #tickets .planning-copy{max-width:790px;background:var(--paper);border-left:3px solid var(--green);padding:25px 34px}
+body.reviewed-castle #toegankelijkheid .castle-content-layout{grid-template-columns:minmax(0,1fr) minmax(0,.75fr)}
+body.reviewed-castle #voor-je-bezoek{display:block;border-top:1px solid var(--line)}
+body.reviewed-castle #voor-je-bezoek .planning-copy{max-width:760px}
+body.reviewed-castle a:focus-visible{outline:3px solid var(--wine);outline-offset:3px}
+@media(max-width:960px){
+ body.reviewed-castle .province-section-head{grid-template-columns:1fr;gap:18px}
+ body.reviewed-castle .province-section-head>p{max-width:720px}
+ body.reviewed-castle .castle-content-layout,body.reviewed-castle #toegankelijkheid .castle-content-layout{grid-template-columns:1fr}
+ body.reviewed-castle .castle-content-layout .castle-editorial-photo{max-width:720px}
+ body.reviewed-castle .castle-content-layout .castle-editorial-photo img{aspect-ratio:16/10;max-height:440px}
+}
+@media(max-width:650px){
+ body.reviewed-castle .province-heading{padding:28px 0 6px}
+ body.reviewed-castle .province-heading h1{font-size:clamp(2.65rem,10vw,3.65rem)}
+ body.reviewed-castle .province-heading .castle-hero-photo img{aspect-ratio:4/3;max-height:360px}
+ body.reviewed-castle .province-section{padding-top:42px}
+ body.reviewed-castle #geschiedenis{padding:42px 18px}
+ body.reviewed-castle #tickets .planning-copy{padding:20px 22px}
+ body.reviewed-castle .castle-content-layout .castle-editorial-photo img{aspect-ratio:4/3}
+}
