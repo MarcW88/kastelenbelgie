@@ -1,0 +1,80 @@
+name: Vlaams-Brabant castle QA and Playwright
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - "content/kasteel/**"
+      - "content/kastelen/vlaams-brabant/**"
+      - "content/reviewed-pages.json"
+      - "scripts/build.mjs"
+      - "scripts/check-vlaams-brabant.mjs"
+      - ".github/workflows/vlaams-brabant-review.yml"
+  push:
+    branches: [main]
+    paths:
+      - "content/kasteel/**"
+      - "content/kastelen/vlaams-brabant/**"
+      - "content/reviewed-pages.json"
+      - "scripts/build.mjs"
+      - "scripts/check-vlaams-brabant.mjs"
+      - ".github/workflows/vlaams-brabant-review.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Rebuild reviewed pages
+        run: npm run build
+      - name: Structural and workflow-artifact gates
+        run: node scripts/check-vlaams-brabant.mjs
+      - name: Existing native site validation
+        run: npm run check
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+      - name: Screenshot all seven castle pages at mobile and desktop widths
+        run: |
+          node .agents/skills/site-design-review/scripts/run-visual-review.mjs \
+            --route /kasteel/kasteel-van-gaasbeek/ \
+            --route /kasteel/kasteel-van-beersel/ \
+            --route /kasteel/kasteel-groenenberg/ \
+            --route /kasteel/kasteel-coloma/ \
+            --route /kasteel/kasteel-van-bouchout/ \
+            --route /kasteel/arenbergkasteel/ \
+            --route /kasteel/kasteel-van-horst/ \
+            --output .artifacts/design-review/vlaams-brabant
+      - name: Verify HTTP, overflow and JS errors in Playwright report
+        run: |
+          node --input-type=module - <<'NODE'
+          import fs from 'node:fs';
+          const p='.artifacts/design-review/vlaams-brabant/report.json';
+          const report=JSON.parse(fs.readFileSync(p,'utf8'));
+          if(report.pages.length!==14)throw Error('Expected seven desktop + seven mobile results');
+          for(const item of report.pages){
+            if(item.httpStatus!==200||item.horizontalOverflow||item.pageErrors.length){
+              throw Error(item.route+' '+item.viewport+' status='+item.httpStatus+' overflow='+item.horizontalOverflow+' JS='+item.pageErrors.join('|'));
+            }
+          }
+          console.log('Playwright checks passed for 14 renderings');
+          NODE
+      - name: Upload factual structural and screenshot evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vlaams-brabant-castle-qa
+          path: |
+            .artifacts/qa/vlaams-brabant-machine-gates.json
+            .artifacts/design-review/vlaams-brabant/
+          if-no-files-found: warn
+          retention-days: 14
