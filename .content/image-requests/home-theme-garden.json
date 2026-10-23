@@ -1,0 +1,21 @@
+{
+  "id": "home-theme-garden",
+  "page": "scripts/build.mjs",
+  "slot": "theme-garden",
+  "required": true,
+  "reason": "Illustration éditoriale fictive pour enrichir visuellement une section de la homepage, sans revendiquer une photographie documentaire.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:home-theme-garden -->",
+  "placement": "replace",
+  "output_path": "assets/generated/home-theme-garden.webp",
+  "prompt": "Elegant heritage travel photography aesthetic illustration of imaginary Belgian castle formal gardens, geometric hedges, flowering borders and distant historic manor, lush natural greens and warm light, no identifiable castle, no text, no logo.",
+  "alt": "Redactionele sfeerillustratie van Belgisch kastelenerfgoed, geen foto van een bestaande locatie",
+  "caption": "",
+  "width": 1024,
+  "height": 768,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
