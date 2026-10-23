@@ -1485,5 +1485,51 @@
         }
       ]
     }
+  },
+  {
+    "route": "/kasteel/kasteel-van-freyr/",
+    "source": "content/kasteel/kasteel-van-freyr/body.html",
+    "title": "Kasteel van Freÿr bezoeken: Franse tuinen, tickets en uren",
+    "description": "Ontdek het kasteel en de tuinen van Freÿr langs de Maas: geschiedenis, bezoekuren in 2026, prijzen, tuinen en toegankelijkheid.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteel-van-freyr/#page",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-van-freyr/",
+          "name": "Kasteel van Freÿr bezoeken",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/namen/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Namen",
+              "item": "https://kastelenbelgie.be/kastelen/namen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Freÿr",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-van-freyr/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
