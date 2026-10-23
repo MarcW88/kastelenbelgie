@@ -23,3 +23,11 @@ checked_at: 2026-10-23
 | PUBLISH_REVIEW | FAIL — KEEP_NOINDEX | No certified research gate or human validation |
 
 **Decision: FAIL — KEEP_NOINDEX.** The source is a public review draft, not complete workflow approval. Do not add unverified facts or remove robots noindex.
+
+## Passes sur le contenu — 2026-10-23
+- HUMANIZER: révision directe du corps HTML pour clarifier la décision du visiteur, supprimer les conclusions promotionnelles et expliciter les limites d'accès. Source: content/kasteel/paleis-op-de-meir/body.html, section `bezoekerskeuze`.
+- GENERAL-WRITING: phrases orientées sur une question réelle de visite; la nouvelle section distingue les composantes du lieu et évite une affirmation d'expérience personnelle.
+- ANTI-AI-SLOP: ajout d'une distinction patrimoniale/pratique vérifiable plutôt qu'une promesse vague; à revérifier pour la répétition éventuelle avec les sections existantes.
+- FACT-CHECK: sources institutionnelles consignées dans `specialist-evidence.md`; conditions volatiles non garanties en temps réel.
+- SEO/GEO: une entité par fiche, lien vers source officielle et choix depuis la page provinciale.
+- PUBLISH_REVIEW: les résultats techniques ne suffisent pas à certifier la SERP complète et la validation humaine; `FAIL — KEEP_NOINDEX` inchangé.
