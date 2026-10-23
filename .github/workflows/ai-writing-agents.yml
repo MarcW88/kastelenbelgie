@@ -23,6 +23,7 @@ on:
   push:
     branches: [main]
     paths:
+      - "content/kasteel/**/body.html"
       - "scripts/execute-writing-agents.mjs"
       - ".github/workflows/ai-writing-agents.yml"
 permissions:
@@ -49,7 +50,7 @@ jobs:
           path: .artifacts/ai-editor/antwerpen-run.json
   execute:
     needs: verify
-    if: ${{ github.event_name == 'workflow_dispatch' && !inputs.dry_run }}
+    if: ${{ (github.event_name == 'workflow_dispatch' && !inputs.dry_run) || (github.event_name == 'push' && github.actor != 'github-actions[bot]') }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
@@ -71,7 +72,7 @@ jobs:
           fi
       - name: Run original three editorial skills through OpenAI Responses API
         run: |
-          slug="${{ inputs.slug }}"
+          slug="${{ github.event_name == 'workflow_dispatch' && inputs.slug || 'all' }}"
           if [ "$slug" = all ]; then
             node scripts/execute-writing-agents.mjs
           else
