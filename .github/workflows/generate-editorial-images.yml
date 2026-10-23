@@ -7,6 +7,7 @@ on:
     paths:
       - '.content/image-requests/**'
       - 'content/**/body.html'
+      - 'scripts/build.mjs'
       - 'scripts/generate_bfl_images.py'
       - '.github/workflows/generate-editorial-images.yml'
   workflow_dispatch:
