@@ -1255,5 +1255,51 @@
         }
       ]
     }
+  },
+  {
+    "route": "/kasteel/kasteel-van-bois-seigneur-isaac/",
+    "source": "content/kasteel/kasteel-van-bois-seigneur-isaac/body.html",
+    "title": "Kasteel van Bois-Seigneur-Isaac bezoeken: geschiedenis en rondleiding",
+    "description": "Ontdek het kasteel van Bois-Seigneur-Isaac: van middeleeuwse grensvesting tot landhuis, met actuele rondleidingsvoorwaarden, tuinen en tarieven.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteel-van-bois-seigneur-isaac/#page",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-van-bois-seigneur-isaac/",
+          "name": "Kasteel van Bois-Seigneur-Isaac bezoeken",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/waals-brabant/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Waals-Brabant",
+              "item": "https://kastelenbelgie.be/kastelen/waals-brabant/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Bois-Seigneur-Isaac",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-van-bois-seigneur-isaac/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
