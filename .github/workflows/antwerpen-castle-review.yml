@@ -1,0 +1,63 @@
+name: Antwerpen castle QA and Playwright
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "content/kasteel/**"
+      - "content/kastelen/antwerpen/**"
+      - "content/research/kasteel/**"
+      - "content/briefs/kasteel/**"
+      - "content/reviews/kasteel/**"
+      - "content/reviewed-pages.json"
+      - "scripts/build.mjs"
+      - "scripts/check-antwerpen.mjs"
+      - ".github/workflows/antwerpen-castle-review.yml"
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Build canonical sources
+        run: npm run build
+      - name: Validate Antwerpen details
+        run: node scripts/check-antwerpen.mjs
+      - name: Validate native site
+        run: npm run check
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Capture all six pages desktop and mobile
+        run: |
+          node .agents/skills/site-design-review/scripts/run-visual-review.mjs \
+            --route /kasteel/kasteel-marnix-de-sainte-aldegonde/ \
+            --route /kasteel/kasteel-dursel/ \
+            --route /kasteel/kasteel-de-renesse/ \
+            --route /kasteel/paleis-op-de-meir/ \
+            --route /kasteel/kasteel-rivierenhof/ \
+            --route /kasteel/sterckshof/ \
+            --output .artifacts/design-review/antwerpen
+      - name: Assert visual browser measurements
+        run: |
+          node --input-type=module - <<'NODE'
+          import fs from 'node:fs';
+          const data=JSON.parse(fs.readFileSync('.artifacts/design-review/antwerpen/report.json','utf8'));
+          if(data.pages.length!==12) throw Error('Expected twelve measurements');
+          for(const p of data.pages) if(p.httpStatus!==200||p.horizontalOverflow||p.pageErrors.length||p.consoleErrors.length) throw Error(JSON.stringify(p));
+          console.log('Twelve pages pass browser status, overflow, console and JS error gates');
+          NODE
+      - name: Upload desktop/mobile screenshots and report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: antwerpen-castle-visual-review
+          path: .artifacts/design-review/antwerpen/
+          if-no-files-found: warn
+          retention-days: 14
