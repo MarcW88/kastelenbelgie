@@ -1347,5 +1347,51 @@
         }
       ]
     }
+  },
+  {
+    "route": "/kasteel/kasteel-van-seneffe/",
+    "source": "content/kasteel/kasteel-van-seneffe/body.html",
+    "title": "Kasteel van Seneffe bezoeken: museum, park en werken",
+    "description": "Bezoek het Kasteel van Seneffe: museum voor edelsmeedkunst, gratis park, tickets, openingsuren en restauratiewerken in 2026.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteel-van-seneffe/#page",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-van-seneffe/",
+          "name": "Kasteel van Seneffe bezoeken",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/henegouwen/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Henegouwen",
+              "item": "https://kastelenbelgie.be/kastelen/henegouwen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Seneffe",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-van-seneffe/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
