@@ -1,0 +1,104 @@
+name: AI writing agents — Antwerpen
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Article slug, or all"
+        required: true
+        default: "all"
+        type: choice
+        options:
+          - all
+          - kasteel-marnix-de-sainte-aldegonde
+          - kasteel-dursel
+          - kasteel-de-renesse
+          - paleis-op-de-meir
+          - kasteel-rivierenhof
+          - sterckshof
+      dry_run:
+        description: "Validate all three skills without paid AI calls or writing"
+        required: true
+        default: true
+        type: boolean
+  push:
+    branches: [main]
+    paths:
+      - "scripts/execute-writing-agents.mjs"
+      - ".github/workflows/ai-writing-agents.yml"
+permissions:
+  contents: write
+concurrency:
+  group: writing-agents-antwerpen
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Syntax check
+        run: node --check scripts/execute-writing-agents.mjs
+      - name: Smoke test real skill loading and target discovery
+        run: node scripts/execute-writing-agents.mjs --dry-run
+      - name: Upload configuration check
+        uses: actions/upload-artifact@v4
+        with:
+          name: writing-agent-config-test
+          path: .artifacts/ai-editor/antwerpen-run.json
+  execute:
+    needs: verify
+    if: ${{ github.event_name == 'workflow_dispatch' && !inputs.dry_run }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: gpt-4.1
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Require configured API key
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "::error::Missing OPENAI_API_KEY repository secret. Configure Settings > Secrets and variables > Actions before running the AI editor."
+            exit 1
+          fi
+      - name: Run original three editorial skills through OpenAI Responses API
+        run: |
+          slug="${{ inputs.slug }}"
+          if [ "$slug" = all ]; then
+            node scripts/execute-writing-agents.mjs
+          else
+            node scripts/execute-writing-agents.mjs "--slug=$slug"
+          fi
+      - name: Upload proof of passes even on error
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: writing-agent-run-evidence
+          path: .artifacts/ai-editor/antwerpen-run.json
+          if-no-files-found: warn
+      - name: Verify content consistency
+        run: |
+          npm run build
+          npm run check
+          node scripts/check-antwerpen.mjs
+          git diff --check
+      - name: Commit amended source only after all passes are validated
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/kasteel/*/body.html
+          if git diff --cached --quiet; then
+            echo "No editorial changes required"
+          else
+            git commit -m "content: apply three canonical AI writing agents to Antwerpen"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
