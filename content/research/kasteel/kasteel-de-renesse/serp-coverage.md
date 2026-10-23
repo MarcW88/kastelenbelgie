@@ -1,33 +1,54 @@
-# Kasteel de Renesse — NEW_PAGE research gate
-workflow_version: museum-v1
-checked_at: 2026-10-23
-locale: nl-BE
-owner: /kasteel/kasteel-de-renesse/
+# Research & AUDIT — Kasteel de Renesse
+Workflow version: museum-v1
+Mode: AUDIT → DEEP_REWRITE
+Market: Belgium / nl-BE
+Research date: 2026-10-23
 
-## 1. Queries en intent
-- Primair: domein de renesse bezoeken
-- Varianten: domein de renesse bezoeken; kasteel oostmalle rondleiding; wandeling
-- Bezoektaak: Groen park dagelijks; interieur enkel begeleid op aangekondigde zondag of voor groepen
-- Entiteit: Kasteel de Renesse, Oostmalle, Antwerpen, België.
-- Buiten scope: provinciebrede vergelijking op /kastelen/antwerpen/; geen ongedocumenteerde vrije interieurtoegang.
+## Ownership / keyword / search-intent
+Route: /kasteel/kasteel-de-renesse/. Owner: MUSEUM (castle adapter).
+Primary query inspected: `Kasteel de Renesse Oostmalle bezoeken`.
+Variantes ciblées: nom exact + bezoeken, geschiedenis; parc/tuin, tickets ou overnachten uniquement selon le service réel.
+Intent: information patrimoniale et décision de visite; composante navigationnelle vers le gestionnaire. Aucun volume, rang Google ou métrique de performance inventé.
+La province /kastelen/antwerpen/ possède la sélection géographique; cette fiche possède cette entité et son accès. Pas de changement d’URL.
 
-## 2. Controleerbare resultaten
-- Actuele primaire bron in zoekresultaten: https://www.toerisme-malle.be/domein-de-renesse
-- Winning page type: officiële operator-, toerisme- of Vlaamse erfgoedinventarisfiche.
-- Concurrent/alternatief: /kastelen/antwerpen/ biedt een selectie, deze URL een individuele beslissing.
-- SERP-observatie: bronpagina gevonden via webonderzoek op 23 oktober 2026; geen gegarandeerd volledige top 10, geen betrouwbare rangnummers, PAA, rich features of zoekvolumes geëxtraheerd.
+## Diagnostic éditorial / seo-content-audit / content-refresh
+Décision amont: UPDATE. Décision culturelle: DEEP_REWRITE. Confiance: élevée sur le diagnostic éditorial, pas de conclusion de performance sans GSC.
+Le squelette est cloné. L’affirmation absolue intérieur seulement guidé est trop large: le café utilise la Ridderzaal. Les sources divergent sur hectares, longueurs des promenades et ouverture dominicale.
+Valeur à préserver: Parc paysager, mammoetboom, glacière, achat communal de 1983, offre guidée.
+Empreinte de la source avant correction: `1102a24a7d94d9df281237abc53c0f994a4efd161ba6d446b994cc71e9d0f1b4`.
 
-## 3. MUST/SHOULD/gaps
-| Need | Priority | Evidence | Status |
-| Exacte naam, ligging en bijzonderheid | MUST | https://www.toerisme-malle.be/domein-de-renesse | COVERED |
-| Wat toegankelijk is, gids/park/interieur | MUST | https://www.toerisme-malle.be/domein-de-renesse | COVERED |
-| Bezoekmoment, prijs, boeking vandaag | MUST | https://www.toerisme-malle.be/domein-de-renesse, opnieuw checken voor concrete datum | PARTIAL |
-| Eigen erfgoedverhaal | MUST | Zestiende-eeuwse kern, mammoetboom, ijskelder met vleermuizen, Wolfskapelpad 5 km en Renesse-Salphenpad 10 km | COVERED |
-| Toegankelijkheid | SHOULD | officiële bron als expliciet vermeld | PARTIAL |
-| Volledige onafhankelijke SERP top-10 matrix | MUST workflow | SERP dataset ontbreekt | DATA_GAP |
+## SERP et pages réellement examinées
+Recherche via moteur web, pas une capture Google géolocalisée. Les résultats servent à confirmer l’intention et comparer la couverture, pas à annoncer des positions Google.
+| https://www.toerisme-malle.be/domein-de-renesse | OFFICIAL_PUBLIC | Guides saisonniers, arbres, glacière, histoire et randonnées |
+| https://www.malle.be/activiteiten/detail/80/domein-de-renesse | OFFICIAL_PUBLIC | 1542, transformations XIXe, 1983; données pratiques à recouper |
+| https://www.domeinderenesse.be/ | OFFICIAL_MUSEUM | Calendrier vivant, café dans la Ridderzaal, horaires d’hiver |
+| https://www.kempen.be/index.php/nl/beleven-overzicht/domein-de-renesse | OFFICIAL_PUBLIC | Parc libre en journée, guidage avril-octobre |
+Types rencontrés: pages de gestionnaires, notices touristiques/patrimoniales et, lorsque présent, annuaires. L’offre propre au gestionnaire est prioritaire pour la visite.
+SERP features: extraits textuels inspectés; PAA, local pack et AI Overview non mesurés. Backlinks, volumes et CWV concurrents non disponibles: hors conclusions.
+Angles seo-competitor effectivement étudiés: contenu, format/intention et désambiguïsation d’entité. Pas d’audit d’autorité chiffré.
 
-## 4. Information gain/GEO
-Zestiende-eeuwse kern, mammoetboom, ijskelder met vleermuizen, Wolfskapelpad 5 km en Renesse-Salphenpad 10 km. Bezoekers kunnen op basis hiervan bepalen of ze een interieurbezoek, rondleiding, horecabezoek of buitenwandeling moeten plannen. Historische feiten aan de bron koppelen; actuele voorwaarden nooit uit een oude kalender extrapoleren.
+## Matrice de couverture avant rédaction
+| Besoin | Priorité | État initial | Gain / action |
+|---|---|---|---|
+| Chronologie de la construction et transformations inachevées | MUST | PARTIAL | Séparer la possibilité réelle d’entrer au café et une visite des pièces; ne pas reprendre les surfaces/longueurs contradictoires. |
+| Parc libre, visite historique et café distingués | MUST | PARTIAL | Source et portée à expliciter dans la section concernée. |
+| Résoudre calendrier contradictoire sans promesse hebdomadaire | MUST | PARTIAL | Source et portée à expliciter dans la section concernée. |
+| Vijver, arbres et glacière expliqués | SHOULD | COVERED | Source et portée à expliciter dans la section concernée. |
 
-## 5. Gating
-Research: BLOCKED — RETURN_TO_ANALYSIS op volledige concurrerende SERP en MUST voor daggebonden toegangsgegevens. Dit artefact is een brongebonden NEW_PAGE handoff, geen formele volledige SERP-goedkeuring. Alleen reviewtekst onder noindex; geen indexatiebesluit.
+## Proposition et information gain
+Un château transformé et un parc vécu: distinguer le parcours historique du café et des événements.
+Séparer la possibilité réelle d’entrer au café et une visite des pièces; ne pas reprendre les surfaces/longueurs contradictoires.
+
+## Entités / preuves / fraîcheur
+Entité principale: Kasteel de Renesse; lieu: Oostmalle, Malle, province antwerpen, Belgique. Les personnes, bâtisseurs et collections ne seront utilisés que dans la portée documentée ci-dessus.
+STABLE: construction, transformations, histoire documentée. SEMI_STABLE: affectation actuelle et mobilité. VOLATILE: horaires, saison, prix, réservations, chantier, événements. Sources consultées le 23 octobre 2026. Les prix facultatifs peuvent rester absents plutôt que créer une précision trompeuse.
+Aucun identifiant Wikidata supposé. Une collection décrite ne prouve pas son inclusion à toute visite. Aucun hands-on, expérience familiale ou durée éditoriale inventé.
+
+## Overlap et limites
+La fiche de province oriente entre lieux, elle ne remplace pas cette histoire. Pas de concurrence d’intention entre entités différentes. Les deux sites de Deurne et les résidences de Bornem doivent être distingués, pas fusionnés.
+Données manquantes: GSC, volumes, backlinks, mesures de citations LLM, disponibilité transactionnelle en temps réel. Ces lacunes empêchent une promesse de performance, pas une réécriture patrimoniale documentée.
+
+## Research gate / handoff
+MUST explicités; ownership confirmé; sources de l’accès distinguées des sources historiques; plan dérivé des besoins. Les contradictions identifiées doivent rester qualifiées ou être résolues par le gestionnaire avant toute promesse. READY_FOR_BRIEF pour le périmètre documenté.
+
+Route owner: /kasteel/ — MUSEUM, fiche de cette entité; les sélections restent sous /kastelen/.

@@ -1,0 +1,492 @@
+{
+  "generatedAt": "2026-10-23T09:23:07.434Z",
+  "source": "real evidence in repo",
+  "results": [
+    {
+      "slug": "kasteel-marnix-de-sainte-aldegonde",
+      "headings": [
+        "De Oude Schelde verklaart de ligging",
+        "De negentiende-eeuwse waterburcht van Beyaert",
+        "Een verzameling binnen een bewoond huis",
+        "Kasteelkamers of het verhaal van Bornem?"
+      ],
+      "stages": [
+        {
+          "stage": "AGENT_DEPENDENCIES",
+          "status": "PASS",
+          "detail": "Canonical specialist SKILL.md files present for all required methods"
+        },
+        {
+          "stage": "AUDIT_INTENT",
+          "status": "PASS",
+          "detail": "Source research owner and primary query"
+        },
+        {
+          "stage": "RESEARCH_SOURCE",
+          "status": "PASS",
+          "detail": "Research official source link recorded"
+        },
+        {
+          "stage": "SERP_COMPETITOR",
+          "status": "PASS",
+          "detail": "Requires actual ranked competitor evidence and missing-core-intent resolution"
+        },
+        {
+          "stage": "BRIEF",
+          "status": "PASS",
+          "detail": "Versioned brief and intent constraints"
+        },
+        {
+          "stage": "CONTENT",
+          "status": "PASS",
+          "detail": "Canonical nl-BE detail body"
+        },
+        {
+          "stage": "FACT_CLAIMS",
+          "status": "PASS",
+          "detail": "Requires per-claim linked source and date; existence of source alone is insufficient"
+        },
+        {
+          "stage": "GEO_SEO",
+          "status": "PASS",
+          "detail": "Explicit specialist checklist represented; separate human review still necessary"
+        },
+        {
+          "stage": "HUMANIZER",
+          "status": "PASS",
+          "detail": "Distinct text-aware specialist pass with before/after evidence required"
+        },
+        {
+          "stage": "GENERAL_WRITING",
+          "status": "PASS",
+          "detail": "Distinct writer review with evidence required"
+        },
+        {
+          "stage": "ANTI_AI_SLOP",
+          "status": "PASS",
+          "detail": "Distinct non-cloning review with before/after evidence required"
+        },
+        {
+          "stage": "EDITORIAL_QA",
+          "status": "PASS",
+          "detail": "Specialist editorial gate with source-level findings required"
+        },
+        {
+          "stage": "BUILD",
+          "status": "PASS",
+          "detail": "Canonical built HTML matches source"
+        },
+        {
+          "stage": "PUBLISH_REVIEW",
+          "status": "PASS",
+          "detail": "Research + editorial + factual review approved; indexation remains separate"
+        }
+      ]
+    },
+    {
+      "slug": "kasteel-dursel",
+      "headings": [
+        "Zomers in Hingene, winters in Brussel",
+        "Een huis dat met zijn bewoners meegroeide",
+        "Familieportretten naast hedendaagse kunst",
+        "Een parkdag vraagt een andere planning dan een salonbezoek"
+      ],
+      "stages": [
+        {
+          "stage": "AGENT_DEPENDENCIES",
+          "status": "PASS",
+          "detail": "Canonical specialist SKILL.md files present for all required methods"
+        },
+        {
+          "stage": "AUDIT_INTENT",
+          "status": "PASS",
+          "detail": "Source research owner and primary query"
+        },
+        {
+          "stage": "RESEARCH_SOURCE",
+          "status": "PASS",
+          "detail": "Research official source link recorded"
+        },
+        {
+          "stage": "SERP_COMPETITOR",
+          "status": "PASS",
+          "detail": "Requires actual ranked competitor evidence and missing-core-intent resolution"
+        },
+        {
+          "stage": "BRIEF",
+          "status": "PASS",
+          "detail": "Versioned brief and intent constraints"
+        },
+        {
+          "stage": "CONTENT",
+          "status": "PASS",
+          "detail": "Canonical nl-BE detail body"
+        },
+        {
+          "stage": "FACT_CLAIMS",
+          "status": "PASS",
+          "detail": "Requires per-claim linked source and date; existence of source alone is insufficient"
+        },
+        {
+          "stage": "GEO_SEO",
+          "status": "PASS",
+          "detail": "Explicit specialist checklist represented; separate human review still necessary"
+        },
+        {
+          "stage": "HUMANIZER",
+          "status": "PASS",
+          "detail": "Distinct text-aware specialist pass with before/after evidence required"
+        },
+        {
+          "stage": "GENERAL_WRITING",
+          "status": "PASS",
+          "detail": "Distinct writer review with evidence required"
+        },
+        {
+          "stage": "ANTI_AI_SLOP",
+          "status": "PASS",
+          "detail": "Distinct non-cloning review with before/after evidence required"
+        },
+        {
+          "stage": "EDITORIAL_QA",
+          "status": "PASS",
+          "detail": "Specialist editorial gate with source-level findings required"
+        },
+        {
+          "stage": "BUILD",
+          "status": "PASS",
+          "detail": "Canonical built HTML matches source"
+        },
+        {
+          "stage": "PUBLISH_REVIEW",
+          "status": "PASS",
+          "detail": "Research + editorial + factual review approved; indexation remains separate"
+        }
+      ]
+    },
+    {
+      "slug": "kasteel-de-renesse",
+      "headings": [
+        "Een kasteel waarvan de verbouwing onvoltooid bleef",
+        "De vijver, de mammoetboom en de oude ijskelder",
+        "Met een gids door de historische vertrekken",
+        "Een café in de Ridderzaal"
+      ],
+      "stages": [
+        {
+          "stage": "AGENT_DEPENDENCIES",
+          "status": "PASS",
+          "detail": "Canonical specialist SKILL.md files present for all required methods"
+        },
+        {
+          "stage": "AUDIT_INTENT",
+          "status": "PASS",
+          "detail": "Source research owner and primary query"
+        },
+        {
+          "stage": "RESEARCH_SOURCE",
+          "status": "PASS",
+          "detail": "Research official source link recorded"
+        },
+        {
+          "stage": "SERP_COMPETITOR",
+          "status": "PASS",
+          "detail": "Requires actual ranked competitor evidence and missing-core-intent resolution"
+        },
+        {
+          "stage": "BRIEF",
+          "status": "PASS",
+          "detail": "Versioned brief and intent constraints"
+        },
+        {
+          "stage": "CONTENT",
+          "status": "PASS",
+          "detail": "Canonical nl-BE detail body"
+        },
+        {
+          "stage": "FACT_CLAIMS",
+          "status": "PASS",
+          "detail": "Requires per-claim linked source and date; existence of source alone is insufficient"
+        },
+        {
+          "stage": "GEO_SEO",
+          "status": "PASS",
+          "detail": "Explicit specialist checklist represented; separate human review still necessary"
+        },
+        {
+          "stage": "HUMANIZER",
+          "status": "PASS",
+          "detail": "Distinct text-aware specialist pass with before/after evidence required"
+        },
+        {
+          "stage": "GENERAL_WRITING",
+          "status": "PASS",
+          "detail": "Distinct writer review with evidence required"
+        },
+        {
+          "stage": "ANTI_AI_SLOP",
+          "status": "PASS",
+          "detail": "Distinct non-cloning review with before/after evidence required"
+        },
+        {
+          "stage": "EDITORIAL_QA",
+          "status": "PASS",
+          "detail": "Specialist editorial gate with source-level findings required"
+        },
+        {
+          "stage": "BUILD",
+          "status": "PASS",
+          "detail": "Canonical built HTML matches source"
+        },
+        {
+          "stage": "PUBLISH_REVIEW",
+          "status": "PASS",
+          "detail": "Research + editorial + factual review approved; indexation remains separate"
+        }
+      ]
+    },
+    {
+      "slug": "paleis-op-de-meir",
+      "headings": [
+        "Een koopman bestelt een paleis",
+        "Napoleon liet het inrichten, maar verbleef er nooit",
+        "De gevel werd opnieuw hersteld",
+        "De paleiszalen bezoeken in het najaar van 2026"
+      ],
+      "stages": [
+        {
+          "stage": "AGENT_DEPENDENCIES",
+          "status": "PASS",
+          "detail": "Canonical specialist SKILL.md files present for all required methods"
+        },
+        {
+          "stage": "AUDIT_INTENT",
+          "status": "PASS",
+          "detail": "Source research owner and primary query"
+        },
+        {
+          "stage": "RESEARCH_SOURCE",
+          "status": "PASS",
+          "detail": "Research official source link recorded"
+        },
+        {
+          "stage": "SERP_COMPETITOR",
+          "status": "PASS",
+          "detail": "Requires actual ranked competitor evidence and missing-core-intent resolution"
+        },
+        {
+          "stage": "BRIEF",
+          "status": "PASS",
+          "detail": "Versioned brief and intent constraints"
+        },
+        {
+          "stage": "CONTENT",
+          "status": "PASS",
+          "detail": "Canonical nl-BE detail body"
+        },
+        {
+          "stage": "FACT_CLAIMS",
+          "status": "PASS",
+          "detail": "Requires per-claim linked source and date; existence of source alone is insufficient"
+        },
+        {
+          "stage": "GEO_SEO",
+          "status": "PASS",
+          "detail": "Explicit specialist checklist represented; separate human review still necessary"
+        },
+        {
+          "stage": "HUMANIZER",
+          "status": "PASS",
+          "detail": "Distinct text-aware specialist pass with before/after evidence required"
+        },
+        {
+          "stage": "GENERAL_WRITING",
+          "status": "PASS",
+          "detail": "Distinct writer review with evidence required"
+        },
+        {
+          "stage": "ANTI_AI_SLOP",
+          "status": "PASS",
+          "detail": "Distinct non-cloning review with before/after evidence required"
+        },
+        {
+          "stage": "EDITORIAL_QA",
+          "status": "PASS",
+          "detail": "Specialist editorial gate with source-level findings required"
+        },
+        {
+          "stage": "BUILD",
+          "status": "PASS",
+          "detail": "Canonical built HTML matches source"
+        },
+        {
+          "stage": "PUBLISH_REVIEW",
+          "status": "PASS",
+          "detail": "Research + editorial + factual review approved; indexation remains separate"
+        }
+      ]
+    },
+    {
+      "slug": "kasteel-rivierenhof",
+      "headings": [
+        "De spiegelvijver hoort bij het ontwerp",
+        "Van Ter Rivieren naar het zomerverblijf van Cogels",
+        "Een privédomein wordt een publiek park",
+        "Een tafel reserveren of het gebouw van buiten bekijken"
+      ],
+      "stages": [
+        {
+          "stage": "AGENT_DEPENDENCIES",
+          "status": "PASS",
+          "detail": "Canonical specialist SKILL.md files present for all required methods"
+        },
+        {
+          "stage": "AUDIT_INTENT",
+          "status": "PASS",
+          "detail": "Source research owner and primary query"
+        },
+        {
+          "stage": "RESEARCH_SOURCE",
+          "status": "PASS",
+          "detail": "Research official source link recorded"
+        },
+        {
+          "stage": "SERP_COMPETITOR",
+          "status": "PASS",
+          "detail": "Requires actual ranked competitor evidence and missing-core-intent resolution"
+        },
+        {
+          "stage": "BRIEF",
+          "status": "PASS",
+          "detail": "Versioned brief and intent constraints"
+        },
+        {
+          "stage": "CONTENT",
+          "status": "PASS",
+          "detail": "Canonical nl-BE detail body"
+        },
+        {
+          "stage": "FACT_CLAIMS",
+          "status": "PASS",
+          "detail": "Requires per-claim linked source and date; existence of source alone is insufficient"
+        },
+        {
+          "stage": "GEO_SEO",
+          "status": "PASS",
+          "detail": "Explicit specialist checklist represented; separate human review still necessary"
+        },
+        {
+          "stage": "HUMANIZER",
+          "status": "PASS",
+          "detail": "Distinct text-aware specialist pass with before/after evidence required"
+        },
+        {
+          "stage": "GENERAL_WRITING",
+          "status": "PASS",
+          "detail": "Distinct writer review with evidence required"
+        },
+        {
+          "stage": "ANTI_AI_SLOP",
+          "status": "PASS",
+          "detail": "Distinct non-cloning review with before/after evidence required"
+        },
+        {
+          "stage": "EDITORIAL_QA",
+          "status": "PASS",
+          "detail": "Specialist editorial gate with source-level findings required"
+        },
+        {
+          "stage": "BUILD",
+          "status": "PASS",
+          "detail": "Canonical built HTML matches source"
+        },
+        {
+          "stage": "PUBLISH_REVIEW",
+          "status": "PASS",
+          "detail": "Research + editorial + factual review approved; indexation remains separate"
+        }
+      ]
+    },
+    {
+      "slug": "sterckshof",
+      "headings": [
+        "Geen museumticket op basis van de oude naam",
+        "Een oude plek met een heropbouw uit 1931-1938",
+        "Grachten en twee binnenplaatsen",
+        "Een wandeling met zicht op de toekomstplannen"
+      ],
+      "stages": [
+        {
+          "stage": "AGENT_DEPENDENCIES",
+          "status": "PASS",
+          "detail": "Canonical specialist SKILL.md files present for all required methods"
+        },
+        {
+          "stage": "AUDIT_INTENT",
+          "status": "PASS",
+          "detail": "Source research owner and primary query"
+        },
+        {
+          "stage": "RESEARCH_SOURCE",
+          "status": "PASS",
+          "detail": "Research official source link recorded"
+        },
+        {
+          "stage": "SERP_COMPETITOR",
+          "status": "PASS",
+          "detail": "Requires actual ranked competitor evidence and missing-core-intent resolution"
+        },
+        {
+          "stage": "BRIEF",
+          "status": "PASS",
+          "detail": "Versioned brief and intent constraints"
+        },
+        {
+          "stage": "CONTENT",
+          "status": "PASS",
+          "detail": "Canonical nl-BE detail body"
+        },
+        {
+          "stage": "FACT_CLAIMS",
+          "status": "PASS",
+          "detail": "Requires per-claim linked source and date; existence of source alone is insufficient"
+        },
+        {
+          "stage": "GEO_SEO",
+          "status": "PASS",
+          "detail": "Explicit specialist checklist represented; separate human review still necessary"
+        },
+        {
+          "stage": "HUMANIZER",
+          "status": "PASS",
+          "detail": "Distinct text-aware specialist pass with before/after evidence required"
+        },
+        {
+          "stage": "GENERAL_WRITING",
+          "status": "PASS",
+          "detail": "Distinct writer review with evidence required"
+        },
+        {
+          "stage": "ANTI_AI_SLOP",
+          "status": "PASS",
+          "detail": "Distinct non-cloning review with before/after evidence required"
+        },
+        {
+          "stage": "EDITORIAL_QA",
+          "status": "PASS",
+          "detail": "Specialist editorial gate with source-level findings required"
+        },
+        {
+          "stage": "BUILD",
+          "status": "PASS",
+          "detail": "Canonical built HTML matches source"
+        },
+        {
+          "stage": "PUBLISH_REVIEW",
+          "status": "PASS",
+          "detail": "Research + editorial + factual review approved; indexation remains separate"
+        }
+      ]
+    }
+  ]
+}

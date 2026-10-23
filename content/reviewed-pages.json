@@ -603,169 +603,565 @@
   {
     "route": "/kasteel/kasteel-marnix-de-sainte-aldegonde/",
     "source": "content/kasteel/kasteel-marnix-de-sainte-aldegonde/body.html",
-    "title": "Kasteel Marnix de Sainte Aldegonde bezoeken in Antwerpen",
-    "description": "Kasteel Marnix de Sainte Aldegonde: geschiedenis, bezoekmogelijkheden, beperkingen en officiële bezoekersinformatie voor een uitstap in Antwerpen.",
+    "title": "Kasteel van Bornem bezoeken: Marnix, Beyaert en koetsen",
+    "description": "Ontdek Kasteel Marnix de Sainte Aldegonde aan de Oude Schelde: de waterburcht van Beyaert, collecties, bezoekformules en beperkingen voor wie minder mobiel is.",
     "stylesheet": "assets/castle-detail.css",
     "schema": {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Kasteel Marnix de Sainte Aldegonde bezoeken",
-      "url": "https://kastelenbelgie.be/kasteel/kasteel-marnix-de-sainte-aldegonde/",
-      "inLanguage": "nl-BE"
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteel-marnix-de-sainte-aldegonde/#page",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-marnix-de-sainte-aldegonde/",
+          "name": "Kasteel van Bornem bezoeken: Marnix, Beyaert en koetsen",
+          "description": "Ontdek Kasteel Marnix de Sainte Aldegonde aan de Oude Schelde: de waterburcht van Beyaert, collecties, bezoekformules en beperkingen voor wie minder mobiel is.",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/antwerpen/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Antwerpen",
+              "item": "https://kastelenbelgie.be/kastelen/antwerpen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel Marnix de Sainte Aldegonde",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-marnix-de-sainte-aldegonde/"
+            }
+          ]
+        }
+      ]
     }
   },
   {
     "route": "/kasteel/kasteel-dursel/",
     "source": "content/kasteel/kasteel-dursel/body.html",
-    "title": "Kasteel d’Ursel bezoeken in Antwerpen",
-    "description": "Kasteel d’Ursel: geschiedenis, bezoekmogelijkheden, beperkingen en officiële bezoekersinformatie voor een uitstap in Antwerpen.",
+    "title": "Kasteel d’Ursel in Hingene: salons, portretten en park",
+    "description": "Lees het verhaal van de zomerresidentie d’Ursel in Hingene. Met bouwgeschiedenis, TALKING HEADS in 2026 en het verschil tussen een park- en salonbezoek.",
     "stylesheet": "assets/castle-detail.css",
     "schema": {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Kasteel d’Ursel bezoeken",
-      "url": "https://kastelenbelgie.be/kasteel/kasteel-dursel/",
-      "inLanguage": "nl-BE"
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteel-dursel/#page",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-dursel/",
+          "name": "Kasteel d’Ursel in Hingene: salons, portretten en park",
+          "description": "Lees het verhaal van de zomerresidentie d’Ursel in Hingene. Met bouwgeschiedenis, TALKING HEADS in 2026 en het verschil tussen een park- en salonbezoek.",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/antwerpen/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Antwerpen",
+              "item": "https://kastelenbelgie.be/kastelen/antwerpen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel d’Ursel",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-dursel/"
+            }
+          ]
+        }
+      ]
     }
   },
   {
     "route": "/kasteel/kasteel-de-renesse/",
     "source": "content/kasteel/kasteel-de-renesse/body.html",
-    "title": "Kasteel de Renesse bezoeken in Antwerpen",
-    "description": "Kasteel de Renesse: geschiedenis, bezoekmogelijkheden, beperkingen en officiële bezoekersinformatie voor een uitstap in Antwerpen.",
+    "title": "Kasteel de Renesse in Oostmalle: park en rondleidingen",
+    "description": "Verken de geschiedenis en het park van Kasteel de Renesse: de onvoltooide verbouwing, mammoetboom, ijskelder en het verschil tussen rondleiding en kasteelcafé.",
     "stylesheet": "assets/castle-detail.css",
     "schema": {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Kasteel de Renesse bezoeken",
-      "url": "https://kastelenbelgie.be/kasteel/kasteel-de-renesse/",
-      "inLanguage": "nl-BE"
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteel-de-renesse/#page",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-de-renesse/",
+          "name": "Kasteel de Renesse in Oostmalle: park en rondleidingen",
+          "description": "Verken de geschiedenis en het park van Kasteel de Renesse: de onvoltooide verbouwing, mammoetboom, ijskelder en het verschil tussen rondleiding en kasteelcafé.",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/antwerpen/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Antwerpen",
+              "item": "https://kastelenbelgie.be/kastelen/antwerpen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel de Renesse",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-de-renesse/"
+            }
+          ]
+        }
+      ]
     }
   },
   {
     "route": "/kasteel/paleis-op-de-meir/",
     "source": "content/kasteel/paleis-op-de-meir/body.html",
-    "title": "Paleis op de Meir bezoeken in Antwerpen",
-    "description": "Paleis op de Meir: geschiedenis, bezoekmogelijkheden, beperkingen en officiële bezoekersinformatie voor een uitstap in Antwerpen.",
+    "title": "Paleis op de Meir bezoeken: rococo en vorstelijke interieurs",
+    "description": "Van koopmanswoning tot vorstelijk paleis: Van Baurscheit, Napoleon en Willem I. Met de bezoekregeling voor 2026 en toegang tot de historische zalen.",
     "stylesheet": "assets/castle-detail.css",
     "schema": {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Paleis op de Meir bezoeken",
-      "url": "https://kastelenbelgie.be/kasteel/paleis-op-de-meir/",
-      "inLanguage": "nl-BE"
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/paleis-op-de-meir/#page",
+          "url": "https://kastelenbelgie.be/kasteel/paleis-op-de-meir/",
+          "name": "Paleis op de Meir bezoeken: rococo en vorstelijke interieurs",
+          "description": "Van koopmanswoning tot vorstelijk paleis: Van Baurscheit, Napoleon en Willem I. Met de bezoekregeling voor 2026 en toegang tot de historische zalen.",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/antwerpen/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Antwerpen",
+              "item": "https://kastelenbelgie.be/kastelen/antwerpen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Paleis op de Meir",
+              "item": "https://kastelenbelgie.be/kasteel/paleis-op-de-meir/"
+            }
+          ]
+        }
+      ]
     }
   },
   {
     "route": "/kasteel/kasteel-rivierenhof/",
     "source": "content/kasteel/kasteel-rivierenhof/body.html",
-    "title": "Kasteel Rivierenhof bezoeken in Antwerpen",
-    "description": "Kasteel Rivierenhof: geschiedenis, bezoekmogelijkheden, beperkingen en officiële bezoekersinformatie voor een uitstap in Antwerpen.",
+    "title": "Kasteel Rivierenhof: Cogels, spiegelvijver en restaurant",
+    "description": "Kasteel Rivierenhof in Deurne begrijpen: de verbouwing van 1779, het park van Cogels en de spiegelvijver. Met het onderscheid tussen wandeling en horeca.",
     "stylesheet": "assets/castle-detail.css",
     "schema": {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Kasteel Rivierenhof bezoeken",
-      "url": "https://kastelenbelgie.be/kasteel/kasteel-rivierenhof/",
-      "inLanguage": "nl-BE"
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteel-rivierenhof/#page",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-rivierenhof/",
+          "name": "Kasteel Rivierenhof: Cogels, spiegelvijver en restaurant",
+          "description": "Kasteel Rivierenhof in Deurne begrijpen: de verbouwing van 1779, het park van Cogels en de spiegelvijver. Met het onderscheid tussen wandeling en horeca.",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/antwerpen/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Antwerpen",
+              "item": "https://kastelenbelgie.be/kastelen/antwerpen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel Rivierenhof",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-rivierenhof/"
+            }
+          ]
+        }
+      ]
     }
   },
   {
     "route": "/kasteel/sterckshof/",
     "source": "content/kasteel/sterckshof/body.html",
-    "title": "Sterckshof bezoeken in Antwerpen",
-    "description": "Sterckshof: geschiedenis, bezoekmogelijkheden, beperkingen en officiële bezoekersinformatie voor een uitstap in Antwerpen.",
+    "title": "Sterckshof in Deurne: heropbouw en huidige bezoekstatus",
+    "description": "Wat kun je bij het Sterckshof zien? Lees over de heropbouw van 1931-1938, het vertrokken Zilvermuseum en de plannen voor een nieuwe museale bestemming.",
     "stylesheet": "assets/castle-detail.css",
     "schema": {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Sterckshof bezoeken",
-      "url": "https://kastelenbelgie.be/kasteel/sterckshof/",
-      "inLanguage": "nl-BE"
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/sterckshof/#page",
+          "url": "https://kastelenbelgie.be/kasteel/sterckshof/",
+          "name": "Sterckshof in Deurne: heropbouw en huidige bezoekstatus",
+          "description": "Wat kun je bij het Sterckshof zien? Lees over de heropbouw van 1931-1938, het vertrokken Zilvermuseum en de plannen voor een nieuwe museale bestemming.",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/antwerpen/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Antwerpen",
+              "item": "https://kastelenbelgie.be/kastelen/antwerpen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Sterckshof",
+              "item": "https://kastelenbelgie.be/kasteel/sterckshof/"
+            }
+          ]
+        }
+      ]
     }
   },
   {
     "route": "/kasteel/landcommanderij-alden-biesen/",
     "source": "content/kasteel/landcommanderij-alden-biesen/body.html",
-    "title": "Landcommanderij Alden Biesen bezoeken in Limburg",
-    "description": "Landcommanderij Alden Biesen: geschiedenis, bezoekvoorwaarden, toegankelijke delen en officiële informatie.",
+    "title": "Alden Biesen bezoeken: DOMUS, waterburcht en tuinen",
+    "description": "Ontdek de landcommanderij van de Duitse Orde in Rijkhoven. Met DOMUS, de brand van 1971 en de verschillende toegangsregels voor Franse tuinen en Engels park.",
     "stylesheet": "assets/castle-detail.css",
     "schema": {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Landcommanderij Alden Biesen bezoeken",
-      "url": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen/",
-      "inLanguage": "nl-BE"
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen/#page",
+          "url": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen/",
+          "name": "Alden Biesen bezoeken: DOMUS, waterburcht en tuinen",
+          "description": "Ontdek de landcommanderij van de Duitse Orde in Rijkhoven. Met DOMUS, de brand van 1971 en de verschillende toegangsregels voor Franse tuinen en Engels park.",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/limburg/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Limburg",
+              "item": "https://kastelenbelgie.be/kastelen/limburg/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Landcommanderij Alden Biesen",
+              "item": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen/"
+            }
+          ]
+        }
+      ]
     }
   },
   {
     "route": "/kasteel/kasteel-van-heers/",
     "source": "content/kasteel/kasteel-van-heers/body.html",
-    "title": "Kasteel van Heers bezoeken in Limburg",
-    "description": "Kasteel van Heers: geschiedenis, bezoekvoorwaarden, toegankelijke delen en officiële informatie.",
+    "title": "Kasteel van Heers: geschiedenis en restauratierondleiding",
+    "description": "Bezoek Heers als restauratiewerf: vier kasteelvleugels, de tiendenschuur en het herstelproject. Met reservatie, werfvoorwaarden en het programma voor 2026.",
     "stylesheet": "assets/castle-detail.css",
     "schema": {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Kasteel van Heers bezoeken",
-      "url": "https://kastelenbelgie.be/kasteel/kasteel-van-heers/",
-      "inLanguage": "nl-BE"
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteel-van-heers/#page",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-van-heers/",
+          "name": "Kasteel van Heers: geschiedenis en restauratierondleiding",
+          "description": "Bezoek Heers als restauratiewerf: vier kasteelvleugels, de tiendenschuur en het herstelproject. Met reservatie, werfvoorwaarden en het programma voor 2026.",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/limburg/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Limburg",
+              "item": "https://kastelenbelgie.be/kastelen/limburg/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Heers",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-van-heers/"
+            }
+          ]
+        }
+      ]
     }
   },
   {
     "route": "/kasteel/kasteel-van-hex/",
     "source": "content/kasteel/kasteel-van-hex/body.html",
-    "title": "Kasteel van Hex bezoeken in Limburg",
-    "description": "Kasteel van Hex: geschiedenis, bezoekvoorwaarden, toegankelijke delen en officiële informatie.",
+    "title": "Kasteel van Hex: historische tuinen en bezoek op afspraak",
+    "description": "Lees de tuinen van Hex: Velbrück, het park van Fuchs, terrassen en rozen. Met festivalbezoek, groepsafspraken en de toegankelijkheidsgrens van de moestuin.",
     "stylesheet": "assets/castle-detail.css",
     "schema": {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Kasteel van Hex bezoeken",
-      "url": "https://kastelenbelgie.be/kasteel/kasteel-van-hex/",
-      "inLanguage": "nl-BE"
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteel-van-hex/#page",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-van-hex/",
+          "name": "Kasteel van Hex: historische tuinen en bezoek op afspraak",
+          "description": "Lees de tuinen van Hex: Velbrück, het park van Fuchs, terrassen en rozen. Met festivalbezoek, groepsafspraken en de toegankelijkheidsgrens van de moestuin.",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/limburg/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Limburg",
+              "item": "https://kastelenbelgie.be/kastelen/limburg/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Hex",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-van-hex/"
+            }
+          ]
+        }
+      ]
     }
   },
   {
     "route": "/kasteel/kasteel-van-ordingen/",
     "source": "content/kasteel/kasteel-van-ordingen/body.html",
-    "title": "Kasteel van Ordingen bezoeken in Limburg",
-    "description": "Kasteel van Ordingen: geschiedenis, bezoekvoorwaarden, toegankelijke delen en officiële informatie.",
+    "title": "Kasteel van Ordingen: commanderie, restauratie en hotel",
+    "description": "Van commanderie tot kasteelhotel in Sint-Truiden. Ontdek de bouwgeschiedenis, het interieur van Pieter Porters en het verschil tussen verblijf en museumbezoek.",
     "stylesheet": "assets/castle-detail.css",
     "schema": {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Kasteel van Ordingen bezoeken",
-      "url": "https://kastelenbelgie.be/kasteel/kasteel-van-ordingen/",
-      "inLanguage": "nl-BE"
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteel-van-ordingen/#page",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-van-ordingen/",
+          "name": "Kasteel van Ordingen: commanderie, restauratie en hotel",
+          "description": "Van commanderie tot kasteelhotel in Sint-Truiden. Ontdek de bouwgeschiedenis, het interieur van Pieter Porters en het verschil tussen verblijf en museumbezoek.",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/limburg/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Limburg",
+              "item": "https://kastelenbelgie.be/kastelen/limburg/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Ordingen",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-van-ordingen/"
+            }
+          ]
+        }
+      ]
     }
   },
   {
     "route": "/kasteel/kasteelbrouwerij-ter-dolen/",
     "source": "content/kasteel/kasteelbrouwerij-ter-dolen/body.html",
-    "title": "Kasteelbrouwerij Ter Dolen bezoeken in Limburg",
-    "description": "Kasteelbrouwerij Ter Dolen: geschiedenis, bezoekvoorwaarden, toegankelijke delen en officiële informatie.",
+    "title": "Ter Dolen bezoeken: Kasteel De Dool en de brouwerij",
+    "description": "Van toevluchtsoord voor abten tot brouwerij sinds 1994. Lees wat de rondleiding omvat en waarom bezoeken tijdens werken in 2026 bevestiging vragen.",
     "stylesheet": "assets/castle-detail.css",
     "schema": {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Kasteelbrouwerij Ter Dolen bezoeken",
-      "url": "https://kastelenbelgie.be/kasteel/kasteelbrouwerij-ter-dolen/",
-      "inLanguage": "nl-BE"
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteelbrouwerij-ter-dolen/#page",
+          "url": "https://kastelenbelgie.be/kasteel/kasteelbrouwerij-ter-dolen/",
+          "name": "Ter Dolen bezoeken: Kasteel De Dool en de brouwerij",
+          "description": "Van toevluchtsoord voor abten tot brouwerij sinds 1994. Lees wat de rondleiding omvat en waarom bezoeken tijdens werken in 2026 bevestiging vragen.",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/limburg/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Limburg",
+              "item": "https://kastelenbelgie.be/kastelen/limburg/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteelbrouwerij Ter Dolen",
+              "item": "https://kastelenbelgie.be/kasteel/kasteelbrouwerij-ter-dolen/"
+            }
+          ]
+        }
+      ]
     }
   },
   {
     "route": "/kasteel/domein-bokrijk/",
     "source": "content/kasteel/domein-bokrijk/body.html",
-    "title": "Domein Bokrijk bezoeken in Limburg",
-    "description": "Domein Bokrijk: geschiedenis, bezoekvoorwaarden, toegankelijke delen en officiële informatie.",
+    "title": "Kasteel en domein Bokrijk: vakmanschap, museum en park",
+    "description": "Ontdek het kasteel van Bokrijk en de hedendaagse kasteelcollectie. Met het onderscheid tussen VAKlab, Openluchtmuseum en park, plus de bezoekkalender 2026.",
     "stylesheet": "assets/castle-detail.css",
     "schema": {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Domein Bokrijk bezoeken",
-      "url": "https://kastelenbelgie.be/kasteel/domein-bokrijk/",
-      "inLanguage": "nl-BE"
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/domein-bokrijk/#page",
+          "url": "https://kastelenbelgie.be/kasteel/domein-bokrijk/",
+          "name": "Kasteel en domein Bokrijk: vakmanschap, museum en park",
+          "description": "Ontdek het kasteel van Bokrijk en de hedendaagse kasteelcollectie. Met het onderscheid tussen VAKlab, Openluchtmuseum en park, plus de bezoekkalender 2026.",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/limburg/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Limburg",
+              "item": "https://kastelenbelgie.be/kastelen/limburg/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Domein Bokrijk",
+              "item": "https://kastelenbelgie.be/kasteel/domein-bokrijk/"
+            }
+          ]
+        }
+      ]
     }
   }
 ]

@@ -1,33 +1,54 @@
-# kasteel-marnix-de-sainte-aldegonde — post-write gap check / PUBLISH_REVIEW
-workflow_version: museum-v1
-mode: NEW_PAGE
-checked_at: 2026-10-23
+# Post-write gap check — /kasteel/kasteel-marnix-de-sainte-aldegonde/
+Workflow version: museum-v1
+Review date: 2026-10-23
+Research artifact: content/research/kasteel/kasteel-marnix-de-sainte-aldegonde/serp-coverage.md
+Brief: content/briefs/kasteel/kasteel-marnix-de-sainte-aldegonde.md
+Draft/source: content/kasteel/kasteel-marnix-de-sainte-aldegonde/body.html
+SHA-256 de l’article final: `81d4cecbe6db8b1155dd1046e1771ca2f88741c52cd7c4e9f1f1e3343ed00e1c`
 
-| Etape obligatoire | Etat | Preuve / manque |
+## 1. Vérification contre les besoins initiaux
+| Requirement | Priority | Final status | Where covered | Evidence/source preserved? | Notes |
+|---|---|---|---|---|---|
+| Distinguer site ancien et château actuel de Beyaert | MUST | COVERED | De negentiende-eeuwse waterburcht van Beyaert | voir fact-check-2026-10-23.md et liens visibles | PARTIAL → réponse développée dans la version finale |
+| Comparer visite complète et centre seul, sans promettre Bruegel | MUST | COVERED | Kasteelkamers of het verhaal van Bornem? | voir fact-check-2026-10-23.md et liens visibles | COVERED → réponse développée dans la version finale |
+| Saison, réservation et restrictions de mobilité | MUST | COVERED | Kasteelkamers of het verhaal van Bornem? | voir fact-check-2026-10-23.md et liens visibles | COVERED → réponse développée dans la version finale |
+| Relier Coloma, famille Marnix et situation fluviale sans légende romaine affirmée | SHOULD | COVERED | De Oude Schelde verklaart de ligging | voir fact-check-2026-10-23.md et liens visibles | MISSING → réponse développée dans la version finale |
+
+## 2. Proposition de visite et entités
+Comprendre une résidence habitée reconstruite au XIXe siècle au bord de l’Oude Schelde, puis choisir la bonne formule.
+Relier la silhouette néogothique au XIXe siècle plutôt qu’à une forteresse intacte; séparer explicitement les parcours.
+Entité et lieu désambiguïsés: Kasteel Marnix de Sainte Aldegonde, Bornem. Collection, architecture et usage actuel distingués. Pas de passage affirmant une visite personnelle. Aucun événement futur présenté comme déjà ouvert. Pas de fusion avec la fiche de province.
+
+## 3. Factualité et fraîcheur
+Le fact-check séparé est conservé dans `fact-check-2026-10-23.md`. Les affirmations de la version finale ont été relues après les passes de style, et non validées depuis le seul brief. Sources consultées le 23 octobre 2026. Faits STABLE: construction et histoire; SEMI_STABLE: usage/mobilité; VOLATILE: horaires, événements, réservations et travaux. Les conditions gardent leurs dates et portée.
+
+## 4. Passes GEO / style / maillage
+Réponse principale dans le lead, faits et liens de source proches, noms de lieux précis. Pas de FAQ ou d’accumulation d’entités créée pour les robots. Les phrases de l’article ont été modifiées via content-and-copy, puis humanizer, general-writing et anti-ai-slop dans cet ordre. Voir `writing-passes-2026-10-23.md` pour les extraits avant/après distincts.
+Le maillage a été vérifié sur les HTML produits avec le script existant `scripts/internal_link_audit.py` en import: 12 sources lues, 8 candidats contextuels déjà présents, aucune action d’ajout requise. Les cibles réellement présentes sont aussi contrôlées par npm run check. Les renvois de fin répétitifs ont été supprimés; le fil d’Ariane vers la province est conservé.
+
+## 5. SEO et lecture du rendu
+Title et meta propres à cette fiche dans reviewed-pages.json; un H1; URL /kasteel/kasteel-marnix-de-sainte-aldegonde/ et canonical propres; langue nl-BE; JSON-LD WebPage + BreadcrumbList cohérent avec le contenu. Aucun schema Review, Museum ou classement d’avis inventé. robots noindex,follow inchangé.
+Build/check: 89 HTML générés, 48 pages rédigées contrôlées. Reconstruction répétée: mêmes empreintes sur les 89 pages. Comparaison au build du HEAD d’origine: seules les 12 fiches demandées diffèrent. Les autres différences de fichiers HTML préexistantes entre sources et artefacts suivis ne sont pas publiées dans ce changement.
+Rendu Playwright/Chromium 153 vérifié en 1440×1000 et 390×844: HTTP 200, texte du main identique à la source, aucun paragraphe caché et aucun débordement horizontal dans les deux rendus finaux. Captures pleine page réellement inspectées. Les champs du runner liés à .content-main (ancienne famille Guides) sont non applicables ici; ils ne sont pas utilisés pour valider les titres ou le contenu.
+Limite de rendu: la requête Google Fonts échoue dans cet environnement (ERR_EMPTY_RESPONSE); les captures utilisent les polices de repli. Le chargement des polices externes et les CWV terrain ne sont donc pas certifiés. Aucune erreur JavaScript de page. La navigation mobile et le focus du lien d’évitement ont été exercés sur une fiche témoin.
+
+Premier contrôle mobile FAIL: mot composé du H2 trop large. Titre reformulé; deuxième capture inspectée et nouvelle mesure: aucun débordement. La correction ne change ni fait ni intention.
+
+## Synthèse des passes exécutées
+| Skill | Résultat sur le texte final | Preuve |
 |---|---|---|
-| AUDIT / NEW_PAGE ownership | COVERED | One entity /kasteel/kasteel-marnix-de-sainte-aldegonde/ versus regional /kastelen/antwerpen/ |
-| seo-keyword + search-intent + JTBD | PARTIAL | content/research/kasteel/kasteel-marnix-de-sainte-aldegonde/serp-coverage.md ; primary and variants identified, volumes unknown |
-| seo-competitor + live SERP matrix | BLOCKED | Official/heritage results inspected; independent top ten and SERP-feature matrix incomplete |
-| Entity and source research | COVERED | Primary institutional source URL in body and research |
-| fact-check and volatility ledger | PARTIAL | Named facts grounded in official page; not every historic claim independently corroborated, booking volatile |
-| content-brief-authoring, brand-voice | COVERED | content/briefs/kasteel/kasteel-marnix-de-sainte-aldegonde.md, cultural voice |
-| content-and-copy | DRAFT | content/kasteel/kasteel-marnix-de-sainte-aldegonde/body.html, individual structure and copy |
-| seo-aeo-geo | PARTIAL | Clear answer to visit intent and source-linked factual language; extractibility requires editorial review |
-| internal-linking-audit | PARTIAL | province/detail two-way links exist; other cluster links pending |
-| humanizer | PARTIAL | Initial natural Belgian-Dutch prose; full original specialist review not independently certified |
-| general-writing | PARTIAL | Initial editorial pass; detailed proof missing |
-| anti-ai-slop | PARTIAL | Distinct claims, but repetitive H2 functions across new pages require review |
-| seo-onpage / seo-technical / seo-best-practices | PENDING | CI build + title, canonical, noindex, CSS, route source verification |
-| editorial-qa | BLOCKED | Research and separate specialist pass incomplete |
-| Playwright desktop/mobile | PENDING | Run on latest commit |
-| PUBLISH_REVIEW | FAIL — KEEP_NOINDEX | No certified research gate or human validation |
+| humanizer | PASS | extraits avant/après dans writing-passes-2026-10-23.md, passe 1 |
+| general-writing | PASS | corrections distinctes dans writing-passes-2026-10-23.md, passe 2 |
+| anti-ai-slop | PASS | détection, remédiation et re-review dans writing-passes-2026-10-23.md, passe 3 |
+| seo-aeo-geo | PASS sur l’extractibilité du contenu | réponses directes, noms désambiguïsés, dates et sources; citations LLM non mesurées |
+| seo-onpage | PASS sur le périmètre édité | metadata propre, H1, headings utiles, liens et WebPage/BreadcrumbList |
+| seo-technical / seo-best-practices | PASS sur le build et le périmètre édité | source statique, canonical, robots et JSON-LD contrôlés; limites fontes/CWV ci-dessus |
+| editorial-qa | PASS | intention, spécificité, factualité, naturel, préservation et utilité vérifiés ci-dessous |
 
-**Decision: FAIL — KEEP_NOINDEX.** The source is a public review draft, not complete workflow approval. Do not add unverified facts or remove robots noindex.
+## 6. Editorial QA / PUBLISH_REVIEW
+Intent: réponse spécifique et utilisable. Original value: histoire contextualisée et distinction des accès. Factuality: preuves reliées et incertitudes bornées. Natural Dutch: syntaxe et rythme relus séparément. SEO preservation: noms, URL, canonical et indexation conservés. Usefulness: article utile sans affiliation. Images: aucune image générée nécessaire pour cette correction de texte; aucune représentation inventée du monument.
+Architecture comparée aux onze autres fiches: les fonctions et les enchaînements sont motivés par le lieu (reconstruction, jardins, commanderie, séjour, chantier ou production), pas par les anciens blocs identiques. Les phrases génériques et fins systématiques ont été corrigées. Aucun MUST MISSING, claim central non vérifié présenté comme certain, ou signal HIGH anti-slop restant.
 
-## Passes sur le contenu — 2026-10-23
-- HUMANIZER: révision directe du corps HTML pour clarifier la décision du visiteur, supprimer les conclusions promotionnelles et expliciter les limites d'accès. Source: content/kasteel/kasteel-marnix-de-sainte-aldegonde/body.html, section `bezoekerskeuze`.
-- GENERAL-WRITING: phrases orientées sur une question réelle de visite; la nouvelle section distingue les composantes du lieu et évite une affirmation d'expérience personnelle.
-- ANTI-AI-SLOP: ajout d'une distinction patrimoniale/pratique vérifiable plutôt qu'une promesse vague; à revérifier pour la répétition éventuelle avec les sections existantes.
-- FACT-CHECK: sources institutionnelles consignées dans `specialist-evidence.md`; conditions volatiles non garanties en temps réel.
-- SEO/GEO: une entité par fiche, lien vers source officielle et choix depuis la page provinciale.
-- PUBLISH_REVIEW: les résultats techniques ne suffisent pas à certifier la SERP complète et la validation humaine; `FAIL — KEEP_NOINDEX` inchangé.
+**PASS — READY_FOR_HUMAN_VALIDATION**
+
+Cette décision est le résultat du mode PUBLISH_REVIEW sur la version finale, pas le résultat du contrôle d’intégrité des skills. La publication sur main est demandée explicitement dans cette tâche. Aucun changement d’indexation autorisé ou effectué.

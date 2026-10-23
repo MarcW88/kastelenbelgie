@@ -1,0 +1,18 @@
+{
+  "compared": 89,
+  "changed_routes": [
+    "kasteel/kasteel-de-renesse/index.html",
+    "kasteel/kasteel-rivierenhof/index.html",
+    "kasteel/landcommanderij-alden-biesen/index.html",
+    "kasteel/paleis-op-de-meir/index.html",
+    "kasteel/domein-bokrijk/index.html",
+    "kasteel/kasteel-van-heers/index.html",
+    "kasteel/kasteel-van-hex/index.html",
+    "kasteel/kasteel-van-ordingen/index.html",
+    "kasteel/sterckshof/index.html",
+    "kasteel/kasteelbrouwerij-ter-dolen/index.html",
+    "kasteel/kasteel-dursel/index.html",
+    "kasteel/kasteel-marnix-de-sainte-aldegonde/index.html"
+  ],
+  "non_target_changes": 0
+}

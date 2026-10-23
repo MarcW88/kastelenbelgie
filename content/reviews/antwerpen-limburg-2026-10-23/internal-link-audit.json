@@ -1,0 +1,562 @@
+{
+  "brand": {
+    "name": "Kastelen België",
+    "domain": "https://kastelenbelgie.be",
+    "locale": "nl-BE"
+  },
+  "domain": "https://kastelenbelgie.be",
+  "crawl_mode": "import",
+  "summary": {
+    "checked_pages": 12,
+    "add_internal_link": 0,
+    "add_contextual_body_link": 0,
+    "no_action_needed": 8
+  },
+  "pages": [
+    {
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-marnix-de-sainte-aldegonde/",
+      "fetch": {
+        "fetcher": "import",
+        "status_code": null
+      },
+      "title": "Kasteel van Bornem bezoeken: Marnix, Beyaert en koetsen | Kastelen België",
+      "h1": "Kasteel Marnix de Sainte Aldegonde bezoeken",
+      "stats": {
+        "total_links": 24,
+        "unique_links": 18,
+        "breakdown": {
+          "navigation": 8,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 3
+        },
+        "unique_breakdown": {
+          "navigation": 7,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 3
+        }
+      },
+      "recommendations": [
+        {
+          "source": "https://kastelenbelgie.be/kasteel/kasteel-marnix-de-sainte-aldegonde/",
+          "target": "https://kastelenbelgie.be/kasteel/kasteel-dursel/",
+          "anchor": "entité nommée dans le contenu",
+          "placement": "paragraphe de relation historique ou choix de visite",
+          "reason": "relation concrète entre les deux lieux ou alternative d’accès",
+          "priority": "P1",
+          "target_normalized": "https://kastelenbelgie.be/kasteel/kasteel-dursel",
+          "action": "no_action_needed",
+          "recommendation": "Target URL already exists in body/contextual links.",
+          "target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-dursel",
+              "region": "body",
+              "anchor": "Kasteel d’Ursel in Hingene"
+            }
+          ],
+          "body_target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-dursel",
+              "region": "body",
+              "anchor": "Kasteel d’Ursel in Hingene"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-dursel/",
+      "fetch": {
+        "fetcher": "import",
+        "status_code": null
+      },
+      "title": "Kasteel d’Ursel in Hingene: salons, portretten en park | Kastelen België",
+      "h1": "Kasteel d’Ursel bezoeken",
+      "stats": {
+        "total_links": 24,
+        "unique_links": 18,
+        "breakdown": {
+          "navigation": 8,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 3
+        },
+        "unique_breakdown": {
+          "navigation": 7,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 3
+        }
+      },
+      "recommendations": [
+        {
+          "source": "https://kastelenbelgie.be/kasteel/kasteel-dursel/",
+          "target": "https://kastelenbelgie.be/kasteel/kasteel-marnix-de-sainte-aldegonde/",
+          "anchor": "entité nommée dans le contenu",
+          "placement": "paragraphe de relation historique ou choix de visite",
+          "reason": "relation concrète entre les deux lieux ou alternative d’accès",
+          "priority": "P1",
+          "target_normalized": "https://kastelenbelgie.be/kasteel/kasteel-marnix-de-sainte-aldegonde",
+          "action": "no_action_needed",
+          "recommendation": "Target URL already exists in body/contextual links.",
+          "target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-marnix-de-sainte-aldegonde",
+              "region": "body",
+              "anchor": "Kasteel Marnix de Sainte Aldegonde in Bornem"
+            }
+          ],
+          "body_target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-marnix-de-sainte-aldegonde",
+              "region": "body",
+              "anchor": "Kasteel Marnix de Sainte Aldegonde in Bornem"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-de-renesse/",
+      "fetch": {
+        "fetcher": "import",
+        "status_code": null
+      },
+      "title": "Kasteel de Renesse in Oostmalle: park en rondleidingen | Kastelen België",
+      "h1": "Kasteel de Renesse bezoeken",
+      "stats": {
+        "total_links": 23,
+        "unique_links": 17,
+        "breakdown": {
+          "navigation": 8,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 2
+        },
+        "unique_breakdown": {
+          "navigation": 7,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 2
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "url": "https://kastelenbelgie.be/kasteel/paleis-op-de-meir/",
+      "fetch": {
+        "fetcher": "import",
+        "status_code": null
+      },
+      "title": "Paleis op de Meir bezoeken: rococo en vorstelijke interieurs | Kastelen België",
+      "h1": "Paleis op de Meir bezoeken",
+      "stats": {
+        "total_links": 23,
+        "unique_links": 17,
+        "breakdown": {
+          "navigation": 8,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 2
+        },
+        "unique_breakdown": {
+          "navigation": 7,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 2
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-rivierenhof/",
+      "fetch": {
+        "fetcher": "import",
+        "status_code": null
+      },
+      "title": "Kasteel Rivierenhof: Cogels, spiegelvijver en restaurant | Kastelen België",
+      "h1": "Kasteel Rivierenhof bezoeken",
+      "stats": {
+        "total_links": 24,
+        "unique_links": 18,
+        "breakdown": {
+          "navigation": 8,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 3
+        },
+        "unique_breakdown": {
+          "navigation": 7,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 3
+        }
+      },
+      "recommendations": [
+        {
+          "source": "https://kastelenbelgie.be/kasteel/kasteel-rivierenhof/",
+          "target": "https://kastelenbelgie.be/kasteel/sterckshof/",
+          "anchor": "entité nommée dans le contenu",
+          "placement": "paragraphe de relation historique ou choix de visite",
+          "reason": "relation concrète entre les deux lieux ou alternative d’accès",
+          "priority": "P1",
+          "target_normalized": "https://kastelenbelgie.be/kasteel/sterckshof",
+          "action": "no_action_needed",
+          "recommendation": "Target URL already exists in body/contextual links.",
+          "target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kasteel/sterckshof",
+              "region": "body",
+              "anchor": "Sterckshof"
+            }
+          ],
+          "body_target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kasteel/sterckshof",
+              "region": "body",
+              "anchor": "Sterckshof"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://kastelenbelgie.be/kasteel/sterckshof/",
+      "fetch": {
+        "fetcher": "import",
+        "status_code": null
+      },
+      "title": "Sterckshof in Deurne: heropbouw en huidige bezoekstatus | Kastelen België",
+      "h1": "Sterckshof bezoeken",
+      "stats": {
+        "total_links": 24,
+        "unique_links": 18,
+        "breakdown": {
+          "navigation": 8,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 3
+        },
+        "unique_breakdown": {
+          "navigation": 7,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 3
+        }
+      },
+      "recommendations": [
+        {
+          "source": "https://kastelenbelgie.be/kasteel/sterckshof/",
+          "target": "https://kastelenbelgie.be/kasteel/kasteel-rivierenhof/",
+          "anchor": "entité nommée dans le contenu",
+          "placement": "paragraphe de relation historique ou choix de visite",
+          "reason": "relation concrète entre les deux lieux ou alternative d’accès",
+          "priority": "P1",
+          "target_normalized": "https://kastelenbelgie.be/kasteel/kasteel-rivierenhof",
+          "action": "no_action_needed",
+          "recommendation": "Target URL already exists in body/contextual links.",
+          "target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-rivierenhof",
+              "region": "body",
+              "anchor": "Kasteel Rivierenhof"
+            }
+          ],
+          "body_target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-rivierenhof",
+              "region": "body",
+              "anchor": "Kasteel Rivierenhof"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen/",
+      "fetch": {
+        "fetcher": "import",
+        "status_code": null
+      },
+      "title": "Alden Biesen bezoeken: DOMUS, waterburcht en tuinen | Kastelen België",
+      "h1": "Landcommanderij Alden Biesen bezoeken",
+      "stats": {
+        "total_links": 24,
+        "unique_links": 18,
+        "breakdown": {
+          "navigation": 8,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 3
+        },
+        "unique_breakdown": {
+          "navigation": 7,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 3
+        }
+      },
+      "recommendations": [
+        {
+          "source": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen/",
+          "target": "https://kastelenbelgie.be/kasteel/kasteel-van-ordingen/",
+          "anchor": "entité nommée dans le contenu",
+          "placement": "paragraphe de relation historique ou choix de visite",
+          "reason": "relation concrète entre les deux lieux ou alternative d’accès",
+          "priority": "P1",
+          "target_normalized": "https://kastelenbelgie.be/kasteel/kasteel-van-ordingen",
+          "action": "no_action_needed",
+          "recommendation": "Target URL already exists in body/contextual links.",
+          "target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-ordingen",
+              "region": "body",
+              "anchor": "Kasteel van Ordingen"
+            }
+          ],
+          "body_target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-ordingen",
+              "region": "body",
+              "anchor": "Kasteel van Ordingen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-van-heers/",
+      "fetch": {
+        "fetcher": "import",
+        "status_code": null
+      },
+      "title": "Kasteel van Heers: geschiedenis en restauratierondleiding | Kastelen België",
+      "h1": "Kasteel van Heers bezoeken",
+      "stats": {
+        "total_links": 24,
+        "unique_links": 18,
+        "breakdown": {
+          "navigation": 8,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 3
+        },
+        "unique_breakdown": {
+          "navigation": 7,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 3
+        }
+      },
+      "recommendations": [
+        {
+          "source": "https://kastelenbelgie.be/kasteel/kasteel-van-heers/",
+          "target": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen/",
+          "anchor": "entité nommée dans le contenu",
+          "placement": "paragraphe de relation historique ou choix de visite",
+          "reason": "relation concrète entre les deux lieux ou alternative d’accès",
+          "priority": "P1",
+          "target_normalized": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen",
+          "action": "no_action_needed",
+          "recommendation": "Target URL already exists in body/contextual links.",
+          "target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen",
+              "region": "body",
+              "anchor": "Alden Biesen"
+            }
+          ],
+          "body_target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen",
+              "region": "body",
+              "anchor": "Alden Biesen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-van-hex/",
+      "fetch": {
+        "fetcher": "import",
+        "status_code": null
+      },
+      "title": "Kasteel van Hex: historische tuinen en bezoek op afspraak | Kastelen België",
+      "h1": "Kasteel van Hex bezoeken",
+      "stats": {
+        "total_links": 24,
+        "unique_links": 18,
+        "breakdown": {
+          "navigation": 8,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 3
+        },
+        "unique_breakdown": {
+          "navigation": 7,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 3
+        }
+      },
+      "recommendations": [
+        {
+          "source": "https://kastelenbelgie.be/kasteel/kasteel-van-hex/",
+          "target": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen/",
+          "anchor": "entité nommée dans le contenu",
+          "placement": "paragraphe de relation historique ou choix de visite",
+          "reason": "relation concrète entre les deux lieux ou alternative d’accès",
+          "priority": "P1",
+          "target_normalized": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen",
+          "action": "no_action_needed",
+          "recommendation": "Target URL already exists in body/contextual links.",
+          "target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen",
+              "region": "body",
+              "anchor": "Engelse park van Alden Biesen"
+            }
+          ],
+          "body_target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen",
+              "region": "body",
+              "anchor": "Engelse park van Alden Biesen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-van-ordingen/",
+      "fetch": {
+        "fetcher": "import",
+        "status_code": null
+      },
+      "title": "Kasteel van Ordingen: commanderie, restauratie en hotel | Kastelen België",
+      "h1": "Kasteel van Ordingen bezoeken",
+      "stats": {
+        "total_links": 24,
+        "unique_links": 18,
+        "breakdown": {
+          "navigation": 8,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 3
+        },
+        "unique_breakdown": {
+          "navigation": 7,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 3
+        }
+      },
+      "recommendations": [
+        {
+          "source": "https://kastelenbelgie.be/kasteel/kasteel-van-ordingen/",
+          "target": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen/",
+          "anchor": "entité nommée dans le contenu",
+          "placement": "paragraphe de relation historique ou choix de visite",
+          "reason": "relation concrète entre les deux lieux ou alternative d’accès",
+          "priority": "P1",
+          "target_normalized": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen",
+          "action": "no_action_needed",
+          "recommendation": "Target URL already exists in body/contextual links.",
+          "target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen",
+              "region": "body",
+              "anchor": "Alden Biesen"
+            }
+          ],
+          "body_target_instances": [
+            {
+              "url": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen",
+              "region": "body",
+              "anchor": "Alden Biesen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://kastelenbelgie.be/kasteel/kasteelbrouwerij-ter-dolen/",
+      "fetch": {
+        "fetcher": "import",
+        "status_code": null
+      },
+      "title": "Ter Dolen bezoeken: Kasteel De Dool en de brouwerij | Kastelen België",
+      "h1": "Kasteelbrouwerij Ter Dolen bezoeken",
+      "stats": {
+        "total_links": 23,
+        "unique_links": 17,
+        "breakdown": {
+          "navigation": 8,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 2
+        },
+        "unique_breakdown": {
+          "navigation": 7,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 2
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "url": "https://kastelenbelgie.be/kasteel/domein-bokrijk/",
+      "fetch": {
+        "fetcher": "import",
+        "status_code": null
+      },
+      "title": "Kasteel en domein Bokrijk: vakmanschap, museum en park | Kastelen België",
+      "h1": "Domein Bokrijk bezoeken",
+      "stats": {
+        "total_links": 23,
+        "unique_links": 17,
+        "breakdown": {
+          "navigation": 8,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 2
+        },
+        "unique_breakdown": {
+          "navigation": 7,
+          "menu": 0,
+          "footer": 13,
+          "cta": 0,
+          "body": 2
+        }
+      },
+      "recommendations": []
+    }
+  ],
+  "blocked_pages": []
+}
