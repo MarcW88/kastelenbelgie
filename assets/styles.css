@@ -13,3 +13,14 @@
 .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,26,22,.89) 0%,rgba(17,30,25,.65) 42%,rgba(19,27,23,.12) 100%),linear-gradient(0deg,rgba(13,25,19,.45),transparent 45%);z-index:1;pointer-events:none}
 .hero .coord{z-index:2}
 @media(max-width:720px){.hero > figure.editorial-media img{object-position:60% center}.hero:after{background:linear-gradient(90deg,rgba(15,26,22,.86),rgba(15,26,22,.50)),linear-gradient(0deg,rgba(13,25,19,.40),transparent)}}
+
+/* BFL homepage visuals: preserve existing card dimensions and text readability. */
+.feature-art,.theme,.route-map{position:relative;overflow:hidden}
+.feature-art>figure.editorial-media,.theme>figure.editorial-media,.route-map>figure.editorial-media{position:absolute!important;inset:0;width:100%!important;height:100%!important;max-width:none!important;margin:0!important;z-index:0;pointer-events:none;overflow:hidden}
+.feature-art>figure.editorial-media img,.theme>figure.editorial-media img,.route-map>figure.editorial-media img{width:100%!important;height:100%!important;object-fit:cover!important;border-radius:0!important;aspect-ratio:auto!important;display:block}
+.feature-art>figure.editorial-media figcaption,.theme>figure.editorial-media figcaption,.route-map>figure.editorial-media figcaption,.hero>figure.editorial-media figcaption{display:none!important}
+.feature-art::before{display:none!important}
+.theme>figure.editorial-media{z-index:0}
+.theme::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,27,21,.85),rgba(15,27,21,.1) 73%);pointer-events:none;z-index:1}
+.theme>span,.theme>h3{position:relative;z-index:2}
+.route-map>svg{display:none}
