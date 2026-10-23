@@ -6,7 +6,7 @@
   "reason": "Illustration éditoriale fictive pour enrichir visuellement une section de la homepage, sans revendiquer une photographie documentaire.",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "marker": "<!-- EDITORIAL_IMAGE:home-feature-heritage -->",
   "placement": "replace",
   "output_path": "assets/generated/home-feature-heritage.webp",
@@ -17,5 +17,8 @@
   "height": 768,
   "prompt_upsampling": true,
   "seed": null,
-  "generated_at": null
+  "generated_at": "2026-10-23T18:01:39.161970+00:00",
+  "bfl_request_id": "ae7238ec-372c-478c-821b-bfdab52cbc7a",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 3.0
 }
