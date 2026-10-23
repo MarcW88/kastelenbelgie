@@ -73,3 +73,8 @@ jobs:
           path: .artifacts/design-review/antwerpen/
           if-no-files-found: warn
           retention-days: 14
+      - name: Require specialist approvals before full CI success
+        if: steps.specialists.outcome == 'failure'
+        run: |
+          echo 'Specialist editorial gates remain blocked. See antwerpen-specialist-evidence artifact.'
+          exit 1
