@@ -12,6 +12,7 @@ on:
       - "content/reviewed-pages.json"
       - "scripts/build.mjs"
       - "scripts/check-antwerpen.mjs"
+      - "scripts/check-antwerpen-specialists.mjs"
       - ".github/workflows/antwerpen-castle-review.yml"
 permissions:
   contents: read
@@ -30,6 +31,17 @@ jobs:
         run: npm run build
       - name: Validate Antwerpen details
         run: node scripts/check-antwerpen.mjs
+      - name: Check every specialist gate and capture blocked evidence
+        id: specialists
+        continue-on-error: true
+        run: node scripts/check-antwerpen-specialists.mjs
+      - name: Publish specialist-stage evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: antwerpen-specialist-evidence
+          path: .artifacts/qa/antwerpen-specialist-stages.json
+          if-no-files-found: warn
       - name: Validate native site
         run: npm run check
       - name: Install Chromium
