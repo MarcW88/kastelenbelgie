@@ -1439,5 +1439,51 @@
         }
       ]
     }
+  },
+  {
+    "route": "/kasteel/kasteel-van-veves/",
+    "source": "content/kasteel/kasteel-van-veves/body.html",
+    "title": "Kasteel van Vêves bezoeken: torens, tickets en kinderen",
+    "description": "Bezoek het Kasteel van Vêves in Celles: historische torens, ingerichte kamers, kinderactiviteiten, actuele openingsdagen, tickets en toegankelijkheid.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteel-van-veves/#page",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-van-veves/",
+          "name": "Kasteel van Vêves bezoeken",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/namen/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Namen",
+              "item": "https://kastelenbelgie.be/kastelen/namen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Vêves",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-van-veves/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
