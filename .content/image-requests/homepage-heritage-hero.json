@@ -1,0 +1,21 @@
+{
+  "id": "homepage-heritage-hero",
+  "page": "scripts/build.mjs",
+  "slot": "hero",
+  "required": true,
+  "reason": "Remplacer le fond abstrait de l'accueil par une illustration éditoriale évocatrice du patrimoine castral belge, clairement fictive et non documentaire.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:homepage-heritage-hero -->",
+  "placement": "replace",
+  "output_path": "assets/generated/homepage-heritage-hero.webp",
+  "prompt": "Wide cinematic editorial art direction for a contemporary Belgian castles discovery atlas homepage. An imagined, non-identifiable historic European stone fortress in a verdant misty rolling landscape, old sandstone and slate roofs with plausible medieval forms, gentle river bend in foreground, textured mossy stone, mature trees and soft golden overcast autumn daylight, sophisticated heritage travel magazine photography aesthetic, atmospheric but natural, restrained forest green and warm earth color palette, broad panorama with a clear dark quiet area on the left reserved for overlaid website title and search controls, architectural subject concentrated right of frame, no humans, no banners, no letters, no logos, no watermark. This is a conceptual imaginary composite, NOT a factual photograph of any existing named Belgian castle. Avoid fantasy architecture and impossible proportions.",
+  "alt": "Sfeervolle redactionele illustratie van een denkbeeldige stenen burcht in een groen landschap",
+  "caption": "Illustratieve sfeerimpressie; geen afbeelding van een bestaand kasteel.",
+  "width": 1536,
+  "height": 1024,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
