@@ -23,4 +23,4 @@
 .theme>figure.editorial-media{z-index:0}
 .theme::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,27,21,.85),rgba(15,27,21,.1) 73%);pointer-events:none;z-index:1}
 .theme>span,.theme>h3{position:relative;z-index:2}
-.route-map>svg{display:none}
+.route-map:has(> figure.editorial-media)>svg{display:none}
