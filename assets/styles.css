@@ -24,3 +24,13 @@
 .theme::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,27,21,.85),rgba(15,27,21,.1) 73%);pointer-events:none;z-index:1}
 .theme>span,.theme>h3{position:relative;z-index:2}
 .route-map:has(> figure.editorial-media)>svg{display:none}
+
+/* Ensure actual BFL assets render as backgrounds independently of figure stacking. */
+.feature-art{background:#596458 url('/assets/generated/home-feature-heritage.webp') center / cover no-repeat!important}
+.theme-grid>.theme:first-child{background:#35483d url('/assets/generated/home-theme-medieval.webp') center / cover no-repeat!important}
+.theme-grid>.theme:nth-child(2){background:#685645 url('/assets/generated/home-theme-family.webp') center / cover no-repeat!important}
+.theme-grid>.theme:nth-child(3){background:#52645a url('/assets/generated/home-theme-garden.webp') center / cover no-repeat!important}
+.theme-grid>.theme:nth-child(4){background:#4b3f36 url('/assets/generated/home-theme-highlights.webp') center / cover no-repeat!important}
+.route-map{background:#ded5c8 url('/assets/generated/home-route-atmosphere.webp') center / cover no-repeat!important}
+.feature-art>figure.editorial-media,.theme>figure.editorial-media,.route-map>figure.editorial-media{display:none!important}
+.theme-grid>.theme::after{inset:0;width:auto;height:auto;right:0;top:0;border:0;border-radius:0;background:linear-gradient(0deg,rgba(15,27,21,.83),rgba(15,27,21,.08) 80%)}
