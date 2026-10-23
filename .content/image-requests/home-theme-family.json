@@ -1,0 +1,21 @@
+{
+  "id": "home-theme-family",
+  "page": "scripts/build.mjs",
+  "slot": "theme-family",
+  "required": true,
+  "reason": "Illustration éditoriale fictive pour enrichir visuellement une section de la homepage, sans revendiquer une photographie documentaire.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:home-theme-family -->",
+  "placement": "replace",
+  "output_path": "assets/generated/home-theme-family.webp",
+  "prompt": "Warm editorial travel-style illustration of a fictional Belgian castle estate with welcoming gravel walking path, trees, sunny lawn and discreet garden benches, family-friendly atmosphere without people, real-world architecture, no identifiable castle, no text, no logo.",
+  "alt": "Redactionele sfeerillustratie van Belgisch kastelenerfgoed, geen foto van een bestaande locatie",
+  "caption": "",
+  "width": 1024,
+  "height": 768,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
