@@ -599,5 +599,89 @@
         "@id": "https://kastelenbelgie.be/kastelen/vlaams-brabant/#page"
       }
     }
+  },
+  {
+    "route": "/kasteel/kasteel-marnix-de-sainte-aldegonde/",
+    "source": "content/kasteel/kasteel-marnix-de-sainte-aldegonde/body.html",
+    "title": "Kasteel Marnix de Sainte Aldegonde bezoeken in Antwerpen",
+    "description": "Kasteel Marnix de Sainte Aldegonde: geschiedenis, bezoekmogelijkheden, beperkingen en officiële bezoekersinformatie voor een uitstap in Antwerpen.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Kasteel Marnix de Sainte Aldegonde bezoeken",
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-marnix-de-sainte-aldegonde/",
+      "inLanguage": "nl-BE"
+    }
+  },
+  {
+    "route": "/kasteel/kasteel-dursel/",
+    "source": "content/kasteel/kasteel-dursel/body.html",
+    "title": "Kasteel d’Ursel bezoeken in Antwerpen",
+    "description": "Kasteel d’Ursel: geschiedenis, bezoekmogelijkheden, beperkingen en officiële bezoekersinformatie voor een uitstap in Antwerpen.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Kasteel d’Ursel bezoeken",
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-dursel/",
+      "inLanguage": "nl-BE"
+    }
+  },
+  {
+    "route": "/kasteel/kasteel-de-renesse/",
+    "source": "content/kasteel/kasteel-de-renesse/body.html",
+    "title": "Kasteel de Renesse bezoeken in Antwerpen",
+    "description": "Kasteel de Renesse: geschiedenis, bezoekmogelijkheden, beperkingen en officiële bezoekersinformatie voor een uitstap in Antwerpen.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Kasteel de Renesse bezoeken",
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-de-renesse/",
+      "inLanguage": "nl-BE"
+    }
+  },
+  {
+    "route": "/kasteel/paleis-op-de-meir/",
+    "source": "content/kasteel/paleis-op-de-meir/body.html",
+    "title": "Paleis op de Meir bezoeken in Antwerpen",
+    "description": "Paleis op de Meir: geschiedenis, bezoekmogelijkheden, beperkingen en officiële bezoekersinformatie voor een uitstap in Antwerpen.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Paleis op de Meir bezoeken",
+      "url": "https://kastelenbelgie.be/kasteel/paleis-op-de-meir/",
+      "inLanguage": "nl-BE"
+    }
+  },
+  {
+    "route": "/kasteel/kasteel-rivierenhof/",
+    "source": "content/kasteel/kasteel-rivierenhof/body.html",
+    "title": "Kasteel Rivierenhof bezoeken in Antwerpen",
+    "description": "Kasteel Rivierenhof: geschiedenis, bezoekmogelijkheden, beperkingen en officiële bezoekersinformatie voor een uitstap in Antwerpen.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Kasteel Rivierenhof bezoeken",
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-rivierenhof/",
+      "inLanguage": "nl-BE"
+    }
+  },
+  {
+    "route": "/kasteel/sterckshof/",
+    "source": "content/kasteel/sterckshof/body.html",
+    "title": "Sterckshof bezoeken in Antwerpen",
+    "description": "Sterckshof: geschiedenis, bezoekmogelijkheden, beperkingen en officiële bezoekersinformatie voor een uitstap in Antwerpen.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Sterckshof bezoeken",
+      "url": "https://kastelenbelgie.be/kasteel/sterckshof/",
+      "inLanguage": "nl-BE"
+    }
   }
 ]
