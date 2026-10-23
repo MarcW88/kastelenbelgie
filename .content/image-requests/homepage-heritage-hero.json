@@ -6,7 +6,7 @@
   "reason": "Corriger l'image du hero BFL qui comporte du texte anglais parasite incrusté dans les pixels; livrer uniquement une scène de château sans typographie.",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "REGENERATE",
+  "status": "GENERATED",
   "marker": "<!-- EDITORIAL_IMAGE:homepage-heritage-hero -->",
   "placement": "replace",
   "output_path": "assets/generated/homepage-heritage-hero.webp",
@@ -17,8 +17,8 @@
   "height": 1024,
   "prompt_upsampling": true,
   "seed": null,
-  "generated_at": "2026-10-23T17:11:12.348475+00:00",
-  "bfl_request_id": "37778d85-742f-4cc0-88be-fc3117e60cbb",
+  "generated_at": "2026-10-23T18:27:26.730238+00:00",
+  "bfl_request_id": "9697bac7-35dd-4e2a-8836-9af863d8708f",
   "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
   "bfl_cost": 4.5
 }
