@@ -1,0 +1,21 @@
+{
+  "id": "home-route-atmosphere",
+  "page": "scripts/build.mjs",
+  "slot": "route",
+  "required": true,
+  "reason": "Illustration éditoriale fictive pour enrichir visuellement une section de la homepage, sans revendiquer une photographie documentaire.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:home-route-atmosphere -->",
+  "placement": "replace",
+  "output_path": "assets/generated/home-route-atmosphere.webp",
+  "prompt": "Panoramic naturalistic Belgian Ardennes-style rolling green countryside with winding tree-lined rural lane and two small distant imagined historical stone castle silhouettes, editorial travel photo illustration, no map labels, no roadsigns with words, no people, no identifiable real places, no text, no logo.",
+  "alt": "Redactionele sfeerillustratie van Belgisch kastelenerfgoed, geen foto van een bestaande locatie",
+  "caption": "",
+  "width": 1024,
+  "height": 768,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
