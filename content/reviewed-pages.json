@@ -1163,5 +1163,51 @@
         }
       ]
     }
+  },
+  {
+    "route": "/kasteel/kasteel-van-rixensart/",
+    "source": "content/kasteel/kasteel-van-rixensart/body.html",
+    "title": "Kasteel van Rixensart bezoeken: geschiedenis en rondleiding",
+    "description": "Ontdek de geschiedenis van het Kasteel van Rixensart, de zeventiende-eeuwse architectuur en hoe je een rondleiding reserveert.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteel-van-rixensart/#page",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-van-rixensart/",
+          "name": "Kasteel van Rixensart bezoeken",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/waals-brabant/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Waals-Brabant",
+              "item": "https://kastelenbelgie.be/kastelen/waals-brabant/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Rixensart",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-van-rixensart/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
