@@ -1,0 +1,21 @@
+{
+  "id": "home-theme-highlights",
+  "page": "scripts/build.mjs",
+  "slot": "theme-highlights",
+  "required": true,
+  "reason": "Illustration éditoriale fictive pour enrichir visuellement une section de la homepage, sans revendiquer une photographie documentaire.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:home-theme-highlights -->",
+  "placement": "replace",
+  "output_path": "assets/generated/home-theme-highlights.webp",
+  "prompt": "Refined cinematic travel magazine illustration of a fictional romantic Belgian stone château beside a calm reflective pond and mature trees in autumn light, historically plausible architecture, no identifiable real place, no lettering, no logo.",
+  "alt": "Redactionele sfeerillustratie van Belgisch kastelenerfgoed, geen foto van een bestaande locatie",
+  "caption": "",
+  "width": 1024,
+  "height": 768,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
