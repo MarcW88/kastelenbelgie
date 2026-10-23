@@ -1209,5 +1209,51 @@
         }
       ]
     }
+  },
+  {
+    "route": "/kasteel/kasteel-van-terhulpen/",
+    "source": "content/kasteel/kasteel-van-terhulpen/body.html",
+    "title": "Kasteel van Terhulpen en Domein Solvay bezoeken",
+    "description": "Wandel door het Domein Solvay in La Hulpe: parkuren, toegang, geschiedenis van het kasteel en concrete beperkingen voor bezoekers.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteel-van-terhulpen/#page",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-van-terhulpen/",
+          "name": "Kasteel van Terhulpen en Domein Solvay bezoeken",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/waals-brabant/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Waals-Brabant",
+              "item": "https://kastelenbelgie.be/kastelen/waals-brabant/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Terhulpen",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-van-terhulpen/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
