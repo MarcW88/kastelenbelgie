@@ -1393,5 +1393,51 @@
         }
       ]
     }
+  },
+  {
+    "route": "/kasteel/kasteel-van-chimay/",
+    "source": "content/kasteel/kasteel-van-chimay/body.html",
+    "title": "Kasteel van Chimay bezoeken: theater, rondleidingen en tickets",
+    "description": "Bezoek het Kasteel van Chimay en zijn historische theater. Ontdek Nederlandstalige rondleidingen, zelfstandige bezoeken, tarieven en openingsdagen.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteel-van-chimay/#page",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-van-chimay/",
+          "name": "Kasteel van Chimay bezoeken",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-23",
+          "isPartOf": {
+            "@id": "https://kastelenbelgie.be/kastelen/henegouwen/#page"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Henegouwen",
+              "item": "https://kastelenbelgie.be/kastelen/henegouwen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Chimay",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-van-chimay/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
