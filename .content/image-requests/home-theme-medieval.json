@@ -1,0 +1,21 @@
+{
+  "id": "home-theme-medieval",
+  "page": "scripts/build.mjs",
+  "slot": "theme-medieval",
+  "required": true,
+  "reason": "Illustration éditoriale fictive pour enrichir visuellement une section de la homepage, sans revendiquer une photographie documentaire.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:home-theme-medieval -->",
+  "placement": "replace",
+  "output_path": "assets/generated/home-theme-medieval.webp",
+  "prompt": "Atmospheric photorealistic editorial illustration of an imaginary medieval Belgian stone fortress on a forested rocky hill at golden hour, grounded historical architecture, dramatic but natural, no identifiable actual castle, no people, no text, no logo.",
+  "alt": "Redactionele sfeerillustratie van Belgisch kastelenerfgoed, geen foto van een bestaande locatie",
+  "caption": "",
+  "width": 1024,
+  "height": 768,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
