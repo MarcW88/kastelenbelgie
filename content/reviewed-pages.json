@@ -683,5 +683,89 @@
       "url": "https://kastelenbelgie.be/kasteel/sterckshof/",
       "inLanguage": "nl-BE"
     }
+  },
+  {
+    "route": "/kasteel/landcommanderij-alden-biesen/",
+    "source": "content/kasteel/landcommanderij-alden-biesen/body.html",
+    "title": "Landcommanderij Alden Biesen bezoeken in Limburg",
+    "description": "Landcommanderij Alden Biesen: geschiedenis, bezoekvoorwaarden, toegankelijke delen en officiële informatie.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Landcommanderij Alden Biesen bezoeken",
+      "url": "https://kastelenbelgie.be/kasteel/landcommanderij-alden-biesen/",
+      "inLanguage": "nl-BE"
+    }
+  },
+  {
+    "route": "/kasteel/kasteel-van-heers/",
+    "source": "content/kasteel/kasteel-van-heers/body.html",
+    "title": "Kasteel van Heers bezoeken in Limburg",
+    "description": "Kasteel van Heers: geschiedenis, bezoekvoorwaarden, toegankelijke delen en officiële informatie.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Kasteel van Heers bezoeken",
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-van-heers/",
+      "inLanguage": "nl-BE"
+    }
+  },
+  {
+    "route": "/kasteel/kasteel-van-hex/",
+    "source": "content/kasteel/kasteel-van-hex/body.html",
+    "title": "Kasteel van Hex bezoeken in Limburg",
+    "description": "Kasteel van Hex: geschiedenis, bezoekvoorwaarden, toegankelijke delen en officiële informatie.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Kasteel van Hex bezoeken",
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-van-hex/",
+      "inLanguage": "nl-BE"
+    }
+  },
+  {
+    "route": "/kasteel/kasteel-van-ordingen/",
+    "source": "content/kasteel/kasteel-van-ordingen/body.html",
+    "title": "Kasteel van Ordingen bezoeken in Limburg",
+    "description": "Kasteel van Ordingen: geschiedenis, bezoekvoorwaarden, toegankelijke delen en officiële informatie.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Kasteel van Ordingen bezoeken",
+      "url": "https://kastelenbelgie.be/kasteel/kasteel-van-ordingen/",
+      "inLanguage": "nl-BE"
+    }
+  },
+  {
+    "route": "/kasteel/kasteelbrouwerij-ter-dolen/",
+    "source": "content/kasteel/kasteelbrouwerij-ter-dolen/body.html",
+    "title": "Kasteelbrouwerij Ter Dolen bezoeken in Limburg",
+    "description": "Kasteelbrouwerij Ter Dolen: geschiedenis, bezoekvoorwaarden, toegankelijke delen en officiële informatie.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Kasteelbrouwerij Ter Dolen bezoeken",
+      "url": "https://kastelenbelgie.be/kasteel/kasteelbrouwerij-ter-dolen/",
+      "inLanguage": "nl-BE"
+    }
+  },
+  {
+    "route": "/kasteel/domein-bokrijk/",
+    "source": "content/kasteel/domein-bokrijk/body.html",
+    "title": "Domein Bokrijk bezoeken in Limburg",
+    "description": "Domein Bokrijk: geschiedenis, bezoekvoorwaarden, toegankelijke delen en officiële informatie.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Domein Bokrijk bezoeken",
+      "url": "https://kastelenbelgie.be/kasteel/domein-bokrijk/",
+      "inLanguage": "nl-BE"
+    }
   }
 ]
