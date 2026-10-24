@@ -202,3 +202,13 @@
 .real-castle-photo .photo-credit a{text-decoration:underline}
 .feature-art:has(.real-castle-photo)::before,.feature-art:has(.real-castle-photo)::after{display:none}
 @media(max-width:780px){#castle-map,#belgium-castle-map{min-height:420px}.real-castle-photo{min-height:320px}.map-help{font-size:.65rem}}
+
+/* West-Vlaanderen: editorial choice cards, consistent with province atlas */
+.west-explore-types{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:26px 0}
+.west-explore-types>a{display:flex;flex-direction:column;gap:8px;padding:22px;background:#fffdf9;border:1px solid #d9d0c2;border-radius:8px;transition:background .2s ease,border-color .2s ease}
+.west-explore-types>a:hover,.west-explore-types>a:focus-visible{background:#e9e6dd;border-color:#8c493e}
+.west-explore-types strong{font-family:'Cormorant Garamond',serif;font-size:1.55rem;line-height:1.1}
+.west-explore-types span{font-size:.82rem;color:#595952}
+.west-explore-types span:last-child{margin-top:auto;color:#33483d;font-weight:700}
+.west-selection-overview>.selection-method{font-size:.84rem;max-width:900px;color:#716b63;margin-top:12px}
+@media(max-width:720px){.west-explore-types{grid-template-columns:1fr}.west-explore-types>a{padding:18px}}
