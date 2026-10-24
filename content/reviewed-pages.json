@@ -477,9 +477,54 @@
   {
     "route": "/kasteel/kasteel-beauvoorde/",
     "source": "content/kasteel/kasteel-beauvoorde/body.html",
-    "title": "Kasteel Beauvoorde bezoeken",
-    "description": "Bezoek Kasteel Beauvoorde in West-Vlaanderen: eigen erfgoedverhaal, bezoekvoorwaarden en officiële bronnen.",
-    "stylesheet": "assets/castle-detail.css"
+    "title": "Kasteel Beauvoorde bezoeken: interieur, tickets en park",
+    "description": "Ontdek Kasteel Beauvoorde in Wulveringem: Arthurs historische interieurs, het vernieuwde parcours, openingsuren, tickets en de toegankelijkheid.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TouristAttraction",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteel-beauvoorde/#castle",
+          "name": "Kasteel Beauvoorde",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-beauvoorde/",
+          "sameAs": [
+            "https://www.herita.be/nl/monumenten/kasteel-beauvoorde",
+            "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/17083"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Wulveringemstraat 12",
+            "postalCode": "8630",
+            "addressLocality": "Veurne",
+            "addressCountry": "BE"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "West-Vlaanderen",
+              "item": "https://kastelenbelgie.be/kastelen/west-vlaanderen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel Beauvoorde",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-beauvoorde/"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "route": "/kasteel/kasteel-van-rumbeke/",
