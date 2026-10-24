@@ -185,3 +185,20 @@
 .meir-editorial>.meir-lead-photo figcaption{position:absolute;right:0;bottom:0;padding:6px 10px;background:rgba(24,34,27,.75);color:#fff;font-size:.62rem}
 .meir-editorial>.meir-lead-photo figcaption a{color:inherit;text-decoration:underline}
 @media(max-width:700px){.meir-editorial>.meir-lead-photo{grid-row:1;min-height:235px}}
+
+/* Homepage: genuine photographic landmark and functional Leaflet castle atlas */
+#castle-map{background:#e6e7df;min-height:550px}
+#belgium-castle-map{position:absolute;inset:0;width:100%;height:100%;z-index:1}
+.live-map::before{display:none}
+.live-map .leaflet-container{font-family:Manrope,sans-serif}
+.live-map .leaflet-popup-content a{font-weight:700;color:#33483d;text-decoration:underline}
+.map-help{position:absolute;bottom:16px;left:16px;right:16px;z-index:500;width:max-content;max-width:calc(100% - 32px);background:rgba(255,253,249,.96);color:#23211e;padding:10px 14px;border:1px solid #d9d0c2;border-radius:8px;font-size:.72rem;box-shadow:0 5px 18px rgba(0,0,0,.10)}
+.map-help a{text-decoration:underline;font-weight:700}
+.map-unavailable{padding:40px;max-width:300px}
+.real-castle-photo{position:relative;margin:0;width:100%;height:100%;min-height:430px}
+.real-castle-photo>a{display:block;width:100%;height:100%}
+.real-castle-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.real-castle-photo .photo-credit{position:absolute;bottom:16px;left:16px;right:16px;width:max-content;max-width:calc(100% - 32px);background:rgba(31,41,37,.87);color:white;border-radius:5px;padding:7px 12px;font-size:.68rem;line-height:1.4}
+.real-castle-photo .photo-credit a{text-decoration:underline}
+.feature-art:has(.real-castle-photo)::before,.feature-art:has(.real-castle-photo)::after{display:none}
+@media(max-width:780px){#castle-map,#belgium-castle-map{min-height:420px}.real-castle-photo{min-height:320px}.map-help{font-size:.65rem}}
