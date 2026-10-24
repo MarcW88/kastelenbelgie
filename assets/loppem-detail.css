@@ -1,4 +1,3 @@
-@import url('/assets/castle-detail.css');
 /* Loppem only: match Ooidonk's editorial split without changing other fiches. */
 .loppem-editorial>.loppem-lead-photo{position:relative;min-height:360px;margin:0;overflow:hidden}
 .loppem-editorial>.loppem-lead-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;aspect-ratio:auto;border-radius:0}

@@ -25,4 +25,4 @@ editorial-qa: visit intent, natural Dutch, evidence, metadata and contextual lin
 ## Technical and visual evidence
 Build and reviewed-source checks passed locally. Agent integrity checks passed (not editorial proof). Local browser launch initially blocked by absent Chromium; installation attempted. Final visual/deployment status must be recorded after CI evidence; not automatically PASS.
 
-PUBLISH_REVIEW: pending actual visual evidence. Noindex retained irrespective of outcome.
+PUBLISH_REVIEW: FAIL — KEEP_NOINDEX. Editorial and static checks completed; visual evidence remains blocked by unavailable local Chromium and queued CI. This is not a visual PASS. Noindex retained irrespective of outcome.

@@ -430,7 +430,7 @@
     "source": "content/kasteel/kasteel-van-loppem/body.html",
     "title": "Kasteel van Loppem: interieur, park en doolhof bezoeken",
     "description": "Plan je bezoek aan Kasteel van Loppem bij Brugge: neogotische interieurs, de geschiedenis van 1918, het park en de aparte openingsuren van het doolhof.",
-    "stylesheet": "assets/loppem-detail.css",
+    "stylesheet": "assets/castle-detail.css",
     "schema": {
       "@context": "https://schema.org",
       "@graph": [
