@@ -45,3 +45,39 @@
 .castle-lead-photo figcaption{padding:10px 2px 0;color:var(--muted);font-size:.72rem;line-height:1.6;text-align:right}
 .castle-lead-photo figcaption a{text-decoration:underline;text-underline-offset:2px}
 @media(max-width:720px){.castle-lead-photo{width:calc(100% - 32px);margin:22px auto 30px}.castle-lead-photo img{aspect-ratio:4/3;object-position:center}.castle-lead-photo figcaption{text-align:left}}
+
+/* Laarne editorial pilot: split hero, readable article and utility sidebar */
+.laarne-intro{width:min(1160px,calc(100% - 48px));margin:32px auto 38px;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);background:#eae3d7;min-height:340px;border:1px solid var(--line);overflow:hidden}
+.laarne-intro-copy{padding:42px 44px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.laarne-intro-copy h2{font-size:clamp(2.1rem,3.4vw,3.5rem);line-height:1.05;margin:13px 0 15px}
+.laarne-intro-copy>p{font-size:.91rem;line-height:1.75;max-width:46ch;margin:0 0 20px}
+.laarne-highlights{display:flex;flex-wrap:wrap;gap:14px;border-top:1px solid #d4cabc;padding-top:14px;width:100%}
+.laarne-highlights span{font-size:.68rem;color:var(--muted);line-height:1.45;min-width:82px}
+.laarne-highlights strong{display:block;font-size:.9rem;color:var(--green);margin-bottom:2px}
+.laarne-visit-link{margin-top:22px;display:inline-block;background:var(--green);padding:10px 17px;color:white;font-size:.8rem;font-weight:700}
+.laarne-intro .laarne-lead-image{width:100%;margin:0;min-height:340px;position:relative}
+.laarne-intro .laarne-lead-image img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;border-radius:0;position:absolute;inset:0}
+.laarne-intro .laarne-lead-image figcaption{position:absolute;bottom:0;right:0;background:rgba(29,35,31,.7);padding:6px 10px;color:#fff;font-size:.62rem;max-width:100%;z-index:1}
+.laarne-intro .laarne-lead-image figcaption a{color:#fff}
+.laarne-reading-layout{width:min(1160px,calc(100% - 48px));margin:0 auto 58px;display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:48px;align-items:start}
+.laarne-article{min-width:0}
+.laarne-reading-layout .laarne-article>.province-section.container{width:100%;max-width:none;padding-left:0;padding-right:0;margin:0 0 35px}
+.laarne-reading-layout .laarne-article h2{font-size:clamp(2rem,3.1vw,3rem);line-height:1.1}
+.laarne-reading-layout .laarne-article .planning-copy{max-width:70ch}
+.laarne-reading-layout .laarne-article .planning-copy p{line-height:1.82}
+.laarne-sidebar{position:sticky;top:28px;display:grid;gap:16px}
+.laarne-side-card{background:#fffdf9;border:1px solid var(--line);padding:25px}
+.laarne-side-card h3{font-size:2rem;margin:10px 0 15px}
+.laarne-side-card nav{display:grid}
+.laarne-side-card nav a{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.78rem;font-weight:700}
+.laarne-side-card nav a:hover{color:var(--wine)}
+.laarne-side-divider{border-top:1px solid var(--line);margin:22px 0 15px}
+.laarne-side-card p{font-size:.78rem;margin:8px 0}
+.laarne-side-card p strong{display:block;color:var(--green)}
+.laarne-official{display:block;margin-top:18px;color:var(--wine);font-size:.78rem;font-weight:700}
+.laarne-story-card{padding:23px;background:var(--green);color:#fff}
+.laarne-story-card .eyebrow{color:#d4c2a5}
+.laarne-story-card strong{display:block;font-family:"Cormorant Garamond",serif;font-size:1.7rem;line-height:1.15;margin:12px 0}
+.laarne-story-card p{font-size:.79rem;color:#e0e4db;margin:0}
+@media(max-width:900px){.laarne-intro{grid-template-columns:1fr 1fr}.laarne-intro-copy{padding:28px}.laarne-reading-layout{grid-template-columns:minmax(0,1fr) 225px;gap:24px}}
+@media(max-width:700px){.laarne-intro{width:calc(100% - 32px);grid-template-columns:1fr;margin:18px auto 28px}.laarne-intro .laarne-lead-image{min-height:255px;grid-row:1}.laarne-intro-copy{grid-row:2;padding:24px}.laarne-reading-layout{width:calc(100% - 32px);display:flex;flex-direction:column;gap:12px}.laarne-sidebar{position:static;width:100%;order:-1}.laarne-story-card{display:none}.laarne-reading-layout .laarne-article>.province-section.container{margin-bottom:28px}}
