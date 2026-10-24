@@ -428,9 +428,51 @@
   {
     "route": "/kasteel/kasteel-van-loppem/",
     "source": "content/kasteel/kasteel-van-loppem/body.html",
-    "title": "Kasteel van Loppem bezoeken",
-    "description": "Bezoek Kasteel van Loppem in West-Vlaanderen: eigen erfgoedverhaal, bezoekvoorwaarden en officiële bronnen.",
-    "stylesheet": "assets/castle-detail.css"
+    "title": "Kasteel van Loppem: interieur, park en doolhof bezoeken",
+    "description": "Plan je bezoek aan Kasteel van Loppem bij Brugge: neogotische interieurs, de geschiedenis van 1918, het park en de aparte openingsuren van het doolhof.",
+    "stylesheet": "assets/loppem-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TouristAttraction",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteel-van-loppem/#castle",
+          "name": "Kasteel van Loppem",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-van-loppem/",
+          "sameAs": "https://www.kasteelvanloppem.be/nl",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Steenbrugsestraat 26",
+            "postalCode": "8210",
+            "addressLocality": "Loppem (Zedelgem)",
+            "addressCountry": "BE"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "West-Vlaanderen",
+              "item": "https://kastelenbelgie.be/kastelen/west-vlaanderen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Loppem",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-van-loppem/"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "route": "/kasteel/kasteel-beauvoorde/",

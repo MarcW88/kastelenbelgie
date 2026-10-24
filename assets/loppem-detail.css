@@ -1,0 +1,13 @@
+@import url('/assets/castle-detail.css');
+/* Loppem only: match Ooidonk's editorial split without changing other fiches. */
+.loppem-editorial>.loppem-lead-photo{position:relative;min-height:360px;margin:0;overflow:hidden}
+.loppem-editorial>.loppem-lead-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;aspect-ratio:auto;border-radius:0}
+.loppem-editorial>.loppem-lead-photo figcaption{position:absolute;right:0;bottom:0;left:0;margin:0;padding:10px 14px;background:rgba(24,34,27,.88);color:#fff;font-size:.72rem;line-height:1.6}
+.loppem-editorial>.loppem-lead-photo figcaption a{color:inherit}
+body.reviewed-castle .castle-editorial-main>#geschiedenis{background:transparent;padding:30px 0 20px}
+body.reviewed-castle .castle-editorial-main>.province-section{padding-top:30px}
+body.reviewed-castle .castle-editorial-main h2{font-size:clamp(2rem,3vw,3rem);line-height:1.15}
+body.reviewed-castle .castle-editorial-main section{scroll-margin-top:28px}
+body.reviewed-castle .castle-editorial-main .castle-visit-panel{border-block:1px solid var(--line);padding-block:30px}
+@media(max-width:700px){.loppem-editorial>.loppem-lead-photo{grid-row:1;min-height:285px}.loppem-editorial>.loppem-lead-photo img{object-position:center 40%}.castle-editorial-toc nav{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:18px}.castle-editorial-toc h3{font-size:1.6rem}body.reviewed-castle .castle-editorial-main h2{font-size:2rem}}
+@media(max-width:380px){.castle-editorial-toc nav{grid-template-columns:1fr}.loppem-editorial>.loppem-lead-photo{min-height:270px}}
