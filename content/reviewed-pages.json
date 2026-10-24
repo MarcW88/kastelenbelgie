@@ -2165,5 +2165,47 @@
         }
       ]
     }
+  },
+  {
+    "route": "/kasteel/kasteel-van-mirwart/",
+    "source": "content/kasteel/kasteel-van-mirwart/body.html",
+    "title": "Kasteel van Mirwart bezoeken: hotel, restaurant en geschiedenis",
+    "description": "Ontdek Kasteel van Mirwart bij Saint-Hubert: middeleeuwse oorsprong, herbouw in de 18e eeuw, verblijf, restaurant en bezoekvoorwaarden.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-van-mirwart/",
+          "name": "Kasteel van Mirwart bezoeken",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-24"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Luxemburg",
+              "item": "https://kastelenbelgie.be/kastelen/luxemburg/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Mirwart",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-van-mirwart/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
