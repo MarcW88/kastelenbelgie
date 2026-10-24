@@ -81,3 +81,37 @@
 .laarne-story-card p{font-size:.79rem;color:#e0e4db;margin:0}
 @media(max-width:900px){.laarne-intro{grid-template-columns:1fr 1fr}.laarne-intro-copy{padding:28px}.laarne-reading-layout{grid-template-columns:minmax(0,1fr) 225px;gap:24px}}
 @media(max-width:700px){.laarne-intro{width:calc(100% - 32px);grid-template-columns:1fr;margin:18px auto 28px}.laarne-intro .laarne-lead-image{min-height:255px;grid-row:1}.laarne-intro-copy{grid-row:2;padding:24px}.laarne-reading-layout{width:calc(100% - 32px);display:flex;flex-direction:column;gap:12px}.laarne-sidebar{position:static;width:100%;order:-1}.laarne-story-card{display:none}.laarne-reading-layout .laarne-article>.province-section.container{margin-bottom:28px}}
+
+/* Individual castle fiche pilot: Gravensteen */
+.castle-editorial-intro{width:min(1160px,calc(100% - 48px));margin:30px auto 40px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);background:#eae3d7;border:1px solid var(--line);overflow:hidden}
+.castle-editorial-lead{padding:34px 42px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.castle-editorial-lead h2{font-size:clamp(2rem,3.5vw,3.4rem);line-height:1.08;margin:12px 0 14px}
+.castle-editorial-lead p{font-size:.91rem;line-height:1.7;margin:0 0 20px}
+.castle-editorial-facts{display:flex;flex-wrap:wrap;gap:16px;width:100%;border-top:1px solid var(--line);padding-top:14px}
+.castle-editorial-facts span{font-size:.7rem;color:var(--muted)}
+.castle-editorial-facts strong{display:block;font-size:.87rem;color:var(--green)}
+.castle-editorial-cta{display:inline-block;margin-top:21px;padding:10px 17px;background:var(--green);color:white;font-size:.79rem;font-weight:700}
+.castle-editorial-intro>.gravensteen-lead-photo{position:relative;min-height:330px;margin:0;overflow:hidden}
+.castle-editorial-intro>.gravensteen-lead-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;aspect-ratio:auto;border-radius:0}
+.castle-editorial-intro>.gravensteen-lead-photo figcaption{position:absolute;bottom:0;right:0;margin:0;padding:5px 9px;background:rgba(24,34,27,.72);color:white;font-size:.62rem}
+.castle-editorial-intro>.gravensteen-lead-photo figcaption a{color:inherit;text-decoration:underline}
+.castle-editorial-layout{width:min(1160px,calc(100% - 48px));display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:42px;margin:0 auto 56px;align-items:start}
+.castle-editorial-main{min-width:0}
+.castle-editorial-main>.province-section.container{width:100%;max-width:none;margin:0 0 32px;padding-left:0;padding-right:0}
+.castle-editorial-main .planning-copy{max-width:70ch}
+.castle-editorial-main .planning-copy p{line-height:1.8}
+.castle-editorial-aside{position:sticky;top:26px;display:grid;gap:16px}
+.castle-editorial-toc{background:var(--paper);border:1px solid var(--line);padding:23px}
+.castle-editorial-toc h3{font-size:1.9rem;margin:12px 0 15px}
+.castle-editorial-toc nav{display:grid}
+.castle-editorial-toc nav a{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.78rem;font-weight:700}
+.castle-editorial-toc nav a:hover{color:var(--wine)}
+.castle-editorial-divider{border-top:1px solid var(--line);margin:18px 0}
+.castle-editorial-toc p{font-size:.78rem;margin:10px 0}
+.castle-editorial-toc p strong{display:block;color:var(--green)}
+.castle-editorial-official{display:block;margin-top:16px;font-size:.78rem;color:var(--wine);font-weight:700}
+.castle-editorial-note{background:var(--green);color:white;padding:22px}
+.castle-editorial-note .eyebrow{color:#e0cead}
+.castle-editorial-note p{font-size:.8rem;margin:10px 0 0}
+@media(max-width:900px){.castle-editorial-intro{grid-template-columns:1fr 1fr}.castle-editorial-lead{padding:26px}.castle-editorial-layout{grid-template-columns:minmax(0,1fr) 220px;gap:24px}}
+@media(max-width:700px){.castle-editorial-intro{grid-template-columns:1fr;width:calc(100% - 32px);margin:20px auto 28px}.castle-editorial-intro>.gravensteen-lead-photo{grid-row:1;min-height:235px}.castle-editorial-lead{grid-row:2;padding:24px}.castle-editorial-layout{display:flex;flex-direction:column;width:calc(100% - 32px)}.castle-editorial-aside{position:static;order:-1;width:100%}.castle-editorial-note{display:none}}
