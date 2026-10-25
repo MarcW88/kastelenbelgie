@@ -118,13 +118,13 @@
           "inLanguage": "nl-BE",
           "dateModified": "2026-10-22",
           "mainEntity": {
-            "@id": "https://kastelenbelgie.be/kastelen/oost-vlaanderen/#plaatsen"
+            "@id": "https://kastelenbelgie.be/kastelen/oost-vlaanderen/#selectie"
           }
         },
         {
           "@type": "ItemList",
-          "@id": "https://kastelenbelgie.be/kastelen/oost-vlaanderen/#plaatsen",
-          "name": "Selectie van kastelen en kasteelparken in Oost-Vlaanderen",
+          "@id": "https://kastelenbelgie.be/kastelen/oost-vlaanderen/#selectie",
+          "name": "Kastelen en historische domeinen in oost-vlaanderen",
           "numberOfItems": 8,
           "itemListElement": [
             {
@@ -323,14 +323,196 @@
     "source": "content/kastelen/antwerpen/body.html",
     "title": "Kastelen in Antwerpen bezoeken | Kastelen België",
     "description": "Ontdek kastelen in provincie Antwerpen: Bornem, d’Ursel, Paleis op de Meir en Rivierenhof. Met bezoekvoorwaarden, rondleidingen en officiële bronnen.",
-    "stylesheet": "assets/province-guide.css"
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://kastelenbelgie.be/kastelen/antwerpen/#page",
+          "url": "https://kastelenbelgie.be/kastelen/antwerpen/",
+          "name": "Kastelen in Antwerpen bezoeken | Kastelen België",
+          "inLanguage": "nl-BE",
+          "mainEntity": {
+            "@id": "https://kastelenbelgie.be/kastelen/antwerpen/#bornem-hingene"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://kastelenbelgie.be/kastelen/antwerpen/#bornem-hingene",
+          "name": "Kastelen en historische domeinen in antwerpen",
+          "numberOfItems": 6,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Kasteel Marnix de Sainte Aldegonde",
+              "url": "https://kastelenbelgie.be/kastelen/antwerpen/#bornem"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kasteel d’Ursel",
+              "url": "https://kastelenbelgie.be/kastelen/antwerpen/#ursel"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel de Renesse",
+              "url": "https://kastelenbelgie.be/kastelen/antwerpen/#renesse"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Paleis op de Meir",
+              "url": "https://kastelenbelgie.be/kastelen/antwerpen/#meir"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Kasteel Rivierenhof",
+              "url": "https://kastelenbelgie.be/kastelen/antwerpen/#rivierenhof"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Sterckshof",
+              "url": "https://kastelenbelgie.be/kastelen/antwerpen/#sterckshof"
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kastelen per regio",
+              "item": "https://kastelenbelgie.be/kastelen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kastelen in Antwerpen bezoeken | Kastelen België",
+              "item": "https://kastelenbelgie.be/kastelen/antwerpen/"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "route": "/kastelen/limburg/",
     "source": "content/kastelen/limburg/body.html",
     "title": "Kastelen in Limburg bezoeken | Kastelen België",
     "description": "Ontdek kastelen in Belgisch Limburg: Alden Biesen, Heers, Hex en meer. Vergelijk rondleidingen, kasteelparken en praktische bezoekvoorwaarden.",
-    "stylesheet": "assets/province-guide.css"
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://kastelenbelgie.be/kastelen/limburg/#page",
+          "url": "https://kastelenbelgie.be/kastelen/limburg/",
+          "name": "Kastelen in Limburg bezoeken | Kastelen België",
+          "inLanguage": "nl-BE",
+          "mainEntity": {
+            "@id": "https://kastelenbelgie.be/kastelen/limburg/#haspengouw"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://kastelenbelgie.be/kastelen/limburg/#haspengouw",
+          "name": "Kastelen en historische domeinen in limburg",
+          "numberOfItems": 9,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Landcommanderij Alden Biesen",
+              "url": "https://kastelenbelgie.be/kastelen/limburg/#alden-biesen"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kasteel van Heers",
+              "url": "https://kastelenbelgie.be/kastelen/limburg/#heers"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Hex",
+              "url": "https://kastelenbelgie.be/kastelen/limburg/#hex"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Kasteel van Ordingen",
+              "url": "https://kastelenbelgie.be/kastelen/limburg/#ordingen"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Kasteel d'Aspremont-Lynden",
+              "url": "https://kastelenbelgie.be/kastelen/limburg/#kasteel-daspremont-lynden"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Kasteel van Leut (Vilain XIIII)",
+              "url": "https://kastelenbelgie.be/kastelen/limburg/#kasteel-van-leut"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Wijnkasteel Genoels-Elderen",
+              "url": "https://kastelenbelgie.be/kastelen/limburg/#wijnkasteel-genoels-elderen"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Kasteelbrouwerij Ter Dolen",
+              "url": "https://kastelenbelgie.be/kastelen/limburg/#ter-dolen"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "Domein Bokrijk",
+              "url": "https://kastelenbelgie.be/kastelen/limburg/#bokrijk"
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kastelen per regio",
+              "item": "https://kastelenbelgie.be/kastelen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kastelen in Limburg bezoeken | Kastelen België",
+              "item": "https://kastelenbelgie.be/kastelen/limburg/"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "route": "/kastelen/wallonie/",
@@ -344,42 +526,516 @@
     "source": "content/kastelen/waals-brabant/body.html",
     "title": "Kastelen in Waals-Brabant bezoeken | Kastelen België",
     "description": "Ontdek bezoekbare kastelen en historische domeinen in Waals-Brabant. Vergelijk interieurbezoeken, parken en rondleidingen met betrouwbare bronnen.",
-    "stylesheet": "assets/province-guide.css"
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://kastelenbelgie.be/kastelen/waals-brabant/#page",
+          "url": "https://kastelenbelgie.be/kastelen/waals-brabant/",
+          "name": "Kastelen in Waals-Brabant bezoeken | Kastelen België",
+          "inLanguage": "nl-BE",
+          "mainEntity": {
+            "@id": "https://kastelenbelgie.be/kastelen/waals-brabant/#selectie"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://kastelenbelgie.be/kastelen/waals-brabant/#selectie",
+          "name": "Kastelen en historische domeinen in waals-brabant",
+          "numberOfItems": 3,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Kasteel van Rixensart",
+              "url": "https://kastelenbelgie.be/kastelen/waals-brabant/#rixensart"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Domein Solvay en Kasteel van Terhulpen",
+              "url": "https://kastelenbelgie.be/kastelen/waals-brabant/#hulpe"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Bois-Seigneur-Isaac",
+              "url": "https://kastelenbelgie.be/kastelen/waals-brabant/#bois-seigneur-isaac"
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kastelen per regio",
+              "item": "https://kastelenbelgie.be/kastelen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kastelen in Waals-Brabant bezoeken | Kastelen België",
+              "item": "https://kastelenbelgie.be/kastelen/waals-brabant/"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "route": "/kastelen/henegouwen/",
     "source": "content/kastelen/henegouwen/body.html",
     "title": "Kastelen in Henegouwen bezoeken | Kastelen België",
     "description": "Ontdek bezoekbare kastelen en historische domeinen in Henegouwen. Vergelijk interieurbezoeken, parken en rondleidingen met betrouwbare bronnen.",
-    "stylesheet": "assets/province-guide.css"
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://kastelenbelgie.be/kastelen/henegouwen/#page",
+          "url": "https://kastelenbelgie.be/kastelen/henegouwen/",
+          "name": "Kastelen in Henegouwen bezoeken | Kastelen België",
+          "inLanguage": "nl-BE",
+          "mainEntity": {
+            "@id": "https://kastelenbelgie.be/kastelen/henegouwen/#selectie"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://kastelenbelgie.be/kastelen/henegouwen/#selectie",
+          "name": "Kastelen en historische domeinen in henegouwen",
+          "numberOfItems": 6,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Kasteel van Beloeil",
+              "url": "https://kastelenbelgie.be/kastelen/henegouwen/#beloeil"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kasteel van Seneffe",
+              "url": "https://kastelenbelgie.be/kastelen/henegouwen/#seneffe"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Chimay",
+              "url": "https://kastelenbelgie.be/kastelen/henegouwen/#chimay"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Kasteel van Attre",
+              "url": "https://kastelenbelgie.be/kastelen/henegouwen/#kasteel-van-attre"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Kasteel van Havré",
+              "url": "https://kastelenbelgie.be/kastelen/henegouwen/#kasteel-van-havre"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Kasteel van Boussu",
+              "url": "https://kastelenbelgie.be/kastelen/henegouwen/#kasteel-van-boussu"
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kastelen per regio",
+              "item": "https://kastelenbelgie.be/kastelen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kastelen in Henegouwen bezoeken | Kastelen België",
+              "item": "https://kastelenbelgie.be/kastelen/henegouwen/"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "route": "/kastelen/namen/",
     "source": "content/kastelen/namen/body.html",
     "title": "Kastelen in Namen bezoeken | Kastelen België",
     "description": "Ontdek bezoekbare kastelen en historische domeinen in Namen. Vergelijk interieurbezoeken, parken en rondleidingen met betrouwbare bronnen.",
-    "stylesheet": "assets/province-guide.css"
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://kastelenbelgie.be/kastelen/namen/#page",
+          "url": "https://kastelenbelgie.be/kastelen/namen/",
+          "name": "Kastelen in Namen bezoeken | Kastelen België",
+          "inLanguage": "nl-BE",
+          "mainEntity": {
+            "@id": "https://kastelenbelgie.be/kastelen/namen/#selectie"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://kastelenbelgie.be/kastelen/namen/#selectie",
+          "name": "Kastelen en historische domeinen in namen",
+          "numberOfItems": 10,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Kasteel van Vêves",
+              "url": "https://kastelenbelgie.be/kastelen/namen/#veves"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kasteel en tuinen van Freÿr",
+              "url": "https://kastelenbelgie.be/kastelen/namen/#freyr"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Lavaux-Sainte-Anne",
+              "url": "https://kastelenbelgie.be/kastelen/namen/#lavaux"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Kasteel van Corroy-le-Château",
+              "url": "https://kastelenbelgie.be/kastelen/namen/#kasteel-van-corroy-le-chateau"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Kasteel van Montaigle",
+              "url": "https://kastelenbelgie.be/kastelen/namen/#kasteel-van-montaigle"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Kasteel van Spontin",
+              "url": "https://kastelenbelgie.be/kastelen/namen/#kasteel-van-spontin"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Kasteel van Fagnolle",
+              "url": "https://kastelenbelgie.be/kastelen/namen/#kasteel-van-fagnolle"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Kasteel van Walzin",
+              "url": "https://kastelenbelgie.be/kastelen/namen/#kasteel-van-walzin"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "Kasteel van Annevoie",
+              "url": "https://kastelenbelgie.be/kastelen/namen/#kasteel-van-annevoie"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "Kasteel van Sombreffe",
+              "url": "https://kastelenbelgie.be/kastelen/namen/#kasteel-van-sombreffe"
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kastelen per regio",
+              "item": "https://kastelenbelgie.be/kastelen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kastelen in Namen bezoeken | Kastelen België",
+              "item": "https://kastelenbelgie.be/kastelen/namen/"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "route": "/kastelen/luik/",
     "source": "content/kastelen/luik/body.html",
     "title": "Kastelen in Luik bezoeken | Kastelen België",
     "description": "Ontdek bezoekbare kastelen en historische domeinen in Luik. Vergelijk interieurbezoeken, parken en rondleidingen met betrouwbare bronnen.",
-    "stylesheet": "assets/province-guide.css"
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://kastelenbelgie.be/kastelen/luik/#page",
+          "url": "https://kastelenbelgie.be/kastelen/luik/",
+          "name": "Kastelen in Luik bezoeken | Kastelen België",
+          "inLanguage": "nl-BE",
+          "mainEntity": {
+            "@id": "https://kastelenbelgie.be/kastelen/luik/#selectie"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://kastelenbelgie.be/kastelen/luik/#selectie",
+          "name": "Kastelen en historische domeinen in luik",
+          "numberOfItems": 5,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Kasteel van Modave",
+              "url": "https://kastelenbelgie.be/kastelen/luik/#modave"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Burcht Reinhardstein",
+              "url": "https://kastelenbelgie.be/kastelen/luik/#reinhardstein"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Jehay",
+              "url": "https://kastelenbelgie.be/kastelen/luik/#jehay"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Kasteel van Fallais",
+              "url": "https://kastelenbelgie.be/kastelen/luik/#kasteel-van-fallais"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Kasteel van Waroux",
+              "url": "https://kastelenbelgie.be/kastelen/luik/#kasteel-van-waroux"
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kastelen per regio",
+              "item": "https://kastelenbelgie.be/kastelen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kastelen in Luik bezoeken | Kastelen België",
+              "item": "https://kastelenbelgie.be/kastelen/luik/"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "route": "/kastelen/luxemburg/",
     "source": "content/kastelen/luxemburg/body.html",
     "title": "Kastelen in Luxemburg bezoeken | Kastelen België",
     "description": "Ontdek bezoekbare kastelen en historische domeinen in Luxemburg. Vergelijk interieurbezoeken, parken en rondleidingen met betrouwbare bronnen.",
-    "stylesheet": "assets/province-guide.css"
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://kastelenbelgie.be/kastelen/luxemburg/#page",
+          "url": "https://kastelenbelgie.be/kastelen/luxemburg/",
+          "name": "Kastelen in Luxemburg bezoeken | Kastelen België",
+          "inLanguage": "nl-BE",
+          "mainEntity": {
+            "@id": "https://kastelenbelgie.be/kastelen/luxemburg/#selectie"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://kastelenbelgie.be/kastelen/luxemburg/#selectie",
+          "name": "Kastelen en historische domeinen in luxemburg",
+          "numberOfItems": 3,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Kasteel van Bouillon",
+              "url": "https://kastelenbelgie.be/kastelen/luxemburg/#bouillon"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Feodaal kasteel van La Roche-en-Ardenne",
+              "url": "https://kastelenbelgie.be/kastelen/luxemburg/#laroche"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Mirwart",
+              "url": "https://kastelenbelgie.be/kastelen/luxemburg/#kasteel-van-mirwart"
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kastelen per regio",
+              "item": "https://kastelenbelgie.be/kastelen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kastelen in Luxemburg bezoeken | Kastelen België",
+              "item": "https://kastelenbelgie.be/kastelen/luxemburg/"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "route": "/kastelen/brussel/",
     "source": "content/kastelen/brussel/body.html",
     "title": "Kastelen in Brussel bezoeken | Kastelen België",
     "description": "Ontdek kastelen en paleizen in Brussel: Coudenberg, Koninklijk Paleis, Karreveld, Malou en Laken. Met bezoekvoorwaarden en bronnen.",
-    "stylesheet": "assets/province-guide.css"
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://kastelenbelgie.be/kastelen/brussel/#page",
+          "url": "https://kastelenbelgie.be/kastelen/brussel/",
+          "name": "Kastelen in Brussel bezoeken | Kastelen België",
+          "inLanguage": "nl-BE",
+          "mainEntity": {
+            "@id": "https://kastelenbelgie.be/kastelen/brussel/#paleizen"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://kastelenbelgie.be/kastelen/brussel/#paleizen",
+          "name": "Kastelen en historische domeinen in brussel",
+          "numberOfItems": 6,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Coudenbergpaleis",
+              "url": "https://kastelenbelgie.be/kastelen/brussel/#coudenberg"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Koninklijk Paleis van Brussel",
+              "url": "https://kastelenbelgie.be/kastelen/brussel/#koninklijk-paleis"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Karreveldkasteel",
+              "url": "https://kastelenbelgie.be/kastelen/brussel/#karreveld"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Maloukasteel",
+              "url": "https://kastelenbelgie.be/kastelen/brussel/#malou"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Kasteel de Rivieren",
+              "url": "https://kastelenbelgie.be/kastelen/brussel/#rivieren"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Kasteel van Laken en Koninklijke Serres",
+              "url": "https://kastelenbelgie.be/kastelen/brussel/#laken"
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kastelen per regio",
+              "item": "https://kastelenbelgie.be/kastelen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kastelen in Brussel bezoeken | Kastelen België",
+              "item": "https://kastelenbelgie.be/kastelen/brussel/"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "route": "/kasteel/gravensteen/",
