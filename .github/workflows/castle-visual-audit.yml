@@ -36,6 +36,7 @@ jobs:
             --route /soorten/burchten/ \
             --route /soorten/waterkastelen/ \
             --route /soorten/kasteelruines/ \
+            --route /soorten/kasteeldomeinen/ \
             --route /kastelen/west-vlaanderen/ \
             --route /kastelen/oost-vlaanderen/ \
             --route /kastelen/vlaams-brabant/ \
