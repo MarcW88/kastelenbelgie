@@ -13,9 +13,21 @@ const chips=[...document.querySelectorAll('[data-filter]')],cards=[...document.q
 const mapElement=document.getElementById('belgium-castle-map');let castleMap=null;const mapMarkers=[];
 if(mapElement&&window.L){
  castleMap=L.map(mapElement,{scrollWheelZoom:false,zoomControl:true}).setView([50.6,4.7],8);
- L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(castleMap);
+ // Use another public tile host if the primary layer returns missing tiles.
+ // Prevent half-rendered maps with isolated patches of background.
+ const primaryTiles=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'});
+ const backupTiles=L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'});
+ let tileFallbackActive=false;
+ primaryTiles.on('tileerror',()=>{
+   if(tileFallbackActive)return;
+   tileFallbackActive=true;
+   castleMap.removeLayer(primaryTiles);
+   backupTiles.addTo(castleMap);
+   castleMap.invalidateSize();
+ });
+ primaryTiles.addTo(castleMap);
  for(const castle of castleLocations){const marker=L.marker([castle.lat,castle.lng]).bindPopup('<strong>'+castle.name+'</strong><br>'+castle.location+'<br><a href="'+castle.href+'">Bekijk kasteelfiche →</a>');marker.addTo(castleMap);mapMarkers.push({marker,tags:castle.tags});}
- const bounds=L.latLngBounds(castleLocations.map(p=>[p.lat,p.lng]));castleMap.fitBounds(bounds.pad(.20),{maxZoom:9});setTimeout(()=>castleMap.invalidateSize(),150);
+ const bounds=L.latLngBounds(castleLocations.map(p=>[p.lat,p.lng]));castleMap.fitBounds(bounds.pad(.20),{maxZoom:9});requestAnimationFrame(()=>castleMap.invalidateSize());setTimeout(()=>castleMap.invalidateSize(),250);
 }else if(mapElement){mapElement.innerHTML='<p class="map-unavailable">De kaart kon niet geladen worden. Gebruik de links naar de kastelen hiernaast.</p>';}
 chips.forEach(chip=>chip.addEventListener('click',()=>{
  chips.forEach(x=>x.classList.remove('active'));chip.classList.add('active');
