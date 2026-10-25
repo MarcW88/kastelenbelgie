@@ -42,3 +42,10 @@ body.reviewed-province .province-heading h1{font-size:clamp(2.85rem,5.8vw,5.7rem
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media(max-width:390px){body.reviewed-province .province-heading h1{font-size:clamp(2.3rem,10vw,2.65rem)}.reviewed-province .brand{font-size:1.16rem;gap:8px;white-space:nowrap}.reviewed-province .brand img{width:32px;height:32px}}
 
+
+/* Oost-Vlaanderen: verified castle fiche photographs inside province selection cards. */
+body.reviewed-province .visit-card-photo{margin:0 0 20px;min-width:0}
+body.reviewed-province .visit-card-photo img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;background:#eae3d7}
+body.reviewed-province .visit-card-photo figcaption{font-size:.65rem;line-height:1.5;color:var(--muted);margin-top:7px}
+body.reviewed-province .visit-card-photo figcaption a{text-decoration:underline;text-underline-offset:2px}
+@media(max-width:650px){body.reviewed-province .visit-card-photo img{aspect-ratio:4/3}}
