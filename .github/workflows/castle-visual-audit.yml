@@ -40,6 +40,7 @@ jobs:
             --route /soorten/paleizen/ \
             --route /bezoeken/kastelen-met-kinderen/ \
             --route /bezoeken/kastelen-met-tuin/ \
+            --route /inspiratie/mooiste-kastelen-belgie/ \
             --route /kastelen/west-vlaanderen/ \
             --route /kastelen/oost-vlaanderen/ \
             --route /kastelen/vlaams-brabant/ \
