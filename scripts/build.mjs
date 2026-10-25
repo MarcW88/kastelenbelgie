@@ -38,3 +38,34 @@ console.log(`${1+Object.keys(pages).length+Object.values(pages).flat().length+3}
 
 const reviewed = applyReviewedPages(root, shell);
 console.log(`${reviewed} gecontroleerde inhoudspagina('s) toegepast.`);
+
+
+/* Sitewide crawlability: enforce one self-canonical for every generated HTML route. */
+const siteHost = fs.readFileSync(path.join(root, 'CNAME'), 'utf8').trim();
+const generatedRoutes = [];
+const skipDirs = new Set(['.git', '.agents', '.artifacts', 'node_modules', 'content', '.github', 'docs']);
+function indexGenerated(directory) {
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    if (entry.isDirectory()) {
+      if (!skipDirs.has(entry.name)) indexGenerated(path.join(directory, entry.name));
+      continue;
+    }
+    if (entry.name !== 'index.html') continue;
+    const filename = path.join(directory, entry.name);
+    const pathname = path.relative(root, directory).split(path.sep).join('/');
+    const route = pathname ? '/' + pathname + '/' : '/';
+    const canonical = 'https://' + siteHost + route;
+    let html = fs.readFileSync(filename, 'utf8');
+    html = html.replace(/<meta name="robots" content="[^"]*">/i, '<meta name="robots" content="index,follow">');
+    html = html.replace(/<link rel="canonical" href="[^"]*">/gi, '');
+    html = html.replace('</head>', '<link rel="canonical" href="' + canonical + '"></head>');
+    fs.writeFileSync(filename, html);
+    generatedRoutes.push(canonical);
+  }
+}
+indexGenerated(root);
+generatedRoutes.sort();
+const xmlEscape = value => value.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+fs.writeFileSync(path.join(root,'sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+generatedRoutes.map(url=>'  <url><loc>'+xmlEscape(url)+'</loc></url>').join('\n')+'\n</urlset>\n');
+fs.writeFileSync(path.join(root,'robots.txt'),'User-agent: *\nAllow: /\n\nSitemap: https://'+siteHost+'/sitemap.xml\n');
+console.log(generatedRoutes.length + ' indexable URLs, self-canonicals, sitemap and robots.txt generated.');
