@@ -26,7 +26,8 @@ if(mapElement&&window.L){
    castleMap.invalidateSize();
  });
  primaryTiles.addTo(castleMap);
- for(const castle of castleLocations){const marker=L.marker([castle.lat,castle.lng]).bindPopup('<strong>'+castle.name+'</strong><br>'+castle.location+'<br><a href="'+castle.href+'">Bekijk kasteelfiche →</a>');marker.addTo(castleMap);mapMarkers.push({marker,tags:castle.tags});}
+ const castlePin=L.divIcon({className:'castle-map-pin',html:'<span aria-hidden="true"></span>',iconSize:[22,28],iconAnchor:[11,26],popupAnchor:[0,-27]});
+ for(const castle of castleLocations){const marker=L.marker([castle.lat,castle.lng],{icon:castlePin}).bindPopup('<strong>'+castle.name+'</strong><br>'+castle.location+'<br><a href="'+castle.href+'">Bekijk kasteelfiche →</a>');marker.addTo(castleMap);mapMarkers.push({marker,tags:castle.tags});}
  const bounds=L.latLngBounds(castleLocations.map(p=>[p.lat,p.lng]));castleMap.fitBounds(bounds.pad(.20),{maxZoom:9});requestAnimationFrame(()=>castleMap.invalidateSize());setTimeout(()=>castleMap.invalidateSize(),250);
 }else if(mapElement){mapElement.innerHTML='<p class="map-unavailable">De kaart kon niet geladen worden. Gebruik de links naar de kastelen hiernaast.</p>';}
 chips.forEach(chip=>chip.addEventListener('click',()=>{
