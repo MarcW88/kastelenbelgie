@@ -42,6 +42,7 @@ jobs:
             --route /kastelen/luxemburg/ \
             --route /kastelen/brussel/ \
             --route /gidsen/kasteel-burcht-paleis-verschil/ \
+            --route /gidsen/middeleeuws-kasteel/ \
             --route /kasteel/gravensteen/ \
             --route /kasteel/kasteel-van-loppem/ \
             --route /kasteel/kasteel-van-gaasbeek/ \
