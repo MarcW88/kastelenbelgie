@@ -38,6 +38,7 @@ jobs:
             --route /soorten/kasteelruines/ \
             --route /soorten/kasteeldomeinen/ \
             --route /soorten/paleizen/ \
+            --route /bezoeken/kastelen-met-kinderen/ \
             --route /kastelen/west-vlaanderen/ \
             --route /kastelen/oost-vlaanderen/ \
             --route /kastelen/vlaams-brabant/ \
