@@ -31,6 +31,7 @@ jobs:
         run: |
           node .agents/skills/site-design-review/scripts/run-visual-review.mjs \
             --route / \
+            --route /kastelen/ \
             --route /kastelen/west-vlaanderen/ \
             --route /kastelen/oost-vlaanderen/ \
             --route /kastelen/vlaams-brabant/ \
