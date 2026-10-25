@@ -12,7 +12,7 @@ for (const entry of JSON.parse(fs.readFileSync(manifest, 'utf8'))) {
   const fail = issue => { throw new Error(`${entry.route}: ${issue}`); };
   if (!html.includes(body)) fail('Reviewed source content was not preserved in the rendered page.');
   if ((html.match(/<h1\b/g) || []).length !== 1) fail('Expected exactly one H1.');
-  if (!html.includes('<meta name="robots" content="noindex,follow">')) fail('Indexation policy changed.');
+  if (!html.includes('<meta name="robots" content="index,follow">')) fail('Indexation policy changed.');
   if (!html.includes(`<link rel="canonical" href="https://${host}${entry.route}">`)) fail('Canonical mismatch.');
   if (/Inhoud nog te schrijven|Gabarit klaar|Nog te classificeren/.test(body)) fail('Editorial placeholder remains.');
   for (const match of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) JSON.parse(match[1]);
