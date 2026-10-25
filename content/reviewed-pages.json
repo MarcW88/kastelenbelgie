@@ -3941,5 +3941,84 @@
         }
       ]
     }
+  },
+  {
+    "route": "/soorten/burchten/",
+    "source": "content/soorten/burchten/body.html",
+    "title": "Burchten in België: versterkte kastelen en hun verhaal | Kastelen België",
+    "description": "Ontdek burchten in België: Gravensteen, Beersel, Laarne, Bouillon en Reinhardstein. Verschillen in verdediging, ligging en bouwgeschiedenis.",
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://kastelenbelgie.be/soorten/burchten/#webpagina",
+          "url": "https://kastelenbelgie.be/soorten/burchten/",
+          "name": "Burchten in België",
+          "inLanguage": "nl-BE",
+          "description": "Een onderbouwde selectie van versterkte burchten en hun ligging en bouwgeschiedenis."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Thema’s",
+              "item": "https://kastelenbelgie.be/soorten/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Burchten",
+              "item": "https://kastelenbelgie.be/soorten/burchten/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Selectie burchten",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Gravensteen",
+              "url": "https://kastelenbelgie.be/kasteel/gravensteen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kasteel van Beersel",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-beersel/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Laarne",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-laarne/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Burcht van Bouillon",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-bouillon/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Burcht Reinhardstein",
+              "url": "https://kastelenbelgie.be/kasteel/burcht-reinhardstein/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
