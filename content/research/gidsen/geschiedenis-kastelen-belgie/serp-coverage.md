@@ -37,3 +37,6 @@ Official sources inspected in this continuation:
 - https://inventaris.onroerenderfgoed.be/erfgoedobjecten/209986 — Loppem neo-Gothic construction 1858–1863.
 - https://inventaris.onroerenderfgoed.be/aanduidingsobjecten/13134 — landscape and monument protection in 1985.
 Search discovery found official sources for castle-history subtopics, but did not establish a fully quantified live ranking/competitor benchmark. Research gate: PARTIAL. This is not a claim of independently executed full specialist orchestration.
+
+## Deep rewrite assessment (2026-10-25)
+Added regional political differentiation, seigneurial estate economy and four contrasting castle trajectories. Source support remains the official institutions listed above. Central coverage is expanded, but quantified competitor/SERP comparison remains incomplete. No claim of complete specialist execution.
