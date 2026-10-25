@@ -787,6 +787,13 @@
     "stylesheet": "assets/castle-detail.css"
   },
   {
+    "route": "/kasteel/kasteel-van-groot-bijgaarden/",
+    "source": "content/kasteel/kasteel-van-groot-bijgaarden/body.html",
+    "title": "Kasteel van Groot-Bijgaarden bezoeken",
+    "description": "Bezoek Kasteel Groot-Bijgaarden: geschiedenis, Floralia Brussels, Pumpkimania en tickets voor het park.",
+    "stylesheet": "assets/castle-detail.css"
+  },
+  {
     "route": "/kasteel/kasteel-marnix-de-sainte-aldegonde/",
     "source": "content/kasteel/kasteel-marnix-de-sainte-aldegonde/body.html",
     "title": "Kasteel van Bornem bezoeken: Marnix, Beyaert en koetsen",
