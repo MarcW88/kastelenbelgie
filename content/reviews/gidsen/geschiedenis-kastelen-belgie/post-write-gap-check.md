@@ -18,3 +18,6 @@ Date: 2026-10-25; mode: resumed NEW_PAGE; branch: main.
 - Specialist skills were not all individually executed/validated by an independent runner.
 - Local npm build, npm check, agent integrity verifiers, two-build reproducibility and Playwright screenshot QA: NOT EXECUTED in this GitHub-connector editing session.
 - Publication review: FAIL — KEEP_NOINDEX until mandatory missing technical/research checks pass and human review occurs; do not change robots policy.
+
+## Deep rewrite review — 2026-10-25
+COVERED: regional political contrasts (#gewesten), estate economy (#bezit), case studies (#casussen) and logical order of heritage care. Technical checks and visual screenshots remain pending. Research competitors and separate skill execution not fully verified. PUBLISH_REVIEW: FAIL — KEEP_NOINDEX until remaining review gates.
