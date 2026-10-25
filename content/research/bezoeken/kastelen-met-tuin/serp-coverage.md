@@ -1,0 +1,7 @@
+# SEO/GEO coverage — kastelen met tuin en park België
+Date 2026-10-25; language nl-BE; owner VISIT_INTENT; NEW_PAGE.
+Primary query: kastelen met tuin bezoeken België. Variants: kasteelparken bezoeken, kasteeltuinen België, tuinen Freyr, Gaasbeek museumtuin, kasteel Bouchout plantentuin, watertuinen Annevoie.
+Distinct: /soorten/kasteeldomeinen/ describes historic estate morphology; /bezoeken/kastelen-met-tuin/ is decision-support for accessible gardens.
+Verified first-party sources: Gaasbeek https://www.kasteelvangaasbeek.be/nl/museumtuin-park (museum garden distinct from park/castle); Freÿr https://freyr.be/fr/votre-visite (garden slopes, accessible lower garden, seasonal hours); Annevoie https://www.annevoie.be/fr/ and https://www.annevoie.be/fr/praktische-informatie/ (water gardens, seasonal access, uneven gravel); Bouchout https://www.plantentuinmeise.be/nl/kasteel-van-bouchout-ttyc and https://www.plantentuinmeise.be/nl/openingsuren-tr1l (garden + castle inclusion).
+MUST verify real gardens open to public COVERED all four; MUST distinct practical arrangements COVERED #plannen; MUST differentiate garden from interiors COVERED; SHOULD compare garden traditions COVERED #tuinen; internal next steps COVERED.
+Limitations: no keyword volume or exhaustively ranked competing SERP matrix; no independently logged execution of each individual specialist; research gate PARTIAL. Do not fabricate year-round access.
