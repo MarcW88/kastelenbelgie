@@ -12,3 +12,6 @@ Stable: architectural structures; semi-stable: restoration interpretation. Volat
 Structure: six independently useful sections; distinctive feature cards followed by examples and source notes, not copy of guide 01.
 Internal relations: guide 01, Gravensteen, three fiches, /soorten/middeleeuwse-kastelen/, /kastelen/.
 Research limitations: competitive SERP metrics absent; actual build and Playwright pending.
+
+## DEEP_REWRITE handoff
+Go beyond labels of building elements: explain how location and threat shaped defensive design; relate poortgebouw and gracht to movement/control; connect motte/neerhof to local economy and residents; contrast authentic and restored forms with Beersel and Gravensteen. No travel logistics or fabricated personal visit. Distinct from guides 01 (terminology), 03 (national history), 04 (stylistic architecture).
