@@ -16,3 +16,6 @@
 - Facts to verify before future substantial revisions: architectural era and use of each named castle; whether terminology changes with regional historical sources.
 - Data gaps: Search Console queries/volumes not available; comprehensive ranked SERP inventory not compiled; page is not ready for indexation solely on this matrix.
 - Research status: PARTIAL evidence gate; awaiting wider competitive SERP review when available.
+
+## Deep rewrite update — 2026-10-25
+AUDIT: DEEP_REWRITE (original definitions correct but examples shallow; historical overlaps only asserted, not demonstrated). Preserved opening comparison and practical recognition guidance. Official source https://inventaris.onroerenderfgoed.be/themas/17345 supports motte/op- en neerhof, landlord economy, shift to residence; https://coudenberg.brussels/nl/ontdekken/geschiedenis-en-archeologie supports castle-to-palace transformation and 1731 fire. Additional explanatory examples: Gravensteen, Gaasbeek, Loppem; chronology and restoration claims framed conservatively. MUST overlaps/cases now COVERED at #grensgevallen and #voorbeelden; SHOULD myth correction COVERED at #misverstanden. Search volumes and ranked competitor matrix remain unavailable; no claim of completed end-to-end specialist runs.
