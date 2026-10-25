@@ -218,16 +218,16 @@
           "url": "https://kastelenbelgie.be/kastelen/vlaams-brabant/",
           "name": "Kastelen in Vlaams-Brabant bezoeken",
           "inLanguage": "nl-BE",
-          "dateModified": "2026-10-22",
+          "dateModified": "2026-10-25",
           "mainEntity": {
-            "@id": "https://kastelenbelgie.be/kastelen/vlaams-brabant/#plaatsen"
+            "@id": "https://kastelenbelgie.be/kastelen/vlaams-brabant/#pajottenland"
           }
         },
         {
           "@type": "ItemList",
-          "@id": "https://kastelenbelgie.be/kastelen/vlaams-brabant/#plaatsen",
+          "@id": "https://kastelenbelgie.be/kastelen/vlaams-brabant/#pajottenland",
           "name": "Selectie van kastelen en kasteelparken in Vlaams-Brabant",
-          "numberOfItems": 7,
+          "numberOfItems": 9,
           "itemListElement": [
             {
               "@type": "ListItem",
@@ -270,6 +270,18 @@
               "position": 7,
               "name": "Kasteel van Horst",
               "url": "https://kastelenbelgie.be/kastelen/vlaams-brabant/#horst"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Kasteel Ter Rijst",
+              "url": "https://kastelenbelgie.be/kastelen/vlaams-brabant/#ter-rijst"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "Kasteel van Groot-Bijgaarden",
+              "url": "https://kastelenbelgie.be/kastelen/vlaams-brabant/#groot-bijgaarden"
             }
           ]
         },
