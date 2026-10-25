@@ -215,3 +215,42 @@
 
 /* Individual castle guides: West-Vlaanderen editorial modules */
 .west-castle-jumps{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 6px}.west-castle-jumps a,.west-castle-action a{display:inline-block;background:#33483d;color:#fff;border-radius:6px;padding:10px 16px;font-size:.85rem;font-weight:700}.west-castle-jumps a:last-child{background:transparent;border:1px solid #87998c;color:#33483d}.west-castle-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0}.west-castle-facts>div{background:#fffdf9;padding:20px;border:1px solid #d9d0c2;border-radius:6px}.west-castle-facts span{display:block;color:#716b63;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}.west-castle-facts strong{font-size:.92rem;line-height:1.5}.west-castle-related a{text-decoration:underline;text-underline-offset:4px}.west-castle-photo-container{padding-top:24px}.west-castle-photo{margin:0}.west-castle-photo img{width:100%;max-height:520px;object-fit:cover;display:block;border-radius:8px}.west-castle-photo figcaption{font-size:.7rem;color:#716b63;margin-top:8px}.west-castle-photo figcaption a{text-decoration:underline}@media(max-width:700px){.west-castle-facts{grid-template-columns:1fr}.west-castle-jumps a{flex:1}}
+
+
+/* Leaflet map layout fallback: keep map tiles positioned even if external CDN CSS fails.
+   Leaflet JS alone does not position panes, tiles or controls. */
+#belgium-castle-map.leaflet-container{position:absolute;inset:0;overflow:hidden;background:#e6e7df;outline:0;touch-action:pan-x pan-y}
+#belgium-castle-map .leaflet-pane,
+#belgium-castle-map .leaflet-tile,
+#belgium-castle-map .leaflet-marker-icon,
+#belgium-castle-map .leaflet-marker-shadow,
+#belgium-castle-map .leaflet-tile-container,
+#belgium-castle-map .leaflet-pane>svg,
+#belgium-castle-map .leaflet-pane>canvas{position:absolute;left:0;top:0}
+#belgium-castle-map .leaflet-map-pane,#belgium-castle-map .leaflet-pane{position:absolute;left:0;top:0}
+#belgium-castle-map .leaflet-tile-pane{z-index:200}
+#belgium-castle-map .leaflet-overlay-pane{z-index:400}
+#belgium-castle-map .leaflet-shadow-pane{z-index:500}
+#belgium-castle-map .leaflet-marker-pane{z-index:600}
+#belgium-castle-map .leaflet-tooltip-pane{z-index:650}
+#belgium-castle-map .leaflet-popup-pane{z-index:700}
+#belgium-castle-map .leaflet-control{position:relative;z-index:800;pointer-events:auto}
+#belgium-castle-map .leaflet-top,#belgium-castle-map .leaflet-bottom{position:absolute;z-index:800;pointer-events:none}
+#belgium-castle-map .leaflet-top{top:0}
+#belgium-castle-map .leaflet-right{right:0}
+#belgium-castle-map .leaflet-bottom{bottom:0}
+#belgium-castle-map .leaflet-left{left:0}
+#belgium-castle-map .leaflet-tile{display:block;width:256px;height:256px;max-width:none!important;max-height:none!important;border:0!important;padding:0!important;margin:0!important}
+#belgium-castle-map .leaflet-tile-container{pointer-events:none}
+#belgium-castle-map .leaflet-control-zoom{margin:12px;background:#fff;border:1px solid #d9d0c2;border-radius:5px;overflow:hidden;box-shadow:0 2px 9px #0002}
+#belgium-castle-map .leaflet-control-zoom a{display:block;width:32px;height:32px;line-height:30px;text-align:center;background:#fff;color:#273e33;text-decoration:none;font:bold 20px Arial,sans-serif;border-bottom:1px solid #ddd}
+#belgium-castle-map .leaflet-control-zoom a:last-child{border:0}
+#belgium-castle-map .leaflet-control-attribution{margin:0 0 3px;padding:1px 5px;background:#fffd;font:10px/1.4 Arial,sans-serif;color:#343434}
+#belgium-castle-map .leaflet-control-attribution a{color:#155b81}
+#belgium-castle-map .leaflet-popup{position:absolute;text-align:center;margin-bottom:20px}
+#belgium-castle-map .leaflet-popup-content-wrapper{background:#fff;border-radius:8px;padding:1px;box-shadow:0 3px 14px #0003}
+#belgium-castle-map .leaflet-popup-content{margin:12px 18px;font:13px/1.5 Arial,sans-serif;text-align:left}
+#belgium-castle-map .leaflet-popup-tip-container{width:40px;height:20px;position:absolute;left:50%;margin-left:-20px;overflow:hidden;pointer-events:none}
+#belgium-castle-map .leaflet-popup-tip{width:16px;height:16px;background:#fff;transform:translate(12px,-8px) rotate(45deg);box-shadow:0 3px 14px #0003}
+#belgium-castle-map .leaflet-popup-close-button{position:absolute;right:5px;top:4px;text-decoration:none;font-size:20px;line-height:20px;color:#555}
+#belgium-castle-map .leaflet-marker-icon,#belgium-castle-map .leaflet-marker-shadow{display:block;max-width:none!important}
