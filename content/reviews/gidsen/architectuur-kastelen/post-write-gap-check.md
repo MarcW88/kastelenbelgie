@@ -12,3 +12,13 @@ Date: 2026-10-25 | NEW_PAGE
 - Local build/check, 2nd build, Playwright screenshots: pending GitHub Actions.
 - Individual specialist skills are not independently verified as executed.
 PUBLISH_REVIEW: FAIL — KEEP_NOINDEX pending full research/specialist and technical validation. No automatic indexation.
+
+## DEEP_REWRITE coverage review — 2026-10-25
+- MUST construction phases and interpretation: COVERED #bouwfasen, Laarne/Ooidonk official inventories.
+- MUST building function and interior circulation: COVERED #interieur; Loppem inventory.
+- MUST designed estate setting: COVERED #landschap; Ooidonk/Loppem inventories.
+- MUST comparative architecture and sources: COVERED #vergelijking; official case records.
+- Existing MUST defence/Renaissance/historicism/materials: maintained.
+- Full keyword competitor SERP, independent specialist execution, individual screenshot inspection: NOT CONFIRMED.
+- Technical build/check and deployment: pending latest GitHub Action.
+- Gate FAIL — KEEP_NOINDEX pending full review and human sign-off; no indexing change.
