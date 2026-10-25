@@ -780,6 +780,13 @@
     }
   },
   {
+    "route": "/kasteel/kasteel-ter-rijst/",
+    "source": "content/kasteel/kasteel-ter-rijst/body.html",
+    "title": "Kasteel Ter Rijst bezoeken",
+    "description": "Ontdek Kasteel Ter Rijst in Heikruis: landschapspark, geschiedenis, wandelregels en openingstijden.",
+    "stylesheet": "assets/castle-detail.css"
+  },
+  {
     "route": "/kasteel/kasteel-marnix-de-sainte-aldegonde/",
     "source": "content/kasteel/kasteel-marnix-de-sainte-aldegonde/body.html",
     "title": "Kasteel van Bornem bezoeken: Marnix, Beyaert en koetsen",
