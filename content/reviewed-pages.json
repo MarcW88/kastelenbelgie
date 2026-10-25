@@ -3728,5 +3728,71 @@
         }
       ]
     }
+  },
+  {
+    "route": "/gidsen/architectuur-kastelen/",
+    "source": "content/gidsen/architectuur-kastelen/body.html",
+    "title": "Architectuur van kastelen in België: stijlen en kenmerken | Kastelen België",
+    "description": "Leer de architectuur van Belgische kastelen lezen: waterburchten, renaissance, classicisme, neogotiek, materialen en latere restauraties.",
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://kastelenbelgie.be/gidsen/architectuur-kastelen/#artikel",
+          "headline": "Architectuur van kastelen in België",
+          "inLanguage": "nl-BE",
+          "mainEntityOfPage": {
+            "@id": "https://kastelenbelgie.be/gidsen/architectuur-kastelen/#webpagina"
+          },
+          "dateModified": "2026-10-25",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Kasteelarchitectuur"
+            },
+            {
+              "@type": "Thing",
+              "name": "Renaissancearchitectuur"
+            },
+            {
+              "@type": "Thing",
+              "name": "Neogotiek"
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/gidsen/architectuur-kastelen/#webpagina",
+          "url": "https://kastelenbelgie.be/gidsen/architectuur-kastelen/",
+          "name": "Architectuur van kastelen in België",
+          "inLanguage": "nl-BE"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Verhalen & gidsen",
+              "item": "https://kastelenbelgie.be/gidsen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Architectuur van kastelen",
+              "item": "https://kastelenbelgie.be/gidsen/architectuur-kastelen/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
