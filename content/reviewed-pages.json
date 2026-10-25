@@ -3596,5 +3596,71 @@
         }
       ]
     }
+  },
+  {
+    "route": "/gidsen/middeleeuws-kasteel/",
+    "source": "content/gidsen/middeleeuws-kasteel/body.html",
+    "title": "Middeleeuws kasteel: opbouw, onderdelen en leven | Kastelen België",
+    "description": "Hoe zag een middeleeuws kasteel eruit? Ontdek de donjon, ringmuur, het poortgebouw, mottekastelen en voorbeelden uit België.",
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://kastelenbelgie.be/gidsen/middeleeuws-kasteel/#artikel",
+          "headline": "Hoe zag een middeleeuws kasteel eruit?",
+          "inLanguage": "nl-BE",
+          "mainEntityOfPage": {
+            "@id": "https://kastelenbelgie.be/gidsen/middeleeuws-kasteel/#webpagina"
+          },
+          "dateModified": "2026-10-25",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Middeleeuws kasteel"
+            },
+            {
+              "@type": "Thing",
+              "name": "Donjon"
+            },
+            {
+              "@type": "Thing",
+              "name": "Mottekasteel"
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/gidsen/middeleeuws-kasteel/#webpagina",
+          "url": "https://kastelenbelgie.be/gidsen/middeleeuws-kasteel/",
+          "name": "Hoe zag een middeleeuws kasteel eruit?",
+          "inLanguage": "nl-BE"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Verhalen & gidsen",
+              "item": "https://kastelenbelgie.be/gidsen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Middeleeuws kasteel",
+              "item": "https://kastelenbelgie.be/gidsen/middeleeuws-kasteel/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
