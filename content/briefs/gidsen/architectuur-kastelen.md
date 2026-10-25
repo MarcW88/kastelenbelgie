@@ -12,3 +12,6 @@ Evidence: Flemish heritage inventories for Laarne, Ooidonk, Gaasbeek and Loppem;
 Voice: culturally engaged, precise nl-BE, no made-up visits, no artificial FAQ or quotas.
 Structure: method of observation -> defensive building -> residential styles -> historicism -> material and setting -> contrasting examples -> sources.
 Data gaps: no national style database covering all regions, no quantitative search demand; no browser screenshots for this authoring step.
+
+## DEEP_REWRITE handoff
+Preserve concise introduction and defensive/Renaissance/historicist sections. Explain architectural reading through altered approaches, construction joints, openings and reconstructed fabric. Add interior household circulation and estate-landscape design with official cases Laarne, Ooidonk, Loppem and Gaasbeek. Keep distinct from guide 03 chronological history and guide 02 defensive anatomy. No visitor logistics or unsupported visual dating.
