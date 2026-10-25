@@ -20,3 +20,6 @@ Search results were dominated by individual official heritage inventories rather
 - OPTIONAL universal national chronological typology: EXCLUDED (regional variation).
 ## Information gain and gaps
 Reading architecture through purpose, alterations and interventions, rather than lists of decorative features. No GSC data or numerical keyword volume; results are exploratory official evidence rather than a comprehensive measured competitor/SERP-feature audit. No unverified tourist services. Research gate PARTIAL (competitor benchmarking and specialists pending).
+
+## DEEP_REWRITE, 25 October 2026
+Existing guide reviewed: core style descriptions sound but insufficient explanation of reading layers, interiors, estates, and architectural case comparison. Official inventory sources verified: Laarne https://inventaris.onroerenderfgoed.be/erfgoedobjecten/135204 ; Ooidonk https://inventaris.onroerenderfgoed.be/erfgoedobjecten/38122 ; Loppem https://inventaris.onroerenderfgoed.be/erfgoedobjecten/209986 . Added #bouwfasen, #interieur, #landschap and #vergelijking. All core intent questions covered; numerical competitor comparison remains incomplete, and full specialist skill execution not independently confirmed.
