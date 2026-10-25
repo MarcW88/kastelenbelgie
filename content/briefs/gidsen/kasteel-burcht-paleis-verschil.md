@@ -21,3 +21,6 @@ Information gain: coherent explanations grounded in Belgian monuments and histor
 Internal links: /kasteel/gravensteen/, /kasteel/burcht-reinhardstein/, /kasteel/kasteel-van-gaasbeek/, /kasteel/kasteel-van-loppem/, /kasteel/koninklijk-paleis-van-brussel/, /kasteel/coudenbergpaleis/, /soorten/middeleeuwse-kastelen/, /soorten/paleizen/, /kastelen/.
 
 Remaining gaps: visually verified diagram/illustrations, complete SERP competitors, actual build/Playwright.
+
+## Deep rewrite handoff — 2026-10-25
+Decision: DEEP_REWRITE. Preserve answer-first three-category differentiation. Expand why the labels overlap, connect fortifications to estate economy, and use separate historical case studies (Gravensteen, Gaasbeek, Loppem, Coudenberg). Explain common misreadings of moat, battlements, palace functions, and ruins. Exclude visit logistics and duplicate chronological history of guide 03. Source priority: Onroerend Erfgoed and Coudenberg; STABLE caveated historical claims.
