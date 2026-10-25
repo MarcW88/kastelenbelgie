@@ -4338,5 +4338,77 @@
         }
       ]
     }
+  },
+  {
+    "route": "/bezoeken/kastelen-met-kinderen/",
+    "source": "content/bezoeken/kastelen-met-kinderen/body.html",
+    "title": "Kastelen bezoeken met kinderen in België: 4 gezinsuitstappen | Kastelen België",
+    "description": "Ontdek kastelen met kinderactiviteiten: Gravensteen, Gaasbeek, Vêves en Loppem. Speurtochten, verkleden, doolhof en praktische tips voor gezinnen.",
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://kastelenbelgie.be/bezoeken/kastelen-met-kinderen/#webpagina",
+          "url": "https://kastelenbelgie.be/bezoeken/kastelen-met-kinderen/",
+          "name": "Kastelen bezoeken met kinderen in België",
+          "inLanguage": "nl-BE"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Bezoeken",
+              "item": "https://kastelenbelgie.be/bezoeken/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kastelen met kinderen",
+              "item": "https://kastelenbelgie.be/bezoeken/kastelen-met-kinderen/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Vier kastelen met gezinsaanbod",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Gravensteen",
+              "url": "https://kastelenbelgie.be/kasteel/gravensteen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kasteel van Gaasbeek",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-gaasbeek/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Vêves",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-veves/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Kasteel van Loppem",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-loppem/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
