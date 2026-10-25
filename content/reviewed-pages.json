@@ -3794,5 +3794,67 @@
         }
       ]
     }
+  },
+  {
+    "route": "/gidsen/kastelen-in-belgie-kaart/",
+    "source": "content/gidsen/kastelen-in-belgie-kaart/body.html",
+    "title": "Kastelen in België op de kaart: zoeken per regio | Kastelen België",
+    "description": "Ontdek kastelen in België op de kaart en per provincie. Leer hoe je kasteellocaties, bezoekbaarheid en officiële erfgoedkaarten vergelijkt.",
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://kastelenbelgie.be/gidsen/kastelen-in-belgie-kaart/#artikel",
+          "headline": "Kastelen in België op de kaart",
+          "inLanguage": "nl-BE",
+          "dateModified": "2026-10-25",
+          "mainEntityOfPage": {
+            "@id": "https://kastelenbelgie.be/gidsen/kastelen-in-belgie-kaart/#webpagina"
+          },
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Kastelen in België"
+            },
+            {
+              "@type": "Thing",
+              "name": "Erfgoedkaarten"
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://kastelenbelgie.be/gidsen/kastelen-in-belgie-kaart/#webpagina",
+          "url": "https://kastelenbelgie.be/gidsen/kastelen-in-belgie-kaart/",
+          "name": "Kastelen in België op de kaart",
+          "inLanguage": "nl-BE"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Verhalen & gidsen",
+              "item": "https://kastelenbelgie.be/gidsen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kastelen op de kaart",
+              "item": "https://kastelenbelgie.be/gidsen/kastelen-in-belgie-kaart/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
