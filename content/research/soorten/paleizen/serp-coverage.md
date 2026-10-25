@@ -14,3 +14,5 @@ MUST: clarify modern uses and access COVERED #bezoek.
 MUST: credible sources and freshness caution COVERED #bronnen.
 MUST: avoid cannibalizing glossary and castle entries COVERED #verschillen.
 Gaps: Antwerp Meir supporting primary source to confirm in additional verification; no measured SERP competitor positions, quantitative volumes or full independent specialist runs. Research gate PARTIAL, do not claim full PUBLISH_REVIEW.
+
+Supplementary official verification 2026-10-25: https://inventaris.onroerenderfgoed.be/erfgoedobjecten/5539 documents the 18th-century private palace, 19th-century royal functions, and later cultural reuse of Paleis op de Meir. Primary-source gap resolved; independent full specialist execution and visual inspection remain unconfirmed.
