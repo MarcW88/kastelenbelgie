@@ -4182,5 +4182,83 @@
         }
       ]
     }
+  },
+  {
+    "route": "/soorten/kasteeldomeinen/",
+    "source": "content/soorten/kasteeldomeinen/body.html",
+    "title": "Kasteeldomeinen in België: kastelen, parken en tuinen | Kastelen België",
+    "description": "Ontdek kasteeldomeinen in België: Gaasbeek, Ooidonk, Hex, Poeke en Groenenberg. Leer hoe kastelen, parken, dreven en historische tuinen samenhangen.",
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://kastelenbelgie.be/soorten/kasteeldomeinen/#webpagina",
+          "url": "https://kastelenbelgie.be/soorten/kasteeldomeinen/",
+          "name": "Kasteeldomeinen in België",
+          "inLanguage": "nl-BE"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Thema’s",
+              "item": "https://kastelenbelgie.be/soorten/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteeldomeinen",
+              "item": "https://kastelenbelgie.be/soorten/kasteeldomeinen/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Selectie Belgische kasteeldomeinen",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Kasteel van Gaasbeek",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-gaasbeek/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kasteeldomein Ooidonk",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-ooidonk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteeldomein van Hex",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-hex/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Kasteeldomein van Poeke",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-poeke/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Kasteel Groenenberg",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-groenenberg/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
