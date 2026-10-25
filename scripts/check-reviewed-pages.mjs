@@ -25,7 +25,7 @@ for (const entry of JSON.parse(fs.readFileSync(manifest, 'utf8'))) {
   }
   // Province-card and structured-data contracts: keep the regional index in sync with its fiches.
   if (/^\/kastelen\/(?:west-vlaanderen|oost-vlaanderen|vlaams-brabant|antwerpen|limburg|waals-brabant|henegouwen|namen|luik|luxemburg|brussel)\/$/.test(entry.route)) {
-    const cards = [...body.matchAll(/<article class="visit-card" id="([^"]+)"[\s\S]*?<\/article>/g)];
+    const cards = [...body.matchAll(/<article class="visit-card" id="([^"]+)"([\s\S]*?)<\/article>/g)];
     if (!cards.length) fail('No castle selection cards found.');
     const ids = new Set();
     for (const [, id, card] of cards) {
