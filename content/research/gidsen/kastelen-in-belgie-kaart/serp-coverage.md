@@ -12,3 +12,6 @@ MUST: point to real internal map /#castle-map: COVERED; provinces and regions: C
 SHOULD: reader pathways by use and geography: COVERED; caution on incomplete inventory: COVERED.
 Information gain: bridge consumer discovery and specialist public-heritage geographic layers, without pretending the introductory map is a national GIS database.
 Gaps: no complete geocoded dataset or map pins for all site entries; live competitor and keyword metrics unavailable; no audited desktop/mobile map capture. Thus research quality gate remains PARTIAL, not independently full expert skill PASS.
+
+## DEEP_REWRITE — 2026-10-25
+Existing guide offered navigation but lacked substantive map literacy and guided research. Added distinctions between map pins, protection polygons, inventory objects and access rights; a reproducible Flemish Geoportaal walkthrough and 4 geographic site scenarios. Independently verified current official documentation: https://geo.onroerenderfgoed.be/help, https://www.onroerenderfgoed.be/het-erfgoedstatuut-opzoeken, https://geo.onroerenderfgoed.be/downloads. MUST user instructions and source limits now COVERED in #kaartlagen/#werkwijze/#betrouwbaarheid. Full quantified competitor SERP and live GIS dataset audit remain unavailable; research gate PARTIAL.
