@@ -4482,5 +4482,89 @@
         }
       ]
     }
+  },
+  {
+    "route": "/inspiratie/mooiste-kastelen-belgie/",
+    "source": "content/inspiratie/mooiste-kastelen-belgie/body.html",
+    "title": "Bijzondere kastelen in België: 6 plekken met een verhaal | Kastelen België",
+    "description": "Ontdek zes bijzondere kastelen in België: Gravensteen, Vêves, Ooidonk, Bouillon, Gaasbeek en Loppem. Erfgoed, architectuur en landschappen.",
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "url": "https://kastelenbelgie.be/inspiratie/mooiste-kastelen-belgie/",
+          "@id": "https://kastelenbelgie.be/inspiratie/mooiste-kastelen-belgie/#pagina",
+          "name": "Bijzondere kastelen in België",
+          "inLanguage": "nl-BE"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Inspiratie",
+              "item": "https://kastelenbelgie.be/inspiratie/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Bijzondere plekken",
+              "item": "https://kastelenbelgie.be/inspiratie/mooiste-kastelen-belgie/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Zes bijzondere kastelen",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Gravensteen",
+              "url": "https://kastelenbelgie.be/kasteel/gravensteen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kasteel van Vêves",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-veves/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Ooidonk",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-ooidonk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Burcht van Bouillon",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-bouillon/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Kasteel van Gaasbeek",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-gaasbeek/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Kasteel van Loppem",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-loppem/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
