@@ -13,3 +13,6 @@ SHOULD: four-phase navigable timeline, three contrasting sites, next-step contex
 Data gaps: no uniform chronology per all provinces, no verified prices/hours, no Search Console rankings, browser QA pending.
 Information gain: address mixed building phases and restoration subjectivity, not a sanitized century-by-century fairy tale.
 Visual direction: clear horizontal timeline adapting to two/one columns, linked history case studies, readable long-form sections.
+
+## Deep rewrite brief (2026-10-25)
+Explain why castle sites were economic and political nodes and how county/duchy/prince-bishopric contexts diverged. Add distinct case analyses of Gravensteen, Ooidonk, Coudenberg and Loppem. Put heritage restoration after nineteenth-century history. Keep distinct from the definition, anatomy and architecture guides.
