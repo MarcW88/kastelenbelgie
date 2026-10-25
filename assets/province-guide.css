@@ -60,3 +60,12 @@ body.reviewed-province .visit-card-photo figcaption a{text-decoration:underline;
 .reviewed-province #bronnen .planning-copy{max-width:950px}
 .reviewed-province #bronnen li{margin:.6em 0;line-height:1.7}
 @media(max-width:820px){.reviewed-province .guide-comparison{grid-template-columns:1fr}.reviewed-province .guide-comparison>div{padding:20px}}
+
+/* Guide 02: architectural parts and grounded Belgian examples */
+.reviewed-province .guide-feature-grid,.reviewed-province .guide-example-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:14px 0 28px}
+.reviewed-province .guide-feature-grid>div,.reviewed-province .guide-example-grid>a{min-width:0;padding:26px;background:var(--paper);border:1px solid var(--line);display:flex;flex-direction:column;gap:11px;text-decoration:none}
+.reviewed-province .guide-feature-grid h3,.reviewed-province .guide-example-grid h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,3vw,2.35rem);line-height:1.08;margin:0}
+.reviewed-province .guide-feature-grid p,.reviewed-province .guide-example-grid p{font-size:.9rem;line-height:1.75;margin:0}
+.reviewed-province .guide-example-grid strong{margin-top:auto;padding-top:10px;font-size:.8rem;color:var(--green);text-decoration:underline;text-underline-offset:3px}
+.reviewed-province .guide-example-grid>a:hover,.reviewed-province .guide-example-grid>a:focus-visible{border-color:var(--green);background:#eceee6}
+@media(max-width:650px){.reviewed-province .guide-feature-grid,.reviewed-province .guide-example-grid{grid-template-columns:1fr}.reviewed-province .guide-feature-grid>div,.reviewed-province .guide-example-grid>a{padding:21px}}
