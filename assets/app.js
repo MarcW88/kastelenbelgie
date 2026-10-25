@@ -1,3 +1,5 @@
+// Global navigation: provinces always means the full regional directory, not Flanders only.
+document.querySelectorAll('[data-nav] a').forEach(a=>{if(a.textContent.trim()==='Provincies')a.setAttribute('href','/kastelen/');});
 const menu=document.querySelector('[data-menu]'),nav=document.querySelector('[data-nav]');menu?.addEventListener('click',()=>{const o=nav.classList.toggle('open');menu.setAttribute('aria-expanded',o)});
 const surprise=['kasteel/gravensteen/','kasteel/kasteel-van-veves/','kasteel/burcht-reinhardstein/','kasteel/kasteel-van-beloeil/','kasteel/kasteel-van-modave/'];document.querySelectorAll('[data-surprise]').forEach(b=>b.addEventListener('click',()=>location.href=surprise[Math.floor(Math.random()*surprise.length)]));
 const castleLocations=[
