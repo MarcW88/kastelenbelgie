@@ -1,32 +1,34 @@
-# kasteel-wijnendale — post-write gap check & PUBLISH_REVIEW
+# Wijnendale: post-write gap check and PUBLISH_REVIEW
 workflow_version: museum-v1
-mode: NEW_PAGE
-checked_at: 2026-10-22
+mode: AUDIT -> DEEP_REWRITE -> PUBLISH_REVIEW
+checked_at: 2026-10-25
 
-| Workflow step | Status | Evidence / blocker |
+| Requirement | Coverage | Evidence |
 |---|---|---|
-| Route ownership & intent | COVERED | One specific estate /kasteel/kasteel-wijnendale/; province selection not duplicated |
-| Primary operator source | COVERED | Official outgoing link in content |
-| Historical facts and scope | PARTIAL | Official operator heritage material; not every claim independently confirmed |
-| Visitor decision (inside vs park) | COVERED | Direct explanation in content |
-| Competitive SERP research | PARTIAL | Search conducted, ranking/top-ten/keyword exports absent |
-| Brief | COVERED | content/briefs/kasteel/kasteel-wijnendale.md |
-| Structured SERP matrix | PARTIAL | content/research/kasteel/kasteel-wijnendale/serp-coverage.md |
-| Facts, entity and freshness | PARTIAL | Official primary sources; claims not all individually logged |
-| GEO / citation worthiness | PARTIAL | Concrete place/event/context with official links |
-| Humanizer / general-writing / anti-ai-slop | PARTIAL | Distinct text reviewed for clone risk; full canonical specialist passes not attested |
-| Internal linking | COVERED | Parent province and official operator |
-| SEO technical/build | PASS (build) | GitHub Pages build/deploy run 39828024102 completed successfully |
-| Desktop/mobile Playwright | PASS (technical) | 2026-10-22 run 39828024075: HTTP 200 at 1440/390, no horizontal overflow or console errors; screenshots inspected, layout remains repetitive |
-| Editorial QA / PUBLISH_REVIEW | FAIL | Research and specialist gates incomplete, and structural clone risk HIGH across eight same-layout pages |
+| Current visit decision | COVERED | Closed museum/private estate in lead; separate group and forest paths |
+| Building phases and original information | COVERED | Probable medieval origins,1833 purchase,Laureys1877/78 gate; present silhouette interpreted |
+| Specific historical significance | COVERED |25May1940 meeting separated from28May capitulation and later Royal Question |
+| Practical price and booking | COVERED | Published15€/40-person minimum;600€ calculation clearly distinguished from quote |
+| Past events versus regular access | COVERED |2026 exceptional dates treated as past, no evergreen opening calendar |
+| Forest scope and route choices | COVERED | Public paths/reserve/private castle separated;2.6/3.2km official routes |
+| Mobility, duration, availability | PARTIAL intentionally | Unpublished details explicitly require organizer confirmation |
+| Authentic image | COVERED | Local Commons derivative, author/date/licence and displayed crop |
+| Natural links | COVERED | Beauvoorde individual house route, Tillegem park option, province selection |
+| Metadata and source chain | COVERED | Route manifest, canonical/entity/breadcrumb schema, research/brief/fact-check |
 
-Decision: FAIL — KEEP_NOINDEX. These are publication drafts, NOT certified complete pages. Never remove noindex without separate human validation and instruction.
+## Separate editorial passes applied
+- content-and-copy: rebuilt around the real visitor decision and Wijnendale-specific building history,1940 meeting and access boundaries. Ooidonk supplies editorial hierarchy, integrated photo, main/aside columns and anchored navigation; its subject matter is not transplanted.
+- fact-check: each written claim audited separately in fact-check.md; current tourism access takes precedence over historical museum descriptions. Unverified Napoleon destruction, room route, universal accessibility and opening schedule omitted.
+- seo-aeo-geo: explicit castle alias/location, direct answer, source-attributed atomic facts and coherent entity/breadcrumb schema. No invented search volumes, analytics, reviews or ticket Offers.
+- internal-linking-audit: each contextual body destination has a distinct purpose; no artificial castle list or duplicated body destination. Repeated official booking link remains functional in the practical module and aside.
+- humanizer: reviewed cadence, genre, global structure and wording; removed the abstract “Deze scheiding voorkomt een mislukte combinatie” and replaced it with direct walking/booking instructions. No invented sensory account or visit experience.
+- general-writing: reviewed headings, lead, caption, navigation and every paragraph; shortened the closing province sentence, kept concrete names and dates, explained the minimum-price calculation without treating it as a current quote.
+- anti-ai-slop: no filler FAQ, inflated praise or generic castle paragraphs; practical modules answer actual access questions. Repetition of closed/private status is limited to lead and decision/navigation context. No HIGH issue retained.
+- editorial-qa: Dutch clarity, intent, sources, information gain, practical uncertainty, HTML semantics, metadata and exclusive route scope reviewed. Open organizer questions remain visible.
 
-## Humanizer + anti-ai-slop revision — 2026-10-22
-- Source edit: content/kasteel/kasteel-wijnendale/body.html.
-- Current approximate body words including navigation: 508.
-- Humanizer: removed duplicated conclusions and softened mechanical repeated visitor contrasts; preserved named people, dates, locations, access constraints and official links.
-- Anti-ai-slop: removed overlapping H2 narrative and repeated explanation blocks; retained these concrete page-specific headings: Van de graven van Vlaanderen tot de twintigste eeuw | Met de kasteelheer op rondleiding | Tarieven en praktische afweging | Wat de beperking voor individuele bezoekers echt betekent | Groepsvoorwaarden en adres voor de organisatie | Controleer de actuele bezoekvoorwaarden.
-- Separate automated heuristic findings: GitHub Actions West Flanders editorial gates / style-findings artifact (machine check, not proof of human authorship or complete specialist signoff).
-- Factuality: volatile opening and price claims should be cross-checked at the official URLs before indexation.
-- Verdict: revision performed; comprehensive SERP gate and final human PUBLISH_REVIEW status unchanged.
+## Technical and visual review
+Build/check, west-Flanders structural checks and pinned agent integrity checks pass. Actual Chromium153 through Playwright rendered1440×1000,768×1024,390×844 and360×800 with real fonts and decoded1280×959 local photo. Native repository visual runner also executed desktop/mobile. Its generic product selectors are supplemented by castle-specific checks.
+
+Screenshots inspected: desktop top/full, mobile top and narrow-mobile history landing. Balanced photo/introduction and main/aside layout; mobile stacking and typography readable, no clipping. No horizontal overflow, JS/console errors, failed requests, broken fragments, duplicate IDs or nested links across four widths. Real TOC click stays on route and lands110px below header; keyboard focus visible; mobile menu toggles. Route-qualified fragments account for base href=/.
+
+PUBLISH_REVIEW: PASS — READY_FOR_HUMAN_VALIDATION. Noindex retained. Unpublished future availability, duration and mobility route remain explicitly unresolved. GitHub Actions and deployed-page verification are separate release checks reported after publication.

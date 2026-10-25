@@ -1,0 +1,23 @@
+/* Wijnendale only. Shared castle/Ooidonk styles remain unchanged. */
+.wijnendale-editorial>.wijnendale-lead-photo{position:relative;min-height:380px;margin:0;overflow:hidden}
+.wijnendale-editorial>.wijnendale-lead-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:48% center;aspect-ratio:auto;border-radius:0}
+.wijnendale-editorial>.wijnendale-lead-photo figcaption{position:absolute;inset:auto 0 0;margin:0;padding:12px 16px;background:rgba(24,34,27,.9);color:#fff;font-size:.72rem;line-height:1.6}
+.wijnendale-editorial>.wijnendale-lead-photo figcaption a{color:inherit;text-decoration:underline}
+.wijnendale-page .castle-editorial-main>.province-section{padding-top:30px;padding-bottom:18px;margin-bottom:24px}
+.wijnendale-page .castle-editorial-main h2{font-size:clamp(2rem,3vw,3rem);line-height:1.14}
+.wijnendale-page .castle-editorial-toc h2{font-size:1.85rem;line-height:1.15;margin:12px 0 15px}
+.wijnendale-page .castle-editorial-main section{scroll-margin-top:110px}
+.wijnendale-page .castle-visit-panel{border-block:1px solid var(--line)}
+.wijnendale-page .wijnendale-access-note{padding:18px 24px;background:var(--paper);border-left:3px solid var(--wine);margin-bottom:22px}
+.wijnendale-page .wijnendale-access-note p{margin:0;line-height:1.8}
+@media(max-width:700px){.wijnendale-editorial>.wijnendale-lead-photo{grid-row:1;min-height:330px}.wijnendale-page .castle-editorial-toc nav{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:18px}.wijnendale-page .castle-editorial-aside{gap:0}.wijnendale-page .castle-editorial-toc h2{font-size:1.6rem}.wijnendale-page .castle-editorial-main h2{font-size:2rem}.wijnendale-page .wijnendale-access-note{padding:18px}}
+@media(max-width:380px){.wijnendale-page .castle-editorial-toc nav{grid-template-columns:1fr}.wijnendale-editorial>.wijnendale-lead-photo{min-height:310px}}
+
+/* Stack before the photograph and reading column become too narrow on tablets. */
+@media(min-width:701px) and (max-width:900px){.wijnendale-page .castle-editorial-intro{grid-template-columns:1fr}.wijnendale-editorial>.wijnendale-lead-photo{grid-row:1;min-height:420px}.wijnendale-editorial>.castle-editorial-lead{grid-row:2}.wijnendale-page .castle-editorial-layout{display:flex;flex-direction:column}.wijnendale-page .castle-editorial-aside{position:static;order:-1;width:100%}.wijnendale-page .castle-editorial-toc nav{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}.wijnendale-page .castle-editorial-note{display:none}}
+
+.wijnendale-page .castle-editorial-aside{top:110px}
+@media(max-width:400px){body:has(.wijnendale-page) .header-row{gap:16px}body:has(.wijnendale-page) .brand{font-size:1.25rem;gap:8px;white-space:nowrap}body:has(.wijnendale-page) .brand img{width:34px;height:34px}}
+
+
+.wijnendale-page .wijnendale-price{padding:20px 24px;background:var(--paper);border-left:3px solid var(--green)}
