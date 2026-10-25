@@ -4260,5 +4260,83 @@
         }
       ]
     }
+  },
+  {
+    "route": "/soorten/paleizen/",
+    "source": "content/soorten/paleizen/body.html",
+    "title": "Paleizen in België: koninklijke en historische residenties | Kastelen België",
+    "description": "Ontdek Belgische paleizen: Koninklijk Paleis Brussel, Coudenberg, Paleis op de Meir, Luik en Laken. Historische functies, architectuur en bezoek.",
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://kastelenbelgie.be/soorten/paleizen/#webpagina",
+          "url": "https://kastelenbelgie.be/soorten/paleizen/",
+          "name": "Paleizen in België",
+          "inLanguage": "nl-BE"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Thema’s",
+              "item": "https://kastelenbelgie.be/soorten/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Paleizen",
+              "item": "https://kastelenbelgie.be/soorten/paleizen/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Selectie Belgische paleizen",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Koninklijk Paleis van Brussel",
+              "url": "https://kastelenbelgie.be/kasteel/koninklijk-paleis-van-brussel/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Paleis op de Coudenberg",
+              "url": "https://kastelenbelgie.be/kasteel/coudenbergpaleis/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Paleis op de Meir",
+              "url": "https://kastelenbelgie.be/kasteel/paleis-op-de-meir/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Paleis van de prins-bisschoppen",
+              "url": "https://www.visitezliege.be/fr/offre/palais-des-princes-eveques"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Kasteel van Laken",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-laken-en-koninklijke-serres/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
