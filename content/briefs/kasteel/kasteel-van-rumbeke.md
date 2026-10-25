@@ -1,14 +1,17 @@
-# Kasteel van Rumbeke — content brief
+# Kasteel van Rumbeke: group tour or Sterrebos walk
 workflow_version: museum-v1
-checked_at: 2026-10-22
-status: RESEARCH_BLOCKED / EDITORIAL_DRAFT_ALLOWED_NOT_APPROVED
-owner: MUSEUM
-intent: Kasteel van Rumbeke bezoeken in Rumbeke · Roeselare
-primary visitor decision: Kasteelinterieur alleen via aangevraagde groepsrondleiding. Interieur niet rolstoeltoegankelijk volgens toeristische dienst.
-angle: Waarom de renaissance hier centraal staat / Het Sterrebos als ontworpen omgeving / Wat is er mogelijk binnen? / De juiste verwachting vóór vertrek
-MUST: unique heritage, visit type, operator source, booking limits
-SHOULD: tangible points of interest, suitability, travel/access caveat, province link
-Sources: https://www.visitroeselare.be/nl/zien-en-doen/cultuur-en-erfgoed/monumenten-en-gebouwen/kasteel-van-rumbeke and https://www.west-vlaanderen.be/domeinen
-Freshness: history STABLE; opening/tickets VOLATILE; accessibility SEMI_STABLE.
-Data gaps: competitive top ten, keyword exports, full accessibility details.
-Anti-slop rule: preserve entity-specific structure; no templated FAQ and no generic claims of personal visits.
+checked_at: 2026-10-25
+status: BRIEF_READY
+owner: MUSEUM /kasteel/kasteel-van-rumbeke/
+
+Primary query: Kasteel van Rumbeke bezoeken. Supporting intents: individueel, groepsbezoek, prijs, rolstoel, renaissance, Kaasterkasteel, Sterrebos, adres. Decision: book a guided group visit before travelling for interiors, or choose an independent estate walk.
+
+Angle: the current Renaissance building and restored tower belong to different phases than the ninth-century legend; the designed park can be understood without entering rooms. Show these distinctions using concrete architecture/interior/landscape facts, without repeating the same inside/outside conclusion.
+
+MUST and evidence: content/research/kasteel/kasteel-van-rumbeke/serp-coverage.md. Preserve correct existing details, noindex and route. Explicitly disclose the two official price/duration formulas; do not claim a single confirmed price, invent explanations or calculate a misleading group quote. State max25 only as Visit Roeselare's condition. Interior access restriction does not establish wheelchair conditions throughout the park.
+
+Outline from evidence: editorial introduction/photo; Renaissance construction/1962 tower restoration; documented indoor details; designed Sterrebos and plan; practical published-offer comparison; access/address; contextual next choice. Shared Ooidonk layout, Rumbeke-specific narrative. No appended generic FAQ, repeated practical cards or artificial castle inventory.
+
+Voice: precise independent Belgian Dutch. Humanizer, general-writing and anti-ai-slop separate passes, preserving facts and uncertainty. Legend remains legend. No invented personal visit or exhaustive room availability. History STABLE; prices/hours/booking VOLATILE, checked25October2026; accessibility SEMI_STABLE. Rank/volume data unavailable, no invented SEO precision.
+
+Photo: verified existing Commons identity, Jonas Gheysen,2February2014,CC BY-SA3.0. Store a lawful derivative locally, date/crop credit visible. Route-only CSS and manifest metadata. Real browser screenshots at desktop/mobile plus tablet/narrow phone. Only Rumbeke files may be published; next castle requires human validation.

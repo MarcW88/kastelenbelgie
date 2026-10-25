@@ -529,9 +529,55 @@
   {
     "route": "/kasteel/kasteel-van-rumbeke/",
     "source": "content/kasteel/kasteel-van-rumbeke/body.html",
-    "title": "Kasteel van Rumbeke bezoeken",
-    "description": "Bezoek Kasteel van Rumbeke in West-Vlaanderen: eigen erfgoedverhaal, bezoekvoorwaarden en officiële bronnen.",
-    "stylesheet": "assets/castle-detail.css"
+    "title": "Kasteel van Rumbeke bezoeken: rondleiding en Sterrebos",
+    "description": "Plan je bezoek aan Kasteel van Rumbeke: groepsrondleidingen, verschillen in gepubliceerde tarieven, renaissancegeschiedenis en wandelen in het Sterrebos.",
+    "stylesheet": "assets/castle-detail.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TouristAttraction",
+          "@id": "https://kastelenbelgie.be/kasteel/kasteel-van-rumbeke/#castle",
+          "name": "Kasteel van Rumbeke",
+          "alternateName": "Kaasterkasteel",
+          "url": "https://kastelenbelgie.be/kasteel/kasteel-van-rumbeke/",
+          "sameAs": [
+            "https://www.kasteelvanrumbeke.be/",
+            "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/23328"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Moorseelsesteenweg 2",
+            "postalCode": "8800",
+            "addressLocality": "Roeselare",
+            "addressCountry": "BE"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "West-Vlaanderen",
+              "item": "https://kastelenbelgie.be/kastelen/west-vlaanderen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Rumbeke",
+              "item": "https://kastelenbelgie.be/kasteel/kasteel-van-rumbeke/"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "route": "/kasteel/kasteel-wijnendale/",
