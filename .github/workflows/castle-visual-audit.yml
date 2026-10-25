@@ -1,0 +1,59 @@
+name: Castle site build and visual audit
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Verify source agents
+        run: |
+          python3 scripts/verify_site_agents.py
+          python3 scripts/verify_museum_agents.py
+      - name: Build
+        run: npm run build
+      - name: Structural tests
+        run: npm run check
+      - name: Capture desktop and mobile pages
+        run: |
+          node .agents/skills/site-design-review/scripts/run-visual-review.mjs \
+            --route /kastelen/west-vlaanderen/ \
+            --route /kastelen/oost-vlaanderen/ \
+            --route /kastelen/vlaams-brabant/ \
+            --route /kastelen/antwerpen/ \
+            --route /kastelen/limburg/ \
+            --route /kastelen/waals-brabant/ \
+            --route /kastelen/henegouwen/ \
+            --route /kastelen/namen/ \
+            --route /kastelen/luik/ \
+            --route /kastelen/luxemburg/ \
+            --route /kastelen/brussel/ \
+            --route /kasteel/gravensteen/ \
+            --route /kasteel/kasteel-van-loppem/ \
+            --route /kasteel/kasteel-van-gaasbeek/ \
+            --route /kasteel/kasteel-van-beloeil/ \
+            --route /kasteel/kasteel-van-veves/ \
+            --route /kasteel/kasteel-van-modave/ \
+            --route /kasteel/kasteel-van-bouillon/ \
+            --route /kasteel/coudenbergpaleis/ \
+            --output .artifacts/design-review/global
+      - name: Upload visual evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: castle-audit-desktop-mobile
+          path: .artifacts/design-review/global
+          if-no-files-found: warn
