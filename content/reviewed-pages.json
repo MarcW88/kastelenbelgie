@@ -3856,5 +3856,90 @@
         }
       ]
     }
+  },
+  {
+    "route": "/soorten/middeleeuwse-kastelen/",
+    "source": "content/soorten/middeleeuwse-kastelen/body.html",
+    "title": "Middeleeuwse kastelen in België: 6 burchten ontdekken | Kastelen België",
+    "description": "Ontdek zes middeleeuwse kastelen in België: Gravensteen, Laarne, Beersel, Vêves, Bouillon en Reinhardstein. Leer de bouwvormen en verschillen kennen.",
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://kastelenbelgie.be/soorten/middeleeuwse-kastelen/#webpagina",
+          "url": "https://kastelenbelgie.be/soorten/middeleeuwse-kastelen/",
+          "name": "Middeleeuwse kastelen in België",
+          "inLanguage": "nl-BE",
+          "description": "Thematische selectie van middeleeuwse burchten en kastelen in België, met historische context."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Thema’s",
+              "item": "https://kastelenbelgie.be/soorten/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Middeleeuwse kastelen",
+              "item": "https://kastelenbelgie.be/soorten/middeleeuwse-kastelen/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Selectie middeleeuwse kastelen",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Gravensteen",
+              "url": "https://kastelenbelgie.be/kasteel/gravensteen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Kasteel van Laarne",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-laarne/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kasteel van Beersel",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-beersel/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Kasteel van Vêves",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-veves/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Burcht van Bouillon",
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-bouillon/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Burcht Reinhardstein",
+              "url": "https://kastelenbelgie.be/kasteel/burcht-reinhardstein/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
