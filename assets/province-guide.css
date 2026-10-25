@@ -69,3 +69,15 @@ body.reviewed-province .visit-card-photo figcaption a{text-decoration:underline;
 .reviewed-province .guide-example-grid strong{margin-top:auto;padding-top:10px;font-size:.8rem;color:var(--green);text-decoration:underline;text-underline-offset:3px}
 .reviewed-province .guide-example-grid>a:hover,.reviewed-province .guide-example-grid>a:focus-visible{border-color:var(--green);background:#eceee6}
 @media(max-width:650px){.reviewed-province .guide-feature-grid,.reviewed-province .guide-example-grid{grid-template-columns:1fr}.reviewed-province .guide-feature-grid>div,.reviewed-province .guide-example-grid>a{padding:21px}}
+
+/* Guide 03: history-first chronological modules, distinct from visit listings */
+.reviewed-province .guide-era-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:12px 0 28px}
+.reviewed-province .guide-era-grid>div{padding:23px 19px;background:var(--paper);border-top:3px solid var(--green);min-width:0}
+.reviewed-province .guide-era-grid h3,.reviewed-province .guide-era-examples h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,2.3vw,2.1rem);line-height:1.1;margin:12px 0}
+.reviewed-province .guide-era-grid p,.reviewed-province .guide-era-examples p{font-size:.86rem;line-height:1.7}
+.reviewed-province .guide-era-examples{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:16px 0 30px}
+.reviewed-province .guide-era-examples>a{display:flex;flex-direction:column;min-width:0;padding:24px;background:var(--paper);border:1px solid var(--line);text-decoration:none}
+.reviewed-province .guide-era-examples strong{margin-top:auto;padding-top:14px;font-size:.8rem;color:var(--green);text-decoration:underline}
+.reviewed-province .guide-era-examples>a:hover,.reviewed-province .guide-era-examples>a:focus-visible{border-color:var(--green)}
+@media(max-width:950px){.reviewed-province .guide-era-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.reviewed-province .guide-era-grid,.reviewed-province .guide-era-examples{grid-template-columns:1fr}}
