@@ -1,0 +1,20 @@
+{
+  "id": "map-guide-layers",
+  "page": "content/gidsen/kastelen-in-belgie-kaart/body.html",
+  "slot": "body",
+  "required": true,
+  "reason": "Conceptual imagery clarifying map interpretation, not an invented factual heritage map",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "placement": "replace",
+  "marker": "<!-- EDITORIAL_IMAGE:map-guide-layers -->",
+  "output_path": "assets/generated/map-guide-layers.webp",
+  "prompt": "Sophisticated conceptual heritage cartography illustration viewed overhead, multiple translucent map sheets layered on a large architectural desk, one with a stylized old castle estate footprint and moat, another with abstract terrain contour lines, another with a historical road network, warm paper ivory charcoal and sage green, refined museum cartographic editorial style, no names or numbers, no claims of true geography, no text, wide horizontal",
+  "alt": "Illustratie van verschillende kaartlagen voor de studie van kasteeldomeinen",
+  "caption": "Conceptuele voorstelling van kaartlagen; niet bedoeld als officiële erfgoedkaart.",
+  "width": 1536,
+  "height": 864,
+  "prompt_upsampling": true,
+  "seed": null
+}
