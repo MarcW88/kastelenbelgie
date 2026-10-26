@@ -4633,7 +4633,7 @@
     "route": "/routes/kastelenroute-oost-vlaanderen/",
     "source": "content/routes/kastelenroute-oost-vlaanderen/body.html",
     "title": "Kastelenroute Oost-Vlaanderen: vier kastelen ontdekken | Kastelen België",
-    "description": "Ontdek een historische kastelenroute door Oost-Vlaanderen langs Gravensteen, Laarne, Ooidonk en Poeke. Stel zelf je uitstap samen.",
+    "description": "Ontdek de kastelenroute Oost-Vlaanderen langs Gravensteen, Laarne, Ooidonk en Poeke. Bekijk bezoeken, gidsen, tuinen en praktische tips.",
     "stylesheet": "assets/province-guide.css",
     "schema": {
       "@context": "https://schema.org",
