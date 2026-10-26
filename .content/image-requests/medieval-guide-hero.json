@@ -1,0 +1,21 @@
+{
+  "id": "medieval-guide-hero",
+  "page": "content/gidsen/middeleeuws-kasteel/body.html",
+  "slot": "hero",
+  "required": true,
+  "reason": "Approved single-guide design refit needs explanatory illustrations",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "placement": "replace",
+  "marker": "<!-- EDITORIAL_IMAGE:medieval-guide-hero -->",
+  "output_path": "assets/generated/medieval-guide-hero.webp",
+  "prompt": "Fictional medieval Belgian Low Countries fortified stone castle viewed from across moat in a broad landscape, keep, gatehouse, curtain wall and riverplain, premium natural editorial architectural illustration, historically plausible, realistic atmospheric light, muted earth tones, landscape format, no text or legends, not a depiction of any actual historical monument",
+  "alt": "Illustratie van een denkbeeldig middeleeuws kasteel met ringmuur, poort en donjon",
+  "caption": "Sfeerillustratie van een denkbeeldige middeleeuwse versterking, geen historische reconstructie.",
+  "width": 1536,
+  "height": 864,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
