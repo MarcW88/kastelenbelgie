@@ -1,0 +1,20 @@
+{
+  "id": "map-guide-hero",
+  "page": "content/gidsen/kastelen-in-belgie-kaart/body.html",
+  "slot": "hero",
+  "required": true,
+  "reason": "Conceptual imagery clarifying map interpretation, not an invented factual heritage map",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "placement": "replace",
+  "marker": "<!-- EDITORIAL_IMAGE:map-guide-hero -->",
+  "output_path": "assets/generated/map-guide-hero.webp",
+  "prompt": "Premium heritage atlas editorial illustration, a folded vintage style geographic map of Belgium on a natural oak desk with subtle fine cartographic lines, antique brass compass and a small neutral stone miniature castle model, soft ivory paper and muted forest green palette, museum editorial design, highly realistic still life photograph, no readable labels, no actual map claims, no boundaries requiring geographic accuracy, no lettering, landscape 16:9",
+  "alt": "Sfeerillustratie van een kastelenatlas met kaart, kompas en miniatuurkasteel",
+  "caption": "Sfeerbeeld ter illustratie van kaartonderzoek; geen geografisch accurate kaart.",
+  "width": 1536,
+  "height": 864,
+  "prompt_upsampling": true,
+  "seed": null
+}
