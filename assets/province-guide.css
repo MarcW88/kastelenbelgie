@@ -103,3 +103,17 @@ body.reviewed-province .visit-card-photo figcaption a{text-decoration:underline;
 @media(max-width:760px){.guide-editorial .guide-comparison{grid-template-columns:1fr}.guide-editorial .province-section-head{display:block}.guide-editorial .province-section{padding-top:44px}.guide-editorial .planning-copy{font-size:1rem}.guide-editorial .guide-feature-image,.guide-editorial .guide-inline-art{margin-inline:0}.guide-editorial .guide-comparison>div{padding:18px}}
 
 /* Guide artwork synced through BFL editorial image workflow (2026-10-26). */
+
+/* Medieval guide: coherent long-form image / component rhythm */
+.guide-medieval .guide-feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:1080px;margin:24px auto 30px}
+.guide-medieval .guide-feature-grid>div{min-width:0;padding:27px 28px;border:1px solid var(--line,#dde2d8);border-radius:12px;background:var(--paper,#f7f8f5)}
+.guide-medieval .guide-feature-grid h3{margin:8px 0 10px;font-size:1.5rem;line-height:1.2}
+.guide-medieval .guide-feature-grid p{margin:0;line-height:1.75}
+.guide-medieval .guide-medieval-image{max-width:1080px;margin:24px auto 32px}
+.guide-medieval .guide-medieval-image .editorial-media{margin:0!important}
+.guide-medieval .guide-medieval-image img{max-height:510px}
+.guide-medieval .guide-example-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:22px auto;max-width:1080px}
+.guide-medieval .guide-example-grid>a{display:block;min-width:0;border:1px solid var(--line,#dde2d8);border-radius:12px;padding:24px 26px;background:var(--paper,#f7f8f5);text-decoration:none}
+.guide-medieval .guide-example-grid h3{font-size:1.4rem;margin:12px 0}
+.guide-medieval .guide-example-grid p{line-height:1.7}
+@media(max-width:760px){.guide-medieval .guide-feature-grid,.guide-medieval .guide-example-grid{grid-template-columns:1fr}.guide-medieval .guide-feature-grid>div,.guide-medieval .guide-example-grid>a{padding:20px}}
