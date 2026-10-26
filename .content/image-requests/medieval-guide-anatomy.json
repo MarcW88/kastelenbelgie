@@ -6,7 +6,7 @@
   "reason": "Approved single-guide design refit needs explanatory illustrations",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "placement": "replace",
   "marker": "<!-- EDITORIAL_IMAGE:medieval-guide-anatomy -->",
   "output_path": "assets/generated/medieval-guide-anatomy.webp",
@@ -17,5 +17,8 @@
   "height": 864,
   "prompt_upsampling": true,
   "seed": null,
-  "generated_at": null
+  "generated_at": "2026-10-26T09:04:05.122374+00:00",
+  "bfl_request_id": "be04b287-6b74-4fe0-9c5d-e07fcc475778",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 4.5
 }

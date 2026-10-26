@@ -6,7 +6,7 @@
   "reason": "Approved single-guide design refit needs explanatory illustrations",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "placement": "replace",
   "marker": "<!-- EDITORIAL_IMAGE:medieval-guide-life -->",
   "output_path": "assets/generated/medieval-guide-life.webp",
@@ -17,5 +17,8 @@
   "height": 864,
   "prompt_upsampling": true,
   "seed": null,
-  "generated_at": null
+  "generated_at": "2026-10-26T09:04:29.444547+00:00",
+  "bfl_request_id": "27560d03-670d-4b87-a9ba-5f7dfd79272b",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 4.5
 }
