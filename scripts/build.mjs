@@ -96,10 +96,7 @@ function fingerprintAssets(dir){
       const buildVersion=createHash('sha256').update(html).digest('hex').slice(0,12);
       fs.writeFileSync(path.join(root,'assets/site-version.json'),JSON.stringify({version:buildVersion}));
       html=html.replace('</head>','<meta name="build-version" content="'+buildVersion+'"></head>');
-      // If the browser or Pages CDN served a stale HTML shell, reload via a unique URL.
-      // The version probe uses a fresh query string, so caches cannot reuse old JSON.
-      const versionProbe='<script>(async()=>{try{const r=await fetch("/assets/site-version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const d=await r.json();const v=document.querySelector("meta[name=build-version]")?.content;if(v&&d.version&&v!==d.version){const u=new URL(location.href);if(u.searchParams.get("site")!==d.version){u.searchParams.set("site",d.version);location.replace(u.href)}}}catch(e){}})();</script>';
-      html=html.replace('</body>',versionProbe+'</body>');
+
     }
     fs.writeFileSync(file,html);
   }
