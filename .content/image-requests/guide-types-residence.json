@@ -1,0 +1,21 @@
+{
+  "id": "guide-types-residence",
+  "page": "content/gidsen/kasteel-burcht-paleis-verschil/body.html",
+  "slot": "residence",
+  "required": true,
+  "reason": "Visual explanation supporting guide layout and historical distinctions",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "placement": "replace",
+  "marker": "<!-- EDITORIAL_IMAGE:guide-types-residence -->",
+  "output_path": "assets/generated/guide-types-residence.webp",
+  "prompt": "Elegant editorial architectural image showing a fictional neo-Gothic Belgian chateau and distant classical palace facades as historical residences, formal garden path, broad sash windows, stone terraces and landscaped green estate, sophisticated overcast sunlight, realistic photography aesthetic, horizontal wide format, no people, no writing, no graphics, no specific real building, emphasis on differences between prestige residence and fortress.",
+  "alt": "Illustratie van een adellijke residentie met grote vensters, tuin en representatieve architectuur",
+  "caption": "Sfeerillustratie van een residentiële kasteelfunctie; geen afbeelding van een bestaande erfgoedsite.",
+  "width": 1344,
+  "height": 768,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
