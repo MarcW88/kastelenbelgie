@@ -4566,5 +4566,196 @@
         }
       ]
     }
+  },
+  {
+    "route": "/routes/kastelenroute-ardennen/",
+    "source": "content/routes/kastelenroute-ardennen/body.html",
+    "title": "Kastelenroute Ardennen: Bouillon, La Roche en Reinhardstein | Kastelen België",
+    "description": "Ontdek een kasteelroute door de Ardennen: Bouillon, La Roche-en-Ardenne en Reinhardstein. Historische haltes en tips om zelf je tocht te plannen.",
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "url": "https://kastelenbelgie.be/routes/kastelenroute-ardennen/",
+          "name": "Kastelenroute Ardennen: Bouillon, La Roche en Reinhardstein",
+          "inLanguage": "nl-BE"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Routes",
+              "item": "https://kastelenbelgie.be/routes/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kastelenroute Ardennen: Bouillon, La Roche en Reinhardstein",
+              "item": "https://kastelenbelgie.be/routes/kastelenroute-ardennen/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Kasteelhaltes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-bouillon/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "url": "https://kastelenbelgie.be/kasteel/feodaal-kasteel-la-roche-en-ardenne/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "url": "https://kastelenbelgie.be/kasteel/burcht-reinhardstein/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "route": "/routes/kastelenroute-oost-vlaanderen/",
+    "source": "content/routes/kastelenroute-oost-vlaanderen/body.html",
+    "title": "Kastelenroute Oost-Vlaanderen: vier kastelen ontdekken | Kastelen België",
+    "description": "Ontdek een historische kastelenroute door Oost-Vlaanderen langs Gravensteen, Laarne, Ooidonk en Poeke. Stel zelf je uitstap samen.",
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "url": "https://kastelenbelgie.be/routes/kastelenroute-oost-vlaanderen/",
+          "name": "Kastelenroute Oost-Vlaanderen: vier kastelen ontdekken",
+          "inLanguage": "nl-BE"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Routes",
+              "item": "https://kastelenbelgie.be/routes/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kastelenroute Oost-Vlaanderen: vier kastelen ontdekken",
+              "item": "https://kastelenbelgie.be/routes/kastelenroute-oost-vlaanderen/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Kasteelhaltes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "url": "https://kastelenbelgie.be/kasteel/gravensteen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-laarne/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-ooidonk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-poeke/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "route": "/routes/kastelenroute-rond-gent/",
+    "source": "content/routes/kastelenroute-rond-gent/body.html",
+    "title": "Kastelenroute rond Gent: Gravensteen, Laarne en Ooidonk | Kastelen België",
+    "description": "Combineer drie bijzondere kastelen rond Gent. Ontdek Gravensteen, Laarne en Ooidonk met historische uitleg en praktische routetips.",
+    "stylesheet": "assets/province-guide.css",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "url": "https://kastelenbelgie.be/routes/kastelenroute-rond-gent/",
+          "name": "Kastelenroute rond Gent: Gravensteen, Laarne en Ooidonk",
+          "inLanguage": "nl-BE"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://kastelenbelgie.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Routes",
+              "item": "https://kastelenbelgie.be/routes/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kastelenroute rond Gent: Gravensteen, Laarne en Ooidonk",
+              "item": "https://kastelenbelgie.be/routes/kastelenroute-rond-gent/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Kasteelhaltes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "url": "https://kastelenbelgie.be/kasteel/gravensteen/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-van-laarne/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "url": "https://kastelenbelgie.be/kasteel/kasteel-ooidonk/"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
