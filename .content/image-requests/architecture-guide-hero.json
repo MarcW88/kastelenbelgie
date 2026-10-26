@@ -1,0 +1,20 @@
+{
+  "id": "architecture-guide-hero",
+  "page": "content/gidsen/architectuur-kastelen/body.html",
+  "slot": "hero",
+  "required": true,
+  "reason": "Illustration pédagogique non documentaire pour rendre lisibles les sections du guide architectural",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "placement": "replace",
+  "marker": "<!-- EDITORIAL_IMAGE:architecture-guide-hero -->",
+  "output_path": "assets/generated/architecture-guide-hero.webp",
+  "prompt": "Wide editorial architectural study of a fictional Belgian castle complex revealing different historical design layers, stone defensive tower, Renaissance residential wing, restrained nineteenth-century neo-Gothic portion, natural muted Belgian countryside, refined heritage magazine photography aesthetic, realistic weathered stone and brick, atmospheric soft morning light, coherent ivory forest green and warm stone palette, no real identifiable heritage site, historically plausible not a reconstruction, no text, horizontal cinematic composition",
+  "alt": "Sfeerillustratie van verschillende bouwstijlen in een fictief Belgisch kasteel",
+  "caption": "Sfeerillustratie van een fictief kasteel; geen historische reconstructie.",
+  "width": 1536,
+  "height": 864,
+  "prompt_upsampling": true,
+  "seed": null
+}
