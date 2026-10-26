@@ -1,0 +1,20 @@
+{
+  "id": "architecture-guide-defence",
+  "page": "content/gidsen/architectuur-kastelen/body.html",
+  "slot": "body",
+  "required": true,
+  "reason": "Illustration pédagogique non documentaire pour rendre lisibles les sections du guide architectural",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "placement": "replace",
+  "marker": "<!-- EDITORIAL_IMAGE:architecture-guide-defence -->",
+  "output_path": "assets/generated/architecture-guide-defence.webp",
+  "prompt": "Historically inspired educational landscape illustration showing the architecture of a fictional medieval Low Countries water castle, moat, gatehouse, stone curtain wall, defensive towers and inner courtyard, composed as sophisticated editorial heritage photography, aerial three quarter view, believable architecture, weathered limestone and brick, calm diffuse daylight, no identifiable existing monument, no map symbols or text, no fantasy",
+  "alt": "Illustratie van een omgrachte middeleeuwse waterburcht met poortgebouw, torens en binnenhof",
+  "caption": "Conceptuele illustratie van verdedigingsarchitectuur; geen bestaande burcht.",
+  "width": 1536,
+  "height": 864,
+  "prompt_upsampling": true,
+  "seed": null
+}
