@@ -1,5 +1,5 @@
 import { applyReviewedPages } from './apply-reviewed-pages.mjs';
-import fs from'node:fs';import path from'node:path';const root=path.resolve(import.meta.dirname,'..');
+import fs from'node:fs';import path from'node:path';import {createHash} from 'node:crypto';const root=path.resolve(import.meta.dirname,'..');
 const pages={kastelen:['vlaanderen','wallonie','brussel','west-vlaanderen','oost-vlaanderen','antwerpen','vlaams-brabant','limburg','waals-brabant','henegouwen','namen','luik','luxemburg'],bezoeken:['bezoekbare-kastelen','kastelen-met-kinderen','gratis-kastelen','kastelen-met-tuin','kastelen-met-park','kastelen-met-rondleiding','kastelen-overnachten'],soorten:['middeleeuwse-kastelen','burchten','waterkastelen','kasteelruines','kasteeldomeinen','paleizen'],inspiratie:['mooiste-kastelen-belgie','mooiste-kastelen-vlaanderen','mooiste-kastelen-wallonie','kastelen-ardennen','kastelen-weekend'],routes:['kastelenroute-ardennen','kastelenroute-oost-vlaanderen','kastelenroute-rond-gent'],gidsen:['geschiedenis-kastelen-belgie','kasteel-burcht-paleis-verschil','middeleeuws-kasteel','architectuur-kastelen','kastelen-in-belgie-kaart'],kasteel:['gravensteen','kasteel-van-veves','kasteel-van-freyr','kasteel-van-lavaux-sainte-anne','burcht-reinhardstein','kasteel-van-beloeil','kasteel-van-seneffe','kasteel-van-chimay','kasteel-van-modave','kasteel-van-jehay','kasteel-van-bouillon','feodaal-kasteel-la-roche-en-ardenne','coudenbergpaleis','koninklijk-paleis-van-brussel','karreveldkasteel','kasteel-malou','kasteel-de-rivieren','kasteel-van-laken-en-koninklijke-serres','kasteel-van-laarne','kasteel-ooidonk','kasteel-van-poeke','kasteel-wissekerke','kasteel-cortewalle','domein-breivelde','park-van-beervelde','kasteel-van-loppem','kasteel-beauvoorde','kasteel-van-rumbeke','kasteel-wijnendale','kasteel-tillegem','kasteel-tudor','kasteel-beisbroek','kasteel-de-blankaart','kasteel-van-gaasbeek','kasteel-van-beersel','kasteel-groenenberg','kasteel-coloma','kasteel-van-bouchout','arenbergkasteel','kasteel-van-horst','kasteel-ter-rijst','kasteel-van-groot-bijgaarden','kasteel-marnix-de-sainte-aldegonde','kasteel-dursel','kasteel-de-renesse','paleis-op-de-meir','kasteel-rivierenhof','sterckshof','landcommanderij-alden-biesen','kasteel-van-heers','kasteel-van-hex','kasteel-van-ordingen','kasteelbrouwerij-ter-dolen','domein-bokrijk','kasteel-van-rixensart','kasteel-van-terhulpen','kasteel-van-bois-seigneur-isaac','kasteel-van-corroy-le-chateau','kasteel-van-montaigle','kasteel-van-spontin','kasteel-van-fallais','kasteel-van-mirwart','kasteel-van-attre','kasteel-van-havre','kasteel-van-fagnolle','kasteel-daspremont-lynden','kasteel-van-leut','wijnkasteel-genoels-elderen','kasteel-van-walzin','kasteel-van-annevoie','kasteel-van-sombreffe','kasteel-van-boussu','kasteel-van-waroux']};
 const labels={kastelen:'Kastelen per regio',bezoeken:'Bezoeken',soorten:'Thema’s',inspiratie:'Inspiratie',routes:'Routes',gidsen:'Verhalen & gidsen',kasteel:'Kasteelfiches'};
 const special={wallonie:'Wallonië',brussel:'Brussel','oost-vlaanderen':'Oost-Vlaanderen','west-vlaanderen':'West-Vlaanderen','vlaams-brabant':'Vlaams-Brabant','waals-brabant':'Waals-Brabant',luik:'Luik',luxemburg:'Luxemburg','kasteel-van-veves':'Kasteel van Vêves','burcht-reinhardstein':'Burcht Reinhardstein','kasteel-van-beloeil':'Kasteel van Beloeil','kasteel-van-modave':'Kasteel van Modave',gravensteen:'Gravensteen'};
@@ -61,6 +61,37 @@ fs.writeFileSync(path.join(root,'assets/search-index.json'),JSON.stringify(searc
 const searchPage = '<section class="page-header"><div class="container"><div class="crumbs"><a href="/">Home</a> · Zoeken</div><span class="eyebrow">Zoek in de kastelenatlas</span><h1>Kastelen zoeken</h1><p>Zoek op naam, provincie, regio of onderwerp. Verfijn de resultaten met een categorie.</p><form class="searchbox search-page-form" action="/zoeken/" method="get"><input type="search" name="q" aria-label="Zoekterm" placeholder="Bijvoorbeeld Gravensteen, Luik of waterkastelen…" required><select name="type" aria-label="Categorie"><option value="">Alle onderwerpen</option><option value="kasteel">Kastelen</option><option value="kastelen">Provincies en regio’s</option><option value="soorten">Thema’s</option><option value="bezoeken">Bezoeken</option><option value="gidsen">Gidsen</option></select><button type="submit">Zoeken</button></form></div></section><section class="section"><div class="container"><p id="search-status" role="status" aria-live="polite">Voer een zoekopdracht in om resultaten te zien.</p><div class="search-results" id="search-results"></div></div></section><script defer src="/assets/search.js"></script>';
 fs.mkdirSync(path.join(root,'zoeken'),{recursive:true});
 fs.writeFileSync(path.join(root,'zoeken/index.html'),shell('Zoeken',searchPage));
+
+/* Fingerprinted URLs prevent stale CSS, scripts and editorial images after new deployments.
+   GitHub Pages has a browser/CDN cache TTL; unchanged asset URLs otherwise serve old files. */
+const assetFingerprint = new Map();
+const getAssetFingerprint = pathname => {
+  if(!assetFingerprint.has(pathname)){
+    const file=path.join(root,pathname.slice(1));
+    if(!fs.existsSync(file)) return null;
+    assetFingerprint.set(pathname,createHash('sha256').update(fs.readFileSync(file)).digest('hex').slice(0,12));
+  }
+  return assetFingerprint.get(pathname);
+};
+function fingerprintAssets(dir){
+  for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
+    if(entry.isDirectory()){if(!['.git','.agents','.artifacts','node_modules','content','.github','docs'].includes(entry.name))fingerprintAssets(path.join(dir,entry.name));continue;}
+    if(entry.name!=='index.html')continue;
+    const file=path.join(dir,entry.name);
+    let html=fs.readFileSync(file,'utf8');
+    html=html.replace(/((?:src|href)=")(\/?assets\/[^"?#]+)(?:\?v=[a-f0-9]+)?(")/g,(full,pre,asset,end)=>{
+      const pathname='/'+asset.replace(/^\//,'');
+      const version=getAssetFingerprint(pathname);
+      return version?pre+pathname+'?v='+version+end:full;
+    });
+    if(dir===root){
+      html=html.replace(/(data-generated-image="home-feature-heritage"[\s\S]*?<img [^>]*?)loading="lazy"/,'$1loading="eager" fetchpriority="high"');
+      html=html.replace('</head>','<meta name="build-version" content="'+createHash('sha256').update(html).digest('hex').slice(0,12)+'"></head>');
+    }
+    fs.writeFileSync(file,html);
+  }
+}
+fingerprintAssets(root);
 
 /* Sitewide crawlability: enforce one self-canonical for every generated HTML route. */
 const siteHost = fs.readFileSync(path.join(root, 'CNAME'), 'utf8').trim();
