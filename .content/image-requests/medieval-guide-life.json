@@ -1,0 +1,21 @@
+{
+  "id": "medieval-guide-life",
+  "page": "content/gidsen/middeleeuws-kasteel/body.html",
+  "slot": "life",
+  "required": true,
+  "reason": "Approved single-guide design refit needs explanatory illustrations",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "placement": "replace",
+  "marker": "<!-- EDITORIAL_IMAGE:medieval-guide-life -->",
+  "output_path": "assets/generated/medieval-guide-life.webp",
+  "prompt": "Historically plausible daily-life activity in a medieval castle courtyard in the Low Countries: small figures tending horses, carrying food and tools, timber workshops, stone walls and gatehouse, documentary realism, atmospheric late daylight, premium editorial style, wide composition, no lettering, no logos, fictional architecture, not a historical reconstruction",
+  "alt": "Illustratie van werkzaamheden op de binnenplaats van een middeleeuws kasteel",
+  "caption": "Sfeerillustratie van dagelijks werk en bevoorrading, niet van een gedocumenteerde historische scène.",
+  "width": 1536,
+  "height": 864,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
