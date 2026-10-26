@@ -117,3 +117,16 @@ body.reviewed-province .visit-card-photo figcaption a{text-decoration:underline;
 .guide-medieval .guide-example-grid h3{font-size:1.4rem;margin:12px 0}
 .guide-medieval .guide-example-grid p{line-height:1.7}
 @media(max-width:760px){.guide-medieval .guide-feature-grid,.guide-medieval .guide-example-grid{grid-template-columns:1fr}.guide-medieval .guide-feature-grid>div,.guide-medieval .guide-example-grid>a{padding:20px}}
+
+/* History long-form reading rhythm, scoped to one reviewed guide */
+.guide-history .guide-era-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:20px 0 38px}
+.guide-history .guide-era-grid>div{min-width:0;display:flex;flex-direction:column;padding:24px 20px;border-top:4px solid var(--green);border-radius:8px;background:var(--paper,#f5f6f1);border-inline:1px solid var(--line,#dde3d9);border-bottom:1px solid var(--line,#dde3d9)}
+.guide-history .guide-era-grid h3{font-size:1.35rem;line-height:1.25;margin:10px 0}
+.guide-history .guide-era-grid p{font-size:.92rem;line-height:1.68;margin:0}
+.guide-history .province-section-head{align-items:start}
+.guide-history .planning-copy{max-width:850px}
+.guide-history .guide-inline-art{max-width:1060px;margin:0 auto 28px}
+.guide-history .guide-inline-art img{max-height:470px}
+.guide-history .planning-copy h3{scroll-margin-top:110px}
+@media(max-width:980px){.guide-history .guide-era-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.guide-history .guide-era-grid{grid-template-columns:1fr;gap:10px}.guide-history .guide-era-grid>div{padding:18px}.guide-history .guide-inline-art{margin-bottom:18px}}
