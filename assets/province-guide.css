@@ -130,3 +130,5 @@ body.reviewed-province .visit-card-photo figcaption a{text-decoration:underline;
 .guide-history .planning-copy h3{scroll-margin-top:110px}
 @media(max-width:980px){.guide-history .guide-era-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.guide-history .guide-era-grid{grid-template-columns:1fr;gap:10px}.guide-history .guide-era-grid>div{padding:18px}.guide-history .guide-inline-art{margin-bottom:18px}}
+
+/* History guide: BFL assets now available; rebuild and visual-audit rendered integration. */
