@@ -1,0 +1,21 @@
+{
+  "id": "guide-types-hero",
+  "page": "content/gidsen/kasteel-burcht-paleis-verschil/body.html",
+  "slot": "hero",
+  "required": true,
+  "reason": "Visual explanation supporting guide layout and historical distinctions",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "placement": "replace",
+  "marker": "<!-- EDITORIAL_IMAGE:guide-types-hero -->",
+  "output_path": "assets/generated/guide-types-hero.webp",
+  "prompt": "Wide premium editorial architectural illustration for a Belgian heritage educational website. Three clearly distinct fictional Belgian historical buildings in one cohesive cinematic landscape composition: left a medieval stone fortified castle with defensive curtain walls, central a 19th century noble chateau set in a park, right a monumental classical royal palace with formal courtyard. Belgium cloudy golden-hour natural light, restrained forest green and warm sandstone color palette, realistic architectural details, no text, no lettering, no logos, no real-world castle, refined photographic style with gentle atmospheric depth.",
+  "alt": "Illustratie van een middeleeuwse burcht, een residentieel kasteel en een monumentaal paleis naast elkaar",
+  "caption": "Sfeerillustratie: verdedigingsburcht, residentieel kasteel en paleis zijn verschillende historische functies.",
+  "width": 1536,
+  "height": 864,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
