@@ -83,10 +83,15 @@ jobs:
         run: |
           git config user.name "Marc Williame"
           git config user.email "146358493+MarcW88@users.noreply.github.com"
-          git add -A
+          # Only BFL-owned outputs may be included. Never stage generated site HTML,
+          # navigation, SEO metadata, build scripts or unrelated editorial edits.
+          git add -- .content/image-requests/ assets/generated/ 'content/**/body.html'
           if git diff --cached --quiet; then
             echo "No generated changes to commit"
           else
             git commit -m "chore(images): generate approved editorial images"
-            git push origin HEAD:${{ github.ref_name }}
+            # Incorporate newer commits; a conflict must fail rather than overwrite.
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
           fi
