@@ -1,0 +1,21 @@
+{
+  "id": "history-guide-hero",
+  "page": "content/gidsen/geschiedenis-kastelen-belgie/body.html",
+  "slot": "hero",
+  "required": true,
+  "reason": "Educational illustration to support reviewed guide long-form timeline",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "placement": "replace",
+  "marker": "<!-- EDITORIAL_IMAGE:history-guide-hero -->",
+  "output_path": "assets/generated/history-guide-hero.webp",
+  "prompt": "Cinematic historically inspired educational editorial illustration representing evolution of castle architecture in the historical lands of present-day Belgium, distant fortified medieval stone castle with later noble residence across expansive atmospheric landscape, visually coherent premium documentary photography look, realistic weathered limestone, subtle autumn forest green and sandstone tones, no recognizable existing heritage structure, no labels or lettering, no fantasy features, horizontal panoramic",
+  "alt": "Illustratie van een middeleeuwse burcht en een latere kasteelresidentie in een historisch landschap",
+  "caption": "Historische sfeerillustratie; geen reconstructie van een specifieke Belgische site.",
+  "width": 1536,
+  "height": 864,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
