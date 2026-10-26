@@ -101,3 +101,5 @@ body.reviewed-province .visit-card-photo figcaption a{text-decoration:underline;
 .guide-editorial .guide-inline-art .editorial-media{margin:0!important}
 .guide-editorial .guide-inline-art img{max-height:430px}
 @media(max-width:760px){.guide-editorial .guide-comparison{grid-template-columns:1fr}.guide-editorial .province-section-head{display:block}.guide-editorial .province-section{padding-top:44px}.guide-editorial .planning-copy{font-size:1rem}.guide-editorial .guide-feature-image,.guide-editorial .guide-inline-art{margin-inline:0}.guide-editorial .guide-comparison>div{padding:18px}}
+
+/* Guide artwork synced through BFL editorial image workflow (2026-10-26). */
