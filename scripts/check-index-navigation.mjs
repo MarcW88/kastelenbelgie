@@ -12,7 +12,7 @@ function scan(dir) {
     const rel=path.relative(root,p);
     const robots=[...html.matchAll(/<meta\s+name="robots"\s+content="([^"]+)"/gi)];
     if (robots.length!==1 || robots[0][1]!== 'index,follow') failures.push(rel+': robots is not exactly index,follow');
-    if (!html.includes('id="primary-navigation"') || !html.includes('href="/#castle-map">Kaart') || !html.includes('href="kastelen/">Provincies')) failures.push(rel+': old/incorrect navigation');
+    if (!html.includes('id="primary-navigation"') || !html.includes('href="/#castle-map">Kaart') || html.includes('>Provincies</a>')) failures.push(rel+': old/incorrect navigation');
     checked++;
   }
 }
