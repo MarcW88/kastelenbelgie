@@ -38,6 +38,10 @@ jobs:
             --route /soorten/kasteelruines/ \
             --route /soorten/kasteeldomeinen/ \
             --route /soorten/paleizen/ \
+            --route /routes/ \
+            --route /routes/kastelenroute-ardennen/ \
+            --route /routes/kastelenroute-oost-vlaanderen/ \
+            --route /routes/kastelenroute-rond-gent/ \
             --route /bezoeken/kastelen-met-kinderen/ \
             --route /bezoeken/kastelen-met-tuin/ \
             --route /inspiratie/mooiste-kastelen-belgie/ \
