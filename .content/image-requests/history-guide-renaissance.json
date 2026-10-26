@@ -1,0 +1,21 @@
+{
+  "id": "history-guide-renaissance",
+  "page": "content/gidsen/geschiedenis-kastelen-belgie/body.html",
+  "slot": "renaissance",
+  "required": true,
+  "reason": "Educational illustration to support reviewed guide long-form timeline",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "placement": "replace",
+  "marker": "<!-- EDITORIAL_IMAGE:history-guide-renaissance -->",
+  "output_path": "assets/generated/history-guide-renaissance.webp",
+  "prompt": "Historically plausible fictional Flemish or Brabant noble castle residence from late 16th to 17th centuries, renaissance residential wings with larger windows adjoining older stone moat towers, formal garden approach, showing transition from military castle to comfortable estate, muted Belgian landscape palette, editorial photorealism, no lettering, no people close-up, no real identified monument, 16:9 landscape",
+  "alt": "Illustratie van een renaissancekasteel met oudere torens, ruimere vensters en landschapstuin",
+  "caption": "Illustratie van de ontwikkeling naar een residentieel kasteel; geen bestaande erfgoedsite.",
+  "width": 1536,
+  "height": 864,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
