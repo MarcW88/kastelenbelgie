@@ -75,12 +75,13 @@ const getAssetFingerprint = pathname => {
 };
 function fingerprintAssets(dir){
   for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
-    if(entry.isDirectory()){if(!['.git','.agents','.artifacts','node_modules','content','.github','docs'].includes(entry.name))fingerprintAssets(path.join(dir,entry.name));continue;}
+    if(entry.isDirectory())continue;
     if(entry.name!=='index.html')continue;
     const file=path.join(dir,entry.name);
     let html=fs.readFileSync(file,'utf8');
     html=html.replace(/((?:src|href)=")(\/?assets\/[^"?#]+)(?:\?v=[a-f0-9]+)?(")/g,(full,pre,asset,end)=>{
       const pathname='/'+asset.replace(/^\//,'');
+      if(pathname==='/assets/leaflet.css')return full;
       const version=getAssetFingerprint(pathname);
       return version?pre+pathname+'?v='+version+end:full;
     });
