@@ -1,0 +1,20 @@
+{
+  "id": "architecture-guide-styles",
+  "page": "content/gidsen/architectuur-kastelen/body.html",
+  "slot": "body",
+  "required": true,
+  "reason": "Illustration pédagogique non documentaire pour rendre lisibles les sections du guide architectural",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "placement": "replace",
+  "marker": "<!-- EDITORIAL_IMAGE:architecture-guide-styles -->",
+  "output_path": "assets/generated/architecture-guide-styles.webp",
+  "prompt": "Architectural editorial diptych in one contiguous image: on the left a fictional Renaissance château facade with regular windows and ornamented stepped gables, on the right a fictional nineteenth-century neo Gothic castle facade with pointed arches and steep roofs, realistic heritage editorial architectural photography, warm masonry, neutral daylight, clean balanced side by side framing, no real identifiable building, no people, no captions, no typography",
+  "alt": "Vergelijkende illustratie van renaissancearchitectuur en neogotiek bij fictieve kasteelgevels",
+  "caption": "Illustratieve vergelijking van stijlvormen; geen foto's van bestaande kastelen.",
+  "width": 1536,
+  "height": 864,
+  "prompt_upsampling": true,
+  "seed": null
+}
