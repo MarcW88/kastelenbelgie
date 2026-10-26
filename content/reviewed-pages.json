@@ -4571,7 +4571,7 @@
     "route": "/routes/kastelenroute-ardennen/",
     "source": "content/routes/kastelenroute-ardennen/body.html",
     "title": "Kastelenroute Ardennen: Bouillon, La Roche en Reinhardstein | Kastelen België",
-    "description": "Ontdek een kasteelroute door de Ardennen: Bouillon, La Roche-en-Ardenne en Reinhardstein. Historische haltes en tips om zelf je tocht te plannen.",
+    "description": "Plan een kastelenroute door de Ardennen langs Bouillon, La Roche-en-Ardenne en Reinhardstein. Historische haltes, toegang en praktische tips.",
     "stylesheet": "assets/province-guide.css",
     "schema": {
       "@context": "https://schema.org",
