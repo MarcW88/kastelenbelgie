@@ -6,7 +6,7 @@
   "reason": "Conceptual imagery clarifying map interpretation, not an invented factual heritage map",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "placement": "replace",
   "marker": "<!-- EDITORIAL_IMAGE:map-guide-hero -->",
   "output_path": "assets/generated/map-guide-hero.webp",
@@ -16,5 +16,9 @@
   "width": 1536,
   "height": 864,
   "prompt_upsampling": true,
-  "seed": null
+  "seed": null,
+  "bfl_request_id": "fd566e27-b1d6-4d7b-b8c6-b9614a4fb936",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 4.5,
+  "generated_at": "2026-10-26T09:24:30.208441+00:00"
 }
