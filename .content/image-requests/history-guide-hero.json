@@ -6,7 +6,7 @@
   "reason": "Educational illustration to support reviewed guide long-form timeline",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "placement": "replace",
   "marker": "<!-- EDITORIAL_IMAGE:history-guide-hero -->",
   "output_path": "assets/generated/history-guide-hero.webp",
@@ -17,5 +17,8 @@
   "height": 864,
   "prompt_upsampling": true,
   "seed": null,
-  "generated_at": null
+  "generated_at": "2026-10-26T09:09:03.100181+00:00",
+  "bfl_request_id": "c1b054ac-1aac-4ff1-a39a-bf0f220e500d",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 4.5
 }
