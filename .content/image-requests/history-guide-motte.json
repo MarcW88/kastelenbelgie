@@ -1,0 +1,21 @@
+{
+  "id": "history-guide-motte",
+  "page": "content/gidsen/geschiedenis-kastelen-belgie/body.html",
+  "slot": "motte",
+  "required": true,
+  "reason": "Educational illustration to support reviewed guide long-form timeline",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "placement": "replace",
+  "marker": "<!-- EDITORIAL_IMAGE:history-guide-motte -->",
+  "output_path": "assets/generated/history-guide-motte.webp",
+  "prompt": "Educational landscape illustration of a fictional 11th-century motte-and-bailey castle in the Low Countries, raised earthen motte topped by timber defended residence, separate lower bailey with farm structures and wooden palisade, moat, rural farmland, historically plausible documentary realism, atmospheric light, horizontal editorial art, no text labels or arrows, not a reconstruction of a real castle",
+  "alt": "Illustratie van een middeleeuwse motte met opperhof en lager neerhof",
+  "caption": "Sfeerillustratie van een mottekasteel met opperhof en neerhof; geen exacte archeologische reconstructie.",
+  "width": 1536,
+  "height": 864,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
