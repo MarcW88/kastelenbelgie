@@ -132,3 +132,10 @@ body.reviewed-province .visit-card-photo figcaption a{text-decoration:underline;
 @media(max-width:620px){.guide-history .guide-era-grid{grid-template-columns:1fr;gap:10px}.guide-history .guide-era-grid>div{padding:18px}.guide-history .guide-inline-art{margin-bottom:18px}}
 
 /* History guide: BFL assets now available; rebuild and visual-audit rendered integration. */
+
+/* Medieval castle selection — reused, credited Wikimedia Commons images */
+.visit-card .medieval-card-photo{margin:0 0 18px;min-width:0;width:100%}
+.visit-card .medieval-card-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:8px;background:#e4ded4}
+.visit-card .medieval-card-photo figcaption{font-size:.68rem;line-height:1.5;color:var(--muted);margin-top:7px;overflow-wrap:anywhere}
+.visit-card .medieval-card-photo figcaption a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+@media(max-width:640px){.visit-card .medieval-card-photo{margin-bottom:15px}.visit-card .medieval-card-photo img{aspect-ratio:16/10}}
