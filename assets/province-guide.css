@@ -139,3 +139,10 @@ body.reviewed-province .visit-card-photo figcaption a{text-decoration:underline;
 .visit-card .medieval-card-photo figcaption{font-size:.68rem;line-height:1.5;color:var(--muted);margin-top:7px;overflow-wrap:anywhere}
 .visit-card .medieval-card-photo figcaption a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 @media(max-width:640px){.visit-card .medieval-card-photo{margin-bottom:15px}.visit-card .medieval-card-photo img{aspect-ratio:16/10}}
+
+/* Burchten selection: existing Wikimedia Commons photographs, responsive crops and attribution. */
+.visit-card .burcht-card-photo{margin:0 0 18px;width:100%;min-width:0}
+.visit-card .burcht-card-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:8px;background:#e4ded4}
+.visit-card .burcht-card-photo figcaption{margin-top:7px;font-size:.68rem;line-height:1.5;color:var(--muted);overflow-wrap:anywhere}
+.visit-card .burcht-card-photo figcaption a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+@media(max-width:640px){.visit-card .burcht-card-photo{margin-bottom:15px}.visit-card .burcht-card-photo img{aspect-ratio:16/10}}
