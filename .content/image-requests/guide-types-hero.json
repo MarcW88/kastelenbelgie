@@ -6,7 +6,7 @@
   "reason": "Visual explanation supporting guide layout and historical distinctions",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "placement": "replace",
   "marker": "<!-- EDITORIAL_IMAGE:guide-types-hero -->",
   "output_path": "assets/generated/guide-types-hero.webp",
@@ -17,5 +17,8 @@
   "height": 864,
   "prompt_upsampling": true,
   "seed": null,
-  "generated_at": null
+  "generated_at": "2026-10-26T08:43:29.147357+00:00",
+  "bfl_request_id": "70823f4e-2252-46b1-adcb-ea222de0ef2e",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 4.5
 }
