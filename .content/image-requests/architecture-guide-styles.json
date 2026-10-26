@@ -6,7 +6,7 @@
   "reason": "Illustration pédagogique non documentaire pour rendre lisibles les sections du guide architectural",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "placement": "replace",
   "marker": "<!-- EDITORIAL_IMAGE:architecture-guide-styles -->",
   "output_path": "assets/generated/architecture-guide-styles.webp",
@@ -16,5 +16,9 @@
   "width": 1536,
   "height": 864,
   "prompt_upsampling": true,
-  "seed": null
+  "seed": null,
+  "bfl_request_id": "6208ef0d-6644-40a5-9936-91a28ae08676",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 4.5,
+  "generated_at": "2026-10-26T09:17:14.668973+00:00"
 }
