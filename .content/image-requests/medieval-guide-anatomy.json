@@ -1,0 +1,21 @@
+{
+  "id": "medieval-guide-anatomy",
+  "page": "content/gidsen/middeleeuws-kasteel/body.html",
+  "slot": "anatomy",
+  "required": true,
+  "reason": "Approved single-guide design refit needs explanatory illustrations",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "placement": "replace",
+  "marker": "<!-- EDITORIAL_IMAGE:medieval-guide-anatomy -->",
+  "output_path": "assets/generated/medieval-guide-anatomy.webp",
+  "prompt": "Detailed cutaway architectural illustration of a fictional 12th-13th century castle in the Low Countries, show defensive gate, moat, curtain wall with wall walk, keep/donjon, courtyard, outbuildings, timber and limestone building methods; plausible medieval history educational editorial image, muted natural palette, horizontal wide composition, no text, no labels, no real castle",
+  "alt": "Schematische illustratie met poortgebouw, ringmuur, woontoren en binnenplaats van een middeleeuws kasteel",
+  "caption": "Educatieve sfeerillustratie van de onderdelen; niet gebaseerd op één bestaande burcht.",
+  "width": 1536,
+  "height": 864,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
