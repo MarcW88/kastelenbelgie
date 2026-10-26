@@ -36,6 +36,12 @@ for(const[cat,slugs]of Object.entries(pages)){const d=path.join(root,cat);fs.mkd
 for(const[slug,t]of[['over-ons','Over deze atlas'],['bronnen','Bronnen & methode'],['contact','Contact']]){const p=path.join(root,slug);fs.mkdirSync(p,{recursive:true});fs.writeFileSync(path.join(p,'index.html'),shell(t,`<section class="page-header"><div class="container"><div class="crumbs"><a href="/">Home</a> · ${t}</div><span class="eyebrow">Over het project</span><h1>${t}</h1><p>Deze pagina wacht op bevestigde projectinformatie.</p></div></section>`));}
 console.log(`${1+Object.keys(pages).length+Object.values(pages).flat().length+3} pagina's gegenereerd.`);
 
+const routesIndex=path.join(root,'routes/index.html');
+let routesHtml=fs.readFileSync(routesIndex,'utf8');
+routesHtml=routesHtml.replace('<title>Routes | Kastelen België</title>','<title>Kastelenroutes in België: Ardennen, Oost-Vlaanderen en Gent | Kastelen België</title>').replace('<meta name="description" content="Ontdek kastelen in België per provincie, type en ervaring.">','<meta name="description" content="Ontdek kastelenroutes in de Ardennen, Oost-Vlaanderen en rond Gent. Vergelijk stops, kies je regio en plan je eigen kasteeluitstap.">');
+routesHtml=routesHtml.replace('</head>','<script type="application/ld+json">'+JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://kastelenbelgie.be/routes/#webpage",url:"https://kastelenbelgie.be/routes/",name:"Kastelenroutes in België",inLanguage:"nl-BE"},{"@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:"https://kastelenbelgie.be/"},{"@type":"ListItem",position:2,name:"Routes",item:"https://kastelenbelgie.be/routes/"}]},{"@type":"ItemList",itemListElement:['kastelenroute-ardennen','kastelenroute-oost-vlaanderen','kastelenroute-rond-gent'].map((slug,i)=>({"@type":"ListItem",position:i+1,url:"https://kastelenbelgie.be/routes/"+slug+"/"}))}]})+'</script></head>');
+fs.writeFileSync(routesIndex,routesHtml);
+
 const reviewed = applyReviewedPages(root, shell);
 console.log(`${reviewed} gecontroleerde inhoudspagina('s) toegepast.`);
 
