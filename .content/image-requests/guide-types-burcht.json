@@ -1,0 +1,21 @@
+{
+  "id": "guide-types-burcht",
+  "page": "content/gidsen/kasteel-burcht-paleis-verschil/body.html",
+  "slot": "burcht",
+  "required": true,
+  "reason": "Visual explanation supporting guide layout and historical distinctions",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "placement": "replace",
+  "marker": "<!-- EDITORIAL_IMAGE:guide-types-burcht -->",
+  "output_path": "assets/generated/guide-types-burcht.webp",
+  "prompt": "Highly detailed atmospheric architectural cutaway illustration of a fictional medieval Low Countries defensive castle, Belgian context, showcasing drawbridge, outer curtain wall, keep tower, battlements, fortified gatehouse, stone texture and moat. Landscape horizontal framing, museum-quality art direction, photorealistic painterly architectural rendering, muted sage greens and natural limestone, no captions, no letters, no labels, no real castle, historically plausible structure.",
+  "alt": "Illustratie van een verdedigbare middeleeuwse burcht met poort, ringmuur en donjon",
+  "caption": "Schematische sfeerillustratie van verdedigingsonderdelen; geen reconstructie van een bestaande Belgische burcht.",
+  "width": 1344,
+  "height": 768,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
