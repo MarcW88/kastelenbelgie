@@ -81,3 +81,23 @@ body.reviewed-province .visit-card-photo figcaption a{text-decoration:underline;
 .reviewed-province .guide-era-examples>a:hover,.reviewed-province .guide-era-examples>a:focus-visible{border-color:var(--green)}
 @media(max-width:950px){.reviewed-province .guide-era-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.reviewed-province .guide-era-grid,.reviewed-province .guide-era-examples{grid-template-columns:1fr}}
+
+/* Long-form guides: image-led editorial pacing, not generic index cards. */
+.guide-editorial .guide-feature-image{max-width:1180px;margin:20px auto 8px}
+.guide-editorial .guide-feature-image .editorial-media{margin:0!important}
+.guide-editorial .guide-feature-image img{max-height:530px;object-fit:cover}
+.guide-editorial .province-section{padding-top:72px}
+.guide-editorial .province-section-head{align-items:start;grid-template-columns:minmax(0,1.3fr) minmax(230px,.7fr);gap:32px}
+.guide-editorial .province-section-head h2{max-width:850px}
+.guide-editorial .planning-copy{max-width:870px;margin:0 auto;font-size:1.04rem;line-height:1.86}
+.guide-editorial .planning-copy p{margin-bottom:1.4em}
+.guide-editorial .planning-copy h3{font-size:clamp(1.35rem,2.4vw,1.9rem);line-height:1.22;margin:32px 0 12px}
+.guide-editorial .guide-comparison{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:10px 0 30px}
+.guide-editorial .guide-comparison>div{background:var(--paper,#f7f7f1);border:1px solid color-mix(in srgb,var(--green) 19%,transparent);border-top:5px solid var(--green);border-radius:12px;padding:24px 22px;min-width:0;display:flex;flex-direction:column;gap:10px}
+.guide-editorial .guide-comparison h3{margin:0;font-size:1.35rem}
+.guide-editorial .guide-comparison p{font-size:.95rem;line-height:1.65;margin:0}
+.guide-editorial .guide-comparison a{margin-top:auto;font-weight:700;font-size:.88rem}
+.guide-editorial .guide-inline-art{max-width:1040px;margin:0 auto 30px}
+.guide-editorial .guide-inline-art .editorial-media{margin:0!important}
+.guide-editorial .guide-inline-art img{max-height:430px}
+@media(max-width:760px){.guide-editorial .guide-comparison{grid-template-columns:1fr}.guide-editorial .province-section-head{display:block}.guide-editorial .province-section{padding-top:44px}.guide-editorial .planning-copy{font-size:1rem}.guide-editorial .guide-feature-image,.guide-editorial .guide-inline-art{margin-inline:0}.guide-editorial .guide-comparison>div{padding:18px}}
