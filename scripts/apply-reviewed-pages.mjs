@@ -57,7 +57,7 @@ export function applyReviewedPages(root, renderPage) {
         const articleEnd = html.lastIndexOf('</article>');
         const valid = links.length > 0 && links.every(([, id]) => html.includes('id="' + id + '"'));
         if (valid && articleEnd > articleStart) {
-          const nav = '<aside class="information-aside" aria-label="Navigatie binnen dit artikel"><div class="information-toc"><span class="eyebrow">Op deze pagina</span><nav aria-label="Spring naar onderdelen">' +
+          const nav = '<aside class="information-aside" aria-label="Navigatie binnen dit artikel"><div class="information-toc castle-editorial-toc"><span class="eyebrow">Op deze pagina</span><h2>In deze gids</h2><nav aria-label="Spring naar onderdelen">' +
             links.map(([, id, label]) => '<a href="' + entry.route + '#' + id + '">' + label + '<span aria-hidden="true">→</span></a>').join('') +
             '</nav></div></aside>';
           html = html.replace(jumps[0], '');
