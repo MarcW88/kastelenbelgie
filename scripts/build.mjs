@@ -46,13 +46,13 @@ console.log(`${1+Object.keys(pages).length+Object.values(pages).flat().length+3}
 // Affiliate URLs are build-time only: public product pages remain fallback destinations.
 const affiliateOffers=JSON.parse(fs.readFileSync(path.join(root,'content','affiliate-links.json'),'utf8')).offers;
 function renderAffiliateLinks(html){
-  return html.replace(/<a\\b([^>]*\\bdata-affiliate-key="([^"]+)"[^>]*)>/g,(whole,attributes,key)=>{
+  return html.replace(/<a\b([^>]*\bdata-affiliate-key="([^"]+)"[^>]*)>/g,(whole,attributes,key)=>{
     const offer=affiliateOffers[key];
     if(!offer)throw new Error('Unconfigured affiliate offer: '+key);
     const chosen=offer.affiliateUrl || offer.publicUrl;
-    if(!/^https:\\/\\//.test(chosen))throw new Error('Invalid affiliate URL for '+key);
+    if(!/^https:\/\//.test(chosen))throw new Error('Invalid affiliate URL for '+key);
     const domain=new URL(chosen).hostname;
-    if(!/^(?:[a-z0-9-]+\\.)+[a-z]{2,}$/i.test(domain))throw new Error('Invalid host for '+key);
+    if(!/^(?:[a-z0-9-]+\.)+[a-z]{2,}$/i.test(domain))throw new Error('Invalid host for '+key);
     const aff=Boolean(offer.affiliateUrl);
     return '<a'+attributes.replace(/href="[^"]*"/,'href="'+chosen.replace(/&/g,'&amp;')+'"').replace(/rel="[^"]*"/,'rel="noopener noreferrer'+(aff?' sponsored':'')+'"')+' data-affiliate-active="'+aff+'">';
   });
