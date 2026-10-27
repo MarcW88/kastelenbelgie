@@ -402,3 +402,35 @@ body .editorial-hub-hero .province-lead{max-width:780px}
 body.reviewed-province .province-guide .visit-card{transition:border-color .2s}
 body.reviewed-province .province-guide .visit-card:hover{border-color:var(--green)}
 @media(max-width:700px){body .editorial-hub .hub-grid{grid-template-columns:1fr}body .editorial-hub .hub-card-featured{grid-column:auto}body .editorial-hub .hub-card{min-height:0;padding:23px}body .editorial-hub .hub-intro{padding-top:38px}body .editorial-hub .hub-next{display:block}body .editorial-hub .hub-next-links{margin-top:20px}}
+
+
+/* Overnight stays: calm editorial booking pathways, responsive by default. */
+.stay-hero .province-lead{max-width:790px}
+.stay-clarification{max-width:790px;color:var(--muted);font-size:.8rem;line-height:1.7;margin-top:19px}
+.stay-landing{padding-bottom:86px}
+.stay-intro{padding:55px 0 29px;max-width:790px}
+.stay-intro h2,.stay-advice h2,.stay-context h2,.stay-affiliation h2{font-size:clamp(1.9rem,3vw,2.6rem);line-height:1.15;margin:10px 0 16px}
+.stay-intro p,.stay-advice p,.stay-context p,.stay-affiliation p{color:var(--muted);line-height:1.75;font-size:.93rem}
+.stay-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.stay-card{padding:32px;background:var(--paper);border:1px solid var(--line);display:flex;align-items:flex-start;flex-direction:column}
+.stay-card h3{font-family:"Cormorant Garamond",serif;font-size:clamp(1.8rem,2.5vw,2.25rem);line-height:1.1;margin:14px 0}
+.stay-card p{font-size:.89rem;line-height:1.75;color:var(--muted);margin:0 0 22px}
+.stay-actions{display:flex;align-items:flex-start;flex-direction:column;gap:14px;margin-top:auto}
+.stay-cta{padding:13px 17px;background:var(--green);color:white;font-size:.83rem;font-weight:700;text-decoration:none}
+.stay-cta:hover,.stay-cta:focus-visible{background:var(--dark);color:white}
+.stay-detail{font-size:.82rem;font-weight:700;color:var(--green);text-decoration:underline;text-underline-offset:4px}
+.stay-advice{display:grid;grid-template-columns:1fr 1fr;gap:42px;margin-top:55px;background:#f0eee7;padding:36px;border-top:4px solid var(--green)}
+.stay-advice ul{padding-left:21px;margin:0}.stay-advice li{font-size:.87rem;line-height:1.8;margin-bottom:13px}
+.stay-context{padding:53px 0 34px}.stay-context-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:21px}
+.stay-context-links a{font-size:.83rem;font-weight:700;padding:12px 15px;border:1px solid var(--line);text-decoration:none}
+.stay-context-links a:hover{background:var(--green);color:white}
+.stay-affiliation{border-top:1px solid var(--line);padding-top:30px;max-width:870px}
+@media(max-width:760px){.stay-grid,.stay-advice{grid-template-columns:1fr}.stay-intro{padding-top:36px}.stay-card{padding:24px}.stay-advice{padding:24px;gap:15px;margin-top:38px}.stay-context{padding-top:36px}}
+
+/* Shared booking CTA on castle index; no monetization without a tracked partner URL. */
+.visitable-actions{display:flex;gap:12px 17px;flex-wrap:wrap;align-items:center;margin-top:auto}
+.visitable-card .visitable-actions a{margin:0;font-size:.81rem;font-weight:700;line-height:1.5}
+.visitable-booking{display:inline-flex;padding:12px 16px;color:white!important;background:var(--green);text-decoration:none!important}
+.visitable-booking:hover,.visitable-booking:focus-visible{background:var(--dark);color:white}
+.visitable-detail{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:580px){.visitable-actions{align-items:flex-start;flex-direction:column}}
