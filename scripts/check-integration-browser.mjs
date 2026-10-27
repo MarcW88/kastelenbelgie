@@ -11,6 +11,11 @@ try{
   for(const route of routes){let errors=[];page.on('pageerror',e=>errors.push(String(e)));const res=await page.goto('http://127.0.0.1:4189'+route,{waitUntil:'domcontentloaded'});await page.screenshot({path:`${output}/${width}-${route.replaceAll('/','-')||'home'}.png`,fullPage:true});
    const info=await page.evaluate(()=>({title:document.title,h1:document.querySelectorAll('h1').length,robots:document.querySelector('meta[name="robots"]')?.content,overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth,affiliate:[...document.querySelectorAll('[data-affiliate-key]')].map(a=>({key:a.dataset.affiliateKey,href:a.href,rel:a.rel}))}));
    if(res.status()!==200||info.h1!==1||info.robots!=='index,follow'||info.overflow||errors.length)failures.push({route,width,status:res.status(),errors,...info});
+   if(width===1440 && info.affiliate.length){
+    const context=page.context();await context.route(/https:\/\/(www\.)?(booking\.com|tiqets\.com)\//,r=>r.fulfill({status:200,contentType:'text/html',body:'<title>Test destination</title>'}));
+    const links=page.locator('[data-affiliate-key]');for(let i=0;i<await links.count();i++){const a=links.nth(i),expected=await a.getAttribute('href');const [popup]=await Promise.all([page.waitForEvent('popup'),a.click()]);await popup.waitForLoadState('domcontentloaded');if(popup.url()!==expected)failures.push({route,width,error:'CTA destination mismatch',expected,actual:popup.url()});await popup.close()}
+    await context.unrouteAll();
+   }
    if(width===390){let b=page.locator('[data-menu]');await b.click();if(await b.getAttribute('aria-expanded')!=='true')failures.push({route,width,error:'mobile menu did not open'});await b.click()}
    results.push({route,width,status:res.status(),...info});page.removeAllListeners('pageerror');
   }await page.close();

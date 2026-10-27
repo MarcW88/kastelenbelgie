@@ -20,6 +20,8 @@ jobs:
       - name: Run installed visual review
         run: |
           node .agents/skills/site-design-review/scripts/run-visual-review.mjs --route /bezoeken/bezoekbare-kastelen/ --route /bezoeken/kastelen-met-kinderen/ --route /bezoeken/kastelen-overnachten/ --route /bezoeken/kastelen-met-rondleiding/ --route /bezoeken/gratis-kastelen/ --route /bezoeken/kastelen-met-park/ --output .artifacts/design-review/monetization
+      - name: Click sidebar anchors
+        run: node scripts/test-anchor-interactions.mjs
       - name: Desktop tablet mobile and interactions
         run: node scripts/check-integration-browser.mjs
       - uses: actions/upload-artifact@v4
