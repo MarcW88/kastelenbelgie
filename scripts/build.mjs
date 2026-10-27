@@ -43,11 +43,6 @@ for(const[cat,slugs]of Object.entries(pages)){const d=path.join(root,cat);fs.mkd
 for(const[slug,t]of[['over-ons','Over deze atlas'],['bronnen','Bronnen & methode'],['contact','Contact']]){const p=path.join(root,slug);fs.mkdirSync(p,{recursive:true});fs.writeFileSync(path.join(p,'index.html'),shell(t,`<section class="page-header"><div class="container"><div class="crumbs"><a href="/">Home</a> · ${t}</div><span class="eyebrow">Over het project</span><h1>${t}</h1><p>Deze pagina wacht op bevestigde projectinformatie.</p></div></section>`));}
 console.log(`${1+Object.keys(pages).length+Object.values(pages).flat().length+3} pagina's gegenereerd.`);
 
-// Durable editorial landing for high-intent castle visits; never overwrite it with placeholders.
-const visitablePath=path.join(root,'bezoeken','bezoekbare-kastelen','index.html');
-const visitableSource=fs.readFileSync(path.join(root,'content','bezoeken','bezoekbare-kastelen.html'),'utf8');
-fs.writeFileSync(visitablePath,shell('Bezoekbare kastelen in België',visitableSource));
-
 // Affiliate URLs are build-time only: public product pages remain fallback destinations.
 const affiliateOffers=JSON.parse(fs.readFileSync(path.join(root,'content','affiliate-links.json'),'utf8')).offers;
 function renderAffiliateLinks(html){
