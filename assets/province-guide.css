@@ -160,3 +160,21 @@ body.reviewed-province .visit-card-photo figcaption a{text-decoration:underline;
 .visit-grid>.visit-card>.theme-card-photo figcaption{max-width:100%;margin-top:7px;font-size:.68rem;line-height:1.5;color:var(--muted);overflow-wrap:anywhere}
 .visit-grid>.visit-card>.theme-card-photo figcaption a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 @media(max-width:650px){.visit-grid>.visit-card>.theme-card-photo img{height:auto;aspect-ratio:16/10}}
+
+/* Editorial guides: one clear reading axis, no redundant right-hand summary column. */
+body.reviewed-province .guide-editorial .province-section-head{display:block;max-width:980px;margin:0 auto 27px}
+body.reviewed-province .guide-editorial .province-section-head>div{max-width:980px}
+body.reviewed-province .guide-editorial .province-section-head h2{max-width:930px}
+body.reviewed-province .guide-editorial .province-section-head>p{max-width:850px;margin:18px 0 0;font-size:.98rem;line-height:1.7;color:var(--muted)}
+body.reviewed-province .guide-editorial .planning-copy{max-width:870px;margin-inline:auto}
+/* Sources are supporting documentation, not another editorial chapter. */
+body.reviewed-province .guide-editorial #bronnen.province-section{max-width:1040px;margin:54px auto 78px;padding:34px clamp(20px,4vw,52px);background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--green);border-radius:12px;box-sizing:border-box}
+body.reviewed-province .guide-editorial #bronnen .province-section-head{max-width:none;margin-bottom:20px}
+body.reviewed-province .guide-editorial #bronnen .province-section-head h2{font-size:clamp(1.75rem,3vw,2.35rem);line-height:1.14}
+body.reviewed-province .guide-editorial #bronnen .province-section-head>p{font-size:.88rem;max-width:750px;margin-top:10px}
+body.reviewed-province .guide-editorial #bronnen .planning-copy{max-width:none;margin:0}
+body.reviewed-province .guide-editorial #bronnen .planning-copy ul{padding-left:1.35em;margin:0 0 18px}
+body.reviewed-province .guide-editorial #bronnen .planning-copy li{font-size:.86rem;line-height:1.6;margin:0 0 10px;overflow-wrap:anywhere}
+body.reviewed-province .guide-editorial #bronnen .planning-copy p{font-size:.84rem;line-height:1.65;color:var(--muted);margin:15px 0 0}
+body.reviewed-province .guide-editorial #bronnen a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:700px){body.reviewed-province .guide-editorial #bronnen.province-section{width:calc(100% - 32px);margin:32px auto 48px;padding:22px 18px}body.reviewed-province .guide-editorial .province-section-head>p{margin-top:12px}}
