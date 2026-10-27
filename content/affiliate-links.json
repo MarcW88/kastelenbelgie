@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "note": "Remplacer uniquement affiliateUrl par le lien suivi personnel généré et autorisé par le programme partenaire. null maintient le lien public, sans promesse de commission.",
+  "offers": {
+    "loppem-tiqets": {
+      "provider": "Tiqets",
+      "product": "Kasteel van Loppem",
+      "publicUrl": "https://www.tiqets.com/en/loppem-attractions-c263051/tickets-for-loppem-castle-maze-p976133/",
+      "affiliateUrl": null
+    },
+    "ordingen-booking": {
+      "provider": "Booking.com",
+      "product": "Kasteel van Ordingen",
+      "publicUrl": "https://www.booking.com/hotel/be/kasteel-van-ordingen.html",
+      "affiliateUrl": null
+    },
+    "chateau-du-lac-booking": {
+      "provider": "Booking.com",
+      "product": "Martin’s Château du Lac",
+      "publicUrl": "https://www.booking.com/hotel/be/dulac.html",
+      "affiliateUrl": null
+    }
+  }
+}
