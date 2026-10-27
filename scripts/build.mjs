@@ -66,6 +66,10 @@ fs.writeFileSync(visitablePath,shell('Bezoekbare kastelen in België',renderAffi
 const overnightPath=path.join(root,'bezoeken','kastelen-overnachten','index.html');
 fs.writeFileSync(overnightPath,shell('Overnachten in een kasteel in België',renderAffiliateLinks(fs.readFileSync(path.join(root,'content','bezoeken','kastelen-overnachten.html'),'utf8'))));
 
+// Durable source for the park landing. Resolve the same Loppem link configuration.
+const parkVisitsPath=path.join(root,'bezoeken','kastelen-met-park','index.html');
+fs.writeFileSync(parkVisitsPath,shell('Kastelen met park in België',renderAffiliateLinks(fs.readFileSync(path.join(root,'content','bezoeken','kastelen-met-park.html'),'utf8'))));
+
 const routesIndex=path.join(root,'routes/index.html');
 let routesHtml=fs.readFileSync(routesIndex,'utf8');
 routesHtml=routesHtml.replace('<title>Routes | Kastelen België</title>','<title>Kastelenroutes in België: Ardennen, Oost-Vlaanderen en Gent | Kastelen België</title>').replace('<meta name="description" content="Ontdek kastelen in België per provincie, type en ervaring.">','<meta name="description" content="Ontdek kastelenroutes in de Ardennen, Oost-Vlaanderen en rond Gent. Vergelijk stops, kies je regio en plan je eigen kasteeluitstap.">');
@@ -73,6 +77,10 @@ routesHtml=routesHtml.replace('</head>','<script type="application/ld+json">'+JS
 fs.writeFileSync(routesIndex,routesHtml);
 
 const reviewed = applyReviewedPages(root, shell);
+// Reviewed article pages are written after primary landing pages; resolve Loppem there too.
+const familyPagePath=path.join(root,'bezoeken','kastelen-met-kinderen','index.html');
+fs.writeFileSync(familyPagePath,renderAffiliateLinks(fs.readFileSync(familyPagePath,'utf8')));
+
 console.log(`${reviewed} gecontroleerde inhoudspagina('s) toegepast.`);
 
 
