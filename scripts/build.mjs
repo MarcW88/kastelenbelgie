@@ -75,8 +75,8 @@ fs.writeFileSync(overnightPath,shell('Overnachten in een kasteel in België',ren
 const parkVisitsPath=path.join(root,'bezoeken','kastelen-met-park','index.html');
 fs.writeFileSync(parkVisitsPath,shell('Kastelen met park in België',renderAffiliateLinks(fs.readFileSync(path.join(root,'content','bezoeken','kastelen-met-park.html'),'utf8'))));
 
-const guidedToursPath=path.join(root,'bezoeken','rondleiding','index.html');
-fs.writeFileSync(guidedToursPath,shell('Kastelen met rondleiding in België',fs.readFileSync(path.join(root,'content','bezoeken','rondleiding.html'),'utf8')));
+const guidedToursPath=path.join(root,'bezoeken','kastelen-met-rondleiding','index.html');
+fs.writeFileSync(guidedToursPath,shell('Kastelen met rondleiding in België',fs.readFileSync(path.join(root,'content','bezoeken','kastelen-met-rondleiding.html'),'utf8')));
 
 const freeCastlePath=path.join(root,'bezoeken','gratis-kastelen','index.html');
 fs.writeFileSync(freeCastlePath,shell('Gratis kastelen bezoeken in België',fs.readFileSync(path.join(root,'content','bezoeken','gratis-kastelen.html'),'utf8')));
