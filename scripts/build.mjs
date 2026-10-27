@@ -48,6 +48,10 @@ const visitablePath=path.join(root,'bezoeken','bezoekbare-kastelen','index.html'
 const visitableSource=fs.readFileSync(path.join(root,'content','bezoeken','bezoekbare-kastelen.html'),'utf8');
 fs.writeFileSync(visitablePath,shell('Bezoekbare kastelen in België',visitableSource));
 
+// Durable source for the free-to-visit castle guide.
+const freeCastlePath=path.join(root,'bezoeken','gratis-kastelen','index.html');
+fs.writeFileSync(freeCastlePath,shell('Gratis kastelen bezoeken in België',fs.readFileSync(path.join(root,'content','bezoeken','gratis-kastelen.html'),'utf8')));
+
 const routesIndex=path.join(root,'routes/index.html');
 let routesHtml=fs.readFileSync(routesIndex,'utf8');
 routesHtml=routesHtml.replace('<title>Routes | Kastelen België</title>','<title>Kastelenroutes in België: Ardennen, Oost-Vlaanderen en Gent | Kastelen België</title>').replace('<meta name="description" content="Ontdek kastelen in België per provincie, type en ervaring.">','<meta name="description" content="Ontdek kastelenroutes in de Ardennen, Oost-Vlaanderen en rond Gent. Vergelijk stops, kies je regio en plan je eigen kasteeluitstap.">');
