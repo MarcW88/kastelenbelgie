@@ -281,3 +281,11 @@ body.reviewed-province .information-toc.castle-editorial-toc nav a:focus-visible
   body.reviewed-province .information-toc.castle-editorial-toc{padding:23px}
   body.reviewed-province .information-toc.castle-editorial-toc h2{font-size:1.4rem}
 }
+
+/* Family outings: reservation first, on-site castle guide second. */
+body.reviewed-province .family-visit-actions{display:flex;align-items:center;flex-wrap:wrap;gap:9px 15px;margin-top:auto;padding-top:17px}
+body.reviewed-province .family-visit-actions .family-booking-cta{display:inline-flex;align-items:center;min-height:44px;padding:11px 16px;background:var(--green);border:1px solid var(--green);color:#fff;text-decoration:none;font-size:.8rem;font-weight:700;line-height:1.4}
+body.reviewed-province .family-visit-actions .family-booking-cta:hover,body.reviewed-province .family-visit-actions .family-booking-cta:focus-visible{background:var(--dark);border-color:var(--dark);color:#fff}
+body.reviewed-province .family-visit-actions .visit-source{margin:0;font-size:.79rem}
+body.reviewed-province .family-booking-note{font-size:.78rem;line-height:1.7;color:var(--muted);margin:17px 0 0}
+@media(max-width:650px){body.reviewed-province .family-visit-actions{align-items:stretch;flex-direction:column}body.reviewed-province .family-visit-actions .family-booking-cta{justify-content:center}}

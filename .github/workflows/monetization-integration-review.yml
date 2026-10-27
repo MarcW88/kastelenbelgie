@@ -1,0 +1,34 @@
+name: Monetization integration browser review
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build && npm run check
+      - name: Run installed visual review
+        run: |
+          node .agents/skills/site-design-review/scripts/run-visual-review.mjs --route /bezoeken/bezoekbare-kastelen/ --route /bezoeken/kastelen-met-kinderen/ --route /bezoeken/kastelen-overnachten/ --route /bezoeken/kastelen-met-rondleiding/ --route /bezoeken/gratis-kastelen/ --route /bezoeken/kastelen-met-park/ --output .artifacts/design-review/monetization
+      - name: Click sidebar anchors
+        run: node scripts/test-anchor-interactions.mjs
+      - name: Desktop tablet mobile and interactions
+        run: node scripts/check-integration-browser.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: monetization-integration-review
+          path: |
+            .artifacts/design-review/monetization/
+            .artifacts/integration-review/
+          if-no-files-found: warn

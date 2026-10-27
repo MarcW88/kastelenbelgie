@@ -43,18 +43,55 @@ for(const[cat,slugs]of Object.entries(pages)){const d=path.join(root,cat);fs.mkd
 for(const[slug,t]of[['over-ons','Over deze atlas'],['bronnen','Bronnen & methode'],['contact','Contact']]){const p=path.join(root,slug);fs.mkdirSync(p,{recursive:true});fs.writeFileSync(path.join(p,'index.html'),shell(t,`<section class="page-header"><div class="container"><div class="crumbs"><a href="/">Home</a> · ${t}</div><span class="eyebrow">Over het project</span><h1>${t}</h1><p>Deze pagina wacht op bevestigde projectinformatie.</p></div></section>`));}
 console.log(`${1+Object.keys(pages).length+Object.values(pages).flat().length+3} pagina's gegenereerd.`);
 
+// Affiliate URLs are build-time only: public product pages remain fallback destinations.
+const affiliateOffers=JSON.parse(fs.readFileSync(path.join(root,'content','affiliate-links.json'),'utf8')).offers;
+function renderAffiliateLinks(html){
+  return html.replace(/<a\b([^>]*\bdata-affiliate-key="([^"]+)"[^>]*)>/g,(whole,attributes,key)=>{
+    const offer=affiliateOffers[key];
+    if(!offer)throw new Error('Unconfigured affiliate offer: '+key);
+    const chosen=offer.affiliateUrl || offer.publicUrl;
+    if(!/^https:\/\//.test(chosen))throw new Error('Invalid affiliate URL for '+key);
+    const domain=new URL(chosen).hostname;
+    if(!/^(?:[a-z0-9-]+\.)+[a-z]{2,}$/i.test(domain))throw new Error('Invalid host for '+key);
+    const aff=Boolean(offer.affiliateUrl);
+    return '<a'+attributes.replace(/href="[^"]*"/,'href="'+chosen.replace(/&/g,'&amp;')+'"').replace(/rel="[^"]*"/,'rel="noopener noreferrer'+(aff?' sponsored':'')+'"')+' data-affiliate-active="'+aff+'">';
+  });
+}
 // Durable editorial landing for high-intent castle visits; never overwrite it with placeholders.
 const visitablePath=path.join(root,'bezoeken','bezoekbare-kastelen','index.html');
 const visitableSource=fs.readFileSync(path.join(root,'content','bezoeken','bezoekbare-kastelen.html'),'utf8');
-fs.writeFileSync(visitablePath,shell('Bezoekbare kastelen in België',visitableSource));
+fs.writeFileSync(visitablePath,shell('Bezoekbare kastelen in België',renderAffiliateLinks(visitableSource)));
+
+// Persistent source for overnight stay landing — never replace it with the atlas placeholder.
+const overnightPath=path.join(root,'bezoeken','kastelen-overnachten','index.html');
+fs.writeFileSync(overnightPath,shell('Overnachten in een kasteel in België',renderAffiliateLinks(fs.readFileSync(path.join(root,'content','bezoeken','kastelen-overnachten.html'),'utf8'))));
+
+// Durable source for the park landing. Resolve the same Loppem link configuration.
+const parkVisitsPath=path.join(root,'bezoeken','kastelen-met-park','index.html');
+fs.writeFileSync(parkVisitsPath,shell('Kastelen met park in België',renderAffiliateLinks(fs.readFileSync(path.join(root,'content','bezoeken','kastelen-met-park.html'),'utf8'))));
+
+const guidedToursPath=path.join(root,'bezoeken','kastelen-met-rondleiding','index.html');
+fs.writeFileSync(guidedToursPath,shell('Kastelen met rondleiding in België',fs.readFileSync(path.join(root,'content','bezoeken','kastelen-met-rondleiding.html'),'utf8')));
+
+const freeCastlePath=path.join(root,'bezoeken','gratis-kastelen','index.html');
+fs.writeFileSync(freeCastlePath,shell('Gratis kastelen bezoeken in België',fs.readFileSync(path.join(root,'content','bezoeken','gratis-kastelen.html'),'utf8')));
 
 const routesIndex=path.join(root,'routes/index.html');
 let routesHtml=fs.readFileSync(routesIndex,'utf8');
+routesHtml=routesHtml.replace('<body>', '<body class="reviewed-province">').replace('</head>', '<link rel="stylesheet" href="/assets/province-guide.css"></head>');
 routesHtml=routesHtml.replace('<title>Routes | Kastelen België</title>','<title>Kastelenroutes in België: Ardennen, Oost-Vlaanderen en Gent | Kastelen België</title>').replace('<meta name="description" content="Ontdek kastelen in België per provincie, type en ervaring.">','<meta name="description" content="Ontdek kastelenroutes in de Ardennen, Oost-Vlaanderen en rond Gent. Vergelijk stops, kies je regio en plan je eigen kasteeluitstap.">');
 routesHtml=routesHtml.replace('</head>','<script type="application/ld+json">'+JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://kastelenbelgie.be/routes/#webpage",url:"https://kastelenbelgie.be/routes/",name:"Kastelenroutes in België",inLanguage:"nl-BE"},{"@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:"https://kastelenbelgie.be/"},{"@type":"ListItem",position:2,name:"Routes",item:"https://kastelenbelgie.be/routes/"}]},{"@type":"ItemList",itemListElement:['kastelenroute-ardennen','kastelenroute-oost-vlaanderen','kastelenroute-rond-gent'].map((slug,i)=>({"@type":"ListItem",position:i+1,url:"https://kastelenbelgie.be/routes/"+slug+"/"}))}]})+'</script></head>');
 fs.writeFileSync(routesIndex,routesHtml);
 
 const reviewed = applyReviewedPages(root, shell);
+// Reviewed article pages are written after primary landing pages; resolve Loppem there too.
+const familyPagePath=path.join(root,'bezoeken','kastelen-met-kinderen','index.html');
+fs.writeFileSync(familyPagePath,renderAffiliateLinks(fs.readFileSync(familyPagePath,'utf8')));
+
+console.log(`${reviewed} gecontroleerde inhoudspagina('s) toegepast.`);
+
+
+
 console.log(`${reviewed} gecontroleerde inhoudspagina('s) toegepast.`);
 
 
