@@ -402,3 +402,33 @@ body .editorial-hub-hero .province-lead{max-width:780px}
 body.reviewed-province .province-guide .visit-card{transition:border-color .2s}
 body.reviewed-province .province-guide .visit-card:hover{border-color:var(--green)}
 @media(max-width:700px){body .editorial-hub .hub-grid{grid-template-columns:1fr}body .editorial-hub .hub-card-featured{grid-column:auto}body .editorial-hub .hub-card{min-height:0;padding:23px}body .editorial-hub .hub-intro{padding-top:38px}body .editorial-hub .hub-next{display:block}body .editorial-hub .hub-next-links{margin-top:20px}}
+
+
+/* Guided visits: coherent editorial entry and booking cards. */
+.guided-hero .province-lead{max-width:790px}
+.tour-disclosure{max-width:790px;font-size:.8rem;line-height:1.65;margin-top:18px;color:var(--muted)}
+.guided-landing{padding-bottom:82px}
+.tour-intro{padding:54px 0 29px;max-width:810px}
+.tour-intro h2,.tour-advice h2,.tour-next h2,.tour-sources h2{font-size:clamp(1.85rem,3vw,2.55rem);line-height:1.17;margin:10px 0 15px}
+.tour-intro p,.tour-advice p,.tour-sources p{max-width:760px;color:var(--muted);font-size:.92rem;line-height:1.75}
+.tour-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}
+.tour-card{display:flex;flex-direction:column;align-items:flex-start;background:var(--paper);border:1px solid var(--line);padding:30px;min-width:0}
+.tour-card:hover{border-color:var(--green)}
+.tour-card h3{font-family:"Cormorant Garamond",serif;font-size:clamp(1.65rem,2.4vw,2.1rem);line-height:1.16;margin:13px 0}
+.tour-card p{font-size:.88rem;color:var(--muted);line-height:1.7;margin:0 0 22px}
+.tour-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 17px;margin-top:auto}
+.tour-booking{background:var(--green);color:white;padding:12px 16px;text-decoration:none;font-size:.81rem;font-weight:700;line-height:1.4}
+.tour-booking:hover,.tour-booking:focus-visible{background:var(--dark);color:white}
+.tour-detail{font-size:.81rem;font-weight:700;color:var(--green);text-decoration:underline;text-underline-offset:3px}
+.tour-advice{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:55px;padding:35px;background:#f0eee7;border-top:4px solid var(--green)}
+.tour-advice ul{margin:0;padding-left:20px}
+.tour-advice li{font-size:.87rem;line-height:1.8;margin-bottom:12px}
+.tour-next{padding-top:53px}
+.tour-next-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:19px}
+.tour-next-links a{font-size:.83rem;font-weight:700;padding:12px 15px;border:1px solid var(--line);text-decoration:none}
+.tour-next-links a:hover{background:var(--green);color:white}
+.tour-sources{margin-top:40px;padding:30px 32px;background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--green)}
+.tour-sources ul{padding-left:20px}
+.tour-sources li{font-size:.83rem;line-height:1.7;margin-bottom:9px}
+.tour-sources a{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+@media(max-width:760px){.tour-grid,.tour-advice{grid-template-columns:1fr}.tour-intro{padding-top:36px}.tour-card{padding:24px}.tour-advice{padding:24px;gap:17px;margin-top:35px}.tour-sources{padding:24px}}
