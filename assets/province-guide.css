@@ -192,3 +192,48 @@ body.reviewed-province .visit-card h3 + p{margin-top:9px}
 body.reviewed-province .guide-editorial .province-section-head{margin-bottom:34px}
 body.reviewed-province .guide-editorial #bronnen .province-section-head h2{font-size:clamp(1.65rem,2.5vw,2.15rem)}
 @media(max-width:650px){body.reviewed-province .province-heading h1{font-size:clamp(2.4rem,8.5vw,3.3rem)}body.reviewed-province .province-section-head{margin-bottom:25px}}
+
+/* Shared sources appendix across every reviewed article type (not guides only). */
+body.reviewed-province .province-guide #bronnen.province-section,
+body.reviewed-castle .province-guide #bronnen.province-section{
+  box-sizing:border-box;width:min(1040px,calc(100% - 48px));max-width:1040px;
+  margin:56px auto 80px;padding:34px clamp(22px,4vw,52px);
+  background:var(--paper);border:1px solid var(--line);
+  border-top:5px solid var(--green);border-radius:12px;
+}
+body.reviewed-province .province-guide #bronnen .province-section-head,
+body.reviewed-castle .province-guide #bronnen .province-section-head{
+  display:block;max-width:none;grid-template-columns:1fr;gap:0;margin:0 0 22px;
+}
+body.reviewed-province .province-guide #bronnen .province-section-head h2,
+body.reviewed-castle .province-guide #bronnen .province-section-head h2{
+  font-size:clamp(1.7rem,2.6vw,2.2rem);line-height:1.16;margin:9px 0 0;
+}
+body.reviewed-province .province-guide #bronnen .province-section-head>p,
+body.reviewed-castle .province-guide #bronnen .province-section-head>p{
+  font-size:.9rem;line-height:1.7;max-width:790px;margin:12px 0 0;
+}
+body.reviewed-province .province-guide #bronnen .planning-copy,
+body.reviewed-castle .province-guide #bronnen .planning-copy{
+  max-width:none;width:100%;margin:0;
+}
+body.reviewed-province .province-guide #bronnen ul,
+body.reviewed-castle .province-guide #bronnen ul{margin:0 0 18px;padding-left:1.3em}
+body.reviewed-province .province-guide #bronnen li,
+body.reviewed-castle .province-guide #bronnen li{
+  font-size:.87rem;line-height:1.7;margin:0 0 11px;overflow-wrap:anywhere;
+}
+body.reviewed-province .province-guide #bronnen .planning-copy p,
+body.reviewed-castle .province-guide #bronnen .planning-copy p{
+  font-size:.85rem;line-height:1.7;color:var(--muted);margin:18px 0 0;
+}
+body.reviewed-province .province-guide #bronnen a,
+body.reviewed-castle .province-guide #bronnen a{
+  text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere;
+}
+@media(max-width:700px){
+  body.reviewed-province .province-guide #bronnen.province-section,
+  body.reviewed-castle .province-guide #bronnen.province-section{
+    width:calc(100% - 32px);margin:36px auto 52px;padding:23px 19px;
+  }
+}
