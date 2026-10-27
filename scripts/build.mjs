@@ -48,6 +48,10 @@ const visitablePath=path.join(root,'bezoeken','bezoekbare-kastelen','index.html'
 const visitableSource=fs.readFileSync(path.join(root,'content','bezoeken','bezoekbare-kastelen.html'),'utf8');
 fs.writeFileSync(visitablePath,shell('Bezoekbare kastelen in België',visitableSource));
 
+// Persistent source for overnight stay landing — never replace it with the atlas placeholder.
+const overnightPath=path.join(root,'bezoeken','kastelen-overnachten','index.html');
+fs.writeFileSync(overnightPath,shell('Overnachten in een kasteel in België',fs.readFileSync(path.join(root,'content','bezoeken','kastelen-overnachten.html'),'utf8')));
+
 const routesIndex=path.join(root,'routes/index.html');
 let routesHtml=fs.readFileSync(routesIndex,'utf8');
 routesHtml=routesHtml.replace('<title>Routes | Kastelen België</title>','<title>Kastelenroutes in België: Ardennen, Oost-Vlaanderen en Gent | Kastelen België</title>').replace('<meta name="description" content="Ontdek kastelen in België per provincie, type en ervaring.">','<meta name="description" content="Ontdek kastelenroutes in de Ardennen, Oost-Vlaanderen en rond Gent. Vergelijk stops, kies je regio en plan je eigen kasteeluitstap.">');
