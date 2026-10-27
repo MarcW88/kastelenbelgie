@@ -402,3 +402,33 @@ body .editorial-hub-hero .province-lead{max-width:780px}
 body.reviewed-province .province-guide .visit-card{transition:border-color .2s}
 body.reviewed-province .province-guide .visit-card:hover{border-color:var(--green)}
 @media(max-width:700px){body .editorial-hub .hub-grid{grid-template-columns:1fr}body .editorial-hub .hub-card-featured{grid-column:auto}body .editorial-hub .hub-card{min-height:0;padding:23px}body .editorial-hub .hub-intro{padding-top:38px}body .editorial-hub .hub-next{display:block}body .editorial-hub .hub-next-links{margin-top:20px}}
+
+
+/* Free castle outings: emphasize access conditions, never imply paid tickets are free. */
+.free-castles-hero .province-lead{max-width:810px}
+.free-castles-disclosure{font-size:.8rem;line-height:1.65;color:var(--muted);max-width:780px;margin-top:19px}
+.free-castles-landing{padding-bottom:80px}
+.free-castles-intro{padding:53px 0 28px;max-width:840px}
+.free-castles-intro h2,.free-castles-advice h2,.free-castles-more h2,.free-castles-sources h2{font-size:clamp(1.85rem,3vw,2.55rem);line-height:1.16;margin:10px 0 15px}
+.free-castles-intro p,.free-castles-advice p,.free-castles-more p,.free-castles-sources p{font-size:.92rem;line-height:1.75;color:var(--muted)}
+.free-castles-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}
+.free-castles-card{padding:30px;background:var(--paper);border:1px solid var(--line);display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.free-castles-card:hover{border-color:var(--green)}
+.free-castles-card h3{font-family:"Cormorant Garamond",serif;font-size:clamp(1.65rem,2.5vw,2.15rem);line-height:1.12;margin:13px 0}
+.free-castles-card .free-castles-kind{font-weight:700;font-size:.82rem;color:var(--green);margin:0 0 13px}
+.free-castles-card>p:not(.free-castles-kind){font-size:.87rem;line-height:1.75;color:var(--muted);margin:0 0 22px}
+.free-castles-actions{display:flex;flex-wrap:wrap;align-items:center;gap:13px 17px;margin-top:auto}
+.free-castles-actions a{font-size:.8rem;font-weight:700;line-height:1.5}
+.free-castles-actions .free-castles-cta{background:var(--green);color:white;padding:12px 15px;text-decoration:none}
+.free-castles-actions .free-castles-cta:hover,.free-castles-actions .free-castles-cta:focus-visible{background:var(--dark);color:white}
+.free-castles-actions a:not(.free-castles-cta){color:var(--green);text-decoration:underline;text-underline-offset:3px}
+.free-castles-advice{display:grid;grid-template-columns:1fr 1fr;gap:42px;background:#f0eee7;border-top:4px solid var(--green);padding:35px;margin-top:53px}
+.free-castles-advice ul{margin:0;padding-left:20px}.free-castles-advice li{font-size:.88rem;line-height:1.75;margin-bottom:12px}
+.free-castles-more{padding:50px 0 20px}
+.free-castles-more>div{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.free-castles-more a{padding:12px 15px;border:1px solid var(--line);font-size:.83rem;font-weight:700;text-decoration:none}
+.free-castles-more a:hover{background:var(--green);color:white}
+.free-castles-sources{margin-top:33px;padding:31px;background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--green)}
+.free-castles-sources ul{padding-left:20px}.free-castles-sources li{font-size:.84rem;line-height:1.7;margin-bottom:9px}
+.free-castles-sources a{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+@media(max-width:760px){.free-castles-grid,.free-castles-advice{grid-template-columns:1fr}.free-castles-intro{padding-top:35px}.free-castles-card,.free-castles-sources{padding:23px}.free-castles-advice{padding:23px;gap:14px;margin-top:34px}}
