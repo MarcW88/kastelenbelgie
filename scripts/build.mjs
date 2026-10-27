@@ -121,7 +121,7 @@ function indexGenerated(directory) {
     let html = fs.readFileSync(filename, 'utf8');
     // Absolute base href otherwise redirects local #section links to the homepage.
     // Keep /-relative assets, but qualify local fragment navigation with this route.
-    html = html.replace(/href="#([a-zA-Z][a-zA-Z0-9_-]*)"/g, (match, id) => 'href="' + route + '#' + id + '"');
+    html = html.replace(/href=(["'])#([a-zA-Z][a-zA-Z0-9_-]*)\1/g, (match, quote, id) => 'href=' + quote + route + '#' + id + quote);
     html = html.replace(/<meta name="robots" content="[^"]*">/i, '<meta name="robots" content="index,follow">');
     html = html.replace(/<link rel="canonical" href="[^"]*">/gi, '');
     html = html.replace('</head>', '<link rel="canonical" href="' + canonical + '"></head>');
