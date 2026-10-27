@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 const root = path.resolve(import.meta.dirname, '..');
 const manifest = path.join(root, 'content/reviewed-pages.json');
 if (!fs.existsSync(manifest)) process.exit(0);
@@ -10,13 +11,19 @@ for (const entry of JSON.parse(fs.readFileSync(manifest, 'utf8'))) {
   const html = fs.readFileSync(filename, 'utf8');
   const body = fs.readFileSync(path.join(root, entry.source), 'utf8');
   const fail = issue => { throw new Error(`${entry.route}: ${issue}`); };
-  // The build qualifies local fragment URLs and fingerprints assets after
-  // inserting the reviewed source. Normalize only those two transformations
-  // before verifying exact editorial source preservation.
-  const normalizedHtml = html
-    .replace(/href=(["'])\/[^"']*\/#([a-zA-Z][a-zA-Z0-9_-]*)\1/g, (match, quote, id) => 'href=' + quote + '#' + id + quote)
-    .replace(/((?:src|href)=")\/assets\/([^"?#]+)\?v=[a-f0-9]{12}(")/g, '$1/assets/$2$3');
-  if (!normalizedHtml.includes(body)) fail('Reviewed source content was not preserved in the rendered page.');
+  // Reproduce the build's intentional href/asset transformations before
+  // enforcing full reviewed source preservation.
+  const expectedBody = body
+    .replace(/href=(["'])#([a-zA-Z][a-zA-Z0-9_-]*)\1/g, (match, quote, id) => 'href=' + quote + entry.route + '#' + id + quote)
+    .replace(/((?:src|href)=")(\/?assets\/[^"?#]+)(?:\?v=[a-f0-9]+)?(")/g, (match, before, asset, after) => {
+      const pathname = '/' + asset.replace(/^\//, '');
+      if (pathname === '/assets/leaflet.css') return match;
+      const file = path.join(root, pathname.slice(1));
+      if (!fs.existsSync(file)) return match;
+      const hash = createHash('sha256').update(fs.readFileSync(file)).digest('hex').slice(0, 12);
+      return before + pathname + '?v=' + hash + after;
+    });
+  if (!html.includes(expectedBody)) fail('Reviewed source content was not preserved in the rendered page.');
   if ((html.match(/<h1\b/g) || []).length !== 1) fail('Expected exactly one H1.');
   if (!html.includes('<meta name="robots" content="index,follow">')) fail('Indexation policy changed.');
   if (!html.includes(`<link rel="canonical" href="https://${host}${entry.route}">`)) fail('Canonical mismatch.');
