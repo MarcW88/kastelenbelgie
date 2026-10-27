@@ -256,3 +256,28 @@ body.reviewed-province .information-content .planning-copy{max-width:100%}
 body.reviewed-province .information-content .guide-feature-image{max-width:100%}
 @media(max-width:960px){body.reviewed-province .information-layout{display:block}body.reviewed-province .information-aside{position:static;margin:18px 0 32px}body.reviewed-province .information-toc nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px}body.reviewed-province .information-aside{display:block}body.reviewed-province .information-layout{display:flex;flex-direction:column}body.reviewed-province .information-content{order:2;width:100%}body.reviewed-province .information-aside{order:1;width:100%}}
 @media(max-width:620px){body.reviewed-province .information-layout{width:calc(100% - 28px)}body.reviewed-province .information-toc{padding:19px 18px}body.reviewed-province .information-toc nav{grid-template-columns:1fr}}
+
+/* Information guides use the castle detail navigation card visual system. */
+body.reviewed-province .information-toc.castle-editorial-toc{
+  background:var(--paper);border:1px solid var(--line);border-radius:0;
+  padding:23px;border-top:1px solid var(--line);
+}
+body.reviewed-province .information-toc.castle-editorial-toc .eyebrow{margin-bottom:0}
+body.reviewed-province .information-toc.castle-editorial-toc h2{
+  font-family:"Cormorant Garamond",serif;font-size:clamp(1.35rem,1.8vw,1.65rem);
+  font-weight:600;letter-spacing:-.015em;line-height:1.18;margin:10px 0 14px;
+}
+body.reviewed-province .information-toc.castle-editorial-toc nav a{
+  display:flex;justify-content:space-between;gap:12px;padding:10px 0;
+  border-bottom:1px solid var(--line);font-size:.78rem;font-weight:700;
+  line-height:1.5;text-decoration:none;
+}
+body.reviewed-province .information-toc.castle-editorial-toc nav a:last-child{border-bottom:0}
+body.reviewed-province .information-toc.castle-editorial-toc nav a:hover,
+body.reviewed-province .information-toc.castle-editorial-toc nav a:focus-visible{
+  color:var(--wine);text-decoration:underline;text-underline-offset:3px;
+}
+@media(max-width:620px){
+  body.reviewed-province .information-toc.castle-editorial-toc{padding:23px}
+  body.reviewed-province .information-toc.castle-editorial-toc h2{font-size:1.4rem}
+}
