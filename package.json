@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "check": "node scripts/check.mjs && node scripts/check-reviewed-pages.mjs && node scripts/check-index-navigation.mjs",
+    "check": "node scripts/check.mjs && node scripts/check-reviewed-pages.mjs && node scripts/check-index-navigation.mjs && python3 scripts/check-site-links.py",
     "visual:install": "playwright install chromium",
     "visual:gravensteen": "node .agents/skills/site-design-review/scripts/run-visual-review.mjs --route /kasteel/gravensteen/ --output .artifacts/design-review/gravensteen",
     "visual:east-flanders": "node .agents/skills/site-design-review/scripts/run-visual-review.mjs --route /kasteel/gravensteen/ --route /kasteel/kasteel-van-laarne/ --route /kasteel/kasteel-ooidonk/ --route /kasteel/kasteel-van-poeke/ --route /kasteel/kasteel-wissekerke/ --route /kasteel/kasteel-cortewalle/ --route /kasteel/domein-breivelde/ --route /kasteel/park-van-beervelde/ --output .artifacts/design-review/east-flanders"

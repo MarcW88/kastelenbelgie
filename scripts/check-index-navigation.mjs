@@ -12,14 +12,18 @@ function scan(dir) {
     const rel=path.relative(root,p);
     const robots=[...html.matchAll(/<meta\s+name="robots"\s+content="([^"]+)"/gi)];
     if (robots.length!==1 || robots[0][1]!== 'index,follow') failures.push(rel+': robots is not exactly index,follow');
-    if (!html.includes('id="primary-navigation"') || !html.includes('href="/#castle-map">Kaart') || html.includes('>Provincies</a>')) failures.push(rel+': old/incorrect navigation');
+    const nav=html.match(/<nav\b[^>]*id=["']primary-navigation["'][^>]*>([\s\S]*?)<\/nav>/i);
+    const entries=nav ? [...nav[1].matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)].map(([,href,label])=>[new URL(href,'https://kastelenbelgie.be/').pathname+new URL(href,'https://kastelenbelgie.be/').hash,label.replace(/<[^>]+>/g,'').trim()]) : [];
+    const expected=[['/kastelen/','Ontdekken'],['/#castle-map','Kaart'],['/soorten/','Thema’s'],['/routes/','Routes'],['/gidsen/','Verhalen']];
+    if(JSON.stringify(entries)!==JSON.stringify(expected)) failures.push(rel+': incorrect primary navigation');
     // Every local section jump must target a real ID on the same page.
     const route = '/' + path.relative(root,path.dirname(p)).split(path.sep).join('/').replace(/^\.$/,'').replace(/\/$/,'');
     const pageRoute = route === '/' ? '/' : route + '/';
     for (const link of html.matchAll(/href="([^"]+)"/g)) {
       const raw = link[1];
       if (!raw || /^(?:https?:|mailto:|tel:|javascript:)/i.test(raw)) continue;
-      const target = new URL(raw, 'https://kastelenbelgie.be' + pageRoute);
+      const base = html.match(/<base\s+href=["']([^"']+)["']/i)?.[1];
+      const target = new URL(raw, new URL(base || pageRoute, 'https://kastelenbelgie.be' + pageRoute));
       if (target.hostname !== 'kastelenbelgie.be') continue;
       if (target.pathname.startsWith('/kasteel/') && target.pathname.endsWith('/')) {
         const targetFile = path.join(root,target.pathname.slice(1),'index.html');
