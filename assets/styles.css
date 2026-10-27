@@ -402,3 +402,11 @@ body .editorial-hub-hero .province-lead{max-width:780px}
 body.reviewed-province .province-guide .visit-card{transition:border-color .2s}
 body.reviewed-province .province-guide .visit-card:hover{border-color:var(--green)}
 @media(max-width:700px){body .editorial-hub .hub-grid{grid-template-columns:1fr}body .editorial-hub .hub-card-featured{grid-column:auto}body .editorial-hub .hub-card{min-height:0;padding:23px}body .editorial-hub .hub-intro{padding-top:38px}body .editorial-hub .hub-next{display:block}body .editorial-hub .hub-next-links{margin-top:20px}}
+
+
+/* Primary booking option + secondary in-depth castle article on visitable cards. */
+.visitable-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px 17px;margin-top:auto;width:100%}
+.visitable-card .visitable-actions a{margin:0;line-height:1.4}
+.visitable-card .visitable-actions .visitable-booking{display:inline-flex;align-items:center;min-height:43px;padding:11px 15px;background:var(--green);color:white;text-decoration:none;border:1px solid var(--green)}
+.visitable-card .visitable-actions .visitable-booking:hover,.visitable-card .visitable-actions .visitable-booking:focus-visible{background:var(--dark);border-color:var(--dark)}
+.visitable-card .visitable-actions .visitable-detail{font-weight:600}
