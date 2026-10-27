@@ -4,7 +4,7 @@ on:
     branches: [main]
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 concurrency:
@@ -23,6 +23,18 @@ jobs:
           node-version: 22
       - run: npm run build
       - run: npm run check
+      # Keep checked-in public HTML identical to the verified deployment.
+      # Without this, branch-based Pages builds can publish old menu/noindex
+      # files while this workflow uploads freshly generated HTML.
+      - name: Synchronize built static pages to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all -- ':(glob)**/index.html' index.html sitemap.xml robots.txt assets/site-version.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(site): sync verified generated HTML [skip ci]"
+            git push origin HEAD:main
+          fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
