@@ -355,3 +355,28 @@ body .atlas-overview h2{font-size:clamp(1.95rem,2.8vw,2.65rem);line-height:1.16}
 .footer .footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin-top:38px;padding-top:20px;border-top:1px solid #46504b;color:#aeb9b1;font-size:.72rem;line-height:1.55}
 @media(max-width:930px){.footer-intro{grid-template-columns:1fr}.footer-feature{max-width:520px}.footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.footer{padding:42px 0 24px}.footer-intro{gap:25px;padding-bottom:29px}.footer .footer-grid{grid-template-columns:1fr;gap:26px;padding-top:29px}.footer .footer-group>p{margin-bottom:12px}.footer .footer-bottom{display:grid;gap:8px;margin-top:30px}.footer .footer-bottom span{margin:0}}
+
+/* Consistent editorial landing pages: Verhalen, Thema's and Routes. */
+body .editorial-hub{padding:0 0 78px}
+body .editorial-hub .hub-intro{max-width:790px;padding:55px 0 31px}
+body .editorial-hub .hub-intro h2{font-size:clamp(2rem,3.1vw,2.8rem);line-height:1.14;margin:10px 0 13px}
+body .editorial-hub .hub-intro p{color:var(--muted);line-height:1.75;max-width:740px}
+body .editorial-hub .hub-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+body .editorial-hub .hub-card{min-height:230px;display:flex;flex-direction:column;align-items:flex-start;padding:30px;background:var(--paper);border:1px solid var(--line);text-decoration:none;transition:border-color .2s,transform .2s}
+body .editorial-hub .hub-card:hover,body .editorial-hub .hub-card:focus-visible{border-color:var(--green);transform:translateY(-2px)}
+body .editorial-hub .hub-card-featured{grid-column:span 2;min-height:240px;background:#ebeee7}
+body .editorial-hub .hub-card h3{font-family:"Cormorant Garamond",serif;font-size:clamp(1.6rem,2.5vw,2.1rem);line-height:1.18;letter-spacing:-.012em;margin:12px 0}
+body .editorial-hub .hub-card p{font-size:.91rem;line-height:1.7;color:var(--muted);max-width:680px;margin:0 0 25px}
+body .editorial-hub .hub-card-link{margin-top:auto;font-size:.8rem;font-weight:700;color:var(--green)}
+body .editorial-hub .hub-next{display:flex;align-items:center;justify-content:space-between;gap:25px;margin-top:45px;padding:30px 0;border-top:1px solid var(--line)}
+body .editorial-hub .hub-next h2{font-size:clamp(1.7rem,2.3vw,2.2rem);margin:9px 0}
+body .editorial-hub .hub-next p{max-width:620px;color:var(--muted);font-size:.9rem;line-height:1.7}
+body .editorial-hub .hub-next-links{display:grid;gap:10px;min-width:220px}
+body .editorial-hub .hub-next-links a{font-size:.83rem;font-weight:700;padding:12px 15px;border:1px solid var(--line)}
+body .editorial-hub .hub-next-links a:hover{background:var(--green);color:#fff}
+body .editorial-hub-hero{padding-bottom:45px}
+body .editorial-hub-hero h1{max-width:890px}
+body .editorial-hub-hero .province-lead{max-width:780px}
+body.reviewed-province .province-guide .visit-card{transition:border-color .2s}
+body.reviewed-province .province-guide .visit-card:hover{border-color:var(--green)}
+@media(max-width:700px){body .editorial-hub .hub-grid{grid-template-columns:1fr}body .editorial-hub .hub-card-featured{grid-column:auto}body .editorial-hub .hub-card{min-height:0;padding:23px}body .editorial-hub .hub-intro{padding-top:38px}body .editorial-hub .hub-next{display:block}body .editorial-hub .hub-next-links{margin-top:20px}}
