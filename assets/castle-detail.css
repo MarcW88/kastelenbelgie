@@ -113,3 +113,11 @@ body.reviewed-castle .castle-access-details p{font-size:.91rem;line-height:1.75;
 body.reviewed-castle .castle-access-details a{font-size:.86rem;font-weight:700;text-decoration:underline;text-underline-offset:4px}
 @media(max-width:900px){body.reviewed-castle .castle-info-grid{grid-template-columns:1fr 1fr}body.reviewed-castle .castle-access-content{grid-template-columns:1fr;gap:16px}}
 @media(max-width:600px){body.reviewed-castle .castle-visit-panel,body.reviewed-castle .castle-access-panel{width:calc(100% - 28px);padding-top:36px;padding-bottom:25px}body.reviewed-castle .castle-info-grid{grid-template-columns:1fr}body.reviewed-castle .castle-info-card{padding:22px}body.reviewed-castle .castle-access-content{padding:24px 20px}body.reviewed-castle .castle-action-line{flex-direction:column}body.reviewed-castle .castle-action-line a{justify-content:center}}
+
+
+/* Castle detail headings: restrained scale, more distance from copy. */
+body.reviewed-castle .province-heading h1{font-size:clamp(2.75rem,5.2vw,5.15rem);line-height:1.1}
+body.reviewed-castle .province-section-head h2,body.reviewed-castle #tickets .province-section-head h2,body.reviewed-castle #toegankelijkheid .province-section-head h2,body.reviewed-castle .castle-module-heading h2,body.reviewed-castle .castle-access-panel h2{font-size:clamp(2rem,3.25vw,3.05rem);line-height:1.15}
+body.reviewed-castle .province-section-head{margin-bottom:32px}
+body.reviewed-castle .castle-info-card h3{font-size:clamp(1.5rem,2vw,1.95rem);line-height:1.2;margin:16px 0 19px}
+@media(max-width:650px){body.reviewed-castle .province-heading h1{font-size:clamp(2.5rem,8.5vw,3.4rem)}}
