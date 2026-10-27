@@ -1,0 +1,27 @@
+name: Stabilisation branch verification
+on:
+  push:
+    branches: [audit/stabilisation-pages-20261027]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build && npm run check
+      - run: git diff --exit-code
+      - run: node scripts/test-anchor-interactions.mjs
+      - name: Capture desktop and mobile
+        run: |
+          node .agents/skills/site-design-review/scripts/run-visual-review.mjs --route / --route /kastelen/ --route /kastelen/oost-vlaanderen/ --route /kasteel/gravensteen/ --route /soorten/waterkastelen/ --route /bezoeken/kastelen-met-kinderen/ --route /routes/kastelenroute-ardennen/ --route /gidsen/middeleeuws-kasteel/ --route /inspiratie/mooiste-kastelen-belgie/ --output .artifacts/stabilisation
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: stabilisation-captures
+          path: .artifacts/stabilisation
