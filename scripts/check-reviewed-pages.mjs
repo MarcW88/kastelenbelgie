@@ -14,8 +14,8 @@ for (const entry of JSON.parse(fs.readFileSync(manifest, 'utf8'))) {
   // inserting the reviewed source. Normalize only those two transformations
   // before verifying exact editorial source preservation.
   const normalizedHtml = html
-    .replace(/href=(["'])\\/[^"']*\\/#([a-zA-Z][a-zA-Z0-9_-]*)\\1/g, (match, quote, id) => 'href=' + quote + '#' + id + quote)
-    .replace(/((?:src|href)=")\\/assets\\/([^"?#]+)\\?v=[a-f0-9]{12}(")/g, '$1/assets/$2$3');
+    .replace(/href=(["'])\/[^"']*\/#([a-zA-Z][a-zA-Z0-9_-]*)\1/g, (match, quote, id) => 'href=' + quote + '#' + id + quote)
+    .replace(/((?:src|href)=")\/assets\/([^"?#]+)\?v=[a-f0-9]{12}(")/g, '$1/assets/$2$3');
   if (!normalizedHtml.includes(body)) fail('Reviewed source content was not preserved in the rendered page.');
   if ((html.match(/<h1\b/g) || []).length !== 1) fail('Expected exactly one H1.');
   if (!html.includes('<meta name="robots" content="index,follow">')) fail('Indexation policy changed.');
