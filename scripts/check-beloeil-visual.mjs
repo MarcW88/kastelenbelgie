@@ -23,8 +23,9 @@ try {
         await page.waitForTimeout(1500);
         const data=await page.evaluate(()=>{
           const img=document.querySelector('.beloeil-lead-photo img');
-          const links=[...document.querySelectorAll('.castle-editorial-toc a[href^="#"]')];
+          const links=[...document.querySelectorAll('.castle-editorial-toc a')].filter(a=>a.hash && a.pathname===location.pathname);
           return {title:document.title,h1:document.querySelectorAll('h1').length,hero:!!document.querySelector('.castle-editorial-intro'),visitPanel:!!document.querySelector('#praktisch-bezoek.castle-visit-panel'),tocLinks:links.length,brokenAnchors:links.map(a=>a.hash.slice(1)).filter(id=>!document.getElementById(id)),image:img?{src:img.currentSrc,loaded:img.complete&&img.naturalWidth>0,naturalWidth:img.naturalWidth}:null,horizontalOverflow:document.documentElement.scrollWidth>document.documentElement.clientWidth,scrollWidth:document.documentElement.scrollWidth,clientWidth:document.documentElement.clientWidth,robots:document.querySelector('meta[name="robots"]')?.content};
+        });
         const screenshot=out+'/'+target.name+'-'+viewport.name+'.png';
         await page.screenshot({path:screenshot,fullPage:true});
         results.push({target:target.name,viewport:viewport.name,status,...data,screenshot});

@@ -9,13 +9,14 @@ for(let i=0;i<slugs.length;i++){const slug=slugs[i],route='/kasteel/'+slug+'/',s
 try{
 const e=entries.find(x=>x.route===route); assert.ok(e && e.source===src,'reviewed manifest route');
 const body=fs.readFileSync(src,'utf8'),html=fs.readFileSync(dst,'utf8');
-assert.ok(html.includes(body),'canonical source copied into render');
+const normalizedHtml=html.replace(/\?v=[a-f0-9]{12}/g,'').replaceAll('href="'+route+'#','href="#');
+    assert.ok(normalizedHtml.includes(body),'canonical source copied into render');
 assert.ok(province.includes('href="'+route+'"'),'province detail link');
 assert.ok(province.includes('id="'+ids[i]+'"'),'province card');
 assert.equal((body.match(/<h1\b/g)||[]).length,1,'one h1');
 assert.ok((body.match(/<h2\b/g)||[]).length>=4,'h2 count');
 assert.ok(/href="https:\/\//.test(body),'official source link');
-assert.ok(html.includes('noindex,follow'),'indexation guard');
+assert.ok(html.includes('<meta name="robots" content="index,follow">') && !/noindex/i.test(html),'indexation guard');
 assert.ok(html.includes('rel="canonical"'),'canonical');
 assert.ok(html.includes('castle-detail.css'),'stylesheet');
 for(const p of ['content/research/kasteel/'+slug+'/serp-coverage.md','content/briefs/kasteel/'+slug+'.md','content/reviews/kasteel/'+slug+'/post-write-gap-check.md'])assert.ok(fs.existsSync(p),'missing artifact '+p);
