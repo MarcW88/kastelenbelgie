@@ -46,6 +46,27 @@ export function applyReviewedPages(root, renderPage) {
     additions += `<meta property="og:type" content="website"><meta property="og:title" content="${escapeHtml(entry.title)}"><meta property="og:description" content="${escapeHtml(entry.description)}"><meta property="og:url" content="${canonical}"><meta name="twitter:card" content="summary">`;
     if (entry.schema) additions += `<script type="application/ld+json">${JSON.stringify(entry.schema).replace(/</g, '\\u003c')}</script>`;
     html = html.replace('</head>', `${additions}</head>`);
+    // Give informational pages the same right-hand section navigation as castle
+    // details. Keep every article section and its semantic headings intact.
+    if (!entry.route.startsWith('/kasteel/')) {
+      const jumps = html.match(/<nav class="visit-jumps" aria-label="Op deze pagina">([\\s\\S]*?)<\\/nav>/);
+      const articleOpen = /<article class="province-guide(?: [^"]*)?">/;
+      if (jumps && articleOpen.test(html)) {
+        const links = [...jumps[1].matchAll(/<a href="#([^"]+)">([\\s\\S]*?)<\\/a>/g)];
+        const articleStart = html.search(articleOpen);
+        const articleEnd = html.lastIndexOf('</article>');
+        const valid = links.length > 0 && links.every(([, id]) => html.includes('id="' + id + '"'));
+        if (valid && articleEnd > articleStart) {
+          const nav = '<aside class="information-aside" aria-label="Navigatie binnen dit artikel"><div class="information-toc"><span class="eyebrow">Op deze pagina</span><nav aria-label="Spring naar onderdelen">' +
+            links.map(([, id, label]) => '<a href="' + entry.route + '#' + id + '">' + label + '<span aria-hidden="true">→</span></a>').join('') +
+            '</nav></div></aside>';
+          html = html.replace(jumps[0], '');
+          html = html.replace(articleOpen, match => match + '<div class="information-layout"><div class="information-content">');
+          const close = html.lastIndexOf('</article>');
+          html = html.slice(0, close) + '</div>' + nav + '</div>' + html.slice(close);
+        }
+      }
+    }
     fs.writeFileSync(destination, html);
   }
   return entries.length;
