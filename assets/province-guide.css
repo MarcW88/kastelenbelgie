@@ -178,3 +178,17 @@ body.reviewed-province .guide-editorial #bronnen .planning-copy li{font-size:.86
 body.reviewed-province .guide-editorial #bronnen .planning-copy p{font-size:.84rem;line-height:1.65;color:var(--muted);margin:15px 0 0}
 body.reviewed-province .guide-editorial #bronnen a{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:700px){body.reviewed-province .guide-editorial #bronnen.province-section{width:calc(100% - 32px);margin:32px auto 48px;padding:22px 18px}body.reviewed-province .guide-editorial .province-section-head>p{margin-top:12px}}
+
+
+/* Balanced heading scale and breathing room in all reviewed overview and guide pages. */
+body.reviewed-province .province-heading h1{font-size:clamp(2.7rem,5vw,4.85rem);line-height:1.1}
+body.reviewed-province .province-heading h1 + .province-lead{margin-top:22px}
+body.reviewed-province .province-section-head h2,body.reviewed-province .planning-title h2{font-size:clamp(2rem,3.15vw,3rem);line-height:1.16;margin-top:13px}
+body.reviewed-province .province-section-head{margin-bottom:34px}
+body.reviewed-province .province-section-head>p{line-height:1.75}
+body.reviewed-province .planning-copy h3{font-size:clamp(1.5rem,2vw,1.75rem);line-height:1.25;margin:34px 0 18px}
+body.reviewed-province .visit-card h3{font-size:clamp(1.75rem,2.3vw,2.05rem);line-height:1.15;margin-bottom:12px}
+body.reviewed-province .visit-card h3 + p{margin-top:9px}
+body.reviewed-province .guide-editorial .province-section-head{margin-bottom:34px}
+body.reviewed-province .guide-editorial #bronnen .province-section-head h2{font-size:clamp(1.65rem,2.5vw,2.15rem)}
+@media(max-width:650px){body.reviewed-province .province-heading h1{font-size:clamp(2.4rem,8.5vw,3.3rem)}body.reviewed-province .province-section-head{margin-bottom:25px}}
