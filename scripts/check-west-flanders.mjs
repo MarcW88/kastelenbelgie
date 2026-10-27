@@ -14,12 +14,13 @@ for(const slug of slugs){
     assert.ok(e && e.source===src,'route/manifest missing');
     assert.ok(fs.existsSync(src)&&fs.existsSync(out),'missing source/render');
     const body=fs.readFileSync(src,'utf8'),html=fs.readFileSync(out,'utf8');
-    assert.ok(html.includes(body),'source not reproduced in generated page');
+    const normalizedHtml=html.replace(/\?v=[a-f0-9]{12}/g,'').replaceAll('href="'+route+'#','href="#');
+    assert.ok(normalizedHtml.includes(body),'source not reproduced in generated page');
     assert.ok(province.includes('href="'+route+'"'),'province link missing');
     assert.equal((body.match(/<h1\b/g)||[]).length,1,'H1 count');
     assert.ok((body.match(/<h2\b/g)||[]).length>=3,'insufficient editorial sections');
     assert.ok(/href="https:\/\//.test(body),'no official source');
-    assert.ok(html.includes('noindex,follow'),'indexation unexpectedly changed');
+    assert.ok(html.includes('<meta name="robots" content="index,follow">') && !/noindex/i.test(html),'indexation unexpectedly changed');
     assert.ok(html.includes('rel="canonical"'),'canonical missing');
     assert.ok(html.includes('castle-detail.css'),'detail stylesheet missing');
     for(const path of ['content/research/kasteel/'+slug+'/serp-coverage.md','content/briefs/kasteel/'+slug+'.md','content/reviews/kasteel/'+slug+'/post-write-gap-check.md']) assert.ok(fs.existsSync(path),'missing workflow artifact: '+path);

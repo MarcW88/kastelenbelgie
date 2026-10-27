@@ -1,6 +1,8 @@
 name: Antwerpen castle QA and Playwright
 on:
   workflow_dispatch:
+  pull_request:
+    branches: [main]
   push:
     branches: [main]
     paths:
