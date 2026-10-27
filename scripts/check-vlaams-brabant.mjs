@@ -13,18 +13,19 @@ for(let i=0;i<slugs.length;i++){
  assert.ok(entry&&entry.source===src,'missing correct reviewed-page route');
  assert.ok(fs.existsSync(src)&&fs.existsSync(output),'source/render absent');
  const body=fs.readFileSync(src,'utf8'),html=fs.readFileSync(output,'utf8');
- assert.ok(html.includes(body),'render does not include canonical body');
+ const normalized = html.replace(/\?v=[a-f0-9]{12}/g,'').replaceAll('href="'+route+'#','href="#');
+ assert.ok(normalized.includes(body),'render does not include canonical body');
  assert.ok(province.includes('href="'+route+'"'),'not linked from province');
  assert.ok(province.includes('id="'+ids[i]+'"'),'province anchor absent');
  assert.equal((body.match(/<h1\b/g)||[]).length,1,'exactly one h1 required');
  assert.ok((body.match(/<h2\b/g)||[]).length>=3,'insufficient sections');
  assert.ok(/href="https:\/\//.test(body),'official source absent');
- assert.ok(html.includes('noindex,follow'),'indexation guard missing');
+ assert.ok(html.includes('<meta name="robots" content="index,follow">') && !/noindex/i.test(html),'indexation guard missing');
  assert.ok(html.includes('rel="canonical"'),'canonical absent');
  assert.ok(html.includes('castle-detail.css'),'CSS absent');
  for(const p of ['content/research/kasteel/'+slug+'/serp-coverage.md','content/briefs/kasteel/'+slug+'.md','content/reviews/kasteel/'+slug+'/post-write-gap-check.md'])assert.ok(fs.existsSync(p),'missing specialist handoff: '+p);
  checks={...checks,status:'PASS',wordCount:body.replace(/<[^>]*>/g,' ').trim().split(/\s+/).length};
- console.log('PASS',slug,'render + province + source + noindex + artifacts');
+ console.log('PASS',slug,'render + province + source + indexation + artifacts');
  }catch(e){checks={...checks,status:'FAIL',error:e.message};console.error('FAIL',slug,e.message)}
  results.push(checks);
 }
