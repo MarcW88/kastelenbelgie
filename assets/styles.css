@@ -402,3 +402,123 @@ body .editorial-hub-hero .province-lead{max-width:780px}
 body.reviewed-province .province-guide .visit-card{transition:border-color .2s}
 body.reviewed-province .province-guide .visit-card:hover{border-color:var(--green)}
 @media(max-width:700px){body .editorial-hub .hub-grid{grid-template-columns:1fr}body .editorial-hub .hub-card-featured{grid-column:auto}body .editorial-hub .hub-card{min-height:0;padding:23px}body .editorial-hub .hub-intro{padding-top:38px}body .editorial-hub .hub-next{display:block}body .editorial-hub .hub-next-links{margin-top:20px}}
+
+/* Overnight stays: calm editorial booking pathways, responsive by default. */
+.stay-hero .province-lead{max-width:790px}
+.stay-clarification{max-width:790px;color:var(--muted);font-size:.8rem;line-height:1.7;margin-top:19px}
+.stay-landing{padding-bottom:86px}
+.stay-intro{padding:55px 0 29px;max-width:790px}
+.stay-intro h2,.stay-advice h2,.stay-context h2,.stay-affiliation h2{font-size:clamp(1.9rem,3vw,2.6rem);line-height:1.15;margin:10px 0 16px}
+.stay-intro p,.stay-advice p,.stay-context p,.stay-affiliation p{color:var(--muted);line-height:1.75;font-size:.93rem}
+.stay-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.stay-card{padding:32px;background:var(--paper);border:1px solid var(--line);display:flex;align-items:flex-start;flex-direction:column}
+.stay-card h3{font-family:"Cormorant Garamond",serif;font-size:clamp(1.8rem,2.5vw,2.25rem);line-height:1.1;margin:14px 0}
+.stay-card p{font-size:.89rem;line-height:1.75;color:var(--muted);margin:0 0 22px}
+.stay-actions{display:flex;align-items:flex-start;flex-direction:column;gap:14px;margin-top:auto}
+.stay-cta{padding:13px 17px;background:var(--green);color:white;font-size:.83rem;font-weight:700;text-decoration:none}
+.stay-cta:hover,.stay-cta:focus-visible{background:var(--dark);color:white}
+.stay-detail{font-size:.82rem;font-weight:700;color:var(--green);text-decoration:underline;text-underline-offset:4px}
+.stay-advice{display:grid;grid-template-columns:1fr 1fr;gap:42px;margin-top:55px;background:#f0eee7;padding:36px;border-top:4px solid var(--green)}
+.stay-advice ul{padding-left:21px;margin:0}.stay-advice li{font-size:.87rem;line-height:1.8;margin-bottom:13px}
+.stay-context{padding:53px 0 34px}.stay-context-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:21px}
+.stay-context-links a{font-size:.83rem;font-weight:700;padding:12px 15px;border:1px solid var(--line);text-decoration:none}
+.stay-context-links a:hover{background:var(--green);color:white}
+.stay-affiliation{border-top:1px solid var(--line);padding-top:30px;max-width:870px}
+@media(max-width:760px){.stay-grid,.stay-advice{grid-template-columns:1fr}.stay-intro{padding-top:36px}.stay-card{padding:24px}.stay-advice{padding:24px;gap:15px;margin-top:38px}.stay-context{padding-top:36px}}
+
+
+/* Shared booking CTA on castle index; no monetization without a tracked partner URL. */
+.visitable-actions{display:flex;gap:12px 17px;flex-wrap:wrap;align-items:center;margin-top:auto}
+.visitable-card .visitable-actions a{margin:0;font-size:.81rem;font-weight:700;line-height:1.5}
+.visitable-booking{display:inline-flex;padding:12px 16px;color:white!important;background:var(--green);text-decoration:none!important}
+.visitable-booking:hover,.visitable-booking:focus-visible{background:var(--dark);color:white}
+.visitable-detail{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:580px){.visitable-actions{align-items:flex-start;flex-direction:column}}
+
+
+/* Park castle landing: access-first editorial cards and clear external CTAs. */
+.park-landing-hero .province-lead{max-width:810px}
+.park-link-disclosure{max-width:800px;margin-top:18px;color:var(--muted);font-size:.8rem;line-height:1.7}
+.park-landing{padding-bottom:80px}
+.park-landing-intro{max-width:830px;padding:52px 0 28px}
+.park-landing-intro h2,.park-landing-advice h2,.park-landing-more h2,.park-landing-sources h2{font-size:clamp(1.85rem,3vw,2.55rem);line-height:1.16;margin:10px 0 15px}
+.park-landing-intro p,.park-landing-advice p,.park-landing-more p,.park-landing-sources p{color:var(--muted);line-height:1.75;font-size:.92rem}
+.park-visit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}
+.park-visit-card{display:flex;align-items:flex-start;flex-direction:column;min-width:0;padding:30px;background:var(--paper);border:1px solid var(--line)}
+.park-visit-card:hover{border-color:var(--green)}
+.park-visit-card h3{font-family:"Cormorant Garamond",serif;font-size:clamp(1.65rem,2.5vw,2.1rem);line-height:1.16;margin:13px 0}
+.park-visit-type{display:block;color:var(--green);font-size:.82rem;margin:0 0 13px}
+.park-visit-card>p{font-size:.88rem;line-height:1.75;color:var(--muted);margin:0 0 24px}
+.park-visit-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 17px;margin-top:auto}
+.park-primary-link{background:var(--green);padding:12px 16px;color:#fff;font-size:.81rem;font-weight:700;text-decoration:none}
+.park-primary-link:hover,.park-primary-link:focus-visible{color:#fff;background:var(--dark)}
+.park-secondary-link{font-size:.81rem;font-weight:700;color:var(--green);text-decoration:underline;text-underline-offset:3px}
+.park-landing-advice{display:grid;grid-template-columns:1fr 1fr;gap:38px;background:#f0eee7;padding:35px;margin-top:54px;border-top:4px solid var(--green)}
+.park-landing-advice ul{padding-left:20px;margin:0}
+.park-landing-advice li{font-size:.88rem;line-height:1.8;margin-bottom:12px}
+.park-landing-more{padding:50px 0 20px}
+.park-landing-more>div{display:flex;gap:12px;flex-wrap:wrap;margin-top:19px}
+.park-landing-more a{border:1px solid var(--line);padding:12px 15px;font-size:.82rem;font-weight:700;text-decoration:none}
+.park-landing-more a:hover{background:var(--green);color:#fff}
+.park-landing-sources{padding:30px;margin-top:34px;border:1px solid var(--line);border-top:5px solid var(--green);background:var(--paper)}
+.park-landing-sources ul{padding-left:20px}.park-landing-sources li{font-size:.83rem;line-height:1.75;margin-bottom:10px}
+.park-landing-sources a{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+@media(max-width:760px){.park-visit-grid,.park-landing-advice{grid-template-columns:1fr}.park-landing-intro{padding-top:35px}.park-visit-card,.park-landing-sources{padding:23px}.park-landing-advice{padding:23px;gap:14px;margin-top:35px}}
+
+/* Guided visits: coherent editorial entry and booking cards. */
+.guided-hero .province-lead{max-width:790px}
+.tour-disclosure{max-width:790px;font-size:.8rem;line-height:1.65;margin-top:18px;color:var(--muted)}
+.guided-landing{padding-bottom:82px}
+.tour-intro{padding:54px 0 29px;max-width:810px}
+.tour-intro h2,.tour-advice h2,.tour-next h2,.tour-sources h2{font-size:clamp(1.85rem,3vw,2.55rem);line-height:1.17;margin:10px 0 15px}
+.tour-intro p,.tour-advice p,.tour-sources p{max-width:760px;color:var(--muted);font-size:.92rem;line-height:1.75}
+.tour-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}
+.tour-card{display:flex;flex-direction:column;align-items:flex-start;background:var(--paper);border:1px solid var(--line);padding:30px;min-width:0}
+.tour-card:hover{border-color:var(--green)}
+.tour-card h3{font-family:"Cormorant Garamond",serif;font-size:clamp(1.65rem,2.4vw,2.1rem);line-height:1.16;margin:13px 0}
+.tour-card p{font-size:.88rem;color:var(--muted);line-height:1.7;margin:0 0 22px}
+.tour-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 17px;margin-top:auto}
+.tour-booking{background:var(--green);color:white;padding:12px 16px;text-decoration:none;font-size:.81rem;font-weight:700;line-height:1.4}
+.tour-booking:hover,.tour-booking:focus-visible{background:var(--dark);color:white}
+.tour-detail{font-size:.81rem;font-weight:700;color:var(--green);text-decoration:underline;text-underline-offset:3px}
+.tour-advice{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:55px;padding:35px;background:#f0eee7;border-top:4px solid var(--green)}
+.tour-advice ul{margin:0;padding-left:20px}
+.tour-advice li{font-size:.87rem;line-height:1.8;margin-bottom:12px}
+.tour-next{padding-top:53px}
+.tour-next-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:19px}
+.tour-next-links a{font-size:.83rem;font-weight:700;padding:12px 15px;border:1px solid var(--line);text-decoration:none}
+.tour-next-links a:hover{background:var(--green);color:white}
+.tour-sources{margin-top:40px;padding:30px 32px;background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--green)}
+.tour-sources ul{padding-left:20px}
+.tour-sources li{font-size:.83rem;line-height:1.7;margin-bottom:9px}
+.tour-sources a{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+@media(max-width:760px){.tour-grid,.tour-advice{grid-template-columns:1fr}.tour-intro{padding-top:36px}.tour-card{padding:24px}.tour-advice{padding:24px;gap:17px;margin-top:35px}.tour-sources{padding:24px}}
+
+/* Free castle outings: emphasize access conditions, never imply paid tickets are free. */
+.free-castles-hero .province-lead{max-width:810px}
+.free-castles-disclosure{font-size:.8rem;line-height:1.65;color:var(--muted);max-width:780px;margin-top:19px}
+.free-castles-landing{padding-bottom:80px}
+.free-castles-intro{padding:53px 0 28px;max-width:840px}
+.free-castles-intro h2,.free-castles-advice h2,.free-castles-more h2,.free-castles-sources h2{font-size:clamp(1.85rem,3vw,2.55rem);line-height:1.16;margin:10px 0 15px}
+.free-castles-intro p,.free-castles-advice p,.free-castles-more p,.free-castles-sources p{font-size:.92rem;line-height:1.75;color:var(--muted)}
+.free-castles-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}
+.free-castles-card{padding:30px;background:var(--paper);border:1px solid var(--line);display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.free-castles-card:hover{border-color:var(--green)}
+.free-castles-card h3{font-family:"Cormorant Garamond",serif;font-size:clamp(1.65rem,2.5vw,2.15rem);line-height:1.12;margin:13px 0}
+.free-castles-card .free-castles-kind{font-weight:700;font-size:.82rem;color:var(--green);margin:0 0 13px}
+.free-castles-card>p:not(.free-castles-kind){font-size:.87rem;line-height:1.75;color:var(--muted);margin:0 0 22px}
+.free-castles-actions{display:flex;flex-wrap:wrap;align-items:center;gap:13px 17px;margin-top:auto}
+.free-castles-actions a{font-size:.8rem;font-weight:700;line-height:1.5}
+.free-castles-actions .free-castles-cta{background:var(--green);color:white;padding:12px 15px;text-decoration:none}
+.free-castles-actions .free-castles-cta:hover,.free-castles-actions .free-castles-cta:focus-visible{background:var(--dark);color:white}
+.free-castles-actions a:not(.free-castles-cta){color:var(--green);text-decoration:underline;text-underline-offset:3px}
+.free-castles-advice{display:grid;grid-template-columns:1fr 1fr;gap:42px;background:#f0eee7;border-top:4px solid var(--green);padding:35px;margin-top:53px}
+.free-castles-advice ul{margin:0;padding-left:20px}.free-castles-advice li{font-size:.88rem;line-height:1.75;margin-bottom:12px}
+.free-castles-more{padding:50px 0 20px}
+.free-castles-more>div{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.free-castles-more a{padding:12px 15px;border:1px solid var(--line);font-size:.83rem;font-weight:700;text-decoration:none}
+.free-castles-more a:hover{background:var(--green);color:white}
+.free-castles-sources{margin-top:33px;padding:31px;background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--green)}
+.free-castles-sources ul{padding-left:20px}.free-castles-sources li{font-size:.84rem;line-height:1.7;margin-bottom:9px}
+.free-castles-sources a{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+@media(max-width:760px){.free-castles-grid,.free-castles-advice{grid-template-columns:1fr}.free-castles-intro{padding-top:35px}.free-castles-card,.free-castles-sources{padding:23px}.free-castles-advice{padding:23px;gap:14px;margin-top:34px}}
