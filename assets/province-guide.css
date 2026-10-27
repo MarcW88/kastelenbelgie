@@ -237,3 +237,22 @@ body.reviewed-castle .province-guide #bronnen a{
     width:calc(100% - 32px);margin:36px auto 52px;padding:23px 19px;
   }
 }
+
+/* Informational pages: readable article on the left, anchored utility menu on right. */
+body.reviewed-province .information-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,270px);gap:clamp(24px,3.2vw,48px);align-items:start;width:min(1240px,calc(100% - 48px));margin:0 auto}
+body.reviewed-province .information-content{min-width:0}
+body.reviewed-province .information-content>.container{width:100%;max-width:100%;margin-inline:0}
+body.reviewed-province .information-aside{position:sticky;top:105px;min-width:0;align-self:start;margin-top:48px}
+body.reviewed-province .information-toc{padding:24px 22px;background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--green);border-radius:10px}
+body.reviewed-province .information-toc .eyebrow{display:block;margin-bottom:14px}
+body.reviewed-province .information-toc nav{display:grid;gap:0}
+body.reviewed-province .information-toc nav a{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-size:.82rem;font-weight:700;line-height:1.5;text-decoration:none;overflow-wrap:anywhere}
+body.reviewed-province .information-toc nav a:last-child{border-bottom:0}
+body.reviewed-province .information-toc nav a:hover,body.reviewed-province .information-toc nav a:focus-visible{color:var(--wine);text-decoration:underline;text-underline-offset:3px}
+body.reviewed-province .information-toc nav a span{font-size:1rem;flex-shrink:0}
+body.reviewed-province .information-content .province-section{scroll-margin-top:105px}
+body.reviewed-province .information-content .province-section-head{max-width:100%}
+body.reviewed-province .information-content .planning-copy{max-width:100%}
+body.reviewed-province .information-content .guide-feature-image{max-width:100%}
+@media(max-width:960px){body.reviewed-province .information-layout{display:block}body.reviewed-province .information-aside{position:static;margin:18px 0 32px}body.reviewed-province .information-toc nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px}body.reviewed-province .information-aside{display:block}body.reviewed-province .information-layout{display:flex;flex-direction:column}body.reviewed-province .information-content{order:2;width:100%}body.reviewed-province .information-aside{order:1;width:100%}}
+@media(max-width:620px){body.reviewed-province .information-layout{width:calc(100% - 28px)}body.reviewed-province .information-toc{padding:19px 18px}body.reviewed-province .information-toc nav{grid-template-columns:1fr}}
