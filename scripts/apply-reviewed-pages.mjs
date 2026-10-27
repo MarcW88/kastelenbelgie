@@ -49,10 +49,10 @@ export function applyReviewedPages(root, renderPage) {
     // Give informational pages the same right-hand section navigation as castle
     // details. Keep every article section and its semantic headings intact.
     if (!entry.route.startsWith('/kasteel/')) {
-      const jumps = html.match(/<nav class="visit-jumps" aria-label="Op deze pagina">([\\s\\S]*?)<\\/nav>/);
+      const jumps = html.match(/<nav class="visit-jumps" aria-label="Op deze pagina">([\s\S]*?)<\/nav>/);
       const articleOpen = /<article class="province-guide(?: [^"]*)?">/;
       if (jumps && articleOpen.test(html)) {
-        const links = [...jumps[1].matchAll(/<a href="#([^"]+)">([\\s\\S]*?)<\\/a>/g)];
+        const links = [...jumps[1].matchAll(/<a href="#([^"]+)">([\s\S]*?)<\/a>/g)];
         const articleStart = html.search(articleOpen);
         const articleEnd = html.lastIndexOf('</article>');
         const valid = links.length > 0 && links.every(([, id]) => html.includes('id="' + id + '"'));
