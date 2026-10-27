@@ -4,7 +4,7 @@ on:
     branches: [main]
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 concurrency:
@@ -12,29 +12,34 @@ concurrency:
   cancel-in-progress: true
 jobs:
   deploy:
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm run build
-      - run: npm run check
-      # Keep checked-in public HTML identical to the verified deployment.
-      # Without this, branch-based Pages builds can publish old menu/noindex
-      # files while this workflow uploads freshly generated HTML.
-      - name: Synchronize built static pages to main
+      - name: Build and verify checked-in output
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add --all -- ':(glob)**/index.html' index.html sitemap.xml robots.txt assets/site-version.json
-          if ! git diff --cached --quiet; then
-            git commit -m "chore(site): sync verified generated HTML [skip ci]"
-            git push origin HEAD:main
-          fi
+          npm run build
+          npm run check
+          git diff --exit-code
+          test -z "$(git ls-files --others --exclude-standard)"
+      - name: Confirm build is reproducible
+        run: |
+          npm run build
+          git diff --exit-code
+          test -z "$(git ls-files --others --exclude-standard)"
+      - name: Refuse stale commit
+        run: |
+          git fetch origin main
+          test "$(git rev-parse origin/main)" = "$GITHUB_SHA"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

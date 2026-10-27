@@ -19,7 +19,8 @@ function scan(dir) {
     for (const link of html.matchAll(/href="([^"]+)"/g)) {
       const raw = link[1];
       if (!raw || /^(?:https?:|mailto:|tel:|javascript:)/i.test(raw)) continue;
-      const target = new URL(raw, 'https://kastelenbelgie.be' + pageRoute);
+      const base = html.match(/<base\s+href=["']([^"']+)["']/i)?.[1];
+      const target = new URL(raw, new URL(base || pageRoute, 'https://kastelenbelgie.be' + pageRoute));
       if (target.hostname !== 'kastelenbelgie.be') continue;
       if (target.pathname.startsWith('/kasteel/') && target.pathname.endsWith('/')) {
         const targetFile = path.join(root,target.pathname.slice(1),'index.html');
