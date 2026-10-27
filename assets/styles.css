@@ -325,3 +325,13 @@
 .castle-editorial-toc nav a{scroll-margin-top:110px}
 html{scroll-padding-top:110px}
 @media(max-width:700px){html{scroll-padding-top:90px}.castle-editorial-toc :is(h2,h3){font-size:1.4rem}}
+
+
+/* Sitewide editorial type rhythm: retain semantic H1/H2/H3 elements. */
+body .page-header h1{font-size:clamp(2.9rem,5.8vw,5.65rem);line-height:1.08}
+body .page-header h1 + p,body .page-header h1 + .province-lead{margin-top:22px}
+body .section> .container > h2,body .section-head h2,body .feature-copy h2,body .route-copy h2{font-size:clamp(2.15rem,3.6vw,3.4rem);line-height:1.14}
+body .section-head h2 + p,body .feature-copy h2 + p,body .route-copy h2 + p{margin-top:20px}
+body .castle-editorial-lead h2,body .laarne-intro-copy h2{font-size:clamp(1.9rem,3vw,2.85rem);line-height:1.15;margin-bottom:22px}
+body .atlas-overview h2{font-size:clamp(1.95rem,2.8vw,2.65rem);line-height:1.16}
+@media(max-width:650px){body .page-header h1{font-size:clamp(2.55rem,8.7vw,3.5rem)}}
