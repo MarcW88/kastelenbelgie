@@ -43,6 +43,11 @@ for(const[cat,slugs]of Object.entries(pages)){const d=path.join(root,cat);fs.mkd
 for(const[slug,t]of[['over-ons','Over deze atlas'],['bronnen','Bronnen & methode'],['contact','Contact']]){const p=path.join(root,slug);fs.mkdirSync(p,{recursive:true});fs.writeFileSync(path.join(p,'index.html'),shell(t,`<section class="page-header"><div class="container"><div class="crumbs"><a href="/">Home</a> · ${t}</div><span class="eyebrow">Over het project</span><h1>${t}</h1><p>Deze pagina wacht op bevestigde projectinformatie.</p></div></section>`));}
 console.log(`${1+Object.keys(pages).length+Object.values(pages).flat().length+3} pagina's gegenereerd.`);
 
+// Durable editorial landing for high-intent castle visits; never overwrite it with placeholders.
+const visitablePath=path.join(root,'bezoeken','bezoekbare-kastelen','index.html');
+const visitableSource=fs.readFileSync(path.join(root,'content','bezoeken','bezoekbare-kastelen.html'),'utf8');
+fs.writeFileSync(visitablePath,shell('Bezoekbare kastelen in België',visitableSource));
+
 const routesIndex=path.join(root,'routes/index.html');
 let routesHtml=fs.readFileSync(routesIndex,'utf8');
 routesHtml=routesHtml.replace('<title>Routes | Kastelen België</title>','<title>Kastelenroutes in België: Ardennen, Oost-Vlaanderen en Gent | Kastelen België</title>').replace('<meta name="description" content="Ontdek kastelen in België per provincie, type en ervaring.">','<meta name="description" content="Ontdek kastelenroutes in de Ardennen, Oost-Vlaanderen en rond Gent. Vergelijk stops, kies je regio en plan je eigen kasteeluitstap.">');
