@@ -15,7 +15,7 @@ try {
     const link=links.nth(i); const href=await link.getAttribute('href'); const expected=new URL(href,'http://127.0.0.1:8123'+route);
     await link.click(); assert.equal(new URL(page.url()).pathname,expected.pathname,`${route} ${href}`); assert.equal(new URL(page.url()).hash,expected.hash,`${route} ${href}`);
     const target=page.locator(`[id="${decodeURIComponent(expected.hash.slice(1))}"]`); assert.equal(await target.count(),1,`${route} ${href}`);
-    assert(await target.evaluate(el=>{const r=el.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight}),`${route} ${href} target not visible`); tested++;
+    await page.waitForFunction(id=>{const el=document.getElementById(id); if(!el)return false;const r=el.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight},decodeURIComponent(expected.hash.slice(1)),{timeout:5000}); tested++;
    }
   }
   await page.close();
